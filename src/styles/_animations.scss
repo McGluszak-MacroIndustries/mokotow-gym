@@ -1,0 +1,25 @@
+.slide-enter-active {
+  transition: opacity 0.05s ease-out;
+}
+
+.slide-leave-active {
+  transition: opacity 0.05s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  opacity: 0;
+}
+
+.animated-movement-move {
+  transition: transform 0.3s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

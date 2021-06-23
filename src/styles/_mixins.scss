@@ -1,0 +1,108 @@
+@import "./_colors.scss";
+
+@mixin proper-border-and-color() {
+  border: $color-bluegray 5px solid;
+  border-radius: 1rem;
+  background-color: $color-fancyyellow;
+  background-image: linear-gradient(
+    to right,
+    $color-fancyyellow,
+    $color-fancyyellow-darker
+  );
+}
+
+@mixin hoverable {
+  cursor: pointer;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+@mixin size-with-padding($width, $height, $padding) {
+  width: calc(#{$width} - #{$padding * 2});
+  height: calc(#{$height} - #{$padding * 2});
+  padding: $padding;
+}
+@mixin size-with-padding-advanced(
+  $width,
+  $height,
+  $padding-top,
+  $padding-right,
+  $padding-bottom,
+  $padding-left
+) {
+  width: calc(#{$width} - calc(#{$padding-left} + #{$padding-right}));
+  height: calc(#{$height} - calc(#{$padding-top} + #{$padding-bottom}));
+  padding-top: $padding-top;
+  padding-right: $padding-right;
+  padding-bottom: $padding-bottom;
+  padding-left: $padding-left;
+}
+
+@mixin grid-center-padding($padding, $width: 100%) {
+  @include grid-center;
+  @include size-with-padding($width, 100%, $padding);
+}
+
+@mixin grid-center-padding-advanced(
+  $padding-top,
+  $padding-right,
+  $padding-bottom,
+  $padding-left,
+  $width: 100%
+) {
+  @include grid-center;
+  @include size-with-padding-advanced(
+    $width,
+    100%,
+    $padding-top,
+    $padding-right,
+    $padding-bottom,
+    $padding-left
+  );
+}
+
+@mixin chip {
+  @include grid-center;
+  // @include app-card;
+  height: $chip-height;
+  grid-column: 1/-1;
+  grid-template-columns: 40% repeat(2, 1fr) 0.5fr;
+  border-bottom: 1px dashed rgb(219, 215, 215);
+  // .percent{
+  //     align-items: start;
+  //     // transform: translateX(-1rem);
+  // }
+  & > * {
+    &:nth-child(1) {
+      @include grid-center;
+      z-index: 1;
+      // border: 2px solid black;
+      height: 100%;
+      // border-top-left-radius: 1rem;
+      // border-bottom-left-radius: 1rem;
+      // background-color: black;
+      color: black;
+      font-weight: bolder;
+    }
+    &:nth-child(2),
+    &:nth-child(3) {
+      @include grid-center;
+      border: none;
+      // height: 95%;
+      // border-radius: 3rem;
+      text-align: center;
+      outline: 0;
+      background: inherit;
+    }
+  }
+}
+
+@mixin grid-center {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+}

@@ -1,20 +1,60 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/Home.vue";
+import Offer from "../views/Offer.vue";
+import Schedule from "../views/Schedule.vue";
+import Team from "../views/Team.vue";
+import Gallery from "../views/Gallery.vue";
+import Contact from "../views/Contact.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "Home",
+    name: "home",
     component: Home,
   },
   {
-    path: "/about",
-    name: "About",
+    path: "/offer",
+    name: "offer",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: Offer,
+  },
+  {
+    path: "/schedule",
+    name: "schedule",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+      import(/* webpackChunkName: "about" */ "../views/Schedule.vue"),
+  },
+  {
+    path: "/team",
+    name: "team",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Team.vue"),
+  },
+  {
+    path: "/gallery",
+    name: "gallery",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Gallery.vue"),
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Contact.vue"),
   },
 ];
 

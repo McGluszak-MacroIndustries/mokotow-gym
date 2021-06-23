@@ -4,13 +4,21 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-// import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 import WindowTemplate from "@/components/WindowTemplate.vue";
 
 export default defineComponent({
-  name: "Home",
+  name: "Gallery",
+  props: {},
   components: {
     WindowTemplate,
   },
+  setup() {
+    return {};
+  },
 });
 </script>
+
+<style scoped lang="scss">
+.Gallery {
+}
+</style>
