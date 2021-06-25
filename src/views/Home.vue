@@ -1,16 +1,27 @@
 <template>
-  <WindowTemplate />
+  <WindowTemplate :items="aboutUsItems" />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-// import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 import WindowTemplate from "@/components/WindowTemplate.vue";
+import { aboutUsItems } from "@/mixins/items";
 
 export default defineComponent({
   name: "Home",
   components: {
     WindowTemplate,
   },
+  props: {},
+  setup() {
+    return {
+      aboutUsItems,
+    };
+  },
 });
 </script>
+
+<style scoped lang="scss">
+.Home {
+}
+</style>

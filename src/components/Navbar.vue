@@ -6,7 +6,8 @@
           class="navbar-item"
           v-for="element in navbarElements"
           :key="element"
-          @click="moveToPage(element.routerName)"
+          @click="moveToPageAndChangeActiveButton(element)"
+          :class="{ selected: element.frontName === activeButton.frontName }"
         >
           {{ element.frontName }}
         </div>
@@ -19,20 +20,27 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import { navbarElements } from "@/mixins/navbar-management";
+import { defineComponent, ref } from "vue";
+import { navbarElements, NavBarElement } from "@/mixins/navbar-management";
 import router from "@/router";
 
 export default defineComponent({
   name: "navbar",
   props: {},
   setup() {
-    function moveToPage(name: string) {
+    const activeButton = ref<NavBarElement>(navbarElements[0]);
+    function moveToPageAndChangeActiveButton(element: NavBarElement) {
+      const name: string = element.routerName;
       router.push({ name });
+      console.log(name);
+      activeButton.value = element;
+      console.log("aktywny element to: ", activeButton.value.routerName);
+      console.log("kliknięty to: ", element.routerName);
     }
     return {
+      activeButton,
       navbarElements,
-      moveToPage,
+      moveToPageAndChangeActiveButton,
     };
   },
 });
@@ -67,7 +75,14 @@ export default defineComponent({
 
       .navbar-item {
         @include hoverable;
+        // padding-top: 0.5rem;
         cursor: pointer;
+        height: 3rem;
+        width: 4rem;
+        &.selected {
+          // padding-bottom: 2rem;
+          border-bottom: 4px $green-ranger solid;
+        }
         //   height: 5rem;
       }
     }

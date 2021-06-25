@@ -1,10 +1,11 @@
 <template>
-  <WindowTemplate />
+  <WindowTemplate :items="offerItems" />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import WindowTemplate from "@/components/WindowTemplate.vue";
+import { offerItems } from "@/mixins/items";
 
 export default defineComponent({
   name: "Offer",
@@ -13,7 +14,9 @@ export default defineComponent({
     WindowTemplate,
   },
   setup() {
-    return {};
+    return {
+      offerItems,
+    };
   },
 });
 </script>
