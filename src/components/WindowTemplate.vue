@@ -4,9 +4,12 @@
       <div class="left">
         <div class="blank"></div>
         <div class="title">
-          <div class="title-text">{{ selectedItem.title }}</div>
+          <div class="title-text">
+            {{ changeNumberFormat(highlightedIndex) }}
+            {{ selectedItem.title }}
+          </div>
         </div>
-        <div class="description" @click="changeSelectedItem()">
+        <div class="description" @click="changeItemToNextItem()">
           {{ selectedItem.description }}
         </div>
         <span class="line"></span>
@@ -22,9 +25,15 @@
         />
 
         <div class="element-container">
-          <div class="element" v-for="element in items.length" :key="element">
+          <div
+            class="element"
+            v-for="element in items.length"
+            :key="element"
+            @click="changeSelectedItem(element)"
+            :class="{ selected: element === highlightedIndex }"
+          >
             <div class="number">
-              {{ element }}
+              {{ changeNumberFormat(element) }}
             </div>
           </div>
         </div>
@@ -34,9 +43,18 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, Ref, ref } from "vue";
+import { computed, defineComponent, onMounted, Ref, ref } from "vue";
 import { Item } from "@/mixins/items";
-import { findIndex, indexOf, isEqual, isNil } from "lodash";
+import {
+  findIndex,
+  floor,
+  indexOf,
+  isEqual,
+  isNil,
+  slice,
+  take,
+  takeRight,
+} from "lodash";
 
 export default defineComponent({
   name: "WindowTemplate",
@@ -53,8 +71,25 @@ export default defineComponent({
   setup(props, { emit }) {
     const selectedItem = ref<Item>(props.items[0]);
     const highlightedIndex = ref<number>(
-      findIndex(props.items, selectedItem.value)
+      findIndex(props.items, selectedItem.value) + 1
     );
+
+    const changeItemSpontaneously = () =>
+      setInterval(() => console.log("dupa"), 5000);
+    onMounted(changeItemSpontaneously);
+
+    // const highlightedItems = computed(() => {
+    //   const numberOfItems = props.items.length;
+    //   return slice(
+    //     [
+    //       ...takeRight(props.items, floor(props.miniaturesAmount / 2)),
+    //       ...props.items,
+    //       ...take(props.items, floor(props.miniaturesAmount / 2)),
+    //     ],
+    //     currentItemIndex.value,
+    //     currentItemIndex.value + props.miniaturesAmount
+    //   );
+    // });
 
     // function getImgUrl(name: string, pic: string) {
     //   // console.log("oto obrazek");
@@ -64,22 +99,33 @@ export default defineComponent({
     //   return require("@/img/" + name + "/" + pic);
     // }
 
-    function changeSelectedItem() {
-      // console.log(props.items[0]);
-      console.log("dupa");
+    function changeItemToNextItem() {
       const index = findIndex(props.items, selectedItem.value);
       console.log(index);
       if (index === props.items.length - 1) {
         selectedItem.value = props.items[0];
+        highlightedIndex.value = 1;
+        // highlightedIndex.value = index;
       } else {
+        highlightedIndex.value += 1;
         selectedItem.value = props.items[index + 1];
       }
     }
 
+    function changeSelectedItem(index: number) {
+      highlightedIndex.value = index;
+      selectedItem.value = props.items[index - 1];
+    }
+    function changeNumberFormat(number: number): string {
+      return (number < 10 ? "0" : "") + number.toString();
+    }
     return {
+      changeItemToNextItem,
       selectedItem,
       changeSelectedItem,
       highlightedIndex,
+      changeNumberFormat,
+      // highlightedItems
     };
   },
 });
@@ -90,37 +136,28 @@ export default defineComponent({
 
 .window-template {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  grid-template-columns: 50vw 50vw;
+  height: calc(50vw * 0.7);
   text-align: left;
-  //   & > * {
-  //     padding-left: 2.2rem;
-  //     padding-right: 4rem;
-  //   }
   .left {
     display: grid;
     grid-template-rows: 12.5vh 15vh 33vh 5vh;
-
-    // background-color: lightblue;
     border: 2px white solid;
 
     .title {
-      //   padding-left: 2rem;
       display: grid;
       align-content: center;
       justify-items: flex-start;
       font-weight: bold;
       font-size: 2rem;
-      //   padding-left: ;
     }
     .line {
       border-top: $green-ranger 10px solid;
       margin-right: 5rem;
-      //   transform: translateY();
     }
     & > * {
       border: orange 2px solid;
+      margin-left: 10vw;
     }
   }
   .right {
@@ -131,54 +168,45 @@ export default defineComponent({
     img {
       width: 100%;
       height: 100%;
-      z-index: 0;
-      opacity: 0.8;
-      // object-fit: cover;
+      opacity: 0.4;
+      filter: brightness(190%);
     }
     .element-container {
       position: absolute;
-      top: 30rem;
-      left: 15rem;
-      width: 20rem;
-      height: 8rem;
+      top: 50vh;
+      left: 15vw;
+      width: 20vw;
+      height: 5vw;
 
       display: grid;
-      grid-template-columns: repeat(auto-fit, 5rem);
+      grid-template-columns: repeat(auto-fit, 5vw);
       justify-content: center;
-      // position: absolute;
-      // margin-top: rem;
-      // transform: translateY(-100%);
-      z-index: 999;
-      // margin-left: 10rem;
-      // margin-right: 10rem;
       grid-gap: 1rem;
-      height: 5rem;
       border: 2px pink solid;
       z-index: 999;
       .element {
-        // position: relative;
         @include hoverable;
         border: 1px red solid;
-        background-color: $green-ranger;
+
         text-align: center;
         display: grid;
+        font-weight: bold;
+        background-color: $white-power;
         align-items: center;
-        // color: black;
         z-index: 9;
         cursor: pointer;
-        // .number {
-        //   color: black;
-        // }
+        & > * {
+          color: $green-ranger;
+        }
+
+        &.selected {
+          background-color: $green-ranger;
+          & > * {
+            color: $white-power;
+          }
+        }
       }
     }
-
-    // img {
-    //   width: 100%;
-    //   height: 100%;
-    //   z-index: 0;
-    //   opacity: 0.1;
-    // }
-    // background-color: lightcoral;
   }
 }
 </style>

@@ -25,6 +25,12 @@ export const aboutUsItems: Array<Item> = [
     description: "Na sucho to i trawa nie urośnie",
     src: "baner_03.jpg",
   },
+  {
+    name: "about-us",
+    title: "KASZLE BO MAM KORONAWIRUSA",
+    description: "Bardzo się boję tej choroby",
+    src: "korona.jpg",
+  },
 ];
 
 export const offerItems: Array<Item> = [

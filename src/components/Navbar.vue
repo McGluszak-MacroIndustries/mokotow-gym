@@ -51,17 +51,19 @@ export default defineComponent({
 .navbar {
   // z-index: 999;
   //   margin: 0;
-  padding: 1rem;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  // padding: 1rem;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  border: 5px solid red;
   //   box-sizing: border-box;
   display: grid;
   height: 5rem;
   & > * {
     border: white 2px solid;
     text-align: center;
+    margin-top: 2vh;
   }
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40vw 40vw;
   font-weight: bold;
   .options {
     display: grid;
@@ -77,8 +79,8 @@ export default defineComponent({
         @include hoverable;
         // padding-top: 0.5rem;
         cursor: pointer;
-        height: 3rem;
-        width: 4rem;
+        height: 2vh;
+        width: 5vw;
         &.selected {
           // padding-bottom: 2rem;
           border-bottom: 4px $green-ranger solid;
@@ -89,6 +91,8 @@ export default defineComponent({
   }
   .logo {
     @include hoverable;
+    padding-left: 5vw;
+
     cursor: pointer;
     z-index: 1;
   }
