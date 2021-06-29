@@ -27,13 +27,13 @@
         <div class="element-container">
           <div
             class="element"
-            v-for="element in items.length"
-            :key="element"
-            @click="changeSelectedItem(element)"
-            :class="{ selected: element === highlightedIndex }"
+            v-for="(item, index) in items"
+            :key="index"
+            @click="changeSelectedItem(item, index)"
+            :class="{ selected: isEqual(item, selectedItem) }"
           >
             <div class="number">
-              {{ changeNumberFormat(element) }}
+              {{ changeNumberFormat(index + 1) }}
             </div>
           </div>
         </div>
@@ -51,6 +51,7 @@ import {
   indexOf,
   isEqual,
   isNil,
+  map,
   slice,
   take,
   takeRight,
@@ -74,20 +75,25 @@ export default defineComponent({
       findIndex(props.items, selectedItem.value) + 1
     );
 
-    const changeItemSpontaneously = () =>
-      setInterval(() => console.log("dupa"), 5000);
-    onMounted(changeItemSpontaneously);
+    // const changeItemSpontaneously = () =>
+    //   setInterval(() => changeItemToNextItem(), 10000);
+    // onMounted(changeItemSpontaneously);
 
     // const highlightedItems = computed(() => {
-    //   const numberOfItems = props.items.length;
+    //   const currentIndex = highlightedIndex.value - 1;
+    //   const itemsToIndexes = map(props.items, (i) => indexOf(props.items, i));
+
+    //   console.log(itemsToIndexes);
+
+    //   // const currentItemIndex = props.items.length;
     //   return slice(
     //     [
-    //       ...takeRight(props.items, floor(props.miniaturesAmount / 2)),
-    //       ...props.items,
-    //       ...take(props.items, floor(props.miniaturesAmount / 2)),
+    //       ...takeRight(itemsToIndexes, floor(props.miniaturesAmount / 2)),
+    //       ...itemsToIndexes,
+    //       ...take(itemsToIndexes, floor(props.miniaturesAmount / 2)),
     //     ],
-    //     currentItemIndex.value,
-    //     currentItemIndex.value + props.miniaturesAmount
+    //     currentIndex,
+    //     currentIndex + props.miniaturesAmount
     //   );
     // });
 
@@ -112,9 +118,11 @@ export default defineComponent({
       }
     }
 
-    function changeSelectedItem(index: number) {
-      highlightedIndex.value = index;
-      selectedItem.value = props.items[index - 1];
+    function changeSelectedItem(item: Item, index: number) {
+      console.log(index);
+      highlightedIndex.value = index + 1;
+      // console.log(highlightedIndex.value);
+      selectedItem.value = props.items[index];
     }
     function changeNumberFormat(number: number): string {
       return (number < 10 ? "0" : "") + number.toString();
@@ -125,7 +133,8 @@ export default defineComponent({
       changeSelectedItem,
       highlightedIndex,
       changeNumberFormat,
-      // highlightedItems
+      // highlightedItems,
+      isEqual,
     };
   },
 });
