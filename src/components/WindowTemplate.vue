@@ -19,15 +19,10 @@
       <div
         class="right"
         :style="{
-          'background-image': `url(${require('../img/subpages/about-us/korona.jpg')})`,
+          'background-image': `url(${require('../img/subpages/' + imgUrl)})`,
         }"
       >
-        <!-- <img
-          :src="
-            require(`../img/subpages/${selectedItem.name}/${selectedItem.src}`)
-          "
-          alt="selectedDog"
-        /> -->
+        <div></div>
 
         <div class="element-container">
           <div class="expanded" v-if="clicked">
@@ -59,6 +54,7 @@
             <div class="right-arrow">r</div>
           </div>
         </div>
+        <div></div>
       </div>
     </slot>
   </div>
@@ -97,8 +93,8 @@ export default defineComponent({
     const highlightedIndex = ref<number>(
       findIndex(props.items, selectedItem.value) + 1
     );
-    const imgUrl = ref<string>(
-      `url(require('../img/subpages/${selectedItem.value.name}/${selectedItem.value.src}'))`
+    const imgUrl = computed(
+      () => `${selectedItem.value.name}/${selectedItem.value.src}`
     );
 
     const changeItemSpontaneously = () =>
@@ -106,25 +102,12 @@ export default defineComponent({
 
     // onMounted(changeItemSpontaneously);
 
-    const imageSrc = computed(
-      () =>
-        `url(require('../img/subpages/${selectedItem.value.name}/${selectedItem.value.src}'))`
-    );
-    const imageProperty = computed(() => {
-      return {
-        // "background-image": `url("../img/subpages/about-us/korona.jpg")`,
-        "background-image":
-          'url(require(../img/subpages/about-us/korona.jpg"));',
-        // `url(../img/subpages/${selectedItem.value.name}/${selectedItem.value.src}`
-      };
-    });
     function changeItemToNextItem() {
       const index = findIndex(props.items, selectedItem.value);
       console.log(index);
       if (index === props.items.length - 1) {
         selectedItem.value = props.items[0];
         highlightedIndex.value = 1;
-        // highlightedIndex.value = index;
       } else {
         highlightedIndex.value += 1;
         selectedItem.value = props.items[index + 1];
@@ -138,8 +121,8 @@ export default defineComponent({
     function changeSelectedItem(item: Item, index: number) {
       console.log(index);
       highlightedIndex.value = index + 1;
-      // console.log(highlightedIndex.value);
       selectedItem.value = props.items[index];
+      clicked.value = !clicked.value;
     }
     function changeNumberFormat(number: number): string {
       return (number < 10 ? "0" : "") + number.toString();
@@ -151,10 +134,7 @@ export default defineComponent({
       changeSelectedItem,
       highlightedIndex,
       changeNumberFormat,
-      // highlightedItems,
       isSelected,
-      imageSrc,
-      imageProperty,
       imgUrl,
     };
   },
@@ -163,11 +143,6 @@ export default defineComponent({
 
 <style scoped lang="scss">
 @import "@/styles/main";
-
-// :root {
-//   --url: url(var(--image));
-// }
-
 #select {
   width: 10vw;
 }
@@ -203,9 +178,9 @@ option {
   }
   .right {
     border: 4px white solid;
-    position: relative;
-    // background-image: url(var(--url));
-    // background-image: url("../img/subpages/about-us/korona.jpg");
+    @include grid-center;
+    grid-template-rows: 12.5vh 48vh 5vh;
+    background-size: cover;
 
     img {
       width: 100%;
@@ -214,19 +189,12 @@ option {
       filter: brightness(190%);
     }
     .element-container {
-      position: absolute;
-      bottom: 5vh;
-      left: 12.5vw;
-      width: 25vw;
-      height: 40vh;
-
-      display: grid;
-      // grid-template-columns: 5vw 10vw 5vw;
-      grid-template-rows: min-content 4vh;
+      width: 100%;
+      height: 100%;
+      @include grid-center;
       align-content: end;
 
       justify-content: center;
-      // grid-gap: 1rem;
       border: 2px pink solid;
       z-index: 999;
       & > * {
@@ -235,15 +203,11 @@ option {
         border: white 2px solid;
         grid-template-columns: 2vw 20vw 2vw;
         text-align: center;
-        // align-content: center;
       }
       .expanded {
         display: grid;
-        // height: 32vh;
-
         .expander {
           display: grid;
-          // grid-auto-flow: row;
           grid-template-rows: repeat(auto-fit, 2fr);
           grid-gap: none;
           align-items: center;
@@ -262,19 +226,15 @@ option {
               background: $green-ranger;
               color: $white-power;
             }
-            // padding-left: -2re
           }
         }
       }
       .proper-container {
         display: grid;
-        // height: 2vh;
         align-content: center;
         background: $white-power;
         .chosen-item {
           display: grid;
-          // position: absolute;
-
           @include hoverable;
           cursor: pointer;
           grid-template-columns: 2vw 16vw 2vw;
@@ -287,14 +247,10 @@ option {
       .all-items {
         grid-auto-flow: row;
         color: blueviolet;
-        // position: absolute;
-        // bottom: 100%;
       }
       .element-selected {
         @include hoverable;
         border: 1px red solid;
-        // position: absolute;
-
         text-align: center;
         display: grid;
         font-weight: bold;
@@ -303,12 +259,6 @@ option {
         align-items: center;
         z-index: 9;
         cursor: pointer;
-
-        &.clicked {
-          // position: absolute;
-          // top: 50vh;
-          height: 40vh;
-        }
 
         &.selected {
           background-color: $green-ranger;
