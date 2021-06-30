@@ -16,25 +16,47 @@
       </div>
     </slot>
     <slot class="right-side">
-      <div class="right">
-        <img
+      <div
+        class="right"
+        :style="{
+          'background-image': `url(${require('../img/subpages/about-us/korona.jpg')})`,
+        }"
+      >
+        <!-- <img
           :src="
             require(`../img/subpages/${selectedItem.name}/${selectedItem.src}`)
           "
           alt="selectedDog"
-        />
+        /> -->
 
         <div class="element-container">
-          <div
-            class="element"
-            v-for="(item, index) in items"
-            :key="index"
-            @click="changeSelectedItem(item, index)"
-            :class="{ selected: isEqual(item, selectedItem) }"
-          >
-            <div class="number">
-              {{ changeNumberFormat(index + 1) }}
+          <div class="expanded" v-if="clicked">
+            <div></div>
+            <div class="expander">
+              <div
+                class="items"
+                v-for="(item, index) in items"
+                :key="index"
+                @click="changeSelectedItem(item, index)"
+                :class="{ selected: isSelected(item) }"
+              >
+                {{ item.title }}
+              </div>
             </div>
+            <div></div>
+          </div>
+          <div class="hidden" v-else></div>
+          <div class="proper-container">
+            <div class="left-arrow">l</div>
+            <div class="chosen-item" @click="clicked = !clicked">
+              <div class="empty"></div>
+              <div class="item-name">
+                {{ selectedItem.title }}
+              </div>
+              <div class="icon" v-if="clicked">a</div>
+              <div class="icon" v-else>b</div>
+            </div>
+            <div class="right-arrow">r</div>
           </div>
         </div>
       </div>
@@ -70,41 +92,32 @@ export default defineComponent({
     },
   },
   setup(props, { emit }) {
+    const clicked = ref<boolean>(false);
     const selectedItem = ref<Item>(props.items[0]);
     const highlightedIndex = ref<number>(
       findIndex(props.items, selectedItem.value) + 1
     );
+    const imgUrl = ref<string>(
+      `url(require('../img/subpages/${selectedItem.value.name}/${selectedItem.value.src}'))`
+    );
 
-    // const changeItemSpontaneously = () =>
-    //   setInterval(() => changeItemToNextItem(), 10000);
+    const changeItemSpontaneously = () =>
+      setInterval(() => changeItemToNextItem(), 5000);
+
     // onMounted(changeItemSpontaneously);
 
-    // const highlightedItems = computed(() => {
-    //   const currentIndex = highlightedIndex.value - 1;
-    //   const itemsToIndexes = map(props.items, (i) => indexOf(props.items, i));
-
-    //   console.log(itemsToIndexes);
-
-    //   // const currentItemIndex = props.items.length;
-    //   return slice(
-    //     [
-    //       ...takeRight(itemsToIndexes, floor(props.miniaturesAmount / 2)),
-    //       ...itemsToIndexes,
-    //       ...take(itemsToIndexes, floor(props.miniaturesAmount / 2)),
-    //     ],
-    //     currentIndex,
-    //     currentIndex + props.miniaturesAmount
-    //   );
-    // });
-
-    // function getImgUrl(name: string, pic: string) {
-    //   // console.log("oto obrazek");
-    //   // console.log(`../img/subpages/${selectedItem.value.name}` + "/" + pic);
-    //   // return require(`@/img/subpages/${selectedItem.value.name}/${pic}`);
-    //   // return require("../img/subpages/about-us/banner_01.jpg");
-    //   return require("@/img/" + name + "/" + pic);
-    // }
-
+    const imageSrc = computed(
+      () =>
+        `url(require('../img/subpages/${selectedItem.value.name}/${selectedItem.value.src}'))`
+    );
+    const imageProperty = computed(() => {
+      return {
+        // "background-image": `url("../img/subpages/about-us/korona.jpg")`,
+        "background-image":
+          'url(require(../img/subpages/about-us/korona.jpg"));',
+        // `url(../img/subpages/${selectedItem.value.name}/${selectedItem.value.src}`
+      };
+    });
     function changeItemToNextItem() {
       const index = findIndex(props.items, selectedItem.value);
       console.log(index);
@@ -118,6 +131,10 @@ export default defineComponent({
       }
     }
 
+    function isSelected(item: Item) {
+      return isEqual(item, selectedItem.value);
+    }
+
     function changeSelectedItem(item: Item, index: number) {
       console.log(index);
       highlightedIndex.value = index + 1;
@@ -128,13 +145,17 @@ export default defineComponent({
       return (number < 10 ? "0" : "") + number.toString();
     }
     return {
+      clicked,
       changeItemToNextItem,
       selectedItem,
       changeSelectedItem,
       highlightedIndex,
       changeNumberFormat,
       // highlightedItems,
-      isEqual,
+      isSelected,
+      imageSrc,
+      imageProperty,
+      imgUrl,
     };
   },
 });
@@ -142,6 +163,17 @@ export default defineComponent({
 
 <style scoped lang="scss">
 @import "@/styles/main";
+
+// :root {
+//   --url: url(var(--image));
+// }
+
+#select {
+  width: 10vw;
+}
+option {
+  background-color: blanchedalmond;
+}
 
 .window-template {
   display: grid;
@@ -172,8 +204,9 @@ export default defineComponent({
   .right {
     border: 4px white solid;
     position: relative;
+    // background-image: url(var(--url));
+    // background-image: url("../img/subpages/about-us/korona.jpg");
 
-    position: relative;
     img {
       width: 100%;
       height: 100%;
@@ -182,30 +215,99 @@ export default defineComponent({
     }
     .element-container {
       position: absolute;
-      top: 50vh;
-      left: 15vw;
-      width: 20vw;
-      height: 5vw;
+      bottom: 5vh;
+      left: 12.5vw;
+      width: 25vw;
+      height: 40vh;
 
       display: grid;
-      grid-template-columns: repeat(auto-fit, 5vw);
+      // grid-template-columns: 5vw 10vw 5vw;
+      grid-template-rows: min-content 4vh;
+      align-content: end;
+
       justify-content: center;
-      grid-gap: 1rem;
+      // grid-gap: 1rem;
       border: 2px pink solid;
       z-index: 999;
-      .element {
+      & > * {
+        display: grid;
+        color: $green-ranger;
+        border: white 2px solid;
+        grid-template-columns: 2vw 20vw 2vw;
+        text-align: center;
+        // align-content: center;
+      }
+      .expanded {
+        display: grid;
+        // height: 32vh;
+
+        .expander {
+          display: grid;
+          // grid-auto-flow: row;
+          grid-template-rows: repeat(auto-fit, 2fr);
+          grid-gap: none;
+          align-items: center;
+          background: $white-power;
+          overflow-y: auto;
+          .items {
+            display: grid;
+            min-height: 6vh;
+            border: 2px $light-grey solid;
+            cursor: pointer;
+            align-content: center;
+            color: $green-ranger;
+            font-weight: bold;
+            @include hoverable;
+            &.selected {
+              background: $green-ranger;
+              color: $white-power;
+            }
+            // padding-left: -2re
+          }
+        }
+      }
+      .proper-container {
+        display: grid;
+        // height: 2vh;
+        align-content: center;
+        background: $white-power;
+        .chosen-item {
+          display: grid;
+          // position: absolute;
+
+          @include hoverable;
+          cursor: pointer;
+          grid-template-columns: 2vw 16vw 2vw;
+          & > * {
+            color: $dark-grey;
+            font-weight: bold;
+          }
+        }
+      }
+      .all-items {
+        grid-auto-flow: row;
+        color: blueviolet;
+        // position: absolute;
+        // bottom: 100%;
+      }
+      .element-selected {
         @include hoverable;
         border: 1px red solid;
+        // position: absolute;
 
         text-align: center;
         display: grid;
         font-weight: bold;
         background-color: $white-power;
+        color: $green-ranger;
         align-items: center;
         z-index: 9;
         cursor: pointer;
-        & > * {
-          color: $green-ranger;
+
+        &.clicked {
+          // position: absolute;
+          // top: 50vh;
+          height: 40vh;
         }
 
         &.selected {
