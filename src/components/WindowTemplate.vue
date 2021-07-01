@@ -9,7 +9,7 @@
             {{ selectedItem.title }}
           </div>
         </div>
-        <div class="description" @click="changeItemToNextItem()">
+        <div class="description">
           {{ selectedItem.description }}
         </div>
         <span class="line"></span>
@@ -42,16 +42,155 @@
           </div>
           <div class="hidden" v-else></div>
           <div class="proper-container">
-            <div class="left-arrow">l</div>
+            <div
+              class="left-arrow"
+              @click="changeItemToNextOrPreviousItem('previous')"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10.314"
+                height="17.385"
+                viewBox="0 0 10.314 17.385"
+              >
+                <g
+                  id="Group_10"
+                  data-name="Group 10"
+                  transform="translate(-345.068 -1200.96) rotate(45)"
+                >
+                  <line
+                    id="Line_5"
+                    data-name="Line 5"
+                    x2="10"
+                    transform="translate(1100.5 610.5)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                  />
+                  <line
+                    id="Line_6"
+                    data-name="Line 6"
+                    x2="10"
+                    transform="translate(1100.5 599.914) rotate(90)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                  />
+                </g>
+              </svg>
+            </div>
             <div class="chosen-item" @click="clicked = !clicked">
               <div class="empty"></div>
               <div class="item-name">
                 {{ selectedItem.title }}
               </div>
-              <div class="icon" v-if="clicked">a</div>
-              <div class="icon" v-else>b</div>
+              <div class="" v-if="clicked">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14.142"
+                  height="14.142"
+                  viewBox="0 0 14.142 14.142"
+                >
+                  <g id="burger" transform="translate(-1431.429 -603.429)">
+                    <line
+                      id="Line_7"
+                      data-name="Line 7"
+                      x2="18"
+                      transform="translate(1432.136 616.864) rotate(-45)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-width="2"
+                    />
+                    <line
+                      id="Line_9"
+                      data-name="Line 9"
+                      x2="18"
+                      transform="translate(1432.136 604.136) rotate(45)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-width="2"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="icon" v-else>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="14"
+                  viewBox="0 0 18 14"
+                >
+                  <g id="burger" transform="translate(-1429.5 -603.5)">
+                    <line
+                      id="Line_7"
+                      data-name="Line 7"
+                      x2="18"
+                      transform="translate(1429.5 604.5)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-width="2"
+                    />
+                    <line
+                      id="Line_8"
+                      data-name="Line 8"
+                      x2="18"
+                      transform="translate(1429.5 610.5)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-width="2"
+                    />
+                    <line
+                      id="Line_9"
+                      data-name="Line 9"
+                      x2="18"
+                      transform="translate(1429.5 616.5)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-width="2"
+                    />
+                  </g>
+                </svg>
+              </div>
             </div>
-            <div class="right-arrow">r</div>
+            <div
+              class="right-arrow"
+              @click="changeItemToNextOrPreviousItem('next')"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10.314"
+                height="17.385"
+                viewBox="0 0 10.314 17.385"
+              >
+                <g
+                  id="Group_11"
+                  data-name="Group 11"
+                  transform="translate(355.382 1218.345) rotate(-135)"
+                >
+                  <line
+                    id="Line_5"
+                    data-name="Line 5"
+                    x2="10"
+                    transform="translate(1100.5 610.5)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                  />
+                  <line
+                    id="Line_6"
+                    data-name="Line 6"
+                    x2="10"
+                    transform="translate(1100.5 599.914) rotate(90)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                  />
+                </g>
+              </svg>
+            </div>
           </div>
         </div>
         <div></div>
@@ -63,17 +202,7 @@
 <script lang="ts">
 import { computed, defineComponent, onMounted, Ref, ref } from "vue";
 import { Item } from "@/mixins/items";
-import {
-  findIndex,
-  floor,
-  indexOf,
-  isEqual,
-  isNil,
-  map,
-  slice,
-  take,
-  takeRight,
-} from "lodash";
+import { findIndex, isEqual } from "lodash";
 
 export default defineComponent({
   name: "WindowTemplate",
@@ -98,19 +227,32 @@ export default defineComponent({
     );
 
     const changeItemSpontaneously = () =>
-      setInterval(() => changeItemToNextItem(), 5000);
+      setInterval(() => changeItemToNextOrPreviousItem("next"), 5000);
 
     // onMounted(changeItemSpontaneously);
 
-    function changeItemToNextItem() {
+    function changeItemToNextOrPreviousItem(direction: string) {
       const index = findIndex(props.items, selectedItem.value);
       console.log(index);
-      if (index === props.items.length - 1) {
-        selectedItem.value = props.items[0];
-        highlightedIndex.value = 1;
-      } else {
-        highlightedIndex.value += 1;
-        selectedItem.value = props.items[index + 1];
+
+      switch (direction) {
+        case "next":
+          if (index === props.items.length - 1) {
+            selectedItem.value = props.items[0];
+            highlightedIndex.value = 1;
+          } else {
+            highlightedIndex.value += 1;
+            selectedItem.value = props.items[index + 1];
+          }
+          break;
+        case "previous":
+          if (index === 0) {
+            selectedItem.value = props.items[props.items.length - 1];
+            highlightedIndex.value = props.items.length;
+          } else {
+            highlightedIndex.value -= 1;
+            selectedItem.value = props.items[index - 1];
+          }
       }
     }
 
@@ -129,7 +271,7 @@ export default defineComponent({
     }
     return {
       clicked,
-      changeItemToNextItem,
+      changeItemToNextOrPreviousItem,
       selectedItem,
       changeSelectedItem,
       highlightedIndex,
@@ -143,12 +285,6 @@ export default defineComponent({
 
 <style scoped lang="scss">
 @import "@/styles/main";
-#select {
-  width: 10vw;
-}
-option {
-  background-color: blanchedalmond;
-}
 
 .window-template {
   display: grid;
@@ -233,20 +369,30 @@ option {
         display: grid;
         align-content: center;
         background: $white-power;
+        & > * {
+          cursor: pointer;
+          @include hoverable;
+          color: $dark-grey;
+        }
+        .left-arrow,
+        .right-arrow {
+          color: $dark-grey;
+          cursor: pointer;
+        }
         .chosen-item {
           display: grid;
           @include hoverable;
           cursor: pointer;
           grid-template-columns: 2vw 16vw 2vw;
+          height: 2vh;
           & > * {
             color: $dark-grey;
             font-weight: bold;
           }
+          .icon {
+            transform: translateY(5%);
+          }
         }
-      }
-      .all-items {
-        grid-auto-flow: row;
-        color: blueviolet;
       }
       .element-selected {
         @include hoverable;
