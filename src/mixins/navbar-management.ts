@@ -3,6 +3,8 @@ export type NavBarElement = {
   routerName: string;
 };
 
+export const icons: string[] = ["fb.png", "inst.png"];
+
 export const navbarElements: NavBarElement[] = [
   {
     frontName: "O NAS",

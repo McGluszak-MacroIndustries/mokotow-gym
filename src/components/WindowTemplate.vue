@@ -1,7 +1,7 @@
 <template>
-  <div class="window-template">
-    <slot name="left-side">
-      <div class="left">
+  <transition name="slide-fade" mode="out-in">
+    <div class="window-template" :key="selectedItem">
+      <div class="left-full">
         <div class="blank"></div>
         <div class="title">
           <div class="title-text">
@@ -9,194 +9,202 @@
             {{ selectedItem.title }}
           </div>
         </div>
+
         <div class="description">
-          {{ selectedItem.description }}
+          <slot name="left-side">
+            {{ selectedItem.description }}
+          </slot>
         </div>
+
         <span class="line"></span>
       </div>
-    </slot>
-    <slot class="right-side">
-      <div
-        class="right"
-        :style="{
-          'background-image': `url(${require('../img/subpages/' + imgUrl)})`,
-        }"
-      >
-        <div></div>
 
-        <div class="element-container">
-          <div class="expanded" v-if="clicked">
+      <slot name="right-full">
+        <div
+          class="right"
+          :style="{
+            'background-image': `linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(${require('../img/subpages/' +
+              imgUrl)})`,
+          }"
+        >
+          <slot name="right-side">
             <div></div>
-            <div class="expander">
-              <div
-                class="items"
-                v-for="(item, index) in items"
-                :key="index"
-                @click="changeSelectedItem(item, index)"
-                :class="{ selected: isSelected(item) }"
-              >
-                {{ item.title }}
+
+            <div class="element-container">
+              <div class="expanded" v-if="clicked">
+                <div></div>
+                <div class="expander">
+                  <div
+                    class="items"
+                    v-for="(item, index) in items"
+                    :key="index"
+                    @click="changeSelectedItem(item, index)"
+                    :class="{ selected: isSelected(item) }"
+                  >
+                    {{ item.title }}
+                  </div>
+                </div>
+                <div></div>
+              </div>
+              <div class="hidden" v-else></div>
+              <div class="proper-container">
+                <div
+                  class="left-arrow"
+                  @click="changeItemToNextOrPreviousItem('previous')"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10.314"
+                    height="17.385"
+                    viewBox="0 0 10.314 17.385"
+                  >
+                    <g
+                      id="Group_10"
+                      data-name="Group 10"
+                      transform="translate(-345.068 -1200.96) rotate(45)"
+                    >
+                      <line
+                        id="Line_5"
+                        data-name="Line 5"
+                        x2="10"
+                        transform="translate(1100.5 610.5)"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="square"
+                        stroke-width="2"
+                      />
+                      <line
+                        id="Line_6"
+                        data-name="Line 6"
+                        x2="10"
+                        transform="translate(1100.5 599.914) rotate(90)"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="square"
+                        stroke-width="2"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="chosen-item" @click="clicked = !clicked">
+                  <div class="empty"></div>
+                  <div class="item-name">
+                    {{ selectedItem.title }}
+                  </div>
+                  <div class="" v-if="clicked">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14.142"
+                      height="14.142"
+                      viewBox="0 0 14.142 14.142"
+                    >
+                      <g id="burger" transform="translate(-1431.429 -603.429)">
+                        <line
+                          id="Line_7"
+                          data-name="Line 7"
+                          x2="18"
+                          transform="translate(1432.136 616.864) rotate(-45)"
+                          fill="none"
+                          stroke="#000"
+                          stroke-width="2"
+                        />
+                        <line
+                          id="Line_9"
+                          data-name="Line 9"
+                          x2="18"
+                          transform="translate(1432.136 604.136) rotate(45)"
+                          fill="none"
+                          stroke="#000"
+                          stroke-width="2"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="icon" v-else>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="14"
+                      viewBox="0 0 18 14"
+                    >
+                      <g id="burger" transform="translate(-1429.5 -603.5)">
+                        <line
+                          id="Line_7"
+                          data-name="Line 7"
+                          x2="18"
+                          transform="translate(1429.5 604.5)"
+                          fill="none"
+                          stroke="#000"
+                          stroke-width="2"
+                        />
+                        <line
+                          id="Line_8"
+                          data-name="Line 8"
+                          x2="18"
+                          transform="translate(1429.5 610.5)"
+                          fill="none"
+                          stroke="#000"
+                          stroke-width="2"
+                        />
+                        <line
+                          id="Line_9"
+                          data-name="Line 9"
+                          x2="18"
+                          transform="translate(1429.5 616.5)"
+                          fill="none"
+                          stroke="#000"
+                          stroke-width="2"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="right-arrow"
+                  @click="changeItemToNextOrPreviousItem('next')"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10.314"
+                    height="17.385"
+                    viewBox="0 0 10.314 17.385"
+                  >
+                    <g
+                      id="Group_11"
+                      data-name="Group 11"
+                      transform="translate(355.382 1218.345) rotate(-135)"
+                    >
+                      <line
+                        id="Line_5"
+                        data-name="Line 5"
+                        x2="10"
+                        transform="translate(1100.5 610.5)"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="square"
+                        stroke-width="2"
+                      />
+                      <line
+                        id="Line_6"
+                        data-name="Line 6"
+                        x2="10"
+                        transform="translate(1100.5 599.914) rotate(90)"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="square"
+                        stroke-width="2"
+                      />
+                    </g>
+                  </svg>
+                </div>
               </div>
             </div>
             <div></div>
-          </div>
-          <div class="hidden" v-else></div>
-          <div class="proper-container">
-            <div
-              class="left-arrow"
-              @click="changeItemToNextOrPreviousItem('previous')"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10.314"
-                height="17.385"
-                viewBox="0 0 10.314 17.385"
-              >
-                <g
-                  id="Group_10"
-                  data-name="Group 10"
-                  transform="translate(-345.068 -1200.96) rotate(45)"
-                >
-                  <line
-                    id="Line_5"
-                    data-name="Line 5"
-                    x2="10"
-                    transform="translate(1100.5 610.5)"
-                    fill="none"
-                    stroke="#000"
-                    stroke-linecap="square"
-                    stroke-width="2"
-                  />
-                  <line
-                    id="Line_6"
-                    data-name="Line 6"
-                    x2="10"
-                    transform="translate(1100.5 599.914) rotate(90)"
-                    fill="none"
-                    stroke="#000"
-                    stroke-linecap="square"
-                    stroke-width="2"
-                  />
-                </g>
-              </svg>
-            </div>
-            <div class="chosen-item" @click="clicked = !clicked">
-              <div class="empty"></div>
-              <div class="item-name">
-                {{ selectedItem.title }}
-              </div>
-              <div class="" v-if="clicked">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14.142"
-                  height="14.142"
-                  viewBox="0 0 14.142 14.142"
-                >
-                  <g id="burger" transform="translate(-1431.429 -603.429)">
-                    <line
-                      id="Line_7"
-                      data-name="Line 7"
-                      x2="18"
-                      transform="translate(1432.136 616.864) rotate(-45)"
-                      fill="none"
-                      stroke="#000"
-                      stroke-width="2"
-                    />
-                    <line
-                      id="Line_9"
-                      data-name="Line 9"
-                      x2="18"
-                      transform="translate(1432.136 604.136) rotate(45)"
-                      fill="none"
-                      stroke="#000"
-                      stroke-width="2"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div class="icon" v-else>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="14"
-                  viewBox="0 0 18 14"
-                >
-                  <g id="burger" transform="translate(-1429.5 -603.5)">
-                    <line
-                      id="Line_7"
-                      data-name="Line 7"
-                      x2="18"
-                      transform="translate(1429.5 604.5)"
-                      fill="none"
-                      stroke="#000"
-                      stroke-width="2"
-                    />
-                    <line
-                      id="Line_8"
-                      data-name="Line 8"
-                      x2="18"
-                      transform="translate(1429.5 610.5)"
-                      fill="none"
-                      stroke="#000"
-                      stroke-width="2"
-                    />
-                    <line
-                      id="Line_9"
-                      data-name="Line 9"
-                      x2="18"
-                      transform="translate(1429.5 616.5)"
-                      fill="none"
-                      stroke="#000"
-                      stroke-width="2"
-                    />
-                  </g>
-                </svg>
-              </div>
-            </div>
-            <div
-              class="right-arrow"
-              @click="changeItemToNextOrPreviousItem('next')"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10.314"
-                height="17.385"
-                viewBox="0 0 10.314 17.385"
-              >
-                <g
-                  id="Group_11"
-                  data-name="Group 11"
-                  transform="translate(355.382 1218.345) rotate(-135)"
-                >
-                  <line
-                    id="Line_5"
-                    data-name="Line 5"
-                    x2="10"
-                    transform="translate(1100.5 610.5)"
-                    fill="none"
-                    stroke="#000"
-                    stroke-linecap="square"
-                    stroke-width="2"
-                  />
-                  <line
-                    id="Line_6"
-                    data-name="Line 6"
-                    x2="10"
-                    transform="translate(1100.5 599.914) rotate(90)"
-                    fill="none"
-                    stroke="#000"
-                    stroke-linecap="square"
-                    stroke-width="2"
-                  />
-                </g>
-              </svg>
-            </div>
-          </div>
+          </slot>
         </div>
-        <div></div>
-      </div>
-    </slot>
-  </div>
+      </slot>
+    </div>
+  </transition>
 </template>
 
 <script lang="ts">
@@ -286,15 +294,42 @@ export default defineComponent({
 <style scoped lang="scss">
 @import "@/styles/main";
 
+.slide-fade-enter {
+  opacity: 0;
+  transform: translateX(10px);
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.4s ease;
+}
+
+.slide-fade-leave-to {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+@keyframes showyourself {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .window-template {
   display: grid;
   grid-template-columns: 50vw 50vw;
-  height: calc(50vw * 0.7);
+  height: 80vh;
   text-align: left;
-  .left {
+
+  .left-full {
+    transition: opacity ease 2s;
     display: grid;
-    grid-template-rows: 12.5vh 15vh 33vh 5vh;
-    border: 2px white solid;
+    grid-template-rows: 12.5vh 15vh 40vh 5vh;
+
+    // border: 2px white solid;
 
     .title {
       display: grid;
@@ -308,14 +343,14 @@ export default defineComponent({
       margin-right: 5rem;
     }
     & > * {
-      border: orange 2px solid;
+      // border: orange 2px solid;
       margin-left: 10vw;
     }
   }
   .right {
-    border: 4px white solid;
+    // border: 4px white solid;
     @include grid-center;
-    grid-template-rows: 12.5vh 48vh 5vh;
+    grid-template-rows: 12.5vh 55vh 5vh;
     background-size: cover;
 
     img {
@@ -331,12 +366,12 @@ export default defineComponent({
       align-content: end;
 
       justify-content: center;
-      border: 2px pink solid;
+      // border: 2px pink solid;
       z-index: 999;
       & > * {
         display: grid;
         color: $green-ranger;
-        border: white 2px solid;
+        // border: white 2px solid;
         grid-template-columns: 2vw 20vw 2vw;
         text-align: center;
       }
@@ -378,8 +413,10 @@ export default defineComponent({
         .right-arrow {
           color: $dark-grey;
           cursor: pointer;
+          transform: translateY(15%);
         }
         .chosen-item {
+          transform: translateY(15%);
           display: grid;
           @include hoverable;
           cursor: pointer;
@@ -390,13 +427,13 @@ export default defineComponent({
             font-weight: bold;
           }
           .icon {
-            transform: translateY(5%);
+            // transform: translateY(15%);
           }
         }
       }
       .element-selected {
         @include hoverable;
-        border: 1px red solid;
+        // border: 1px red solid;
         text-align: center;
         display: grid;
         font-weight: bold;

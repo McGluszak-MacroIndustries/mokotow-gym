@@ -1,7 +1,11 @@
 <template>
   <Navbar />
   <div class="layout">
-    <router-view />
+    <router-view v-slot="{ Component }">
+      <transition name="slide-fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
 
     <Footer />
   </div>
@@ -42,26 +46,43 @@ export default defineComponent({
   text-align: center;
   color: #2c3e50;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
 }
 .view {
   z-index: 0;
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
-  // // padding-left: 4rem;
-  // // padding-right: 4rem;
-  // background-color: red;
-  // .left {
-  //   background-color: yellowgreen;
-  // }
 }
-// .view {
-//   height: 70vh;
-// }
+
 .layout {
   display: grid;
-  grid-template-rows: 70vh 10vh;
+  grid-template-rows: 80vh 20vh;
   transform: translateY(-10%);
   z-index: 0;
+}
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-fade-enter {
+  opacity: 0;
+  transform: translateX(10px);
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.1s ease;
+}
+
+.slide-fade-leave-to {
+  transform: translateX(-10px);
+  opacity: 0;
 }
 </style>

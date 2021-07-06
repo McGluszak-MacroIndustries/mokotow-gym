@@ -54,16 +54,16 @@ export default defineComponent({
   // padding: 1rem;
   margin-left: 10vw;
   margin-right: 10vw;
-  border: 5px solid red;
+  // border: 5px solid red;
   //   box-sizing: border-box;
   display: grid;
   height: 5rem;
   & > * {
-    border: white 2px solid;
+    // border: white 2px solid;
     text-align: center;
     margin-top: 2vh;
   }
-  grid-template-columns: 40vw 40vw;
+  grid-template-columns: 40vw 42.5vw;
   font-weight: bold;
   .options {
     display: grid;
@@ -79,7 +79,7 @@ export default defineComponent({
         @include hoverable;
         // padding-top: 0.5rem;
         cursor: pointer;
-        height: 2vh;
+        height: 3vh;
         width: 5vw;
         &.selected {
           // padding-bottom: 2rem;
