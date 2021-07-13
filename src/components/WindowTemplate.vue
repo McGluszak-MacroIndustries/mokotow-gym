@@ -1,47 +1,52 @@
 <template>
-  <transition name="slide-fade" mode="out-in">
-    <div class="window-template" :key="selectedItem">
-      <div class="left-full">
-        <div class="blank"></div>
-        <div class="title">
+  <div class="window-template">
+    <div class="left-full" @click="clicked = false">
+      <div class="blank"></div>
+      <transition name="slide-fade" mode="out-in">
+        <div class="title" :key="selectedItem">
           <div class="title-text">
-            {{ changeNumberFormat(highlightedIndex) }}
+            <!-- {{ changeNumberFormat(highlightedIndex) }} -->
             {{ selectedItem.title }}
           </div>
         </div>
-
-        <div class="description">
+      </transition>
+      <transition name="slide-fade" mode="out-in">
+        <div class="description" :key="selectedItem">
           <slot name="left-side">
             {{ selectedItem.description }}
           </slot>
         </div>
+      </transition>
+      <span class="line"></span>
+    </div>
 
-        <span class="line"></span>
-      </div>
-
-      <slot name="right-full">
+    <slot name="right-full">
+      <transition name="slide-fade" mode="out-in">
         <div
           class="right"
           :style="{
             'background-image': `linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(${require('../img/subpages/' +
               imgUrl)})`,
           }"
+          :key="selectedItem"
         >
           <slot name="right-side">
-            <div></div>
+            <div @click="clicked = false"></div>
 
             <div class="element-container">
               <div class="expanded" v-if="clicked">
                 <div></div>
                 <div class="expander">
                   <div
-                    class="items"
+                    class="item"
                     v-for="(item, index) in items"
                     :key="index"
                     @click="changeSelectedItem(item, index)"
                     :class="{ selected: isSelected(item) }"
                   >
-                    {{ item.title }}
+                    <div></div>
+                    <div class="title">{{ item.title }}</div>
+                    <div></div>
                   </div>
                 </div>
                 <div></div>
@@ -91,7 +96,7 @@
                   <div class="item-name">
                     {{ selectedItem.title }}
                   </div>
-                  <div class="" v-if="clicked">
+                  <!-- <div class="" v-if="clicked">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="14.142"
@@ -119,8 +124,8 @@
                         />
                       </g>
                     </svg>
-                  </div>
-                  <div class="icon" v-else>
+                  </div> -->
+                  <div class="icon" v-if="!clicked">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18"
@@ -199,16 +204,16 @@
                 </div>
               </div>
             </div>
-            <div></div>
+            <div @click="clicked = false"></div>
           </slot>
         </div>
-      </slot>
-    </div>
-  </transition>
+      </transition>
+    </slot>
+  </div>
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, onMounted, Ref, ref } from "vue";
+import { computed, defineComponent, onMounted, Ref, ref, watch } from "vue";
 import { Item } from "@/mixins/items";
 import { findIndex, isEqual } from "lodash";
 
@@ -224,7 +229,8 @@ export default defineComponent({
       default: 3,
     },
   },
-  setup(props, { emit }) {
+  emits: ["selected-item"],
+  setup(props, context) {
     const clicked = ref<boolean>(false);
     const selectedItem = ref<Item>(props.items[0]);
     const highlightedIndex = ref<number>(
@@ -233,6 +239,12 @@ export default defineComponent({
     const imgUrl = computed(
       () => `${selectedItem.value.name}/${selectedItem.value.src}`
     );
+
+    const emitSelectedItem = () => {
+      context.emit("selected-item", selectedItem.value);
+    };
+
+    watch(() => selectedItem.value, emitSelectedItem);
 
     const changeItemSpontaneously = () =>
       setInterval(() => changeItemToNextOrPreviousItem("next"), 5000);
@@ -246,6 +258,9 @@ export default defineComponent({
       switch (direction) {
         case "next":
           if (index === props.items.length - 1) {
+            addEventListener("click", () => {
+              console.log(Event);
+            });
             selectedItem.value = props.items[0];
             highlightedIndex.value = 1;
           } else {
@@ -272,18 +287,19 @@ export default defineComponent({
       console.log(index);
       highlightedIndex.value = index + 1;
       selectedItem.value = props.items[index];
-      clicked.value = !clicked.value;
+
+      // clicked.value = !clicked.value;
     }
-    function changeNumberFormat(number: number): string {
-      return (number < 10 ? "0" : "") + number.toString();
-    }
+    // function changeNumberFormat(number: number): string {
+    //   return (number < 10 ? "0" : "") + number.toString();
+    // }
     return {
       clicked,
       changeItemToNextOrPreviousItem,
       selectedItem,
       changeSelectedItem,
       highlightedIndex,
-      changeNumberFormat,
+      // changeNumberFormat,
       isSelected,
       imgUrl,
     };
@@ -330,7 +346,9 @@ export default defineComponent({
     grid-template-rows: 12.5vh 15vh 40vh 5vh;
 
     // border: 2px white solid;
-
+    .description {
+      margin-right: 5vw;
+    }
     .title {
       display: grid;
       align-content: center;
@@ -364,19 +382,14 @@ export default defineComponent({
       height: 100%;
       @include grid-center;
       align-content: end;
-
+      display: grid;
       justify-content: center;
-      // border: 2px pink solid;
       z-index: 999;
-      & > * {
-        display: grid;
-        color: $green-ranger;
-        // border: white 2px solid;
-        grid-template-columns: 2vw 20vw 2vw;
-        text-align: center;
-      }
+
       .expanded {
         display: grid;
+        width: 25vw;
+        // grid-gap: 2rem;
         .expander {
           display: grid;
           grid-template-rows: repeat(auto-fit, 2fr);
@@ -384,18 +397,31 @@ export default defineComponent({
           align-items: center;
           background: $white-power;
           overflow-y: auto;
-          .items {
+          .item {
             display: grid;
-            min-height: 6vh;
-            border: 2px $light-grey solid;
+            min-height: 7vh;
+            // border: 2px $light-grey solid;
+            border-bottom: 2px $light-grey solid;
             cursor: pointer;
             align-content: center;
             color: $green-ranger;
             font-weight: bold;
+            font-size: 1.5rem;
+            grid-template-columns: 1vw 20vw 4vw;
+            .title {
+              color: $green-ranger;
+              font-weight: bold;
+              font-size: 1.5rem;
+            }
             @include hoverable;
             &.selected {
               background: $green-ranger;
               color: $white-power;
+              .title {
+                color: $white-power;
+                font-weight: bold;
+                font-size: 1.5rem;
+              }
             }
           }
         }
@@ -403,31 +429,39 @@ export default defineComponent({
       .proper-container {
         display: grid;
         align-content: center;
-        background: $white-power;
+        grid-gap: 1.1vw;
+        grid-template-columns: 5vw 25vw 5vw;
+
+        height: 7vh;
+        // background: $white-power;
         & > * {
           cursor: pointer;
           @include hoverable;
           color: $dark-grey;
+          background-color: $white-power;
+          height: 7vh;
+          display: grid;
+          align-items: center;
+          justify-content: center;
         }
         .left-arrow,
         .right-arrow {
           color: $dark-grey;
-          cursor: pointer;
-          transform: translateY(15%);
         }
         .chosen-item {
-          transform: translateY(15%);
+          // transform: translateY(15%);
           display: grid;
           @include hoverable;
           cursor: pointer;
-          grid-template-columns: 2vw 16vw 2vw;
-          height: 2vh;
+          grid-template-columns: 1vw 20vw 4vw;
+          // height: 2vh;
           & > * {
             color: $dark-grey;
             font-weight: bold;
+            font-size: 1.5rem;
           }
           .icon {
-            // transform: translateY(15%);
+            transform: translateY(-5%);
           }
         }
       }

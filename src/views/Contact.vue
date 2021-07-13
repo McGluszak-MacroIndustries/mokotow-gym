@@ -1,24 +1,23 @@
 <template>
   <WindowTemplate :items="items">
     <template v-slot:left-side>
-      <div class="info">
-        <div class="name">MOKOTÓW-GYM</div>
-        <div class="address">
-          <!-- <div>kod-pocztowy</div> -->
-          <div>ulica-jakaśtam</div>
-          <div>
-            <button>
-              <a href="@/img/layout/baner_01.jpg" download="dupsko">Download</a>
-            </button>
+      <div class="menu">
+        <div class="info">
+          <div class="name">MOKOTÓW-GYM</div>
+          <div class="address">
+            <!-- <div>kod-pocztowy</div> -->
+            <div>ulica-jakaśtam</div>
+            <div>kod poczt00wy</div>
+          </div>
+          <div class="media-menu">
+            <div v-for="icon in icons" :key="icon" class="icon">
+              <a href="https://www.wp.pl" target="_blank">
+                <img :src="getIconUrl(icon)" alt="" />
+              </a>
+            </div>
           </div>
         </div>
-        <div class="media-menu">
-          <div v-for="icon in icons" :key="icon" class="icon">
-            <a href="https://www.wp.pl">
-              <img :src="getIconUrl(icon)" alt="" />
-            </a>
-          </div>
-        </div>
+        <button class="find-us" @click="redirect()">znajdź nas</button>
       </div>
       <!-- <div></div>
       <div></div> -->
@@ -43,7 +42,6 @@ import WindowTemplate from "@/components/WindowTemplate.vue";
 import { aboutUsItems, Item } from "@/mixins/items";
 import { GoogleMap, Marker } from "vue3-google-map";
 import { icons } from "@/mixins/navbar-management";
-// import MapTemplate from "@/components/MapTemplate.vue";
 
 export default defineComponent({
   name: "Contact",
@@ -64,7 +62,14 @@ export default defineComponent({
       },
     ];
     function getIconUrl(iconUrl: string) {
-      return require("../assets/media-small/" + iconUrl);
+      return require("../assets/social_icons/" + iconUrl);
+    }
+    function redirect() {
+      const a = document.createElement("a");
+      a.target = "_blank";
+      a.href =
+        "https://www.google.com/maps/place/Bia%C5%82ej+Floty+2,+02-654+Warszawa/data=!4m2!3m1!1s0x471933ca6bdf4ef9:0xe7e1f4cb36e62445?sa=X&ved=2ahUKEwjl5suQptTxAhXts4sKHY4rD6QQ8gEwAHoECA4QAQ";
+      a.click();
     }
     return {
       getIconUrl,
@@ -72,6 +77,7 @@ export default defineComponent({
       items,
       aboutUsItems,
       icons,
+      redirect,
     };
   },
 });
@@ -79,28 +85,32 @@ export default defineComponent({
 
 <style scoped lang="scss">
 @import "@/styles/main";
-
+button {
+  background-color: $green-ranger;
+  @include hoverable;
+  cursor: pointer;
+  color: $white-power;
+  border-radius: 2rem;
+  border: 2px solid $white-power;
+  width: 15vw;
+  height: 10vh;
+}
 .map {
-  // border: 5px orange solid;
   width: 50vw;
   height: 80vh;
+  filter: brightness(60%);
 }
 
 .info {
   display: grid;
-  grid-template-rows: 20vh 5vh 10vh;
-  // background: $dark-grey;
-  // opacity: 0.7;
+  grid-template-rows: 7vh 5vh 5vh;
+
   .name {
-    // margin-top: 10vh;
-    // margin-bottom: 1
     font-size: 3rem;
     font-weight: bold;
   }
   & > * {
     display: grid;
-    justify-content: center;
-    align-items: center;
   }
   .address {
   }
@@ -108,7 +118,7 @@ export default defineComponent({
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     .icon {
       @include hoverable;
       width: 4vw;

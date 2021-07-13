@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="info">
-      <div class="copyrights">C 2021 Mokotowski-Gym</div>
+      <div class="copyrights">&copy; 2021 Mokotowski-Gym</div>
       <div class="addresses">
         <div>www.mokotowskigym.com</div>
         <div>mokotowski@gmail.com</div>
