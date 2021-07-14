@@ -29,11 +29,12 @@
               imgUrl)})`,
           }"
           :key="selectedItem"
+          @click.self="clicked = false"
         >
           <slot name="right-side">
-            <div @click="clicked = false"></div>
+            <div></div>
 
-            <div class="element-container">
+            <div class="element-container" @click.self="clicked = false">
               <div class="expanded" v-if="clicked">
                 <div></div>
                 <div class="expander">
