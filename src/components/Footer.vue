@@ -13,7 +13,7 @@
       </div>
       <div class="media-menu">
         <div v-for="icon in icons" :key="icon" class="icon">
-          <a href="https://www.wp.pl">
+          <a href="https://www.facebook.com/homokomando/">
             <img :src="getIconUrl(icon)" alt="" />
           </a>
         </div>

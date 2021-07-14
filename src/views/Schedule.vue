@@ -43,7 +43,7 @@ export default defineComponent({
     function goToReservations() {
       const a = document.createElement("a");
       a.target = "_blank";
-      a.href = "https://wwww.wp.pl";
+      a.href = "https://www.facebook.com/homokomando";
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
