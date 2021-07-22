@@ -9,6 +9,9 @@
 
     <Footer class="footer" v-show="isMobile === 0" />
   </div>
+  <div class="construction">
+    <img src="./assets/under.png" alt="" />
+  </div>
 
   <!-- <router-link to="/">Home</router-link> |
     <router-link to="/offer">Oferta</router-link>
@@ -51,7 +54,20 @@ export default defineComponent({
   color: $white-power;
   // font-family: "Roboto", sans-serif;
 }
-
+.construction {
+  // background-image: url("./assets/underconstructions.png");
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-120vh);
+  img {
+    width: 70%;
+    height: 70%;
+    z-index: 999;
+  }
+  width: 100%;
+  height: 100%;
+}
 .x {
   z-index: 2;
 }
@@ -119,6 +135,9 @@ export default defineComponent({
     // .footer {
     //   grid-area: foot;
     // }
+  }
+  .construction {
+    transform: translateY(-170vh);
   }
 }
 </style>
