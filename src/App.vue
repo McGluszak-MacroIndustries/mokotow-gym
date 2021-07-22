@@ -1,13 +1,16 @@
 <template>
-  <Navbar />
+  <Navbar class="x" />
   <div class="layout">
-    <router-view v-slot="{ Component }">
+    <router-view v-slot="{ Component }" class="view">
       <transition name="slide-fade" mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>
 
-    <Footer />
+    <Footer class="footer" v-show="isMobile === 0" />
+  </div>
+  <div class="construction">
+    <img src="./assets/under.png" alt="" />
   </div>
 
   <!-- <router-link to="/">Home</router-link> |
@@ -18,10 +21,25 @@
 import { defineComponent } from "@vue/runtime-core";
 import Navbar from "@/components/Navbar.vue";
 import Footer from "@/components/Footer.vue";
+import { ref } from "vue";
 export default defineComponent({
   components: {
     Navbar,
     Footer,
+  },
+  setup() {
+    const isMobile = ref<number>(window.innerWidth < 1000 ? 1 : 0);
+    setInterval(() => {
+      const browserWidth = window.innerWidth;
+      if (browserWidth >= 1000) {
+        isMobile.value = 0;
+      } else {
+        isMobile.value = 1;
+      }
+    }, 100);
+    return {
+      isMobile,
+    };
   },
 });
 </script>
@@ -36,6 +54,23 @@ export default defineComponent({
   color: $white-power;
   // font-family: "Roboto", sans-serif;
 }
+.construction {
+  // background-image: url("./assets/underconstructions.png");
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-120vh);
+  img {
+    width: 70%;
+    height: 70%;
+    z-index: 999;
+  }
+  width: 100%;
+  height: 100%;
+}
+.x {
+  z-index: 2;
+}
 
 #app {
   font-family: "Roboto", sans-serif;
@@ -46,7 +81,8 @@ export default defineComponent({
   text-align: center;
   color: #2c3e50;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
+  overflow: hidden;
 }
 .view {
   z-index: 0;
@@ -84,5 +120,24 @@ export default defineComponent({
 .slide-fade-leave-to {
   transform: translateX(-10px);
   opacity: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .layout {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    // grid-template-areas:
+    //   "view"
+    //   "view";
+    // .view {
+    //   grid-area: view;
+    // }
+    // .footer {
+    //   grid-area: foot;
+    // }
+  }
+  .construction {
+    transform: translateY(-170vh);
+  }
 }
 </style>

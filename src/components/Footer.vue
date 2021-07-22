@@ -95,9 +95,11 @@ export default defineComponent({
       display: grid;
       grid-auto-flow: column;
       justify-content: center;
+      grid-gap: 1vw;
       .icon {
         @include hoverable;
-        width: 4vw;
+
+        height: 3vh;
       }
     }
   }

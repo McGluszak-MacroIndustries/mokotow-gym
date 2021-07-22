@@ -96,6 +96,8 @@ button {
   height: 10vh;
 }
 .map {
+  // width: 100%;
+  // height: 100%;
   width: 50vw;
   height: 80vh;
   filter: brightness(60%);
@@ -122,6 +124,41 @@ button {
     .icon {
       @include hoverable;
       width: 4vw;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .map {
+    width: 100vw;
+    height: 60vh;
+  }
+  .menu {
+    transform: translateX(2%);
+    .info {
+      // transform: translateX();
+      grid-template-rows: 5vh 5vh 5vh;
+      transform: translateY(-10%);
+      .name {
+        text-align: center;
+        font-size: 2rem;
+      }
+      .media-menu {
+        justify-content: center;
+        grid-gap: 5vw;
+      }
+    }
+  }
+  button {
+    // transform: translateX(5%);
+    width: 60vw;
+    height: 5vh;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .info {
+    .name {
+      font-size: 2.5rem;
     }
   }
 }

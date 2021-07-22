@@ -4,7 +4,7 @@ import router from "./router";
 
 const width = screen.width;
 
-console.log("szerokosc", width);
+console.log("szerokosc", window.innerWidth);
 
 const isMobile: boolean = width < 700;
 

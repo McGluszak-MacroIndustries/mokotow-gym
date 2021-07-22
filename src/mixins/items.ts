@@ -8,48 +8,41 @@ export type Item = {
 export const aboutUsItems: Array<Item> = [
   {
     name: "about-us",
-    title: "JESTEŚMY RASISTAMI",
-    description:
-      "Namówił nas na to Wojciech Niedźwiedź z Torunia, przysięgam wam na boga",
+    title: "TU POWSTAJE MOKOTÓW GYM",
+    description: "Najlepszy gym w Warszawie",
     src: "baner_01.jpg",
   },
   {
     name: "about-us",
-    title: "NIENAWIDZIMY MNIEJSZOŚCI RASOWCYH",
+    title: "TU POWSTAJE MOKOTÓW GYM",
     description: "Ale to już chyba wspominałem",
     src: "baner_02.jpg",
   },
   {
     name: "about-us",
-    title: "NASI TRENERZY SĄ NA STERYDACH",
+    title: "TU POWSTAJE MOKOTÓW GYM",
     description: "Na sucho to i trawa nie urośnie",
     src: "baner_03.jpg",
-  },
-  {
-    name: "about-us",
-    title: "KASZLE BO MAM KORONAWIRUSA",
-    description: "Bardzo się boję tej choroby",
-    src: "korona.jpg",
   },
 ];
 
 export const offerItems: Array<Item> = [
   {
     name: "offer",
-    title: "MAMY ZNIŻKI STUDENCKIE",
-    description: "Kochamy studenckie bydło",
+    title: "WITAJ NA MOKOTÓW GYM",
+    description: "Stay tuned",
     src: "tajner.jpg",
   },
   {
     name: "offer",
-    title: "JEST TEŻ COŚ DLA GRUBYCH BAB",
-    description: "Schudnij jedząc ciastka ps mąż cb zdradza",
+    title: "MOKOTÓW GYM",
+    description: "Wkrótce!",
     src: "tajnermalysz.jpg",
   },
   {
     name: "offer",
-    title: "A JAK CI NIE PASUJE TO",
-    description: "wypierdalaj w podskokach plz",
+    title: "MAKE PROGRESS",
+    description: "I inne hasła motywacyjne",
     src: "tajnerlep.jpg",
   },
 ];
