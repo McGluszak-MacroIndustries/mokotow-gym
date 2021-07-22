@@ -1,5 +1,9 @@
 <template>
-  <WindowTemplate :items="scheduleItems" @selected-item="changeItem($event)">
+  <WindowTemplate
+    :items="scheduleItems"
+    @selected-item="changeItem($event)"
+    id="schedule"
+  >
     <template v-slot:left-side>
       <div class="menu">
         <div>
@@ -75,10 +79,31 @@ button {
 }
 .menu {
   display: grid;
-  grid-template-rows: 15vh 15vh;
+  grid-template-rows: 13vh 15vh;
   .buttons {
     display: grid;
     grid-auto-flow: column;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .menu {
+    // width: 100vw;
+    // transform: translateX(10%);
+    margin-left: 2.5vw;
+
+    .buttons {
+      margin-left: 1.8vw;
+      justify-content: space-evenly;
+      justify-items: center;
+      align-items: flex-start;
+      & > * {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  button {
+    width: 25vw;
+    height: 8vh;
   }
 }
 </style>

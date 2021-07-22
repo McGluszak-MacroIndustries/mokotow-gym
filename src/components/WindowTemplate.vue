@@ -5,7 +5,6 @@
       <transition name="slide-fade" mode="out-in">
         <div class="title" :key="selectedItem">
           <div class="title-text">
-            <!-- {{ changeNumberFormat(highlightedIndex) }} -->
             {{ selectedItem.title }}
           </div>
         </div>
@@ -29,8 +28,25 @@
               imgUrl)})`,
           }"
           :key="selectedItem"
+          :class="{ mobile: isMobile }"
           @click.self="clicked = false"
         >
+          <!-- <div class="mobile-window" v-show="isMobile">
+            <transition name="slide-fade" mode="out-in">
+              <div class="title" :key="selectedItem">
+                <div class="title-text">
+                  {{ selectedItem.title }}
+                </div>
+              </div>
+            </transition>
+            <transition name="slide-fade" mode="out-in">
+              <div class="description" :key="selectedItem">
+                <slot name="left-side">
+                  {{ selectedItem.description }}
+                </slot>
+              </div>
+            </transition>
+          </div> -->
           <slot name="right-side">
             <div></div>
 
@@ -245,10 +261,23 @@ export default defineComponent({
       context.emit("selected-item", selectedItem.value);
     };
 
+    const isMobile = ref<boolean>(window.innerWidth < 1000);
+
+    window.onresize = () => {
+      const browserWidth = window.innerWidth;
+      console.log(browserWidth);
+      console.log("zresajzowano", window.innerWidth);
+      if (browserWidth > 1000) {
+        isMobile.value = false;
+      } else {
+        isMobile.value = true;
+      }
+    };
+
     watch(() => selectedItem.value, emitSelectedItem);
 
-    const changeItemSpontaneously = () =>
-      setInterval(() => changeItemToNextOrPreviousItem("next"), 5000);
+    // const changeItemSpontaneously = () =>
+    //   setInterval(() => changeItemToNextOrPreviousItem("next"), 5000);
 
     // onMounted(changeItemSpontaneously);
 
@@ -295,6 +324,7 @@ export default defineComponent({
     //   return (number < 10 ? "0" : "") + number.toString();
     // }
     return {
+      isMobile,
       clicked,
       changeItemToNextOrPreviousItem,
       selectedItem,
@@ -338,17 +368,27 @@ export default defineComponent({
 .window-template {
   display: grid;
   grid-template-columns: 50vw 50vw;
+  grid-template-areas: "leftfull rightfull";
   height: 80vh;
   text-align: left;
 
   .left-full {
     transition: opacity ease 2s;
     display: grid;
-    grid-template-rows: 12.5vh 15vh 40vh 5vh;
-
-    // border: 2px white solid;
+    grid-template-rows: 7vh 11vh 38vh 5vh;
+    grid-template-areas:
+      "blank"
+      "title"
+      "description"
+      "line";
+    margin-top: 12vh;
+    grid-area: leftfull;
+    .blank {
+      grid-area: blank;
+    }
     .description {
       margin-right: 5vw;
+      grid-area: description;
     }
     .title {
       display: grid;
@@ -356,10 +396,12 @@ export default defineComponent({
       justify-items: flex-start;
       font-weight: bold;
       font-size: 2rem;
+      grid-area: title;
     }
     .line {
       border-top: $green-ranger 10px solid;
       margin-right: 5rem;
+      grid-area: line;
     }
     & > * {
       // border: orange 2px solid;
@@ -370,7 +412,9 @@ export default defineComponent({
     // border: 4px white solid;
     @include grid-center;
     grid-template-rows: 12.5vh 55vh 5vh;
+
     background-size: cover;
+    grid-area: rightfull;
 
     img {
       width: 100%;
@@ -432,7 +476,7 @@ export default defineComponent({
         align-content: center;
         grid-gap: 1.1vw;
         grid-template-columns: 5vw 25vw 5vw;
-
+        min-width: 20vw;
         height: 7vh;
         // background: $white-power;
         & > * {
@@ -455,6 +499,7 @@ export default defineComponent({
           @include hoverable;
           cursor: pointer;
           grid-template-columns: 1vw 20vw 4vw;
+
           // height: 2vh;
           & > * {
             color: $dark-grey;
@@ -484,6 +529,137 @@ export default defineComponent({
             color: $white-power;
           }
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .window-template {
+    grid-template-rows: 55vh 30vh;
+    grid-template-areas:
+      "rightfull rightfull"
+      "leftfull leftfull";
+    // overflow: hidden;
+    .right {
+      display: grid;
+      grid-template-rows: 25vh 33.5vh 20vh;
+      // img {
+      //   width: 50%;
+      //   height: 50%;
+      // }
+      .element-container {
+        .expanded {
+          width: 50vw;
+
+          // border-bottom: none;
+          .expander {
+            .item {
+              border-bottom: 0.5px $light-grey solid;
+
+              overflow-x: hidden;
+              &.selected {
+                .title {
+                  font-size: 1rem;
+                }
+              }
+              .title {
+                width: 40vw;
+                font-size: 1rem;
+                transform: translateX(2vw);
+              }
+            }
+          }
+        }
+        .proper-container {
+          grid-template-columns: 10vw 50vw 10vw;
+          grid-gap: 5vw;
+          .chosen-item {
+            grid-template-columns: 1vw 40vw 5vw;
+            .item-name {
+              // transform: translateX(-6%);
+              font-size: 1rem;
+              width: 40vw;
+            }
+          }
+        }
+      }
+    }
+    .left-full {
+      grid-template-rows: 1vh 12vh 25vh 2vh;
+      margin-top: 5vh;
+      .description {
+        margin-left: 0;
+        text-align: center;
+
+        // align-self: center;
+      }
+      .title {
+        justify-items: center;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .window-template {
+    grid-template-rows: 55vh 30vh;
+    grid-template-areas:
+      "rightfull rightfull"
+      "leftfull leftfull";
+    // overflow: hidden;
+    .right {
+      display: grid;
+      grid-template-rows: 25vh 33.5vh 20vh;
+      // img {
+      //   width: 50%;
+      //   height: 50%;
+      // }
+      .element-container {
+        .expanded {
+          width: 50vw;
+
+          // border-bottom: none;
+          .expander {
+            .item {
+              border-bottom: 0.5px $light-grey solid;
+
+              overflow-x: hidden;
+              &.selected {
+                .title {
+                  font-size: 1rem;
+                }
+              }
+              .title {
+                width: 40vw;
+                font-size: 1rem;
+                transform: translateX(2vw);
+              }
+            }
+          }
+        }
+        .proper-container {
+          grid-template-columns: 10vw 50vw 10vw;
+          grid-gap: 5vw;
+          .chosen-item {
+            grid-template-columns: 1vw 40vw 5vw;
+            .item-name {
+              // transform: translateX(-6%);
+              font-size: 1rem;
+              width: 40vw;
+            }
+          }
+        }
+      }
+    }
+    .left-full {
+      grid-template-rows: 1vh 12vh 25vh 2vh;
+      margin-top: 5vh;
+      .description {
+      }
+      .title {
+        font-size: 1rem;
       }
     }
   }
