@@ -9,9 +9,9 @@
 
     <Footer class="footer" v-show="isMobile === 0" />
   </div>
-  <div class="construction">
+  <!-- <div class="construction">
     <img src="./assets/under.png" alt="" />
-  </div>
+  </div> -->
 
   <!-- <router-link to="/">Home</router-link> |
     <router-link to="/offer">Oferta</router-link>
