@@ -389,6 +389,7 @@ export default defineComponent({
     .description {
       margin-right: 5vw;
       grid-area: description;
+      font-weight: bold;
     }
     .title {
       display: grid;
@@ -400,7 +401,7 @@ export default defineComponent({
     }
     .line {
       border-top: $green-ranger 10px solid;
-      margin-right: 5rem;
+      margin-right: 10rem;
       grid-area: line;
     }
     & > * {

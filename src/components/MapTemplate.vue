@@ -69,7 +69,7 @@ export default defineComponent({
     }
     .line {
       border-top: $green-ranger 10px solid;
-      margin-right: 5rem;
+      margin-right: 10rem;
     }
     & > * {
       //   border: orange 2px solid;
