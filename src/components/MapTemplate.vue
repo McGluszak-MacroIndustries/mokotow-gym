@@ -95,7 +95,7 @@ export default defineComponent({
       align-content: end;
 
       justify-content: center;
-    //   border: 2px pink solid;
+      //   border: 2px pink solid;
       z-index: 999;
       & > * {
         display: grid;

@@ -617,6 +617,7 @@ export default defineComponent({
       //   height: 50%;
       // }
       .element-container {
+        transform: translateY(-5%);
         .expanded {
           width: 50vw;
 
@@ -628,12 +629,12 @@ export default defineComponent({
               overflow-x: hidden;
               &.selected {
                 .title {
-                  font-size: 1rem;
+                  font-size: 0.8rem;
                 }
               }
               .title {
                 width: 40vw;
-                font-size: 1rem;
+                font-size: 0.8rem;
                 transform: translateX(2vw);
               }
             }
@@ -646,20 +647,30 @@ export default defineComponent({
             grid-template-columns: 1vw 40vw 5vw;
             .item-name {
               // transform: translateX(-6%);
-              font-size: 1rem;
+              font-size: 0.8rem;
               width: 40vw;
+              text-overflow: ellipsis;
             }
           }
         }
       }
     }
     .left-full {
-      grid-template-rows: 1vh 12vh 25vh 2vh;
       margin-top: 5vh;
+      // width: 80vw;
+      .blank {
+        display: none;
+      }
+      justify-items: center;
       .description {
+        transform: translateY(-40%);
+        font-weight: bold;
       }
       .title {
-        font-size: 1rem;
+        display: none;
+      }
+      .line {
+        display: none;
       }
     }
   }
