@@ -180,7 +180,7 @@ export default defineComponent({
     cursor: pointer;
     z-index: 1;
     img {
-      width: 70%;
+      height: 60%;
     }
   }
 }

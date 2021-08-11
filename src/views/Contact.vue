@@ -90,10 +90,10 @@ button {
   @include hoverable;
   cursor: pointer;
   color: $white-power;
-  border-radius: 2rem;
-  border: 2px solid $white-power;
-  width: 15vw;
-  height: 10vh;
+  // border-radius: 2rem;
+  border: 2px solid $green-ranger;
+  width: 10vw;
+  height: 5vh;
 }
 .map {
   // width: 100%;

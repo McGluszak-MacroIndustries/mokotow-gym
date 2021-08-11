@@ -444,19 +444,19 @@ export default defineComponent({
           overflow-y: auto;
           .item {
             display: grid;
-            min-height: 7vh;
+            min-height: 4vh;
             // border: 2px $light-grey solid;
             border-bottom: 2px $light-grey solid;
             cursor: pointer;
             align-content: center;
             color: $green-ranger;
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 0.9rem;
             grid-template-columns: 1vw 20vw 4vw;
             .title {
               color: $green-ranger;
               font-weight: bold;
-              font-size: 1.5rem;
+              font-size: 0.9rem;
             }
             @include hoverable;
             &.selected {
@@ -465,7 +465,7 @@ export default defineComponent({
               .title {
                 color: $white-power;
                 font-weight: bold;
-                font-size: 1.5rem;
+                font-size: 0.9rem;
               }
             }
           }
@@ -477,14 +477,14 @@ export default defineComponent({
         grid-gap: 1.1vw;
         grid-template-columns: 5vw 25vw 5vw;
         min-width: 20vw;
-        height: 7vh;
+        height: 4vh;
         // background: $white-power;
         & > * {
           cursor: pointer;
           @include hoverable;
           color: $dark-grey;
           background-color: $white-power;
-          height: 7vh;
+          height: 4vh;
           display: grid;
           align-items: center;
           justify-content: center;
@@ -504,7 +504,7 @@ export default defineComponent({
           & > * {
             color: $dark-grey;
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 0.9rem;
           }
           .icon {
             transform: translateY(-5%);
