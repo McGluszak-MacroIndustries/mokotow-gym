@@ -68,7 +68,7 @@ export default defineComponent({
       font-size: 2rem;
     }
     .line {
-      border-top: $green-ranger 10px solid;
+      border-top: $golden-solution 10px solid;
       margin-right: 10rem;
     }
     & > * {
@@ -99,7 +99,7 @@ export default defineComponent({
       z-index: 999;
       & > * {
         display: grid;
-        color: $green-ranger;
+        color: $golden-solution;
         border: white 2px solid;
         grid-template-columns: 2vw 20vw 2vw;
         text-align: center;
@@ -119,11 +119,11 @@ export default defineComponent({
             border: 2px $light-grey solid;
             cursor: pointer;
             align-content: center;
-            color: $green-ranger;
+            color: $golden-solution;
             font-weight: bold;
             @include hoverable;
             &.selected {
-              background: $green-ranger;
+              background: $golden-solution;
               color: $white-power;
             }
           }
@@ -165,13 +165,13 @@ export default defineComponent({
         display: grid;
         font-weight: bold;
         background-color: $white-power;
-        color: $green-ranger;
+        color: $golden-solution;
         align-items: center;
         z-index: 9;
         cursor: pointer;
 
         &.selected {
-          background-color: $green-ranger;
+          background-color: $golden-solution;
           & > * {
             color: $white-power;
           }

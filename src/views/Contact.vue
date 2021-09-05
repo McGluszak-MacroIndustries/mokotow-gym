@@ -1,23 +1,25 @@
 <template>
-  <WindowTemplate :items="items">
+  <WindowTemplate :items="currentItems" :key="currentItems">
     <template v-slot:left-side>
       <div class="menu">
         <div class="info">
           <div class="name">MOKOTÓW-GYM</div>
           <div class="address">
             <!-- <div>kod-pocztowy</div> -->
-            <div>ulica-jakaśtam</div>
-            <div>kod poczt00wy</div>
+            <div>{{ currentAddress[0] }}</div>
+            <div>02 - 654 Warszawa</div>
           </div>
           <div class="media-menu">
             <div v-for="icon in icons" :key="icon" class="icon">
-              <a href="https://www.facebook.com/homokomando/" target="_blank">
-                <img :src="getIconUrl(icon)" alt="" />
+              <a :href="icon.iconHref" target="_blank">
+                <img :src="getIconUrl(icon.iconName)" alt="" />
               </a>
             </div>
           </div>
         </div>
-        <button class="find-us" @click="redirect()">znajdź nas</button>
+        <button class="find-us" @click="redirect()">
+          {{ currentAddress[1] }}
+        </button>
       </div>
       <!-- <div></div>
       <div></div> -->
@@ -37,9 +39,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { computed, defineComponent } from "vue";
 import WindowTemplate from "@/components/WindowTemplate.vue";
-import { aboutUsItems, Item } from "@/mixins/items";
+import { aboutUsItems, Item, isEnglishLanguageOn } from "@/mixins/items";
 import { GoogleMap, Marker } from "vue3-google-map";
 import { icons } from "@/mixins/navbar-management";
 
@@ -61,6 +63,17 @@ export default defineComponent({
         src: "",
       },
     ];
+    const englishItems: Array<Item> = [
+      { name: "FIND US", title: "FIND US", description: "", src: "" },
+    ];
+    const currentItems = computed(() => {
+      return isEnglishLanguageOn.value ? englishItems : items;
+    });
+    const address = ["ulica Białej Floty 2", "ZNAJDŹ NAS"];
+    const engAddress = ["Białej Floty Street 2", "FIND US"];
+    const currentAddress = computed(() => {
+      return isEnglishLanguageOn.value ? engAddress : address;
+    });
     function getIconUrl(iconUrl: string) {
       return require("../assets/social_icons/" + iconUrl);
     }
@@ -78,6 +91,8 @@ export default defineComponent({
       aboutUsItems,
       icons,
       redirect,
+      currentItems,
+      currentAddress,
     };
   },
 });
@@ -86,12 +101,12 @@ export default defineComponent({
 <style scoped lang="scss">
 @import "@/styles/main";
 button {
-  background-color: $green-ranger;
+  background-color: $golden-solution;
   @include hoverable;
   cursor: pointer;
-  color: $white-power;
+  color: $dark-grey;
   // border-radius: 2rem;
-  border: 2px solid $green-ranger;
+  border: none;
   width: 10vw;
   height: 5vh;
 }

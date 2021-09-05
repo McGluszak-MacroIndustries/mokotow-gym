@@ -11,9 +11,8 @@
       </transition>
       <transition name="slide-fade" mode="out-in">
         <div class="description" :key="selectedItem">
-          <slot name="left-side">
-            {{ selectedItem.description }}
-          </slot>
+          {{ selectedItem.description }}
+          <slot name="left-side"> </slot>
         </div>
       </transition>
       <span class="line"></span>
@@ -233,6 +232,7 @@
 import { computed, defineComponent, onMounted, Ref, ref, watch } from "vue";
 import { Item } from "@/mixins/items";
 import { findIndex, isEqual } from "lodash";
+import { isEnglishLanguageOn } from "@/mixins/items";
 
 export default defineComponent({
   name: "WindowTemplate",
@@ -371,11 +371,12 @@ export default defineComponent({
   grid-template-areas: "leftfull rightfull";
   height: 80vh;
   text-align: left;
+  white-space: pre-line;
 
   .left-full {
     transition: opacity ease 2s;
     display: grid;
-    grid-template-rows: 7vh 11vh 38vh 5vh;
+    grid-template-rows: 1vh 14vh 44vh 5vh;
     grid-template-areas:
       "blank"
       "title"
@@ -390,6 +391,7 @@ export default defineComponent({
       margin-right: 5vw;
       grid-area: description;
       font-weight: bold;
+      font-size: 1rem;
     }
     .title {
       display: grid;
@@ -400,7 +402,7 @@ export default defineComponent({
       grid-area: title;
     }
     .line {
-      border-top: $green-ranger 10px solid;
+      border-top: $golden-solution 10px solid;
       margin-right: 10rem;
       grid-area: line;
     }
@@ -412,7 +414,7 @@ export default defineComponent({
   .right {
     // border: 4px white solid;
     @include grid-center;
-    grid-template-rows: 12.5vh 55vh 5vh;
+    grid-template-rows: 12.5vh 58vh 5vh;
 
     background-size: cover;
     grid-area: rightfull;
@@ -441,7 +443,7 @@ export default defineComponent({
           grid-template-rows: repeat(auto-fit, 2fr);
           grid-gap: none;
           align-items: center;
-          background: $white-power;
+          background: $light-grey;
           overflow-y: auto;
           .item {
             display: grid;
@@ -450,21 +452,21 @@ export default defineComponent({
             border-bottom: 2px $light-grey solid;
             cursor: pointer;
             align-content: center;
-            color: $green-ranger;
+            color: $golden-solution;
             font-weight: bold;
             font-size: 0.9rem;
             grid-template-columns: 1vw 20vw 4vw;
             .title {
-              color: $green-ranger;
+              color: $dark-grey;
               font-weight: bold;
               font-size: 0.9rem;
             }
             @include hoverable;
             &.selected {
-              background: $green-ranger;
+              background: $golden-solution;
               color: $white-power;
               .title {
-                color: $white-power;
+                color: $dark-grey;
                 font-weight: bold;
                 font-size: 0.9rem;
               }
@@ -518,16 +520,16 @@ export default defineComponent({
         text-align: center;
         display: grid;
         font-weight: bold;
-        background-color: $white-power;
-        color: $green-ranger;
+        background-color: $dark-grey;
+        color: $golden-solution;
         align-items: center;
         z-index: 9;
         cursor: pointer;
 
         &.selected {
-          background-color: $green-ranger;
+          background-color: $golden-solution;
           & > * {
-            color: $white-power;
+            color: $dark-grey;
           }
         }
       }
@@ -589,8 +591,9 @@ export default defineComponent({
       grid-template-rows: 1vh 12vh 25vh 2vh;
       margin-top: 5vh;
       .description {
-        margin-left: 0;
+        margin-left: 1rem;
         text-align: center;
+        font-size: 0.8rem;
 
         // align-self: center;
       }
@@ -599,6 +602,9 @@ export default defineComponent({
         text-align: center;
         font-size: 1.5rem;
         margin-left: 0;
+      }
+      .line {
+        display: none;
       }
     }
   }

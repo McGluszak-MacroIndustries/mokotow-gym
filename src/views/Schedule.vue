@@ -1,16 +1,15 @@
 <template>
   <WindowTemplate
-    :items="scheduleItems"
+    :items="currentItems"
     @selected-item="changeItem($event)"
     id="schedule"
+    :key="currentItems"
   >
     <template v-slot:left-side>
       <div class="menu">
-        <div>
-          {{ selectedItem.description }}
-        </div>
+        <div></div>
         <div class="buttons">
-          <button @click="download()">pobierz</button>
+          <button @click="download()">POBIERZ</button>
           <button @click="goToReservations()">ZAREZERWUJ</button>
         </div>
       </div>
@@ -20,21 +19,26 @@
 
 <script lang="ts">
 import WindowTemplate from "@/components/WindowTemplate.vue";
-import { defineComponent, ref } from "vue";
-import { Item, scheduleItems } from "@/mixins/items";
+import { computed, defineComponent, ref } from "vue";
+import { Item, scheduleItems, isEnglishLanguageOn } from "@/mixins/items";
+import { scheduleItemsEnglish } from "@/mixins/englishItems";
 
 export default defineComponent({
   components: { WindowTemplate },
   name: "Schedule",
   props: {},
   setup() {
-    const selectedItem = ref<Item>(scheduleItems[0]);
+    const currentItems = computed(() => {
+      return isEnglishLanguageOn.value ? scheduleItemsEnglish : scheduleItems;
+    });
+
+    const selected = ref<Item>(currentItems.value[0]);
     function changeItem(value: Item) {
       console.log("oto nowy przedmiot", value);
-      selectedItem.value = value;
+      selected.value = value;
     }
     function generateFileUrl() {
-      return `/schedules/${selectedItem.value.src}`;
+      return `/schedules/${selected.value.src}`;
     }
     function download() {
       const a = document.createElement("a");
@@ -53,12 +57,13 @@ export default defineComponent({
       document.body.removeChild(a);
     }
     return {
-      selectedItem,
+      selected,
       scheduleItems,
       changeItem,
       generateFileUrl,
       download,
       goToReservations,
+      currentItems,
     };
   },
 });
@@ -68,12 +73,12 @@ export default defineComponent({
 @import "@/styles/main";
 
 button {
-  background-color: $green-ranger;
+  background-color: $golden-solution;
   @include hoverable;
   cursor: pointer;
-  color: $white-power;
+  color: $dark-grey;
   // border-radius: 2rem;
-  border: 2px solid $green-ranger;
+  border: none;
   width: 10vw;
   height: 5vh;
 }

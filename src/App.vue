@@ -1,5 +1,11 @@
 <template>
-  <Navbar class="x" />
+  <Navbar
+    :currentNavbarElements="currentNavbarElements"
+    :currentNavbarElement="currentNavbarElement"
+    @update-current-element="onUpdateCurrentElement($event)"
+    class="x"
+    :key="currentNavbarElements"
+  />
   <div class="layout">
     <router-view v-slot="{ Component }" class="view">
       <transition name="slide-fade" mode="out-in">
@@ -7,7 +13,11 @@
       </transition>
     </router-view>
 
-    <Footer class="footer" v-show="isMobile === 0" />
+    <Footer
+      :currentNavbarElements="currentNavbarElements"
+      class="footer"
+      v-show="isMobile === 0"
+    />
   </div>
   <!-- <div class="construction">
     <img src="./assets/under.png" alt="" />
@@ -21,13 +31,26 @@
 import { defineComponent } from "@vue/runtime-core";
 import Navbar from "@/components/Navbar.vue";
 import Footer from "@/components/Footer.vue";
-import { ref } from "vue";
+import { computed, ref } from "vue";
+import {
+  navbarElements,
+  englishNavbarElements,
+  NavBarElement,
+} from "@/mixins/navbar-management";
+import { isEnglishLanguageOn } from "@/mixins/items";
 export default defineComponent({
   components: {
     Navbar,
     Footer,
   },
   setup() {
+    // const isEnglishLanguageOn = ref<boolean>(false);
+    const currentNavbarElements = computed(() => {
+      return isEnglishLanguageOn.value ? englishNavbarElements : navbarElements;
+    });
+
+    const currentNavbarElement = ref(currentNavbarElements.value[0]);
+
     const isMobile = ref<number>(window.innerWidth < 1000 ? 1 : 0);
     setInterval(() => {
       const browserWidth = window.innerWidth;
@@ -37,8 +60,17 @@ export default defineComponent({
         isMobile.value = 1;
       }
     }, 100);
+
+    function onUpdateCurrentElement(element: NavBarElement) {
+      currentNavbarElement.value = element;
+    }
     return {
       isMobile,
+      isEnglishLanguageOn,
+      currentNavbarElements,
+      currentNavbarElement,
+      onUpdateCurrentElement,
+      // currentNavbarElements,
     };
   },
 });

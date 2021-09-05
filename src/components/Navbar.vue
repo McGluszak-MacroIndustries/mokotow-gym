@@ -4,10 +4,12 @@
       <div class="items">
         <div
           class="navbar-item"
-          v-for="element in navbarElements"
+          v-for="element in currentNavbarElements"
           :key="element"
           @click="moveToPageAndChangeActiveButton(element)"
-          :class="{ selected: element.frontName === activeButton.frontName }"
+          :class="{
+            selected: element.routerName === currentNavbarElement.routerName,
+          }"
         >
           {{ element.frontName }}
         </div>
@@ -24,7 +26,7 @@
       <div class="expanded-menu" v-else @click="clicked += 1">
         <div class="mobile-items">
           <div
-            v-for="element in navbarElements"
+            v-for="element in currentNavbarElements"
             :key="element"
             @click="moveToPageAndChangeActiveButton(element)"
             class="item"
@@ -36,22 +38,58 @@
     </div>
     <div class="logo">
       <img src="../img/layout/logo@2x.png" alt="MOKOTÓW GYM" />
+      <!-- <div class="language-selection">
+        <div class="">PL</div>
+        <div>ANG</div>
+      </div> -->
+    </div>
+    <div class="lang">
+      <div class="language-selection">
+        <div @click="changeLanguage(false)" class="polish">
+          <img src="../assets/flags/pl.png" alt="" />
+        </div>
+        <div @click="changeLanguage(true)" class="english">
+          <img src="../assets/flags/uk.png" alt="" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { computed, defineComponent, ref } from "vue";
-import { navbarElements, NavBarElement } from "@/mixins/navbar-management";
+import {
+  navbarElements,
+  NavBarElement,
+  englishNavbarElements,
+} from "@/mixins/navbar-management";
 import router from "@/router";
 import { isEqual } from "lodash";
+import { isEnglishLanguageOn } from "@/mixins/items";
 
 export default defineComponent({
   name: "navbar",
-  props: {},
+  props: {
+    currentNavbarElements: {
+      type: Array as () => NavBarElement[],
+      required: true,
+    },
+    currentNavbarElement: {
+      type: Object as () => NavBarElement,
+      required: true,
+    },
+  },
+  emits: ["update-current-element"],
 
-  setup() {
-    const activeButton = ref<NavBarElement>(navbarElements[0]);
+  setup(props, { emit }) {
+    // const currentNavbarElements = ref<Array<NavBarElement>>(navbarElements);
+
+    // const isEnglishLanguageOn = ref<boolean>(false);
+    // const currentNavbarElements = computed(() => {
+    //   return isEnglishLanguageOn.value ? englishNavbarElements : navbarElements;
+    // });
+
+    const activeButton = ref<NavBarElement>(props.currentNavbarElements[0]);
 
     const isMobile = ref<number>(window.innerWidth < 1000 ? 1 : 0);
     const clicked = ref<number>(1);
@@ -83,16 +121,22 @@ export default defineComponent({
     //   new Promise((resolve) => setTimeout(resolve, delay));
 
     async function moveToPageAndChangeActiveButton(element: NavBarElement) {
-      if (isEqual(element, activeButton.value)) {
+      if (isEqual(element, props.currentNavbarElement)) {
         return;
       }
       const name: string = element.routerName;
       router.push({ name });
       console.log(name);
+
+      emit("update-current-element", element);
+
       activeButton.value = element;
 
       console.log("aktywny element to: ", activeButton.value.routerName);
       console.log("kliknięty to: ", element.routerName);
+    }
+    function changeLanguage(option: boolean) {
+      isEnglishLanguageOn.value = option;
     }
     return {
       clicked,
@@ -100,7 +144,9 @@ export default defineComponent({
       width,
       activeButton,
       navbarElements,
+      englishNavbarElements,
       moveToPageAndChangeActiveButton,
+      changeLanguage,
     };
   },
 });
@@ -118,7 +164,7 @@ export default defineComponent({
     text-align: center;
     margin-top: 2vh;
   }
-  grid-template-columns: 40vw 42.5vw;
+  grid-template-columns: 40vw 42.5vw 5vw;
   font-weight: bold;
   .options {
     display: grid;
@@ -135,10 +181,10 @@ export default defineComponent({
         // padding-top: 0.5rem;
         cursor: pointer;
         height: 3vh;
-        width: 5vw;
+        width: 6vw;
         &.selected {
           // padding-bottom: 2rem;
-          border-bottom: 4px $green-ranger solid;
+          border-bottom: 4px $golden-solution solid;
         }
         //   height: 5rem;
       }
@@ -183,6 +229,24 @@ export default defineComponent({
       height: 60%;
     }
   }
+  .language-selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    height: 1rem;
+    //
+    & > * {
+      @include hoverable;
+      z-index: 1;
+    }
+    // .polish {
+    //   background-image: url("../assets/flags/pl.png");
+    //   background-size:
+    // }
+    // .english {
+    //   background-image: url("../assets/flags/uk.png");
+    // }
+  }
 }
 svg {
   fill: $white-power;
@@ -195,10 +259,13 @@ svg {
 
 @media screen and (max-width: 1000px) {
   .navbar {
-    grid-template-columns: 20vw 60vw;
+    grid-template-columns: 20vw 50vw 10vw;
     .logo {
       height: 10vh;
     }
+    // .lang {
+    //   display: none;
+    // }
   }
 }
 </style>

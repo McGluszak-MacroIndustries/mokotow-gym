@@ -1,11 +1,12 @@
 <template>
-  <WindowTemplate :items="aboutUsItems" />
+  <WindowTemplate :items="currentItems" :key="currentItems" />
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { computed, defineComponent } from "vue";
 import WindowTemplate from "@/components/WindowTemplate.vue";
-import { aboutUsItems } from "@/mixins/items";
+import { offerItems, isEnglishLanguageOn } from "@/mixins/items";
+import { offerItemsEnglish } from "@/mixins/englishItems";
 
 export default defineComponent({
   name: "Gallery",
@@ -14,8 +15,11 @@ export default defineComponent({
     WindowTemplate,
   },
   setup() {
+    const currentItems = computed(() => {
+      return isEnglishLanguageOn.value ? offerItemsEnglish : offerItems;
+    });
     return {
-      aboutUsItems,
+      currentItems,
     };
   },
 });

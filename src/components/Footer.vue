@@ -4,7 +4,7 @@
       <div class="second-menu">
         <div
           class="navbar-item"
-          v-for="element in navbarElements"
+          v-for="element in currentNavbarElements"
           :key="element"
           @click="moveToPage(element)"
         >
@@ -13,8 +13,8 @@
       </div>
       <div class="media-menu">
         <div v-for="icon in icons" :key="icon" class="icon">
-          <a href="https://www.facebook.com/homokomando/">
-            <img :src="getIconUrl(icon)" alt="" />
+          <a :href="icon.iconHref" target="blank">
+            <img :src="getIconUrl(icon.iconName)" alt="" />
           </a>
         </div>
       </div>
@@ -23,7 +23,7 @@
       <div class="copyrights">&copy; 2021 Mokotowski-Gym</div>
       <div class="addresses">
         <div>www.mokotowskigym.com</div>
-        <div>mokotowski@gmail.com</div>
+        <div>office@mokotowskigym.com</div>
       </div>
     </div>
   </div>
@@ -40,9 +40,13 @@ import router from "@/router";
 
 export default defineComponent({
   name: "Footer",
-  props: {},
+  props: {
+    currentNavbarElements: {
+      type: Array as () => NavBarElement[],
+      required: true,
+    },
+  },
   setup() {
-    const navbars = navbarElements;
     function moveToPage(element: NavBarElement) {
       const name: string = element.routerName;
       router.push({ name });
@@ -55,7 +59,7 @@ export default defineComponent({
       navbarElements,
       icons,
       moveToPage,
-      navbars,
+
       getIconUrl,
     };
   },
@@ -66,7 +70,8 @@ export default defineComponent({
 @import "@/styles/main";
 .Footer {
   display: grid;
-  grid-template-rows: 16vh 2vh;
+  grid-gap: 4rem;
+  grid-template-rows: 5vh 1vh;
   background: $white-power;
   .second-navbar {
     display: grid;

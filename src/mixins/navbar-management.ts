@@ -3,7 +3,17 @@ export type NavBarElement = {
   routerName: string;
 };
 
-export const icons: string[] = ["fb.png", "inst.png"];
+export type Icon = {
+  iconName: string;
+  iconHref: string;
+};
+
+//["fb.png", "inst.png"];
+
+export const icons: Icon[] = [
+  { iconName: "fb.png", iconHref: "https://www.facebook.com/MokotowskiGym" },
+  { iconName: "inst.png", iconHref: "https://www.facebook.com/MokotowskiGym" },
+];
 
 export const navbarElements: NavBarElement[] = [
   {
@@ -28,6 +38,33 @@ export const navbarElements: NavBarElement[] = [
   },
   {
     frontName: "KONTAKT",
+    routerName: "contact",
+  },
+];
+
+export const englishNavbarElements: NavBarElement[] = [
+  {
+    frontName: "ABOUT US",
+    routerName: "home",
+  },
+  {
+    frontName: "OFFER",
+    routerName: "offer",
+  },
+  {
+    frontName: "SCHEDULE",
+    routerName: "schedule",
+  },
+  {
+    frontName: "TEAM",
+    routerName: "team",
+  },
+  {
+    frontName: "GALLERY",
+    routerName: "gallery",
+  },
+  {
+    frontName: "CONTACT",
     routerName: "contact",
   },
 ];
