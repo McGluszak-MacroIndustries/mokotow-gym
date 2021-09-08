@@ -40,7 +40,7 @@ export const teamItems: Array<Item> = [
     -modelowanie sylwetki dla mężczyzn
     -zdrowe plecy
     -treningi personalne`,
-    src: "tajner.jpg",
+    src: "2x.jpg",
   },
   {
     name: "team",
@@ -55,7 +55,7 @@ export const teamItems: Array<Item> = [
     - boks
     - kickboxing
     - treningi indywidualne`,
-    src: "tajner.jpg",
+    src: "2x.jpg",
   },
   {
     name: "team",
@@ -69,7 +69,7 @@ export const teamItems: Array<Item> = [
     Prowadzone zajęcia:
 
     - Kettlebells / explosive strength`,
-    src: "karolina-min.jpg",
+    src: "2x.jpg",
   },
   {
     name: "team",
@@ -87,7 +87,7 @@ export const teamItems: Array<Item> = [
     - kickboxing
     - boks
     - treningi personalne`,
-    src: "marcin-min.jpg",
+    src: "2x.jpg",
   },
   {
     name: "team",
@@ -104,7 +104,7 @@ export const teamItems: Array<Item> = [
     - boks
     - kickboxing
     - samoobrona dla kobiet`,
-    src: "mateusz-min.jpg",
+    src: "2x.jpg",
   },
   {
     name: "team",
@@ -121,7 +121,7 @@ export const teamItems: Array<Item> = [
     - Hip hop, new style
     - Commercial
     - Cheerleaders`,
-    src: "tajner.jpg",
+    src: "2x.jpg",
   },
   {
     name: "team",
@@ -140,7 +140,7 @@ export const teamItems: Array<Item> = [
     
 
     `,
-    src: "tajner.jpg",
+    src: "2x.jpg",
   },
   {
     name: "team",
@@ -156,7 +156,7 @@ export const teamItems: Array<Item> = [
     - mama wraca do formy
     - jędrne pośladki,płaski brzuch
     - treningi personalne`,
-    src: "sandra-min.jpg",
+    src: "2x.jpg",
   },
   {
     name: "team",
@@ -172,7 +172,7 @@ export const teamItems: Array<Item> = [
     - BJJ dla dorosłych
     - BJJ dla dzieci
     - treningi personalne`,
-    src: "tomek-min.jpg",
+    src: "2x.jpg",
   },
   {
     name: "team",
@@ -185,7 +185,7 @@ export const teamItems: Array<Item> = [
 
     Prowadzone zajęcia:
     - Boks grupa początkująca`,
-    src: "tajner.jpg",
+    src: "2x.jpg",
   },
 ];
 
