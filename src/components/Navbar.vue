@@ -261,7 +261,12 @@ svg {
   .navbar {
     grid-template-columns: 20vw 50vw 10vw;
     .logo {
-      height: 10vh;
+      height: 8vh;
+    }
+    .lang {
+      .language-selection {
+        grid-template-columns: 20px 20px;
+      }
     }
     // .lang {
     //   display: none;

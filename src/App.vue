@@ -19,13 +19,6 @@
       v-show="isMobile === 0"
     />
   </div>
-  <!-- <div class="construction">
-    <img src="./assets/under.png" alt="" />
-  </div> -->
-
-  <!-- <router-link to="/">Home</router-link> |
-    <router-link to="/offer">Oferta</router-link>
-    <router-link to="/schedule">Grafik</router-link> -->
 </template>
 <script lang="ts">
 import { defineComponent } from "@vue/runtime-core";
@@ -86,32 +79,19 @@ export default defineComponent({
   color: $white-power;
   // font-family: "Roboto", sans-serif;
 }
-.construction {
-  // background-image: url("./assets/underconstructions.png");
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  transform: translateY(-120vh);
-  img {
-    width: 70%;
-    height: 70%;
-    z-index: 999;
-  }
-  width: 100%;
-  height: 100%;
-}
+
 .x {
   z-index: 2;
 }
 
 #app {
   font-family: "Roboto", sans-serif;
-  background-color: $dark-grey;
+  background-color: $white-power;
   // :$white-power ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: $white-power;
   width: 100vw;
   height: 100vh;
   overflow: hidden;

@@ -372,6 +372,7 @@ export default defineComponent({
   height: 80vh;
   text-align: left;
   white-space: pre-line;
+  background-color: $dark-grey;
 
   .left-full {
     transition: opacity ease 2s;
