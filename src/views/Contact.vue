@@ -3,11 +3,12 @@
     <template v-slot:left-side>
       <div class="menu">
         <div class="info">
-          <div class="name">MOKOTÓW-GYM</div>
+          <div class="name">MOKOTOWSKI GYM</div>
           <div class="address">
             <!-- <div>kod-pocztowy</div> -->
             <div>{{ currentAddress[0] }}</div>
             <div>02 - 654 Warszawa</div>
+            <div>+48 696 168 867</div>
           </div>
           <div class="media-menu">
             <div v-for="icon in icons" :key="icon" class="icon">
@@ -69,8 +70,8 @@ export default defineComponent({
     const currentItems = computed(() => {
       return isEnglishLanguageOn.value ? englishItems : items;
     });
-    const address = ["ulica Białej Floty 2", "ZNAJDŹ NAS"];
-    const engAddress = ["Białej Floty Street 2", "FIND US"];
+    const address = ["ulica Białej Floty 2", "SPRAWDŹ TRASĘ"];
+    const engAddress = ["Białej Floty Street 2", "FIND US ON MAP"];
     const currentAddress = computed(() => {
       return isEnglishLanguageOn.value ? engAddress : address;
     });
@@ -120,7 +121,7 @@ button {
 
 .info {
   display: grid;
-  grid-template-rows: 7vh 5vh 5vh;
+  grid-template-rows: 8vh 8vh 5vh;
 
   .name {
     font-size: 3rem;
@@ -130,6 +131,7 @@ button {
     display: grid;
   }
   .address {
+    // grid-gap: 0.1rem;
   }
   .media-menu {
     display: grid;
