@@ -86,7 +86,7 @@ export default defineComponent({
 
 #app {
   font-family: "Roboto", sans-serif;
-  background-color: $white-power;
+  background-color: $dark-grey;
   // :$white-power ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

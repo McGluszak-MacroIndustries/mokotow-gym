@@ -237,13 +237,13 @@ export const scheduleItems: Array<Item> = [
     title: "SALA NR1",
     description:
       "Poniżej przedstawiamy rozkład zajęć w sali numer jeden, gdzie odbywa się przede wszystkim joga i pikiety politycznych elit",
-    src: "schedule1.jpg",
+    src: "schedule.jpg",
   },
   {
     name: "schedule",
     title: "SALA NR2",
     description:
       "W sali numer dwa odbywają się z reguły zajęcia ze sztuk walki a takze uprawiamy tutaj ogółem szermiestwo",
-    src: "schedule2.png",
+    src: "schedule.jng",
   },
 ];
