@@ -595,7 +595,7 @@ export default defineComponent({
 
           // border-bottom: none;
           .expander {
-            transform: translateY(-10%) translateX(12%);
+            transform: translateY(-12%) translateX(12%);
             .item {
               border-bottom: 0.5px $light-grey solid;
               padding-left: 20px;
@@ -614,7 +614,7 @@ export default defineComponent({
           }
         }
         .proper-container {
-          transform: translateX(9%) translateY(15%);
+          transform: translateX(9%) translateY(7%);
           // margin-bottom: 0.5rem;
 
           grid-template-columns: 50vw 3rem 3rem;
@@ -685,7 +685,7 @@ export default defineComponent({
 
           // border-bottom: none;
           .expander {
-            transform: translateY(-10%) translateX(12.5%);
+            transform: translateY(-7%) translateX(12.5%);
             .item {
               border-bottom: 0.5px $light-grey solid;
               padding-left: 15px;

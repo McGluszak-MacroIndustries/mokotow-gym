@@ -84,7 +84,7 @@ export const teamItems: Array<Item> = [
     Prowadzone zajęcia:
 
     - Kettlebells / explosive strength`,
-    src: "2x.jpg",
+    src: "moz.jpg",
   },
   {
     name: "team",
