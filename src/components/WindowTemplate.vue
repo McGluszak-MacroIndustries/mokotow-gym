@@ -373,7 +373,8 @@ export default defineComponent({
   grid-template-columns: 50vw 50vw;
   grid-template-areas: "leftfull rightfull";
   height: 80vh;
-  text-align: left;
+  text-align: justify;
+  text-indent: 10px;
   white-space: pre-line;
   background-color: $dark-grey;
   overflow-x: hidden;
@@ -397,6 +398,7 @@ export default defineComponent({
       margin-right: 1vw;
       grid-area: description;
       // scrollbar-color: red;
+
       padding-right: 4vw;
       padding-bottom: 2vh;
       font-size: 1rem;

@@ -28,48 +28,38 @@ export const teamItems: Array<Item> = [
     title: "FILIP SZAMBORSKI",
     description: `Sport zacząłem uprawiać w wieku 9 lat, kiedy to mama zaprowadziło mnie na judo i szermierkę. Jako nastolatek zająłem się parkourem i treningiem na siłowni.
     Od sześciu lat zawodowo pracuję jako trener personalny. Szczególny nacisk kładę na staranność i dokładność w wykonywaniu ćwiczeń, a także kompleksową mobilizację i rozciągnięcie po treningu. Moją specjalizacją jest modelowanie sylwetki, mogę pochwalić się licznymi spektakularnymi przemianami klientów.
-
+    
     Po godzinach zajmuję się podróżowaniem, modelingiem, kuchnią i pomocą dla zwierząt (jestem wolontariuszem w schronisku)
-    
-    
 
-    Prowadzone zajęcia:
     
-    -fitness dla kobiet
-    -power pump
-    -modelowanie sylwetki dla mężczyzn
-    -zdrowe plecy
-    -treningi personalne
-    
-    Sport zacząłem uprawiać w wieku 9 lat, kiedy to mama zaprowadziło mnie na judo i szermierkę. Jako nastolatek zająłem się parkourem i treningiem na siłowni.
-    Od sześciu lat zawodowo pracuję jako trener personalny. Szczególny nacisk kładę na staranność i dokładność w wykonywaniu ćwiczeń, a także kompleksową mobilizację i rozciągnięcie po treningu. Moją specjalizacją jest modelowanie sylwetki, mogę pochwalić się licznymi spektakularnymi przemianami klientów.
+    𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    Po godzinach zajmuję się podróżowaniem, modelingiem, kuchnią i pomocą dla zwierząt (jestem wolontariuszem w schronisku)
+    ○ fitness dla kobiet
+    ○ power pump
+    ○ modelowanie sylwetki dla mężczyzn
+    ○ zdrowe plecy
+    ○ treningi personalne
     
-    
-
-    Prowadzone zajęcia:
-    
-    -fitness dla kobiet
-    -power pump
-    -modelowanie sylwetki dla mężczyzn
-    -zdrowe plecy
-    -treningi personalne`,
+    `,
     src: "2x.jpg",
   },
   {
     name: "team",
     title: "JAREK KRZOSEK",
-    description: `Sporty kopane i uderzane uprawiam od 15 lat. Moje zajęcia mają opinie wymagających: nie oszczędzam ani siebie, ani podopiecznych. Uczestnicy treningów wychodzą z nich zmęczeni, ale zadowoleni. Oprócz przygotowania kondycyjnego bardzo duży nacisk kładę na technikę. Poszczególne ciosy czy akcje powtarzamy aż do momentu kiedy ćwiczący opanują je do perfekcji.
+    description: `Sport zacząłem uprawiać w wieku 9 lat, kiedy to mama zaprowadziło mnie na judo i szermierkę. Jako nastolatek zająłem się parkourem i treningiem na siłowni.
+    Od sześciu lat zawodowo pracuję jako trener personalny. Szczególny nacisk kładę na staranność i dokładność w wykonywaniu ćwiczeń, a także kompleksową mobilizację i rozciągnięcie po treningu. Moją specjalizacją jest modelowanie sylwetki, mogę pochwalić się licznymi spektakularnymi przemianami klientów.
+    
+    Po godzinach zajmuję się podróżowaniem, modelingiem, kuchnią i pomocą dla zwierząt (jestem wolontariuszem w schronisku)
 
-    Moim hobby są kuchnie świata (sport i karierę trenera łączę z pracą w gastronomii). Gram również w piłkę nożną i tenisa.
+    
+    𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-
-
-    Prowadzone zajęcia:
-    - boks
-    - kickboxing
-    - treningi indywidualne`,
+    ○ fitness dla kobiet
+    ○ power pump
+    ○ modelowanie sylwetki dla mężczyzn
+    ○ zdrowe plecy
+    ○ treningi personalne
+    `,
     src: "2x.jpg",
   },
   {
@@ -80,28 +70,25 @@ export const teamItems: Array<Item> = [
     Po godzinach jestem fotografką, pasjonatką podróży i entuzjastką zdrowego stylu życia :)
 
 
+    𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    Prowadzone zajęcia:
-
-    - Kettlebells / explosive strength`,
+    ○ Kettlebells / explosive strength`,
     src: "moz.jpg",
   },
   {
     name: "team",
     title: "MARCIN NASIADKO",
     description: `Kickboxing to moja pasja i życie od 15 lat. Trenowałem w Polsce oraz w najlepszych klubach Holandii, Łotwy i Norwegii. Dziewięciokrotnie zdobywałem Mistrzostwo Polski i Puchar Świata. Jako członek kadry narodowej pięciokrotnie reprezentowałem Polskę na Mistrzostwach Świata i Mistrzostwach Europy, walczyłem też w barwach największej zawodowej organizacji kickboxingu w Polsce – DSF Kickboxing Challenge
-
     Od 4 lat trenuję dzieci, młodzież i dorosłych – zawodników oraz osoby ćwiczące rekreacyjnie. Dbam o każdy aspekt przygotowania technicznego, motorycznego i psychologicznego moich wychowanków.
 
     Oprócz sportów walki uprawiam narciarstwo. Bardzo lubię podróże.
 
 
+    𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    Prowadzone zajęcia:
-
-    - kickboxing
-    - boks
-    - treningi personalne`,
+    ○ kickboxing
+    ○ boks
+    ○ treningi personalne`,
     src: "2x.jpg",
   },
   {
@@ -112,13 +99,12 @@ export const teamItems: Array<Item> = [
     Po godzinach uprawiam survival i wspinaczkę wysokogórską. Interesuję się historią. Bardzo lubię teatr.
 
 
+    𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    Prowadzone zajęcia:
-
-    - Muai Thai
-    - boks
-    - kickboxing
-    - samoobrona dla kobiet`,
+    ○ Muai Thai
+    ○ boks
+    ○ kickboxing
+    ○ samoobrona dla kobiet`,
     src: "2x.jpg",
   },
   {
@@ -129,13 +115,12 @@ export const teamItems: Array<Item> = [
     Po godzinach zdecydowanie unikam nudy, rzucam sobie wyzwania i próbuję nowych rzeczy, obecnie uczę się bachaty sensual. Interesuję się też modą. Każdą wolną chwilę poświęcam mojej największej miłości - maltance Sheri.
     
 
+    𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    Prowadzone zajęcia:
-
-    - Shuffle dance
-    - Hip hop, new style
-    - Commercial
-    - Cheerleaders`,
+    ○ Shuffle dance
+    ○ Hip hop, new style
+    ○ Commercial
+    ○ Cheerleaders`,
     src: "2x.jpg",
   },
   {
@@ -146,11 +131,10 @@ export const teamItems: Array<Item> = [
     Po godzinach zajmuję się urban exploration, filozofią, stolarstwem.
     
     
+    𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    Prowadzone zajęcia:
-
-    - Trening siłowy ze sztangą (Starting Strength)
-    - Treningi personalne
+    ○ Trening siłowy ze sztangą (Starting Strength)
+    ○ Treningi personalne
 
     
 
@@ -165,12 +149,11 @@ export const teamItems: Array<Item> = [
     Jestem fanką egzotycznych podróży i dobrych książek oraz właścicielką pieska Cookie. Bardzo lubię stawać przed aparatem fotograficznym. Ciekawym doświadczeniem był udział w konkursie Miss Warsawy, gdzie dotarłam do finału.
     
     
-    
-    Prowadzone zajecia:
+    𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    - mama wraca do formy
-    - jędrne pośladki,płaski brzuch
-    - treningi personalne`,
+    ○ mama wraca do formy
+    ○ jędrne pośladki,płaski brzuch
+    ○ treningi personalne`,
     src: "2x.jpg",
   },
   {
@@ -181,12 +164,11 @@ export const teamItems: Array<Item> = [
     Jestem człowiekiem rodzinnym. Moją drugą wielką pasją poza sportem jest sushi.
 
 
+    𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    Prowadzone zajecia:
-
-    - BJJ dla dorosłych
-    - BJJ dla dzieci
-    - treningi personalne`,
+    ○ BJJ dla dorosłych
+    ○ BJJ dla dzieci
+    ○ treningi personalne`,
     src: "2x.jpg",
   },
   {
@@ -197,9 +179,9 @@ export const teamItems: Array<Item> = [
     Po godzinach jestem człowiekiem czarnoskórym.
 
 
+    𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    Prowadzone zajęcia:
-    - Boks grupa początkująca`,
+    ○ Boks grupa początkująca`,
     src: "2x.jpg",
   },
 ];
