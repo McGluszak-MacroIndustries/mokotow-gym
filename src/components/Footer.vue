@@ -76,6 +76,7 @@ export default defineComponent({
   .second-navbar {
     display: grid;
     grid-template-columns: 60vw 40vw;
+
     // border-bottom: black 2px solid;
     & > * {
       // border: red 2px solid;

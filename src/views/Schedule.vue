@@ -73,12 +73,13 @@ export default defineComponent({
 @import "@/styles/main";
 
 button {
-  background-color: $golden-solution;
+  background-color: $dark-grey;
   @include hoverable;
   cursor: pointer;
-  color: $dark-grey;
+  color: $white-power;
   // border-radius: 2rem;
-  border: none;
+  border: 3px solid $white-power;
+  border-radius: 2rem;
   width: 10vw;
   height: 5vh;
 }

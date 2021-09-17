@@ -1,21 +1,195 @@
 <template>
   <div class="window-template">
-    <div class="left-full" @click="clicked = false">
-      <div class="blank"></div>
+    <div class="left-full" @click.self="clicked = false">
+      <div class="blank" @click="clicked = false"></div>
       <transition name="slide-fade" mode="out-in">
-        <div class="title" :key="selectedItem">
-          <div class="title-text">
-            {{ selectedItem.title }}
+        <slot name="slot-fix">
+          <div class="title" :key="selectedItem" @click="clicked = false">
+            <div class="title-text">
+              {{ selectedItem.title }}
+            </div>
           </div>
-        </div>
+        </slot>
       </transition>
       <transition name="slide-fade" mode="out-in">
-        <div class="description" :key="selectedItem">
+        <div class="description" :key="selectedItem" @click="clicked = false">
           {{ selectedItem.description }}
           <slot name="left-side"> </slot>
         </div>
       </transition>
-      <span class="line"></span>
+      <slot name="menu-nav">
+        <div class="element-container" @click.self="clicked = false">
+          <div class="expanded" v-if="clicked">
+            <div></div>
+            <div class="expander">
+              <div
+                class="item"
+                v-for="(item, index) in items"
+                :key="index"
+                @click="changeSelectedItem(item, index)"
+                :class="{ selected: isSelected(item) }"
+              >
+                <div></div>
+                <div class="name">{{ item.title }}</div>
+                <div></div>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div class="hidden" v-else></div>
+          <div class="proper-container">
+            <div class="chosen-item" @click="clicked = !clicked">
+              <div class="empty"></div>
+              <div class="item-name">
+                {{ selectedItem.title }}
+              </div>
+              <!-- <div class="" v-if="clicked">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14.142"
+                      height="14.142"
+                      viewBox="0 0 14.142 14.142"
+                    >
+                      <g id="burger" transform="translate(-1431.429 -603.429)">
+                        <line
+                          id="Line_7"
+                          data-name="Line 7"
+                          x2="18"
+                          transform="translate(1432.136 616.864) rotate(-45)"
+                          fill="none"
+                          stroke="#000"
+                          stroke-width="2"
+                        />
+                        <line
+                          id="Line_9"
+                          data-name="Line 9"
+                          x2="18"
+                          transform="translate(1432.136 604.136) rotate(45)"
+                          fill="none"
+                          stroke="#000"
+                          stroke-width="2"
+                        />
+                      </g>
+                    </svg>
+                  </div> -->
+              <div class="icon" v-if="!clicked">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="14"
+                  viewBox="0 0 18 14"
+                >
+                  <g id="burger" transform="translate(-1429.5 -603.5)">
+                    <line
+                      id="Line_7"
+                      data-name="Line 7"
+                      x2="18"
+                      transform="translate(1429.5 604.5)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-width="2"
+                    />
+                    <line
+                      id="Line_8"
+                      data-name="Line 8"
+                      x2="18"
+                      transform="translate(1429.5 610.5)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-width="2"
+                    />
+                    <line
+                      id="Line_9"
+                      data-name="Line 9"
+                      x2="18"
+                      transform="translate(1429.5 616.5)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-width="2"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="left-arrow"
+              @click="changeItemToNextOrPreviousItem('previous')"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10.314"
+                height="17.385"
+                viewBox="0 0 10.314 17.385"
+              >
+                <g
+                  id="Group_10"
+                  data-name="Group 10"
+                  transform="translate(-345.068 -1200.96) rotate(45)"
+                >
+                  <line
+                    id="Line_5"
+                    data-name="Line 5"
+                    x2="10"
+                    transform="translate(1100.5 610.5)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                  />
+                  <line
+                    id="Line_6"
+                    data-name="Line 6"
+                    x2="10"
+                    transform="translate(1100.5 599.914) rotate(90)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div
+              class="right-arrow"
+              @click="changeItemToNextOrPreviousItem('next')"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10.314"
+                height="17.385"
+                viewBox="0 0 10.314 17.385"
+              >
+                <g
+                  id="Group_11"
+                  data-name="Group 11"
+                  transform="translate(355.382 1218.345) rotate(-135)"
+                >
+                  <line
+                    id="Line_5"
+                    data-name="Line 5"
+                    x2="10"
+                    transform="translate(1100.5 610.5)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                  />
+                  <line
+                    id="Line_6"
+                    data-name="Line 6"
+                    x2="10"
+                    transform="translate(1100.5 599.914) rotate(90)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </slot>
     </div>
 
     <slot name="right-full">
@@ -49,177 +223,6 @@
           <slot name="right-side">
             <div></div>
 
-            <div class="element-container" @click.self="clicked = false">
-              <div class="expanded" v-if="clicked">
-                <div></div>
-                <div class="expander">
-                  <div
-                    class="item"
-                    v-for="(item, index) in items"
-                    :key="index"
-                    @click="changeSelectedItem(item, index)"
-                    :class="{ selected: isSelected(item) }"
-                  >
-                    <div></div>
-                    <div class="title">{{ item.title }}</div>
-                    <div></div>
-                  </div>
-                </div>
-                <div></div>
-              </div>
-              <div class="hidden" v-else></div>
-              <div class="proper-container">
-                <div
-                  class="left-arrow"
-                  @click="changeItemToNextOrPreviousItem('previous')"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="10.314"
-                    height="17.385"
-                    viewBox="0 0 10.314 17.385"
-                  >
-                    <g
-                      id="Group_10"
-                      data-name="Group 10"
-                      transform="translate(-345.068 -1200.96) rotate(45)"
-                    >
-                      <line
-                        id="Line_5"
-                        data-name="Line 5"
-                        x2="10"
-                        transform="translate(1100.5 610.5)"
-                        fill="none"
-                        stroke="#000"
-                        stroke-linecap="square"
-                        stroke-width="2"
-                      />
-                      <line
-                        id="Line_6"
-                        data-name="Line 6"
-                        x2="10"
-                        transform="translate(1100.5 599.914) rotate(90)"
-                        fill="none"
-                        stroke="#000"
-                        stroke-linecap="square"
-                        stroke-width="2"
-                      />
-                    </g>
-                  </svg>
-                </div>
-                <div class="chosen-item" @click="clicked = !clicked">
-                  <div class="empty"></div>
-                  <div class="item-name">
-                    {{ selectedItem.title }}
-                  </div>
-                  <!-- <div class="" v-if="clicked">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14.142"
-                      height="14.142"
-                      viewBox="0 0 14.142 14.142"
-                    >
-                      <g id="burger" transform="translate(-1431.429 -603.429)">
-                        <line
-                          id="Line_7"
-                          data-name="Line 7"
-                          x2="18"
-                          transform="translate(1432.136 616.864) rotate(-45)"
-                          fill="none"
-                          stroke="#000"
-                          stroke-width="2"
-                        />
-                        <line
-                          id="Line_9"
-                          data-name="Line 9"
-                          x2="18"
-                          transform="translate(1432.136 604.136) rotate(45)"
-                          fill="none"
-                          stroke="#000"
-                          stroke-width="2"
-                        />
-                      </g>
-                    </svg>
-                  </div> -->
-                  <div class="icon" v-if="!clicked">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="14"
-                      viewBox="0 0 18 14"
-                    >
-                      <g id="burger" transform="translate(-1429.5 -603.5)">
-                        <line
-                          id="Line_7"
-                          data-name="Line 7"
-                          x2="18"
-                          transform="translate(1429.5 604.5)"
-                          fill="none"
-                          stroke="#000"
-                          stroke-width="2"
-                        />
-                        <line
-                          id="Line_8"
-                          data-name="Line 8"
-                          x2="18"
-                          transform="translate(1429.5 610.5)"
-                          fill="none"
-                          stroke="#000"
-                          stroke-width="2"
-                        />
-                        <line
-                          id="Line_9"
-                          data-name="Line 9"
-                          x2="18"
-                          transform="translate(1429.5 616.5)"
-                          fill="none"
-                          stroke="#000"
-                          stroke-width="2"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  class="right-arrow"
-                  @click="changeItemToNextOrPreviousItem('next')"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="10.314"
-                    height="17.385"
-                    viewBox="0 0 10.314 17.385"
-                  >
-                    <g
-                      id="Group_11"
-                      data-name="Group 11"
-                      transform="translate(355.382 1218.345) rotate(-135)"
-                    >
-                      <line
-                        id="Line_5"
-                        data-name="Line 5"
-                        x2="10"
-                        transform="translate(1100.5 610.5)"
-                        fill="none"
-                        stroke="#000"
-                        stroke-linecap="square"
-                        stroke-width="2"
-                      />
-                      <line
-                        id="Line_6"
-                        data-name="Line 6"
-                        x2="10"
-                        transform="translate(1100.5 599.914) rotate(90)"
-                        fill="none"
-                        stroke="#000"
-                        stroke-linecap="square"
-                        stroke-width="2"
-                      />
-                    </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
             <div @click="clicked = false"></div>
           </slot>
         </div>
@@ -370,14 +373,16 @@ export default defineComponent({
   grid-template-columns: 50vw 50vw;
   grid-template-areas: "leftfull rightfull";
   height: 80vh;
-  text-align: left;
+  text-align: justify;
+  text-indent: 10px;
   white-space: pre-line;
   background-color: $dark-grey;
+  overflow-x: hidden;
 
   .left-full {
     transition: opacity ease 2s;
     display: grid;
-    grid-template-rows: 1vh 14vh 44vh 5vh;
+    grid-template-rows: 1vh 14vh 40vh 9vh;
     grid-template-areas:
       "blank"
       "title"
@@ -385,15 +390,21 @@ export default defineComponent({
       "line";
     margin-top: 12vh;
     grid-area: leftfull;
+
     .blank {
       grid-area: blank;
     }
     .description {
-      margin-right: 5vw;
+      margin-right: 1vw;
       grid-area: description;
-      font-weight: bold;
+      // scrollbar-color: red;
+
+      padding-right: 4vw;
+      padding-bottom: 2vh;
       font-size: 1rem;
+      overflow-y: auto;
     }
+
     .title {
       display: grid;
       align-content: center;
@@ -402,10 +413,131 @@ export default defineComponent({
       font-size: 2rem;
       grid-area: title;
     }
-    .line {
-      border-top: $golden-solution 10px solid;
-      margin-right: 10rem;
-      grid-area: line;
+    .element-container {
+      display: grid;
+
+      width: 100%;
+      height: 100%;
+      // @include grid-center;
+      align-content: end;
+      display: grid;
+      justify-content: start;
+
+      grid-gap: 0.5rem;
+
+      .expanded {
+        display: grid;
+        width: 20vw;
+        align-items: flex-end;
+        align-self: flex-end;
+
+        // grid-gap: 2rem;
+        .expander {
+          display: grid;
+          grid-template-rows: repeat(auto-fit, 2fr);
+          grid-gap: none;
+          border-radius: 2rem;
+          overflow-x: hidden;
+          align-items: flex-end;
+          align-self: flex-end;
+
+          // align-items: center;
+          background: $light-grey;
+          overflow-y: auto;
+          .item {
+            display: grid;
+            min-height: 4vh;
+            background: $light-grey;
+            padding-left: 2%;
+            // border: 2px $light-grey solid;
+            // border-bottom: 2px $light-grey solid;
+            cursor: pointer;
+            align-content: center;
+            color: $dark-grey;
+            font-weight: bold;
+            font-size: 0.9rem;
+            z-index: 999;
+            grid-template-columns: 1vw 20vw 4vw;
+            .name {
+              color: $dark-grey;
+              font-weight: lighter;
+              font-size: 0.9rem;
+            }
+            @include hoverable;
+            &.selected {
+              background: $white-power;
+              // color: black;
+              .name {
+                color: $dark-grey;
+                font-weight: bolder;
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+      .proper-container {
+        display: grid;
+        align-content: center;
+        grid-gap: 1.1vw;
+        grid-template-columns: 20vw 3rem 3rem;
+        min-width: 20vw;
+        height: 3rem;
+        // background: $white-power;
+        & > * {
+          cursor: pointer;
+          @include hoverable;
+          color: $dark-grey;
+          background-color: $white-power;
+          height: 3rem;
+          display: grid;
+          align-items: center;
+          justify-content: center;
+        }
+        .left-arrow,
+        .right-arrow {
+          color: $dark-grey;
+          border-radius: 50%;
+        }
+        .chosen-item {
+          // transform: translateY(15%);
+          display: grid;
+          @include hoverable;
+          cursor: pointer;
+          grid-template-columns: 3vw 17vw 3vw;
+          border-radius: 2rem;
+          // z-index: 1;
+
+          // height: 2vh;
+          & > * {
+            color: $dark-grey;
+            font-weight: bold;
+            font-size: 0.9rem;
+          }
+          .icon {
+            transform: translateX(-20%);
+          }
+        }
+      }
+      .element-selected {
+        @include hoverable;
+        // border: 1px red solid;
+        text-align: center;
+        display: grid;
+        font-weight: bold;
+        background-color: $dark-grey;
+        color: $white-power;
+        align-items: center;
+        z-index: 9;
+        cursor: pointer;
+
+        &.selected {
+          background-color: $white-power;
+          & > * {
+            color: $dark-grey;
+          }
+        }
+      }
     }
     & > * {
       // border: orange 2px solid;
@@ -426,115 +558,6 @@ export default defineComponent({
       opacity: 0.4;
       filter: brightness(190%);
     }
-    .element-container {
-      width: 100%;
-      height: 100%;
-      @include grid-center;
-      align-content: end;
-      display: grid;
-      justify-content: center;
-      z-index: 999;
-
-      .expanded {
-        display: grid;
-        width: 25vw;
-        // grid-gap: 2rem;
-        .expander {
-          display: grid;
-          grid-template-rows: repeat(auto-fit, 2fr);
-          grid-gap: none;
-          align-items: center;
-          background: $light-grey;
-          overflow-y: auto;
-          .item {
-            display: grid;
-            min-height: 4vh;
-            // border: 2px $light-grey solid;
-            border-bottom: 2px $light-grey solid;
-            cursor: pointer;
-            align-content: center;
-            color: $golden-solution;
-            font-weight: bold;
-            font-size: 0.9rem;
-            grid-template-columns: 1vw 20vw 4vw;
-            .title {
-              color: $dark-grey;
-              font-weight: bold;
-              font-size: 0.9rem;
-            }
-            @include hoverable;
-            &.selected {
-              background: $golden-solution;
-              color: $white-power;
-              .title {
-                color: $dark-grey;
-                font-weight: bold;
-                font-size: 0.9rem;
-              }
-            }
-          }
-        }
-      }
-      .proper-container {
-        display: grid;
-        align-content: center;
-        grid-gap: 1.1vw;
-        grid-template-columns: 5vw 25vw 5vw;
-        min-width: 20vw;
-        height: 4vh;
-        // background: $white-power;
-        & > * {
-          cursor: pointer;
-          @include hoverable;
-          color: $dark-grey;
-          background-color: $white-power;
-          height: 4vh;
-          display: grid;
-          align-items: center;
-          justify-content: center;
-        }
-        .left-arrow,
-        .right-arrow {
-          color: $dark-grey;
-        }
-        .chosen-item {
-          // transform: translateY(15%);
-          display: grid;
-          @include hoverable;
-          cursor: pointer;
-          grid-template-columns: 1vw 20vw 4vw;
-
-          // height: 2vh;
-          & > * {
-            color: $dark-grey;
-            font-weight: bold;
-            font-size: 0.9rem;
-          }
-          .icon {
-            transform: translateY(-5%);
-          }
-        }
-      }
-      .element-selected {
-        @include hoverable;
-        // border: 1px red solid;
-        text-align: center;
-        display: grid;
-        font-weight: bold;
-        background-color: $dark-grey;
-        color: $golden-solution;
-        align-items: center;
-        z-index: 9;
-        cursor: pointer;
-
-        &.selected {
-          background-color: $golden-solution;
-          & > * {
-            color: $dark-grey;
-          }
-        }
-      }
-    }
   }
 }
 @media screen and (max-width: 1000px) {
@@ -551,61 +574,77 @@ export default defineComponent({
       //   width: 50%;
       //   height: 50%;
       // }
-      .element-container {
-        .expanded {
-          width: 50vw;
-
-          // border-bottom: none;
-          .expander {
-            .item {
-              border-bottom: 0.5px $light-grey solid;
-
-              overflow-x: hidden;
-              &.selected {
-                .title {
-                  font-size: 1rem;
-                }
-              }
-              .title {
-                width: 40vw;
-                font-size: 1rem;
-                transform: translateX(2vw);
-              }
-            }
-          }
-        }
-        .proper-container {
-          grid-template-columns: 10vw 50vw 10vw;
-          grid-gap: 5vw;
-          .chosen-item {
-            grid-template-columns: 1vw 40vw 5vw;
-            .item-name {
-              // transform: translateX(-6%);
-              font-size: 1rem;
-              width: 40vw;
-            }
-          }
-        }
-      }
     }
     .left-full {
-      grid-template-rows: 1vh 12vh 25vh 2vh;
-      margin-top: 5vh;
+      grid-template-rows: 1vh 8vh 28vh 2vh;
+      margin-top: 50px;
       .description {
-        margin-left: 1rem;
+        margin-left: 1.3rem;
         text-align: center;
         font-size: 0.8rem;
 
         // align-self: center;
       }
       .title {
+        transform: translateY(-50%);
         justify-items: center;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-left: 0;
       }
       .line {
         display: none;
+      }
+      .element-container {
+        .expanded {
+          width: 50vw;
+          transform: translateY(-10px);
+
+          // border-bottom: none;
+          .expander {
+            transform: translateY(-12%) translateX(12%);
+            .item {
+              border-bottom: 0.5px $light-grey solid;
+              padding-left: 20px;
+              overflow-x: hidden;
+              &.selected {
+                .name {
+                  font-size: 0.8rem;
+                }
+              }
+              .name {
+                width: 40vw;
+                font-size: 0.8rem;
+                transform: translateX(2vw);
+              }
+            }
+          }
+        }
+        .proper-container {
+          transform: translateX(9%) translateY(-50px);
+          // margin-bottom: 0.5rem;
+
+          grid-template-columns: 50vw 3rem 3rem;
+          position: fixed;
+
+          grid-gap: 2vw;
+          .left-arrow,
+          .right-arrow,
+          .chosen-item {
+            height: 3rem;
+          }
+          .chosen-item {
+            grid-template-columns: 3vw 37vw 5vw;
+            .item-name {
+              // transform: translateX(-6%);
+              font-size: 0.8rem;
+              width: 40vw;
+            }
+            .icon {
+              transform: translateY(5%);
+            }
+          }
+        }
       }
     }
   }
@@ -624,23 +663,46 @@ export default defineComponent({
       //   width: 50%;
       //   height: 50%;
       // }
+    }
+    .left-full {
+      grid-template-rows: 1vh 6vh 30vh 2vh;
+      margin-top: 50px;
+      .description {
+        margin-left: 1.3rem;
+        text-align: center;
+        font-size: 0.8rem;
+        margin-bottom: 1.1rem;
+
+        // align-self: center;
+      }
+      .title {
+        transform: translateY(-50%);
+        justify-items: center;
+        text-align: center;
+        font-size: 2rem;
+        margin-left: 0;
+      }
+      .line {
+        display: none;
+      }
       .element-container {
-        transform: translateY(-5%);
         .expanded {
           width: 50vw;
+          transform: translateY(-2%);
 
           // border-bottom: none;
           .expander {
+            transform: translateY(-7%) translateX(12.5%);
             .item {
               border-bottom: 0.5px $light-grey solid;
-
+              padding-left: 15px;
               overflow-x: hidden;
               &.selected {
-                .title {
+                .name {
                   font-size: 0.8rem;
                 }
               }
-              .title {
+              .name {
                 width: 40vw;
                 font-size: 0.8rem;
                 transform: translateX(2vw);
@@ -649,36 +711,30 @@ export default defineComponent({
           }
         }
         .proper-container {
-          grid-template-columns: 10vw 50vw 10vw;
-          grid-gap: 5vw;
+          transform: translateX(9%) translateY(-20%);
+          // margin-bottom: 0.5rem;
+
+          grid-template-columns: 50vw 3rem 3rem;
+          position: fixed;
+
+          grid-gap: 2vw;
+          .left-arrow,
+          .right-arrow,
           .chosen-item {
-            grid-template-columns: 1vw 40vw 5vw;
+            height: 3rem;
+          }
+          .chosen-item {
+            grid-template-columns: 3vw 37vw 5vw;
             .item-name {
               // transform: translateX(-6%);
               font-size: 0.8rem;
               width: 40vw;
-              text-overflow: ellipsis;
+            }
+            .icon {
+              transform: translateY(5%);
             }
           }
         }
-      }
-    }
-    .left-full {
-      margin-top: 5vh;
-      // width: 80vw;
-      .blank {
-        display: none;
-      }
-      justify-items: center;
-      .description {
-        transform: translateY(-40%);
-        font-weight: bold;
-      }
-      .title {
-        display: none;
-      }
-      .line {
-        display: none;
       }
     }
   }

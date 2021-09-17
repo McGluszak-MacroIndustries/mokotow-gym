@@ -157,9 +157,9 @@ export default defineComponent({
 .navbar {
   margin-left: 10vw;
   margin-right: 10vw;
-
   display: grid;
   height: 5rem;
+
   & > * {
     text-align: center;
     margin-top: 2vh;
@@ -171,6 +171,7 @@ export default defineComponent({
     align-items: center;
     z-index: 1;
     padding-right: 2vw;
+
     .items {
       display: grid;
       grid-auto-flow: column;
@@ -180,11 +181,11 @@ export default defineComponent({
         @include hoverable;
         // padding-top: 0.5rem;
         cursor: pointer;
-        height: 3vh;
+        height: 5vh;
         width: 6vw;
         &.selected {
           // padding-bottom: 2rem;
-          border-bottom: 4px $golden-solution solid;
+          border-bottom: 4px $white-power solid;
         }
         //   height: 5rem;
       }
