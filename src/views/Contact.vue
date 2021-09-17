@@ -6,7 +6,7 @@
     <template v-slot:left-side>
       <div class="menu">
         <div class="info">
-          <div class="name">MOKOTOWSKI GYM</div>
+          <div class="name">Mokotowski Gym</div>
           <div class="address">
             <!-- <div>kod-pocztowy</div> -->
             <div>{{ currentAddress[0] }}</div>

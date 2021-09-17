@@ -376,6 +376,7 @@ export default defineComponent({
   text-align: left;
   white-space: pre-line;
   background-color: $dark-grey;
+  overflow-x: hidden;
 
   .left-full {
     transition: opacity ease 2s;
@@ -425,6 +426,8 @@ export default defineComponent({
       .expanded {
         display: grid;
         width: 20vw;
+        align-items: flex-end;
+        align-self: flex-end;
 
         // grid-gap: 2rem;
         .expander {
@@ -433,8 +436,10 @@ export default defineComponent({
           grid-gap: none;
           border-radius: 2rem;
           overflow-x: hidden;
+          align-items: flex-end;
+          align-self: flex-end;
 
-          align-items: center;
+          // align-items: center;
           background: $light-grey;
           overflow-y: auto;
           .item {
@@ -482,7 +487,7 @@ export default defineComponent({
           @include hoverable;
           color: $dark-grey;
           background-color: $white-power;
-          height: 4vh;
+          height: 3rem;
           display: grid;
           align-items: center;
           justify-content: center;
@@ -572,7 +577,7 @@ export default defineComponent({
       grid-template-rows: 1vh 8vh 28vh 2vh;
       margin-top: 50px;
       .description {
-        margin-left: 1rem;
+        margin-left: 1.3rem;
         text-align: center;
         font-size: 0.8rem;
 
@@ -591,7 +596,7 @@ export default defineComponent({
       .element-container {
         .expanded {
           width: 50vw;
-          transform: translateY(5%);
+          transform: translateY(-10px);
 
           // border-bottom: none;
           .expander {
@@ -614,7 +619,7 @@ export default defineComponent({
           }
         }
         .proper-container {
-          transform: translateX(9%) translateY(7%);
+          transform: translateX(9%) translateY(-50px);
           // margin-bottom: 0.5rem;
 
           grid-template-columns: 50vw 3rem 3rem;
@@ -661,7 +666,7 @@ export default defineComponent({
       grid-template-rows: 1vh 6vh 30vh 2vh;
       margin-top: 50px;
       .description {
-        margin-left: 1rem;
+        margin-left: 1.3rem;
         text-align: center;
         font-size: 0.8rem;
         margin-bottom: 1.1rem;
