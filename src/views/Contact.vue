@@ -1,5 +1,8 @@
 <template>
-  <WindowTemplate :items="currentItems" :key="currentItems">
+  <WindowTemplate :items="currentItems" :key="currentItems" id="window">
+    <template v-slot:slot-fix>
+      <div class="title">Kontakt</div>
+    </template>
     <template v-slot:left-side>
       <div class="menu">
         <div class="info">
@@ -24,6 +27,9 @@
       </div>
       <!-- <div></div>
       <div></div> -->
+    </template>
+    <template v-slot:menu-nav>
+      <div></div>
     </template>
     <template v-slot:right-full>
       <GoogleMap
@@ -59,7 +65,7 @@ export default defineComponent({
     const items: Array<Item> = [
       {
         name: "ZNAJDŹ NAS",
-        title: "ZNAJDŹ NAS",
+        title: "Kontakt",
         description: "",
         src: "",
       },
@@ -102,15 +108,21 @@ export default defineComponent({
 <style scoped lang="scss">
 @import "@/styles/main";
 button {
-  background-color: $golden-solution;
+  background-color: $dark-grey;
   @include hoverable;
   cursor: pointer;
-  color: $dark-grey;
+  color: $white-power;
   // border-radius: 2rem;
-  border: none;
+  border: 3px solid $white-power;
+  border-radius: 2rem;
   width: 10vw;
   height: 5vh;
 }
+
+.title {
+  // padding-top: 10vh;
+}
+
 .map {
   // width: 100%;
   // height: 100%;
@@ -119,42 +131,54 @@ button {
   filter: brightness(60%);
 }
 
-.info {
-  display: grid;
-  grid-template-rows: 8vh 8vh 5vh;
+.menu {
+  // height: 40vh;
+  // padding-top: 2rem;
+  .info {
+    display: grid;
+    grid-template-rows: 7vh 8vh 5vh;
 
-  .name {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  & > * {
-    display: grid;
-  }
-  .address {
-    // grid-gap: 0.1rem;
-  }
-  .media-menu {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    justify-content: flex-start;
-    .icon {
-      @include hoverable;
-      width: 4vw;
+    .name {
+      font-size: 2rem;
+      // font-weight: lighter;
+    }
+    & > * {
+      display: grid;
+    }
+    .address {
+      // grid-gap: 0.1rem;
+    }
+    .media-menu {
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      justify-content: flex-start;
+      .icon {
+        @include hoverable;
+        width: 4vw;
+      }
     }
   }
 }
 @media screen and (max-width: 1000px) {
+  button {
+    font-size: 0.7rem;
+    width: 30vw;
+    // height: 20px;
+    // width: 2vw;
+  }
   .map {
     width: 100vw;
-    height: 60vh;
+    height: 55vh;
   }
   .menu {
     transform: translateX(2%);
+    // padding-top: -20%;
+
     .info {
       // transform: translateX();
-      grid-template-rows: 5vh 5vh 5vh;
-      transform: translateY(-10%);
+      grid-template-rows: 6vh 9vh 5vh;
+      // transform: translateY(10%);
       .name {
         text-align: center;
         font-size: 2rem;
@@ -165,14 +189,27 @@ button {
       }
     }
   }
-  button {
-    // transform: translateX(5%);
-    width: 60vw;
-    height: 5vh;
-  }
+  // button {
+  //   // transform: translateX(5%);
+  //   width: 60vw;
+  //   height: 5vh;
+  // }
 }
 
 @media screen and (max-width: 1200px) {
+  button {
+    font-size: 0.65rem;
+  }
+  .info {
+    .name {
+      font-size: 2.5rem;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  button {
+    font-size: 0.6rem;
+  }
   .info {
     .name {
       font-size: 2.5rem;

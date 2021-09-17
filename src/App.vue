@@ -102,9 +102,9 @@ export default defineComponent({
 
 .layout {
   display: grid;
-  grid-template-rows: 80vh 20vh;
+  grid-template-rows: 80vh 25vh;
   transform: translateY(-10%);
-  z-index: 0;
+  z-index: 55;
 }
 .fade-enter {
   opacity: 0;

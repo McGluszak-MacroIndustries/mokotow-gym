@@ -39,6 +39,21 @@ export const teamItems: Array<Item> = [
     -power pump
     -modelowanie sylwetki dla mężczyzn
     -zdrowe plecy
+    -treningi personalne
+    
+    Sport zacząłem uprawiać w wieku 9 lat, kiedy to mama zaprowadziło mnie na judo i szermierkę. Jako nastolatek zająłem się parkourem i treningiem na siłowni.
+    Od sześciu lat zawodowo pracuję jako trener personalny. Szczególny nacisk kładę na staranność i dokładność w wykonywaniu ćwiczeń, a także kompleksową mobilizację i rozciągnięcie po treningu. Moją specjalizacją jest modelowanie sylwetki, mogę pochwalić się licznymi spektakularnymi przemianami klientów.
+
+    Po godzinach zajmuję się podróżowaniem, modelingiem, kuchnią i pomocą dla zwierząt (jestem wolontariuszem w schronisku)
+    
+    
+
+    Prowadzone zajęcia:
+    
+    -fitness dla kobiet
+    -power pump
+    -modelowanie sylwetki dla mężczyzn
+    -zdrowe plecy
     -treningi personalne`,
     src: "2x.jpg",
   },
@@ -192,19 +207,19 @@ export const teamItems: Array<Item> = [
 export const aboutUsItems: Array<Item> = [
   {
     name: "about-us",
-    title: "TU POWSTAJE MOKOTÓW GYM",
+    title: "Tu powstaje MokotowskiGym",
     description: "Najlepszy gym w Warszawie",
     src: "baner_01.jpg",
   },
   {
     name: "about-us",
-    title: "TU POWSTAJE MOKOTÓW GYM",
+    title: "Tu powstaje MokotowskiGym",
     description: "Ale to już chyba wspominałem",
     src: "baner_02.jpg",
   },
   {
     name: "about-us",
-    title: "TU POWSTAJE MOKOTÓW GYM",
+    title: "Tu powstaje MokotowskiGym",
     description: "Na sucho to i trawa nie urośnie",
     src: "baner_03.jpg",
   },
