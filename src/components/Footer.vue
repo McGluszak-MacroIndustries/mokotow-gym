@@ -22,9 +22,21 @@
     <div class="info">
       <div class="copyrights">&copy; 2021 Mokotowski-Gym</div>
       <div class="addresses">
+        <div>ul. Białej Floty 2, 02-654 Warszawa</div>
+        <div>tel: +48696168867</div>
         <div>www.mokotowskigym.com</div>
         <div>office@mokotowskigym.com</div>
       </div>
+    </div>
+    <div class="company-data">
+      <div>McGluszak MacroIndustries Sp.z o.o</div>
+      <div>ul. Warszawska 6m32, 15-063 Białystok</div>
+      <div>NIP:9662116841</div>
+      <div>KRS:0000716731</div>
+      <div>REGON:368770856</div>
+
+      <div></div>
+      <div></div>
     </div>
   </div>
 </template>
@@ -71,8 +83,24 @@ export default defineComponent({
 .Footer {
   display: grid;
   grid-gap: 4rem;
-  grid-template-rows: 5vh 1vh;
+  grid-template-rows: 5vh 1vh 3vh;
   background: $white-power;
+  .company-data {
+    transform: translateY(-3vh);
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: right;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    & > * {
+      color: $light-grey;
+      font-size: 0.6rem;
+
+      // margin-right: 1rem;
+      // justify-self: ;
+    }
+  }
   .second-navbar {
     display: grid;
     grid-template-columns: 60vw 40vw;
@@ -119,10 +147,14 @@ export default defineComponent({
       color: $dark-grey;
       padding-top: 1vh;
     }
+    .copyrights {
+      font-size: 0.9rem;
+    }
     .addresses {
       display: grid;
       grid-auto-flow: column;
       justify-content: right;
+      font-size: 0.7rem;
       grid-gap: 2vw;
       & > * {
         color: $dark-grey;

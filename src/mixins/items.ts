@@ -160,9 +160,8 @@ export const teamItems: Array<Item> = [
     name: "team",
     title: "TOMEK RYTEL",
     description: `Jestem posiadaczem czarnego pasa w BJJ (brazylijskim jiu jitsu), członkiem kadry narodowej grapplingu i kilkukrotnym mistrzem polski ADCC. Umiejętności przez wiele lat szlifowałem w Polsce, Abu Dhabi i Brazylii. Aktualnie pozostaję czynnym zawodnikiem i trenerem.
-
+    
     Jestem człowiekiem rodzinnym. Moją drugą wielką pasją poza sportem jest sushi.
-
 
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
@@ -189,20 +188,27 @@ export const teamItems: Array<Item> = [
 export const aboutUsItems: Array<Item> = [
   {
     name: "about-us",
-    title: "Tu powstaje MokotowskiGym",
-    description: "Najlepszy gym w Warszawie",
+    title: "Nowa jakość na Mokotowie",
+    description: `Mokotowski Gym to nowopowstały klub fitness przy ul. Białej Floty 2 (Marina Mokotów II) w Warszawie.
+    
+    Oferujemy szeroki wybór zajęć w kameralnych grupach, treningi indywidualne i możliwość samodzielnych ćwiczeń.`,
     src: "baner_01.jpg",
   },
   {
     name: "about-us",
-    title: "Tu powstaje MokotowskiGym",
-    description: "Ale to już chyba wspominałem",
+    title: "Miejsce dla deweloperów",
+    description: `Mokotowski Gym to projekt osób od lat związanych z branżą IT.
+
+    Naszą ambicją jest stworzenie nie tylko doskonałego klubu sportowego, co również miejsca networkingu i integracji.
+    Deweloperzy mogą wreszcie rozstrzygnąć kwestię wyższości C++ nad Javą poprzez przyjacielską wymianę argumentów na ringu`,
     src: "baner_02.jpg",
   },
   {
     name: "about-us",
-    title: "Tu powstaje MokotowskiGym",
-    description: "Na sucho to i trawa nie urośnie",
+    title: "Wyselekcjonowana kadra pracownicza",
+    description: `Szczególną uwagę zwracamy na czynnik ludzki.
+    
+    Gwarantujemy, że nasi trenerzy są nie tylko świetnymi specjalistami we własnych dziedzinach, co także ciekawymi, otwartymi ludźmi, którzy bez trudu zarażą Cię pasją do sportu.`,
     src: "baner_03.jpg",
   },
 ];

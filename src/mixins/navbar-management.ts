@@ -33,8 +33,8 @@ export const navbarElements: NavBarElement[] = [
     routerName: "team",
   },
   {
-    frontName: "GALERIA",
-    routerName: "gallery",
+    frontName: "CENNIK",
+    routerName: "pricelist",
   },
   {
     frontName: "KONTAKT",
