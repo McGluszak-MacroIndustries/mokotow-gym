@@ -24,6 +24,10 @@
         </svg>
       </div>
       <div class="expanded-menu" v-else @click="clicked += 1">
+        <div class="mobile-buttons">
+          <div class="x-">X</div>
+          <div class="lang-button">PL</div>
+        </div>
         <div class="mobile-items">
           <div
             v-for="element in currentNavbarElements"
@@ -36,22 +40,24 @@
         </div>
       </div>
     </div>
+    <div class="lang">
+      <div class="language-selection">
+        <div
+          @click="changeLanguage()"
+          class="lang-circle"
+          :key="chosenLanguage"
+        >
+          {{ chosenLanguage }}
+        </div>
+        <!-- <div @click="changeLanguage(true)" class="lang-circle">ENG</div> -->
+      </div>
+    </div>
     <div class="logo">
       <img src="../img/layout/logo@2x.png" alt="MOKOTÓW GYM" />
       <!-- <div class="language-selection">
         <div class="">PL</div>
         <div>ANG</div>
       </div> -->
-    </div>
-    <div class="lang">
-      <div class="language-selection">
-        <div @click="changeLanguage(false)" class="polish">
-          <img src="../assets/flags/pl.png" alt="" />
-        </div>
-        <div @click="changeLanguage(true)" class="english">
-          <img src="../assets/flags/uk.png" alt="" />
-        </div>
-      </div>
     </div>
   </div>
 </template>
@@ -82,6 +88,9 @@ export default defineComponent({
   emits: ["update-current-element"],
 
   setup(props, { emit }) {
+    const chosenLanguage = computed(() => {
+      return isEnglishLanguageOn.value ? "ENG" : "PL";
+    });
     // const currentNavbarElements = ref<Array<NavBarElement>>(navbarElements);
 
     // const isEnglishLanguageOn = ref<boolean>(false);
@@ -135,8 +144,8 @@ export default defineComponent({
       console.log("aktywny element to: ", activeButton.value.routerName);
       console.log("kliknięty to: ", element.routerName);
     }
-    function changeLanguage(option: boolean) {
-      isEnglishLanguageOn.value = option;
+    function changeLanguage() {
+      isEnglishLanguageOn.value = !isEnglishLanguageOn.value;
     }
     return {
       clicked,
@@ -147,6 +156,7 @@ export default defineComponent({
       englishNavbarElements,
       moveToPageAndChangeActiveButton,
       changeLanguage,
+      chosenLanguage,
     };
   },
 });
@@ -154,9 +164,10 @@ export default defineComponent({
 
 <style scoped lang="scss">
 @import "@/styles/main";
+
 .navbar {
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 3vw;
+  // margin-right: 10vw;
   display: grid;
   height: 5rem;
 
@@ -164,7 +175,7 @@ export default defineComponent({
     text-align: center;
     margin-top: 2vh;
   }
-  grid-template-columns: 40vw 42.5vw 5vw;
+  grid-template-columns: 40vw 5vw 75vw;
   font-weight: bold;
   .options {
     display: grid;
@@ -179,10 +190,11 @@ export default defineComponent({
 
       .navbar-item {
         @include hoverable;
+        font-size: 1rem;
         // padding-top: 0.5rem;
         cursor: pointer;
         height: 5vh;
-        width: 6vw;
+        width: 4vw;
         &.selected {
           // padding-bottom: 2rem;
           border-bottom: 4px $white-power solid;
@@ -193,36 +205,67 @@ export default defineComponent({
   }
   .navbar-mobile {
     z-index: 1;
+    // width: 140rem;
+    // height: 100vh;
 
     .burger-menu {
       @include hoverable;
     }
-    .mobile-items {
+    .expanded-menu {
       display: grid;
-      grid-auto-flow: row;
-      padding-top: 30vh;
-      // justify-content: start;
-      align-content: flex-start;
-      grid-gap: 3vh;
-      font-size: 1.5rem;
-      z-index: 99;
-
-      transform: translateX(-10%) translateY(-10%);
+      grid-template-rows: 5vh 90vh;
       width: 100vw;
-      height: 120vh;
+      // padding-left: 0;
+      height: 100vh;
+      transform: translateY(-10%);
       background: $dark-grey;
 
-      overflow: hidden;
+      padding-top: 0;
+      .mobile-buttons {
+        display: grid;
+        grid-template-columns: 6rem 6rem;
+        padding-left: 5rem;
+        justify-content: flex-start;
+        z-index: 99;
+        transform: translateY(190%);
+        & > * {
+          display: grid;
+          @include hoverable;
+          background: $white-power;
+          color: $dark-grey;
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .mobile-items {
+        display: grid;
+        grid-auto-flow: row;
 
-      .item {
-        @include hoverable;
-        z-index: 20;
+        padding-top: 30vh;
+        // justify-content: start;
+        align-content: flex-start;
+        grid-gap: 3vh;
+        font-size: 1.5rem;
+        z-index: 99;
+
+        width: 100vw;
+        height: 120vh;
+
+        overflow: hidden;
+
+        .item {
+          @include hoverable;
+          z-index: 20;
+        }
       }
     }
   }
   .logo {
     @include hoverable;
-    padding-left: 5vw;
+    padding-left: 10vw;
 
     cursor: pointer;
     z-index: 1;
@@ -232,9 +275,24 @@ export default defineComponent({
   }
   .language-selection {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    // grid-template-columns: 1fr 1fr;
+
     column-gap: 1rem;
     height: 1rem;
+
+    .lang-circle {
+      display: flex;
+      transform: translateY(7%);
+      background-color: $white-power;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      text-align: center;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      color: $dark-grey;
+    }
     //
     & > * {
       @include hoverable;
@@ -253,8 +311,18 @@ svg {
   fill: $white-power;
 }
 @media screen and (max-width: 1200px) {
+  .navbar {
+    margin-left: 0;
+    margin-top: 0;
+  }
   .items {
     font-size: 0.75rem;
+  }
+  .logo {
+    transform: translateX(40%);
+  }
+  .lang {
+    display: none;
   }
 }
 

@@ -9,7 +9,7 @@ import { offerItems, isEnglishLanguageOn } from "@/mixins/items";
 import { offerItemsEnglish } from "@/mixins/englishItems";
 
 export default defineComponent({
-  name: "Gallery",
+  name: "PriceList",
   props: {},
   components: {
     WindowTemplate,

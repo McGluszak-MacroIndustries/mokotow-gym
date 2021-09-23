@@ -9,8 +9,8 @@
       <div class="menu">
         <div></div>
         <div class="buttons">
-          <button @click="download()">POBIERZ</button>
-          <button @click="goToReservations()">ZAREZERWUJ</button>
+          <button @click="download()">{{ currentButtons[0] }}</button>
+          <button @click="goToReservations()">{{ currentButtons[1] }}</button>
         </div>
       </div>
     </template>
@@ -30,6 +30,12 @@ export default defineComponent({
   setup() {
     const currentItems = computed(() => {
       return isEnglishLanguageOn.value ? scheduleItemsEnglish : scheduleItems;
+    });
+
+    const currentButtons = computed(() => {
+      return isEnglishLanguageOn.value
+        ? ["DOWNLOAD", "MAKE RESERVATION"]
+        : ["POBIERZ", "ZAREZERWUJ"];
     });
 
     const selected = ref<Item>(currentItems.value[0]);
@@ -64,6 +70,7 @@ export default defineComponent({
       download,
       goToReservations,
       currentItems,
+      currentButtons,
     };
   },
 });

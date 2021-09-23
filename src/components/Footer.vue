@@ -1,6 +1,6 @@
 <template>
   <div class="Footer">
-    <div class="second-navbar">
+    <!-- <div class="second-navbar">
       <div class="second-menu">
         <div
           class="navbar-item"
@@ -18,7 +18,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="info">
       <div class="copyrights">&copy; 2021 Mokotowski-Gym</div>
       <div class="addresses">
@@ -26,6 +26,13 @@
         <div>tel: +48696168867</div>
         <div>www.mokotowskigym.com</div>
         <div>office@mokotowskigym.com</div>
+      </div>
+      <div class="media-menu">
+        <div v-for="icon in icons" :key="icon" class="icon">
+          <a :href="icon.iconHref" target="blank">
+            <img :src="getIconUrl(icon.iconName)" alt="" />
+          </a>
+        </div>
       </div>
     </div>
     <div class="company-data">
@@ -82,9 +89,14 @@ export default defineComponent({
 @import "@/styles/main";
 .Footer {
   display: grid;
-  grid-gap: 4rem;
-  grid-template-rows: 5vh 1vh 3vh;
+  grid-gap: 3rem;
+  grid-template-rows: 5vh 3vh;
   background: $white-power;
+  justify-content: stretch;
+  & > * {
+    align-items: flex-end;
+    padding-bottom: 1rem;
+  }
   .company-data {
     transform: translateY(-3vh);
     display: grid;
@@ -101,48 +113,48 @@ export default defineComponent({
       // justify-self: ;
     }
   }
-  .second-navbar {
-    display: grid;
-    grid-template-columns: 60vw 40vw;
+  // .second-navbar {
+  //   display: grid;
+  //   grid-template-columns: 60vw 40vw;
 
-    // border-bottom: black 2px solid;
-    & > * {
-      // border: red 2px solid;
-      padding-top: 5vh;
-    }
-    .second-menu {
-      margin-left: 10vw;
+  //   // border-bottom: black 2px solid;
+  //   & > * {
+  //     // border: red 2px solid;
+  //     padding-top: 5vh;
+  //   }
+  //   .second-menu {
+  //     margin-left: 10vw;
 
-      display: grid;
-      grid-auto-flow: column;
-      align-items: flex-start;
-      color: $dark-grey;
-      .navbar-item {
-        @include hoverable;
-        display: grid;
-        justify-items: start;
-        color: $dark-grey;
-        // font-weight: bold;
-      }
-    }
-    .media-menu {
-      display: grid;
-      grid-auto-flow: column;
-      justify-content: center;
-      grid-gap: 1vw;
-      .icon {
-        @include hoverable;
+  //     display: grid;
+  //     grid-auto-flow: column;
+  //     align-items: flex-start;
+  //     color: $dark-grey;
+  //     .navbar-item {
+  //       @include hoverable;
+  //       display: grid;
+  //       justify-items: start;
+  //       color: $dark-grey;
+  //       // font-weight: bold;
+  //     }
+  //   }
+  //   .media-menu {
+  //     display: grid;
+  //     grid-auto-flow: column;
+  //     justify-content: center;
+  //     grid-gap: 1vw;
+  //     .icon {
+  //       @include hoverable;
 
-        height: 3vh;
-      }
-    }
-  }
+  //       height: 3vh;
+  //     }
+  //   }
+  // }
   .info {
     margin-left: 10vw;
     margin-right: 10vw;
     display: grid;
     grid-auto-flow: column;
-    border-top: $dark-grey 1px solid;
+    border-bottom: $dark-grey 1px solid;
     & > * {
       color: $dark-grey;
       padding-top: 1vh;
@@ -158,6 +170,21 @@ export default defineComponent({
       grid-gap: 2vw;
       & > * {
         color: $dark-grey;
+      }
+    }
+    .media-menu {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: center;
+      align-content: center;
+      align-self: center;
+      // align-content: center;
+      grid-gap: 1vw;
+      .icon {
+        @include hoverable;
+        align-content: center;
+        height: 3vh;
+        transform: translateY(20%);
       }
     }
   }
