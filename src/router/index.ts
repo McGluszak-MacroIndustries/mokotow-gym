@@ -3,7 +3,7 @@ import Home from "../views/Home.vue";
 import Offer from "../views/Offer.vue";
 import Schedule from "../views/Schedule.vue";
 import Team from "../views/Team.vue";
-import Gallery from "../views/Gallery.vue";
+import Gallery from "../views/PriceList.vue";
 import Contact from "../views/Contact.vue";
 
 const routes: Array<RouteRecordRaw> = [
@@ -39,13 +39,13 @@ const routes: Array<RouteRecordRaw> = [
       import(/* webpackChunkName: "about" */ "../views/Team.vue"),
   },
   {
-    path: "/gallery",
-    name: "gallery",
+    path: "/pricelist",
+    name: "pricelist",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Gallery.vue"),
+      import(/* webpackChunkName: "about" */ "../views/PriceList.vue"),
   },
   {
     path: "/contact",
@@ -55,6 +55,15 @@ const routes: Array<RouteRecordRaw> = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Contact.vue"),
+  },
+  {
+    path: "/privacypolitics",
+    name: "privacypolitics",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/PrivacyPolitics.vue"),
   },
 ];
 

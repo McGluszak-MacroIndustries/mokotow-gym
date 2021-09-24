@@ -372,9 +372,9 @@ export default defineComponent({
   display: grid;
   grid-template-columns: 50vw 50vw;
   grid-template-areas: "leftfull rightfull";
-  height: 80vh;
-  text-align: justify;
-  text-indent: 10px;
+  height: 90vh;
+  text-align: left;
+  // text-indent: 10px;
   white-space: pre-line;
   background-color: $dark-grey;
   overflow-x: hidden;
@@ -382,7 +382,7 @@ export default defineComponent({
   .left-full {
     transition: opacity ease 2s;
     display: grid;
-    grid-template-rows: 1vh 14vh 40vh 9vh;
+    grid-template-rows: 5vh 20vh 45vh 4vh;
     grid-template-areas:
       "blank"
       "title"
@@ -396,6 +396,7 @@ export default defineComponent({
     }
     .description {
       margin-right: 1vw;
+      margin-bottom: 3vh;
       grid-area: description;
       // scrollbar-color: red;
 
@@ -410,7 +411,7 @@ export default defineComponent({
       align-content: center;
       justify-items: flex-start;
       font-weight: bold;
-      font-size: 2rem;
+      font-size: 4rem;
       grid-area: title;
     }
     .element-container {
@@ -541,7 +542,7 @@ export default defineComponent({
     }
     & > * {
       // border: orange 2px solid;
-      margin-left: 10vw;
+      margin-left: 3vw;
     }
   }
   .right {

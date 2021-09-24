@@ -1,11 +1,13 @@
 <template>
-  <Navbar
-    :currentNavbarElements="currentNavbarElements"
-    :currentNavbarElement="currentNavbarElement"
-    @update-current-element="onUpdateCurrentElement($event)"
-    class="x"
-    :key="currentNavbarElements"
-  />
+  <transition name="slide-fade" mode="out-in">
+    <Navbar
+      :currentNavbarElements="currentNavbarElements"
+      :currentNavbarElement="currentNavbarElement"
+      @update-current-element="onUpdateCurrentElement($event)"
+      class="x"
+      :key="currentNavbarElements"
+    />
+  </transition>
   <div class="layout">
     <router-view v-slot="{ Component }" class="view">
       <transition name="slide-fade" mode="out-in">
@@ -102,7 +104,7 @@ export default defineComponent({
 
 .layout {
   display: grid;
-  grid-template-rows: 80vh 25vh;
+  grid-template-rows: 90vh 15vh;
   transform: translateY(-10%);
   z-index: 55;
 }

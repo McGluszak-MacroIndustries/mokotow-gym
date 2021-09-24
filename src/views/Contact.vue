@@ -1,7 +1,7 @@
 <template>
   <WindowTemplate :items="currentItems" :key="currentItems" id="window">
     <template v-slot:slot-fix>
-      <div class="title">Kontakt</div>
+      <div class="title">{{ currentTitle }}</div>
     </template>
     <template v-slot:left-side>
       <div class="menu">
@@ -78,6 +78,9 @@ export default defineComponent({
     });
     const address = ["ulica Białej Floty 2", "SPRAWDŹ TRASĘ"];
     const engAddress = ["Białej Floty Street 2", "FIND US ON MAP"];
+    const currentTitle = computed(() => {
+      return isEnglishLanguageOn.value ? "Contact" : "Kontakt";
+    });
     const currentAddress = computed(() => {
       return isEnglishLanguageOn.value ? engAddress : address;
     });
@@ -92,6 +95,7 @@ export default defineComponent({
       a.click();
     }
     return {
+      currentTitle,
       getIconUrl,
       center,
       items,

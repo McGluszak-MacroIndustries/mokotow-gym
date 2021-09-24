@@ -1,6 +1,6 @@
 <template>
   <div class="Footer">
-    <div class="second-navbar">
+    <!-- <div class="second-navbar">
       <div class="second-menu">
         <div
           class="navbar-item"
@@ -18,12 +18,36 @@
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="info">
       <div class="copyrights">&copy; 2021 Mokotowski-Gym</div>
       <div class="addresses">
+        <div>ul. Białej Floty 2, 02-654 Warszawa</div>
+        <div>tel: +48696168867</div>
         <div>www.mokotowskigym.com</div>
         <div>office@mokotowskigym.com</div>
+      </div>
+      <div class="media-menu">
+        <div v-for="icon in icons" :key="icon" class="icon">
+          <a :href="icon.iconHref" target="blank">
+            <img :src="getIconUrl(icon.iconName)" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="lower-pannel">
+      <div class="privacy-politics" @click="moveToPrivacyPolitics()">
+        Polityka prywatności
+      </div>
+      <div class="company-data">
+        <div>McGluszak MacroIndustries Sp.z o.o</div>
+        <div>ul. Warszawska 6m32, 15-063 Białystok</div>
+        <div>NIP:9662116841</div>
+        <div>KRS:0000716731</div>
+        <div>REGON:368770856</div>
+
+        <div></div>
+        <div></div>
       </div>
     </div>
   </div>
@@ -54,11 +78,16 @@ export default defineComponent({
     function getIconUrl(iconUrl: string) {
       return require("../assets/media-small/" + iconUrl);
     }
+    function moveToPrivacyPolitics() {
+      const name = "privacypolitics";
+      router.push({ name });
+    }
 
     return {
       navbarElements,
       icons,
       moveToPage,
+      moveToPrivacyPolitics,
 
       getIconUrl,
     };
@@ -70,62 +99,114 @@ export default defineComponent({
 @import "@/styles/main";
 .Footer {
   display: grid;
-  grid-gap: 4rem;
-  grid-template-rows: 5vh 1vh;
+  grid-gap: 3rem;
+  grid-template-rows: 5vh 3vh;
   background: $white-power;
-  .second-navbar {
+  justify-content: stretch;
+  & > * {
+    align-items: flex-end;
+    padding-bottom: 1rem;
+  }
+  .lower-pannel {
     display: grid;
-    grid-template-columns: 60vw 40vw;
-
-    // border-bottom: black 2px solid;
-    & > * {
-      // border: red 2px solid;
-      padding-top: 5vh;
+    grid-template-columns: 20vw 70vw;
+    .privacy-politics {
+      @include hoverable;
+      transform: translateX(10vw) translateY(-2.8vh);
+      color: $light-grey;
+      font-size: 0.8rem;
     }
-    .second-menu {
-      margin-left: 10vw;
 
+    .company-data {
+      transform: translateY(-3vh);
       display: grid;
       grid-auto-flow: column;
-      align-items: flex-start;
+      justify-content: right;
+      // margin-left: 10vw;
+      // margin-right: 10vw;
+
+      & > * {
+        color: $light-grey;
+        font-size: 0.6rem;
+
+        // margin-right: 1rem;
+        // justify-self: ;
+      }
+    }
+  }
+
+  // .second-navbar {
+  //   display: grid;
+  //   grid-template-columns: 60vw 40vw;
+
+  //   // border-bottom: black 2px solid;
+  //   & > * {
+  //     // border: red 2px solid;
+  //     padding-top: 5vh;
+  //   }
+  //   .second-menu {
+  //     margin-left: 10vw;
+
+  //     display: grid;
+  //     grid-auto-flow: column;
+  //     align-items: flex-start;
+  //     color: $dark-grey;
+  //     .navbar-item {
+  //       @include hoverable;
+  //       display: grid;
+  //       justify-items: start;
+  //       color: $dark-grey;
+  //       // font-weight: bold;
+  //     }
+  //   }
+  //   .media-menu {
+  //     display: grid;
+  //     grid-auto-flow: column;
+  //     justify-content: center;
+  //     grid-gap: 1vw;
+  //     .icon {
+  //       @include hoverable;
+
+  //       height: 3vh;
+  //     }
+  //   }
+  // }
+  .info {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: grid;
+    grid-auto-flow: column;
+    border-bottom: $dark-grey 1px solid;
+    & > * {
       color: $dark-grey;
-      .navbar-item {
-        @include hoverable;
-        display: grid;
-        justify-items: start;
+      padding-top: 1vh;
+    }
+    .copyrights {
+      font-size: 0.9rem;
+    }
+    .addresses {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: right;
+      font-size: 0.7rem;
+      grid-gap: 2vw;
+      & > * {
         color: $dark-grey;
-        // font-weight: bold;
       }
     }
     .media-menu {
       display: grid;
       grid-auto-flow: column;
       justify-content: center;
+      align-content: center;
+      align-self: center;
+      // align-content: center;
       grid-gap: 1vw;
       .icon {
         @include hoverable;
-
+        align-content: center;
         height: 3vh;
-      }
-    }
-  }
-  .info {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    display: grid;
-    grid-auto-flow: column;
-    border-top: $dark-grey 1px solid;
-    & > * {
-      color: $dark-grey;
-      padding-top: 1vh;
-    }
-    .addresses {
-      display: grid;
-      grid-auto-flow: column;
-      justify-content: right;
-      grid-gap: 2vw;
-      & > * {
-        color: $dark-grey;
+        transform: translateY(20%);
       }
     }
   }
