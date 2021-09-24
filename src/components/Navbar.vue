@@ -16,23 +16,25 @@
       </div>
     </div>
     <div class="navbar-mobile" v-else>
-      <div class="burger-menu" v-if="clicked === 1" @click="clicked -= 1">
+      <div class="burger-menu" v-if="clicked" @click="clicked = false">
         <svg viewBox="0 0 100 80" width="40" height="40">
           <rect width="100" height="20"></rect>
           <rect y="30" width="100" height="20"></rect>
           <rect y="60" width="100" height="20"></rect>
         </svg>
       </div>
-      <div class="expanded-menu" v-else @click="clicked += 1">
+      <div class="expanded-menu" v-else>
         <div class="mobile-buttons">
-          <div class="x-">X</div>
-          <div class="lang-button">PL</div>
+          <div class="x-" @click="clicked = true">x</div>
+          <div class="lang-button" @click="changeLanguageInMobile()">
+            {{ chosenLanguage }}
+          </div>
         </div>
         <div class="mobile-items">
           <div
             v-for="element in currentNavbarElements"
             :key="element"
-            @click="moveToPageAndChangeActiveButton(element)"
+            @click="moveToPageAndChangeActiveButtonMobile(element)"
             class="item"
           >
             {{ element.frontName }}
@@ -101,7 +103,7 @@ export default defineComponent({
     const activeButton = ref<NavBarElement>(props.currentNavbarElements[0]);
 
     const isMobile = ref<number>(window.innerWidth < 1000 ? 1 : 0);
-    const clicked = ref<number>(1);
+    const clicked = ref<boolean>(true);
     const width = window.innerWidth;
 
     window.onresize = () => {
@@ -144,7 +146,27 @@ export default defineComponent({
       console.log("aktywny element to: ", activeButton.value.routerName);
       console.log("kliknięty to: ", element.routerName);
     }
+    function moveToPageAndChangeActiveButtonMobile(element: NavBarElement) {
+      if (isEqual(element, props.currentNavbarElement)) {
+        return;
+      }
+      const name: string = element.routerName;
+      router.push({ name });
+      console.log(name);
+
+      emit("update-current-element", element);
+
+      activeButton.value = element;
+
+      console.log("aktywny element to: ", activeButton.value.routerName);
+      console.log("kliknięty to: ", element.routerName);
+      clicked.value = true;
+    }
     function changeLanguage() {
+      // console.log("dupa");
+      isEnglishLanguageOn.value = !isEnglishLanguageOn.value;
+    }
+    function changeLanguageInMobile() {
       isEnglishLanguageOn.value = !isEnglishLanguageOn.value;
     }
     return {
@@ -155,7 +177,9 @@ export default defineComponent({
       navbarElements,
       englishNavbarElements,
       moveToPageAndChangeActiveButton,
+      moveToPageAndChangeActiveButtonMobile,
       changeLanguage,
+      changeLanguageInMobile,
       chosenLanguage,
     };
   },
@@ -226,15 +250,15 @@ export default defineComponent({
         grid-template-columns: 6rem 6rem;
         padding-left: 5rem;
         justify-content: flex-start;
-        z-index: 99;
-        transform: translateY(190%);
+        z-index: 110;
+        transform: translateY(200%);
         & > * {
           display: grid;
           @include hoverable;
           background: $white-power;
           color: $dark-grey;
-          width: 4rem;
-          height: 4rem;
+          width: 3rem;
+          height: 3rem;
           border-radius: 50%;
           align-items: center;
           justify-content: center;
@@ -244,11 +268,11 @@ export default defineComponent({
         display: grid;
         grid-auto-flow: row;
 
-        padding-top: 30vh;
+        padding-top: 25vh;
         // justify-content: start;
         align-content: flex-start;
         grid-gap: 3vh;
-        font-size: 1.5rem;
+        font-size: 4rem;
         z-index: 99;
 
         width: 100vw;

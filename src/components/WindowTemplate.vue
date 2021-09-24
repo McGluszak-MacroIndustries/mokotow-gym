@@ -382,7 +382,7 @@ export default defineComponent({
   .left-full {
     transition: opacity ease 2s;
     display: grid;
-    grid-template-rows: 5vh 20vh 40vh 4vh;
+    grid-template-rows: 5vh 20vh 45vh 4vh;
     grid-template-areas:
       "blank"
       "title"
@@ -396,6 +396,7 @@ export default defineComponent({
     }
     .description {
       margin-right: 1vw;
+      margin-bottom: 3vh;
       grid-area: description;
       // scrollbar-color: red;
 

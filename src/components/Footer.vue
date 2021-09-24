@@ -35,15 +35,20 @@
         </div>
       </div>
     </div>
-    <div class="company-data">
-      <div>McGluszak MacroIndustries Sp.z o.o</div>
-      <div>ul. Warszawska 6m32, 15-063 Białystok</div>
-      <div>NIP:9662116841</div>
-      <div>KRS:0000716731</div>
-      <div>REGON:368770856</div>
+    <div class="lower-pannel">
+      <div class="privacy-politics" @click="moveToPrivacyPolitics()">
+        Polityka prywatności
+      </div>
+      <div class="company-data">
+        <div>McGluszak MacroIndustries Sp.z o.o</div>
+        <div>ul. Warszawska 6m32, 15-063 Białystok</div>
+        <div>NIP:9662116841</div>
+        <div>KRS:0000716731</div>
+        <div>REGON:368770856</div>
 
-      <div></div>
-      <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   </div>
 </template>
@@ -73,11 +78,16 @@ export default defineComponent({
     function getIconUrl(iconUrl: string) {
       return require("../assets/media-small/" + iconUrl);
     }
+    function moveToPrivacyPolitics() {
+      const name = "privacypolitics";
+      router.push({ name });
+    }
 
     return {
       navbarElements,
       icons,
       moveToPage,
+      moveToPrivacyPolitics,
 
       getIconUrl,
     };
@@ -97,22 +107,34 @@ export default defineComponent({
     align-items: flex-end;
     padding-bottom: 1rem;
   }
-  .company-data {
-    transform: translateY(-3vh);
+  .lower-pannel {
     display: grid;
-    grid-auto-flow: column;
-    justify-content: right;
-    margin-left: 10vw;
-    margin-right: 10vw;
-
-    & > * {
+    grid-template-columns: 20vw 70vw;
+    .privacy-politics {
+      @include hoverable;
+      transform: translateX(10vw) translateY(-2.8vh);
       color: $light-grey;
-      font-size: 0.6rem;
+      font-size: 0.8rem;
+    }
 
-      // margin-right: 1rem;
-      // justify-self: ;
+    .company-data {
+      transform: translateY(-3vh);
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: right;
+      // margin-left: 10vw;
+      // margin-right: 10vw;
+
+      & > * {
+        color: $light-grey;
+        font-size: 0.6rem;
+
+        // margin-right: 1rem;
+        // justify-self: ;
+      }
     }
   }
+
   // .second-navbar {
   //   display: grid;
   //   grid-template-columns: 60vw 40vw;
