@@ -1,5 +1,6 @@
+/* eslint-disable */
 import { ref } from "vue";
-/* eslint-disable no-trailing-spaces */
+
 export type Item = {
   name: string;
   title: string;
@@ -883,7 +884,6 @@ export const priceListItems: Array<Item> = [
     
     Zakup karnetów i rezerwacje zajęć odbywają się przez stronę www (𝐝𝐨 𝐤𝐥𝐢𝐤𝐧𝐢𝐞̨𝐜𝐢𝐚 𝐩𝐨𝐧𝐢𝐳̇𝐞𝐣), można też kupić je na recepcji klubu. 
     Na zajęciach grupowych obowiązuje limit osób, co gwarantuje komfort ćwiczeń i bezpośredni kontakt z prowadzącym.
-    
 
     Treningi indywidualne są płatne bezpośrednio u prowadzących – na pierwszy trening można umówić się za pośrednictwem recepcji (+48 696 168 867).`,
     src: "pricelist.jpg",
