@@ -1,5 +1,9 @@
 <template>
-  <WindowTemplate :items="currentItems" :key="currentItems" />
+  <WindowTemplate :items="currentItems" :key="currentItems">
+    <template v-slot:menu-nav>
+      <div></div>
+    </template>
+  </WindowTemplate>
 </template>
 
 <script lang="ts">

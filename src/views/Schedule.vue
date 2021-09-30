@@ -44,7 +44,7 @@ export default defineComponent({
       selected.value = value;
     }
     function generateFileUrl() {
-      return `/schedules/${selected.value.src}`;
+      return `/schedules/grafik.pdf`;
     }
     function download() {
       const a = document.createElement("a");
@@ -55,9 +55,10 @@ export default defineComponent({
       document.body.removeChild(a);
     }
     function goToReservations() {
+      console.log("dupa");
       const a = document.createElement("a");
       a.target = "_blank";
-      a.href = "https://www.facebook.com/homokomando";
+      a.href = "https://mokotowskigym.perfectgym.com/Pgm/#/Login";
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -94,6 +95,7 @@ button {
   display: grid;
   grid-template-rows: 13vh 15vh;
   .buttons {
+    z-index: 99;
     display: grid;
     grid-auto-flow: column;
   }
@@ -102,6 +104,7 @@ button {
   .menu {
     // width: 100vw;
     // transform: translateX(10%);
+    grid-template-rows: 8vh 15vh;
     margin-left: 2.5vw;
 
     .buttons {
