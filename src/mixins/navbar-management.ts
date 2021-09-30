@@ -12,7 +12,10 @@ export type Icon = {
 
 export const icons: Icon[] = [
   { iconName: "fb.png", iconHref: "https://www.facebook.com/MokotowskiGym" },
-  { iconName: "inst.png", iconHref: "https://www.facebook.com/MokotowskiGym" },
+  {
+    iconName: "inst.png",
+    iconHref: "https://www.instagram.com/mokotowski_gym",
+  },
 ];
 
 export const navbarElements: NavBarElement[] = [

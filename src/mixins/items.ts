@@ -1,5 +1,5 @@
 import { ref } from "vue";
-
+/* eslint-disable no-trailing-spaces */
 export type Item = {
   name: string;
   title: string;
@@ -456,7 +456,7 @@ export const privacyPolitics: Array<Item> = [
     bezpieczeństwa danych osobowych i minimalizacji, wymagając oceny wpływu na prywatność
     i ochronę danych, uwzględnienia i zaprojektowana bezpieczeństwa i minimalizacji
     przetwarzania danych od początku projektu lub inwestycji.`,
-    src: "2x.jpg",
+    src: "grupa1.jpg",
   },
 ];
 
@@ -467,7 +467,7 @@ export const teamItems: Array<Item> = [
     description: `Sport zacząłem uprawiać w wieku 9 lat, kiedy to mama zaprowadziło mnie na judo i szermierkę. Jako nastolatek zająłem się parkourem i treningiem na siłowni. Od sześciu lat pracuję zawodowo jako trener personalny.
     Szczególny nacisk kładę na staranność i dokładność w wykonywaniu ćwiczeń, a także kompleksową mobilizację i rozciągnięcie po treningu. Moją specjalizacją jest modelowanie sylwetki, mogę pochwalić się licznymi spektakularnymi przemianami klientów.
     
-    Po godzinach aktywnie podrózuję po Europie, zajmuję się modelingiem, kuchnią, a także zwierzętami - jestem wolontariuszem w schronisku dla psów
+    Po godzinach aktywnie podrózuję po Europie, zajmuję się modelingiem, kuchnią, a także zwierzętami - jestem wolontariuszem w schronisku dla psów.
     
     Prowadzone zajęcia:
     
@@ -475,35 +475,33 @@ export const teamItems: Array<Item> = [
     ○ power pump
     ○ modelowanie sylwetki dla mężczyzn
     ○ zdrowe plecy
-    ○ treningi personalne
-    `,
-    src: "2x.jpg",
+    ○ treningi personalne`,
+    src: "szamborski.jpg",
   },
-  {
-    name: "team",
-    title: "JAREK KRZOSEK",
-    description: `Sporty kopane i uderzane uprawiam od 15 lat. Moje zajęcia mają opinie wymagających: nie oszczędzam ani siebie, ani podopiecznych. Uczestnicy treningów wychodzą z nich zmęczeni, ale zadowoleni. Oprócz przygotowania kondycyjnego bardzo duży nacisk kładę na technikę. Poszczególne ciosy czy akcje powtarzamy aż do momentu kiedy ćwiczący opanują je do perfekcji.
-    Moim hobby są kuchnie świata (sport i karierę trenera łączę z pracą w gastronomii). Gram również w piłkę nożną i tenisa.
+  // {
+  //   name: "team",
+  //   title: "JAREK KRZOSEK",
+  //   description: `Sporty kopane i uderzane uprawiam od 15 lat. Moje zajęcia mają opinie wymagających: nie oszczędzam ani siebie, ani podopiecznych. Uczestnicy treningów wychodzą z nich zmęczeni, ale zadowoleni. Oprócz przygotowania kondycyjnego bardzo duży nacisk kładę na technikę. Poszczególne ciosy czy akcje powtarzamy aż do momentu kiedy ćwiczący opanują je do perfekcji.
+  //   Moim hobby są kuchnie świata (sport i karierę trenera łączę z pracą w gastronomii). Gram również w piłkę nożną i tenisa.
 
-
-    𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
-    ○ boks
-    ○ kickboxing
-    ○ treningi indywidualne
-    `,
-    src: "2x.jpg",
-  },
+  //   𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
+  //   ○ boks
+  //   ○ kickboxing
+  //   ○ treningi indywidualne
+  //   `,
+  //   src: "2x.jpg",
+  // },
   {
     name: "team",
     title: "KAROLINA UJEJSKA",
     description: `Specjalizuję się w treningu z Kettlebells wg metody Hardstyle. Jestem wicemistrzynią Polski Kettlebell Hardstyle oraz zwyciężczynią pucharu Polskiej Ligi Kettlebell Hardstyle w kategorii pro.
   Doświadczenia zawodnicze i wnioski wyniesione z wielu lat ciężkich treningów pozwalają efektywniej pomagać moim podopiecznym. Nacisk na technikę i dbałość o detale w połączeniu z wytrwałością, mogą wznieść każdego na niespotykany poziom siły -  która jest podstawą dla pozostałych cech motorycznych oraz pracy nad sylwetką.
+  Po godzinach jestem fotografką, pasjonatką podróży i entuzjastką zdrowego stylu życia :)
 
-  Po godiznach jestem fotografką, pasjonatką podróży i entuzjastką zdrowego stylu życia :)
 
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    ○ Kettlebells / explosive strength`,
+    ○ kettlebells / explosive strength`,
     src: "moz.jpg",
   },
   {
@@ -511,16 +509,14 @@ export const teamItems: Array<Item> = [
     title: "MARCIN NASIADKO",
     description: `Kickboxing to moja pasja i życie od 15 lat. Trenowałem w Polsce oraz w najlepszych klubach Holandii, Łotwy i Norwegii. Dziewięciokrotnie zdobywałem Mistrzostwo Polski i Puchar Świata. Jako członek kadry narodowej pięciokrotnie reprezentowałem Polskę na Mistrzostwach Świata i Mistrzostwach Europy, walczyłem też w barwach największej zawodowej organizacji kickboxingu w Polsce – DSF Kickboxing Challenge.
     Od 4 lat trenuję dzieci, młodzież i dorosłych – zawodników oraz osoby ćwiczące rekreacyjnie. Dbam o każdy aspekt przygotowania technicznego, motorycznego i psychologicznego moich wychowanków.
-    
-    Po godzinach, oprócz sportów walki uprawiam narciarstwo. Bardzo lubię podróże.
+     Po godzinach, oprócz sportów walki uprawiam narciarstwo. Bardzo lubię podróże.
 
 
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
     
     ○ kickboxing
     ○ boks
-    ○ treningi personalne
-    `,
+    ○ treningi personalne`,
     src: "nasiadko.jpg",
   },
   {
@@ -529,13 +525,12 @@ export const teamItems: Array<Item> = [
     description: `Od dzieciństwa interesowałem się sportami walki. Na początku było to Oyama Karate, później odkryłem pasję do boksu tajskiego. Muai Thai ćwiczyłem w wielu klubach w Polsce i za granicą (Londyn, Kijów, Tajlandia) pod okiem wielu znamienitych osobistości. 
     Posiadam uprawnienia trenera nie tylko boksu tajskiego, ale również boksu klasycznego. 
     Ukończyłem również 9-miesięczne szkolenie dla służb mundurowych prowadzone przez byłych żołnierzy jednostki GROM.
-    
     Po godzinach uprawiam survival i wspinaczkę wysokogórską. Interesuję się historią. Bardzo lubię teatr.
     
     
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    ○ Muai Thai
+    ○ muai thai
     ○ boks
     ○ kickboxing
     ○ samoobrona dla kobiet
@@ -548,48 +543,42 @@ export const teamItems: Array<Item> = [
     title: "PATRYCJA CZEKAJ",
     description: `Według znajomych jestem wulkanem energii. Od ponad 20 lat ćwiczę taniec, miałam styczność z wieloma stylami - od inscenizacji tanecznych, przez jazz, po cheerleading, hip hop, new style, commercial i shuffle. Wielokrotnie uczestniczyłam w mistrzostwach na poziomie krajowym oraz europejskim, realizowałam pokazy taneczne na wydarzeniach sportowych i kulturalnych, koncerty, teledyski i eventy telewizyjne.
     Jestem absolwentką socjologii oraz kryminologii, a na codzień pracuję w branży Public Relations.
-
     Zdecydowanie unikam nudy, rzucam sobie wyzwania i próbuję nowych rzeczy, obecnie uczę się bachaty sensual. Interesuję się też modą. Każdą wolną chwilę poświęcam mojej największej miłości - maltance Sheri.
 
 
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    ○ Shuffle dance
-    ○ Hip hop, new style
-    ○ Commercial
-    ○ Cheerleaders`,
+    ○ shuffle dance
+    ○ hip hop, new style
+    ○ commercial
+    ○ cheerleaders`,
     src: "czekaj.jpg",
   },
   {
     name: "team",
     title: "PIOTR BURZYKOWSKI",
     description: `Tłumacz, trener, terapeuta. Od najmłodszych lat podróżuję po świecie w poszukiwaniu wiedzy, doświadczeń i nowych smaków. Wierzę, że najszybszym sposobem na poprawę jakości życia każdego człowieka jest zwiększenie jego siły. Specjalizuję się w treningu według metody „Starting Strength”.
-
     Po godzinach zajmuję się urban exploration, filozofią, stolarstwem.
     
     
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    ○ Trening siłowy ze sztangą (Starting Strength)
-    ○ Treningi personalne
-
-    
-
-    `,
-    src: "burzykowski.jpg",
+    ○ trening siłowy ze sztangą (Starting Strength)
+    ○ treningi personalne`,
+    src: "piotr.jpg",
   },
   {
     name: "team",
     title: "SANDRA WOCH",
-    description: `Moimi sportowymi pasjami są taniec towarzyski, siatkówka i siłownia. Specjalizuję się w modelowaniu ciała oraz zajęciach dla kobiet w ciąży i świeżo upieczonych mam. Mam doświadczenie w prowadzeniu zajęć dla kobiet w każdym wieku.
-
-    Jestem fanką egzotycznych podróży i dobrych książek oraz właścicielką pieska Cookie. Bardzo lubię stawać przed aparatem fotograficznym. Ciekawym doświadczeniem był udział w konkursie Miss Warsawy, gdzie dotarłam do finału.
+    description: `Moimi sportowymi pasjami są taniec towarzyski, siatkówka i siłownia. Specjalizuję się w kształtowaniu sylwetki oraz zajęciach dla kobiet w ciąży  i świeżo upieczonych mam. Mam doświadczenie w prowadzeniu zajęć dla kobiet w każdym wieku. 
+    Treningi ze mną sprawią, że pokochasz i zaakceptujesz swoje ciało i będziesz sprawna i silna. 
+     Kocham egzotyczne podróże i kuchnie świata. A w wolnym czasie pieszczoty ze swoim psem Cookim i dobrą książkę.
+    Ciekawym doświadczeniem  był udział w konkursie Miss Warszawy, gdzie dotarłam do finału.
     
     
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    ○ mama wraca do formy
-    ○ jędrne pośladki,płaski brzuch
+    ○ brzuch, uda, pośladki
     ○ treningi personalne`,
     src: "woch.jpg",
   },
@@ -597,151 +586,325 @@ export const teamItems: Array<Item> = [
     name: "team",
     title: "TOMEK RYTEL",
     description: `Jestem posiadaczem czarnego pasa w BJJ (brazylijskim jiu jitsu), członkiem kadry narodowej grapplingu, kilkukrotnym mistrzem polski ADCC, zdobywcą African Championship Masterclass 2021 w kategorii 65kg. Umiejętności przez wiele lat szlifowałem w Polsce, Abu Dhabi i Brazylii. Aktualnie pozostaję czynnym zawodnikiem i trenerem.
-    
     Jestem człowiekiem rodzinnym. Moją drugą wielką pasją poza sportem jest sushi.
 
+    
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
     ○ BJJ dla dorosłych
     ○ BJJ dla dzieci
-    ○ treningi personalne
-    
-    `,
+    ○ treningi personalne`,
     src: "rytel.jpg",
   },
-  {
-    name: "team",
-    title: "MOKEBE GŁUSZAK",
-    description: `Biznesmen, człowiek sukcesu wykształcony na filmach Roberta Kiyosaki i Trader21.
+  // {
+  //   name: "team",
+  //   title: "MOKEBE GŁUSZAK",
+  //   description: `Biznesmen, człowiek sukcesu wykształcony na filmach Roberta Kiyosaki i Trader21.
 
-    Po godzinach jestem człowiekiem czarnoskórym.
+  //   Po godzinach jestem człowiekiem czarnoskórym.
 
+  //   𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
-    𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
-
-    ○ Boks grupa początkująca`,
-    src: "2x.jpg",
-  },
+  //   ○ Boks grupa początkująca`,
+  //   src: "2x.jpg",
+  // },
 ];
 
 export const aboutUsItems: Array<Item> = [
   {
     name: "about-us",
-    title: "Nowa jakość na Mokotowie",
+    title: "FITNESS, SZTUKI WALKI, TANIEC",
     description: `Mokotowski Gym to nowopowstały klub fitness przy ul. Białej Floty 2 (Marina Mokotów II) w Warszawie.
-    
-    Oferujemy szeroki wybór zajęć w kameralnych grupach, treningi indywidualne i możliwość samodzielnych ćwiczeń.
-    
-    Jesteśmy przekonani, że każdy znajdzie tutaj coś dla siebie.`,
-    src: "baner_01.jpg",
-  },
-  {
-    name: "about-us",
-    title: "Taniec, sztuki walki i fitness",
-    description: `Szukasz miejsca, w którym mógłbyś/mogłabyś nauczyć się tańczyć?
+
+
+    Szukasz miejsca, w którym mógłbyś/mogłabyś nauczyć się tańczyć?
     Może kusi Cię boksowanie lub trening w parterze?
     Lubisz także trening siłowy?
+    To wspaniale się składa: u nas znajdziesz wszystko - i to w jednym miejscu!
 
-    To się wspaniale składa. U nas znajdziesz wszystko - i to w jednym miejscu!
-    `,
-    src: "baner_01.jpg",
-  },
-  {
-    name: "about-us",
-    title: "Miejsce dla deweloperów",
-    description: `Mokotowski Gym to projekt osób od lat związanych z branżą IT.
 
-    Naszą ambicją jest stworzenie nie tylko doskonałego klubu sportowego, co również miejsca networkingu i integracji.
-    Deweloperzy mogą wreszcie rozstrzygnąć kwestię wyższości C++ nad Javą poprzez przyjacielską wymianę argumentów na ringu`,
-    src: "baner_02.jpg",
-  },
-  {
-    name: "about-us",
-    title: "Zadbaj o swoje zdrowie",
-    description: `Człowiek nie został stworzony do pracy przy biurku - a jednak większość z nas tak właśnie spędza swój czas, przez co dręczą nas charakterystyczne dla tego typu życia udręki: ból pleców, zespół cieśni nadgarstka, ból karku, zwyrodnienia stawów - można by wymieniać bez końca!
-    Naprawa złych nawyków może trwać latami, lecz tu z pomocą przychodzi trening siłowy - oswój się ze sztangą, przyspiesz swoje zdrowienie, zainwestuj we własne ciało.
+    Wyznajemy zasadę: przede wszystkim pasja.
+    Nasi trenerzy są nie tylko świetnymi specjalistami we własnych dziedzinach, co także ciekawymi, otwartymi ludźmi, którzy bez trudu zarażą Cię pasją do sportu.
+
+
+    Wejdź na wyższy poziom, i pamiętaj: sky is the limit!
+
     
-    Pomóż swojej naturze. Nic tak nie wzmacnia jak trening siłowy. Zacznij już dziś, pod okiem naszych specjalistów, a wkrótce zapomnisz o bólu pleców!`,
-    src: "baner_02.jpg",
+    Oferujemy szeroki wybór zajęć w kameralnych grupach, treningi indywidualne i możliwość samodzielnych ćwiczeń - u nas każdy znajdzie coś dla siebie.`,
+    src: "grupa1.jpg",
   },
-  {
-    name: "about-us",
-    title: "Wyselekcjonowana kadra pracownicza",
-    description: `Szczególną uwagę zwracamy na czynnik ludzki.
-    
-    Gwarantujemy, że nasi trenerzy są nie tylko świetnymi specjalistami we własnych dziedzinach, co także ciekawymi, otwartymi ludźmi, którzy bez trudu zarażą Cię pasją do sportu.
-    Nic nie przyspiesza rozwoju tak mocno, co dobry nauczyciel. Nasi trenerzy przeprowadzą Cię przez podstawy aż po poziom mistrzowski.
-    Pamiętaj - sky is the limit.`,
-    src: "baner_03.jpg",
-  },
+  // {
+  //   name: "about-us",
+  //   title: "Taniec, sztuki walki i fitness",
+  //   description: `Szukasz miejsca, w którym mógłbyś/mogłabyś nauczyć się tańczyć?
+  //   Może kusi Cię boksowanie lub trening w parterze?
+  //   Lubisz także trening siłowy?
+
+  //   To się wspaniale składa. U nas znajdziesz wszystko - i to w jednym miejscu!
+  //   `,
+  //   src: "baner_01.jpg",
+  // },
+  // {
+  //   name: "about-us",
+  //   title: "Miejsce dla deweloperów",
+  //   description: `Mokotowski Gym to projekt osób od lat związanych z branżą IT.
+
+  //   Naszą ambicją jest stworzenie nie tylko doskonałego klubu sportowego, co również miejsca networkingu i integracji.
+  //   Deweloperzy mogą wreszcie rozstrzygnąć kwestię wyższości C++ nad Javą poprzez przyjacielską wymianę argumentów na ringu`,
+  //   src: "baner_02.jpg",
+  // },
+  // {
+  //   name: "about-us",
+  //   title: "Zadbaj o swoje zdrowie",
+  //   description: `Człowiek nie został stworzony do pracy przy biurku - a jednak większość z nas tak właśnie spędza swój czas, przez co dręczą nas charakterystyczne dla tego typu życia udręki: ból pleców, zespół cieśni nadgarstka, ból karku, zwyrodnienia stawów - można by wymieniać bez końca!
+  //   Naprawa złych nawyków może trwać latami, lecz tu z pomocą przychodzi trening siłowy - oswój się ze sztangą, przyspiesz swoje zdrowienie, zainwestuj we własne ciało.
+
+  //   Pomóż swojej naturze. Nic tak nie wzmacnia jak trening siłowy. Zacznij już dziś, pod okiem naszych specjalistów, a wkrótce zapomnisz o bólu pleców!`,
+  //   src: "baner_02.jpg",
+  // },
+  // {
+  //   name: "about-us",
+  //   title: "Wyselekcjonowana kadra pracownicza",
+  //   description: `Szczególną uwagę zwracamy na czynnik ludzki.
+
+  //   Gwarantujemy, że nasi trenerzy są nie tylko świetnymi specjalistami we własnych dziedzinach, co także ciekawymi, otwartymi ludźmi, którzy bez trudu zarażą Cię pasją do sportu.
+  //   Nic nie przyspiesza rozwoju tak mocno, co dobry nauczyciel. Nasi trenerzy przeprowadzą Cię przez podstawy aż po poziom mistrzowski.
+  //   Pamiętaj - sky is the limit.`,
+  //   src: "baner_03.jpg",
+  // },
 ];
 
 export const offerItems: Array<Item> = [
   {
     name: "offer",
-    title: "Taniec, sztuki walki, fitness",
-    description: `Nie jesteśmy gołosłowni - u nas to wszystko znajdziesz dla siebie.
-    Od shuffledance, przez boks, judo, aż po treningi personalne - jestesmy tutaj właśnie dla Ciebie.
-    
-    Niniejszym pozwól zaprosić Cię na zapoznanie z naszą ofertą`,
-    src: "tajner.jpg",
-  },
-  {
-    name: "offer",
     title: "Starting Strength™",
     description: `Czym jest Starting Strength™?
+    
     
     Starting Strength™  jest kompletną metodą treningu siłowego opracowaną przez trenera Marka Rippetoe.
     Trening według metody Starting Strength™ świetnie się sprawdza zarówno u nastolatków i dorosłych, którzy pragną zwiększyć swoją sprawność fizyczną i poprawić sylwetkę, jak i u seniorów, którzy pragną zachować jak najdłużej autonomię w życiu codziennym. Metoda opiera się na ćwiczeniach wielostawowych wykonywanych ze sztangą według starannie zaprojektowanego programu treningowego.
 
-Główne ćwiczenia to:
 
+    Główne ćwiczenia to:
 ○ przysiad ze sztangą
 ○ wyciskanie sztangi stojąc
 ○ wyciskanie sztangi leżąc
 ○ martwy ciąg
 
+
 Zostały one wybrane, ponieważ pozwalają na zwiększenie siły u trenujących szybciej, skuteczniej i w bardziej bezpieczny sposób w porównaniu z innymi zestawami ćwiczeń. Będziesz stawał się silniejszy od samego początku programu, ponieważ na każdym treningu będziemy odpowiednio zwiększać ciężar na sztandze.
 Ale bez obaw! Początkowe ciężary i progresja będą zawsze dostosowane do Twojej kondycji i poziomu siły.
 W miarę postępów w programie pojawią się nowe ćwiczenia, ale i tak  przysiady, wyciskanie stojąc i leżąc oraz martwe ciągi pozostaną najczęściej wykonywanymi ćwiczeniami.
 
+
 Zajęcia Starting Strength™ prowadzi u nas trener 𝐏𝐢𝐨𝐭𝐫 𝐁𝐮𝐫𝐳𝐲𝐤𝐨𝐰𝐬𝐤𝐢`,
-    src: "tajnermalysz.jpg",
+    src: "strength.jpg",
+  },
+  {
+    name: "offer",
+    title: "Cross Training",
+    description: `Cross Training to program treningu siłowego i kondycyjnego rodem z CrossFitu. Jest to świetna alternatywa dla monotonnych i nudnych treningów na siłowni - treningi crossa nigdy nie są takie same. 
+    
+    
+    Głównym założeniem tego treningu jest osiągnięcie sprawności aż w dziesięciu różnych obszarach fizycznych: wydolność krążeniowo-oddechowa, wytrzymałość, siła, gibkość, moc, szybkość, zwinność, równowaga, koordynacja i dokładność. 
+    Na zajęciach przeplatają się ćwiczenia funkcjonalne, elementy lekkoatletyki, gimnastyki i treningu siłowego – uczestnicy biegają, wiosłują, skaczą, przenoszą najróżniejsze przedmioty, rywalizują z innymi oraz z samym sobą. 
+    
+    
+    Metodyka Cross Training przynosi rozmaite rezultaty: większą wytrzymałość mięśni, zwiększenie zakres ruchu niemal wszystkich stawów, podkręcenie metabolizmu, przyspieszenie spalanie tkanki tłuszczowej, lepszą sprawność fizyczną organizmu, a także równomierne kształtowanie całej sylwetki.
+    
+
+    Zajęcia Cross Training prowadzone są przez trenera 𝐅𝐢𝐥𝐢𝐩𝐚 𝐒𝐳𝐚𝐦𝐛𝐨𝐫𝐬𝐤𝐢𝐞𝐠𝐨`,
+    src: "cross2.jpg",
+  },
+  // {
+  //   name: "offer",
+  //   title: "Mama wraca do formy",
+  //   description: `Ciąża to niezwykle wymagający czas dla kobiety, a aktywność fizyczna to najlepsze remedium na powrót do dawnej formy.
+
+  //   Nie pozwól sobie wmówić, że ruch nie jest dla Ciebie! Na naszych zajęciach poznasz podstawowe formy ruchowe, abyś mogła stopniowo i sukcesywnie wzmocnić swój organizm.`,
+  //   src: "mamy.jpg",
+  // },
+  {
+    name: "offer",
+    title: "Zdrowe plecy",
+    description: `Znowu obolały wstajesz sprzed komputera? Czujesz, że Twoim plecom przydałby się odpoczynek? W takim razie oto zajęcia dla Ciebie.
+
+
+    Ból całych pleców lub któregoś z odcinków kręgosłupa nie należy do rzadkości, a ze względu na sposób życia i pracy dla wielu osób stał się przykrą codziennością.
+    Gdy zastanawiamy się, co w takiej sytuacji zrobić, często pędzimy do marketu, by specjalną kupić poduszkę ortopedycznej na kręgosłup szyjny czy twardy materac. Po czasie okazuje się jednak, że to tylko częściowo rozwiązało problem i wprawdzie boli mniej, ale nie jest idealnie. 
+    Musimy sobie bowiem uświadomić, że nasz kręgosłup nie działa w osamotnieniu i sam nie „dźwiga” całego obciążenia. Nieocenionym wsparciem są mięśnie korpusu i to one powinny pełnić rolę mitologicznego Atlasa - jeśli więc nie zadbamy o to, by nasze mięśnie były wystarczająco silne, ciężar będzie osadzony na samym kręgosłupie, a ten odpowie nam bólem i kształtującymi się zwyrodnieniami. 
+    Jeśli zaś wystarczająco się nie rozciągniemy, napięte ścięgna i zbite mięśnie do pewnego stopnia będą mogły ograniczyć naszą ruchomość i również wywoływać ból (może być to efektem za małej ilości ruchu lub po prostu stresu). 
+    
+
+    Dlaczego warto wykonywać ćwiczenia na zdrowy kręgosłup? 
+    Ból całych pleców lub któregoś z odcinków kręgosłupa nie należy do rzadkości, a ze względu na sposób życia i pracy dla wielu osób stał się przykrą codziennością. Gdy zastanawiamy się, co w takiej sytuacji zrobić, często pędzimy do marketu, by specjalną kupić poduszkę ortopedycznej na kręgosłup szyjny czy twardy materac. 
+    Po czasie okazuje się jednak, że to tylko częściowo rozwiązało problem i wprawdzie boli mniej, ale nie jest idealnie. Musimy sobie bowiem uświadomić, że nasz kręgosłup nie działa w osamotnieniu i sam nie „dźwiga” całego obciążenia. Nieocenionym wsparciem są mięśnie korpusu i to one powinny pełnić rolę mitologicznego Atlasa. Jeśli więc nie zadbamy o to, by nasze mięśnie były wystarczająco silne, ciężar będzie osadzony na samym kręgosłupie, a ten odpowie nam bólem i kształtującymi się zwyrodnieniami. Jeśli zaś wystarczająco się nie rozciągniemy, napięte ścięgna i zbite mięśnie do pewnego stopnia będą mogły ograniczyć naszą ruchomość i również wywoływać ból (może być to efektem za małej ilości ruchu lub po prostu stresu). 
+    
+    
+    Kto powinien wykonywać ćwiczenia na zdrowy kręgosłup? 
+    Wciąż można spotkać się z przeświadczeniem, że ćwiczenia na zdrowy kręgosłup to zajęcia tylko dla seniorów, a to przecież zupełnie nieprawda! Siedzący tryb życia, ciągłe garbienie się i zamknięta pozycja przed komputerem – to codzienność ogromnej liczby Polaków - i to bez względu na wiek. 
+    Warto zdawać sobie sprawę, że nawet jeśli jeszcze nie boli nas odcinek lędźwiowy czy piersiowy kręgosłupa, to w pewnym momencie zacznie, a właśnie uprzednia troska o mięśnie pleców może znacząco oddalić ten moment w czasie. Troska o zdrowy kręgosłup wymaga regularnej pracy – na szczęście nie jest to bardzo uciążliwe zajęcie, dzięki czemu nawet codzienna praktyka nie powinna przysporzyć nam problemu. 
+    
+    
+    Podczas wykonywania ćwiczeń na kręgosłup musimy zadbać o wzmocnienie mięśni, które podtrzymują nasz układ kostny, ponieważ to one odciążają plecy i pozwalają zredukować negatywnie efekty spędzania całych dni w pozycji siedzącej. Przede wszystkim należy pamiętać, że ćwiczenia na zdrowy kręgosłup nie powinny należeć do dynamicznych i przy ich wykonywaniu zdecydowanie bardziej liczy się dokładność i reakcja na własne odczucia, niż tempo (podobnie jak w jodze). Każde z ćwiczeń, zarówno na kręgosłup szyjny, piersiowy czy lędźwiowy wymaga wykonania kilku powtórzeń i zachowania symetrii (tzn. jeśli robimy skręt w lewo, to musimy wykonać też skręt w prawo – daje to pewność równomiernego rozciągnięcia i rozbudowania mięśni i ścięgien).
+    
+    
+    Zajęcia prowadzi trener 𝐅𝐢𝐥𝐢𝐩 𝐒𝐳𝐚𝐦𝐛𝐨𝐫𝐬𝐤𝐢`,
+    src: "plecy.jpg",
   },
   {
     name: "offer",
     title: "Boks",
     description: `Współczesny boks jest dyscypliną wywodzącą się z XVIII-wiecznej Anglii.
     Jako sport walki jest unikatem na skalę światową, ponieważ ciosy zadaje się tylko rękami. Bywa nazywany sportem dżentelmenów.
+
     
     Na grupie początkującej kształtujemy przede wszystkim odpowiednie nawyki i pamięć mięsniowo-motoryczną.
     Typowe zajęcia składają się z 15 minut rozgrzewki, a nastepnie z zajęć w parach, w których ćwiczymy wyprowadzanie ciosów, poruszanie się oraz obronę.
-    Oprócz techniki kładziemy nacisk na przygotowanie kondycyjne.
-    
-    W miarę zdobywania doświadczenia wprowadzamy sparingi.
+    Oprócz techniki kładziemy nacisk na przygotowanie kondycyjne. W miarę zdobywania doświadczenia wprowadzamy sparingi.
+
     
     Zajęcia są dla każdego, kto pragnie ukształtować kondycję i sylwetkę, zyskać praktyczne umiejętności obronne oraz pewność siebie.
     Prowadzimy grupy koedukacyjne oraz dedykowane dla kobiet.
     Zapraszamy również młodzież - tutaj minimalny wiek to ok. 12 lat.
     
-    Zajęcia prowadzą trener 𝐉𝐚𝐫𝐞𝐤 𝐊𝐫𝐳𝐨𝐬𝐞𝐤 oraz trener 𝐌𝐚𝐫𝐜𝐢𝐧 𝐍𝐚𝐬𝐢𝐚𝐝𝐤𝐨.`,
-    src: "mokebe.jpg",
+
+    Zajęcia prowadzą 𝐉𝐚𝐫𝐞𝐤 𝐊𝐫𝐳𝐨𝐬𝐞𝐤 oraz 𝐌𝐚𝐫𝐜𝐢𝐧 𝐍𝐚𝐬𝐢𝐚𝐝𝐤𝐨.`,
+    src: "boks.jpg",
+  },
+  {
+    name: "offer",
+    title: "Shuffle Dance",
+    description: `Shuffle dance to obecnie jeden z najbardziej popularnych stylów tańca w Europie, polegający na pozornym „ślizganiu się” po podłodze. Oprócz ślizgania, styl przeplata się różnorodnymi krokami, takimi jak przeskoki, obroty, wykopy, moonwalk i różnego rodzaju footworkami - a to wszystko w rytm energicznej muzyki!
+
+    
+    Do czego tańczymy?
+    Styl wywodzi się z klubów tanecznych muzyki rave, które w brzmieniu przypomina techno i house, ale ma mocniejsze brzmienie i szybsze tempo - z pewnością nie zabraknie sporej dawki muzycznej energii. 
+    Regularne zajęcia Shuffle Dance poprawiają kondycję fizyczną, umożliwiają zrzucenie nadprogramowych kilogramów i spalenie duuużych ilości kalorii - to przyjemna wersja treningu cardio! Dodatkowo zajęcia pozwolą na polepszenie koordynacji ciała, ale przede wszystkim to dobra zabawa, duża dawka pozytywnej energii i skok endorfin.
+    Zapisz się już dziś i tańcz jak w teledysku LMFAO!
+    
+
+    Zajęcia prowadzi trener 𝐏𝐚𝐭𝐫𝐲𝐜𝐣𝐚 𝐂𝐳𝐞𝐤𝐚𝐣.
+    `,
+    src: "shuffle.jpg",
+  },
+  {
+    name: "offer",
+    title: "Kickboxing",
+    description: `Kickboxing należy do grupy stójkowych sportów walki. Dozwolone są w nim ciosy bokserskie i kopnięcia. 
+    Zasady dyscypliny nastawiają nas na ciągłą wymianę ciosów i kopnięć, a brak przestojów walce powoduje, że jest to sport niezwykle dynamiczny oraz spektakularny dla oka. 
+    
+    
+    Treningi kickboxingu rozwiją nasze ciało w sposób holistyczny. Kształtuje takie cechy motoryczne jak szybkość, siła, wytrzymałość. Sport ten nie tylko wpływa dobrze na kondycje fizyczną, ale i psychiczną, redukuje stres, uczy trzymać nerwy na wodzy oraz znacząco poprawia naszą samodyscyplinę i pewność siebie.
+    
+
+    Zajęcia z kickboxingu w naszym klubie prowadzi 𝐌𝐚𝐫𝐜𝐢𝐧 𝐍𝐚𝐬𝐢𝐚𝐝𝐤𝐨.
+    `,
+    src: "kickboxing.jpg",
+  },
+  {
+    name: "offer",
+    title: "BJJ",
+    description: `Brazylijskie jiu-jistu jest to dyscyplina sportowa wywodząca się z judo, ju-jitsu oraz zapasów, która koncentruje się na walce w parterze.
+    Techniki ukierunkowane są na zajęcie pozycji dominujących oraz ataki dźwigniami bądź duszeniami. Nie stosuje się uderzeń ani kopnięć. 
+    
+
+    Jest to sport zarówno dla mężczyzn jak i dla kobiet. Rozwija szeroko rozumianą koordynację ruchową, siłę oraz wytrzymałość.
+
+
+    Zajęcia prowadzi trener 𝐓𝐨𝐦𝐚𝐬𝐳 𝐑𝐲𝐭𝐞𝐥.
+    `,
+    src: "bjj.jpg",
+  },
+  {
+    name: "offer",
+    title: "Kettlebell hardstyle",
+    description: `Trening z odważnikami kulowymi metodyką Hardstyle przynosi nad wyraz wiele korzyści.
+     Holistycznie wzmacnia ciało i jest niezwykle wydajny. Podczas treningu z kettlami angażujemy do pracy wiele mięśni jednocześnie, a więc zwiększa się zapotrzebowanie na energię.
+Trening kettlami doskonale buduje siłę, a jak wiadomo siła jest podstawą dla wszystkich cech motorycznych i jest potrzebna każdemu. Zwiększa wytrzymałość, koordynację, wzmacnia mięśnie odpowiedzialne za prawidłową postawę ciała oraz mięśnie głębokie, które pełnią rolę ochronną dla narządów wewnętrznych. 
+    
+
+    Podstawowe techniki z kettlem wg metody Hardstyle opierają się na głównych wzorcach ruchowych, których trenowanie przekłada się na to, że coraz lepiej wykonujemy inne ruchy, zarówno w życiu codziennym jak i w różnych sportach i aktywnościach.
+    W treningu z kettlami wykonujemy ruchy o charakterze siłowym, dynamicznym i eksplozywnym, a więc kształtujemy wszystkie cechy motoryczne używając tylko jednego przyrządu treningowego.
+    A przede wszystkim: trening typu kettlebell pomaga niwelować stres i jest po prostu fajny!
+    
+
+    Zajęcia z kettlebells prowadzi 𝐊𝐚𝐫𝐨𝐥𝐢𝐧𝐚 𝐔𝐣𝐞𝐣𝐬𝐤𝐚.
+    `,
+    src: "kettlebell.jpg",
+  },
+  {
+    name: "offer",
+    title: "Oddech & koordynacja",
+    description: ` Zajecia poswiecone aktywizacji obu półkul mózgowych majace na celu zgłębienia świadomosci własnego ciała. Bardzo wiele osób trenując na siłowni, bądź też trenując inne sporty ma problemy także z prawidłowym oddychaniem. 
+    Trenują na tak zwanym bezdechu, przez co nie moga podniesć pewnej poprzeczki z racji niedotlenienia organizmu. 
+    
+
+    Zajecia będą poświęcone poprawie wlaśnie tych elementów ruchowych i oddechowych.
+    `,
+    src: "koncentracja.jpg",
+  },
+  {
+    name: "offer",
+    title: "Boks/kickboxing kids&parents",
+    description: `Pomysł na te zajęcia zrodził się przypadkiem.
+    Otóż często zdarzało się, że tatusiowie na treningi z przychodzili z pociechami. Postanowiliśmy więc wyjść naprzeciw potrzebom i raz w tygodniu wprowadzić zajęcia, na których komfortowo ćwiczyć mogą dwa pokolenia. 
+    
+    Na sali jest dwóch trenerów, jeden opiekuje się dorosłymi, drugi dziećmi. 
+    Minimalny rekomendowany wiek rozpoczęcia zajeć to około 9 lat, choć to oczywiście bardzo indywidualna sprawa. 
+    W razie wątpliwości zapraszamy do kontaktu z recepcją.
+    `,
+    src: "kids.jpg",
+  },
+  // {
+  //   name: "offer",
+  //   title: "MUAY THAI",
+  //   description: `Przyjmuje się, że muay thai wywodzi się z Tajlandii, jednakże brak jest historycznych źródeł potwierdzających jednoznacznie i ostatecznie to założenie. Pomimo tego, iż większość krajów z tamtego regionu przypisuje sobie wynalezienie tej sztuki walki, to nie ulega wątpliwości, że to właśnie w Tajlandii rozwinął on się najbardziej stając się bez mała sportem narodowym. Początek rozwoju starożytnego muay thai (tzw. muay boran), jako wyodrębnionego i posiadającego cechy charakterystyczne stylu walki wręcz, datuje się według źródeł archeologicznych na początek XIII wieku (era Sukhothai). Czterej wojownicy Jatubaht, którzy ochraniali królewskiego słonia po stracie broni musieli używać Muay thai. U swoich źródeł był silnie zrytualizowanym i przesyconym elementami religijnymi, stylem obejmującym taniec przed walką (waikhru) oraz rytualne metody treningowe. W miarę szerszej jego adaptacji na potrzeby tajlandzkiej armii, włączono do niego elementy walki bronią (krabi-krabong) oraz za pomocą owijaczy na ręce zwanych "kaad chuek", które w celu zadawania większych obrażeń były specjalnie utwardzane i nabijane kamiennym żwirem (wg niektórych źródeł także szkłem i innymi podobnymi materiałami). Na rozwój muay boran wpłynęło też silnie chińskie Wushu, z którym Tajowie zetknęli się w na początku drugiej połowy XVIII wieku, a z którego zaczerpnięto rozmaite techniki uderzeń zadawanych z wyskoku.
+  //   W roku 1887 na mocy dekretu królewskiego otwarto wydziały wychowania fizycznego na nowych akademiach wojskowych zachodniego typu i w kolegiach nauczycielskich. Wśród obowiązkowych zajęć był boks tajski, praktykowany dwa razy w tygodniu przez półtorej godziny. Większość młodych bokserów jednakże pochodziła z klasy pracującej i trenowała w swoich wioskach i pobliskich świątyniach. Instruktorzy, zarówno z wiosek, jak i ze świątyń, byli z reguły bokserami, którzy zakończyli karierę sportową. Przed głównymi imprezami obiecujący zawodnicy trenowali codziennie, a w celu zachęcenia ich otrzymywali stypendia treningowe od lokalnych przedstawicieli rządu i możnowładców.
+  //   Do końca XIX wieku wykształciły się w miarę jednolite ringowe reguły muay thai przy użyciu owijaczy (w formule zwanej "muay kaad chuek" ). W 1921 walki w boksie tajskim zaczęły odbywać się na wzniesionych platformach otoczonych linami. Powód był taki, że platforma i liny zapobiegały przed wdarciem się kibiców na ring. A w roku 1929 właściciel stadionu Suan Sanuk wprowadził ring dla tajskich bokserów z trzema linami i narożnikami, głównie dlatego, że miał nadzieję na organizowanie międzynarodowych walk bokserskich.
+  //   Ze względu na wysoką urazowość walk, od połowy lat 20. XX wieku zaczęto wycofywać z ringu owijacze "kaad chuek" oraz wyłączać stosowanie bardziej destrukcyjnych technik, takich jak kopnięcia w krocze, dźwignie, rzuty czy uderzenia głową. Najprawdopodobniej bezpośrednią przyczyną tych zmian była śmierć zawodnika na ringu stadionu Lak Muang w Bangkoku. Na początku lat 30. XX wieku zawodnicy boksu tajskiego zaczęli używać metalowych ochraniaczy na krocze i skórzanych rękawic bokserskich. Stosowanie rękawic bokserskich stało się przy okazji przyczyną rozbudowania technik muay thai o elementy zachodnioeuropejskiego boksu. Przyjęto zmodyfikowane przepisy bokserskie markiza Queensberry i w ślad za tym profesjonalne walki Tajów wyznaczono na 5 rund po 3 minuty każda. Stopniowo wprowadzono podział zawodników na kategorie wagowe. Wszystko to uczyniło z muay thai popularny na całym świecie sport walki. Młodzi bokserzy wykonujący rytuał przed walką
+  //   Niemniej jednak, wiele z tradycji przetrwało. Na przykład, zawodnicy nadal wykonywali tradycyjny taniec przed walką (waikhru), początkowo, by przedstawić region, z którego pochodzą, a dziś ze względu na zwyczaje. Wykonywali swoje modły do bogów i odmawiali walki, jeżeli nie towarzyszyły im synkopowane rytmy tajskiej muzyki ludowej. Zespół muzyczny składał się z samych mężczyzn (aby uniknąć osłabienia sił zawodników): flecisty, dwóch bębnistów i cymbalisty. Flecista kierował perkusistami i zmieniał swe tony w zależności od tempa walki i emocji przejawianych przez tłum.
+  //   Około roku 1935 ośrodki, w których rozgrywano walki, zaczęły przeznaczać część zysków na pomoc tajlandzkim instytucjom dobroczynnym i armii Tajlandii. Taka praktyka stosowana jest do czasów obecnych.
+
+  //   Zajecia rozpoczynaja sie od mocniej rozgrzewki, ktora aktywuje kazdy and element naszego ciała aby obyło sie Bez specjalnych kontuzji.
+  //   Nastepnie pracujemy nad technika w parach zazwyczaj po 3 min jak na normalnej walce, pomiedzy rundami wplatamy cwiczenia ogolnorozwojowe.
+  //   Dla chetnych kazdy trening konczymy kilkoma rundami sparingowymi Albo cardio na worku.
+  //   Podczas treningu ksztaltujemy cala sylwetke, charakter i refleks. `,
+  //   src: "muaythai.jpg",
+  // },
+];
+
+export const priceListItems: Array<Item> = [
+  {
+    name: "pricelist",
+    title: "Oferta skrojona dla Ciebie",
+    description: `Oferujemy kilka rodzajów karnetów, zarówno z możliwością korzystania z zajęć grupowych, jak i bez.
+
+    
+    Zakup karnetów i rezerwacje zajęć odbywają się przez stronę www (𝐝𝐨 𝐤𝐥𝐢𝐤𝐧𝐢𝐞̨𝐜𝐢𝐚 𝐩𝐨𝐧𝐢𝐳̇𝐞𝐣), można też kupić je na recepcji klubu. 
+    Na zajęciach grupowych obowiązuje limit osób, co gwarantuje komfort ćwiczeń i bezpośredni kontakt z prowadzącym.
+    
+
+    Treningi indywidualne są płatne bezpośrednio u prowadzących – na pierwszy trening można umówić się za pośrednictwem recepcji (+48 696 168 867).`,
+    src: "pricelist.jpg",
   },
 ];
 
 export const scheduleItems: Array<Item> = [
   {
     name: "schedule",
-    title: "SALA NR1",
-    description:
-      "Poniżej przedstawiamy rozkład zajęć w sali numer jeden, gdzie odbywa się przede wszystkim joga i pikiety politycznych elit",
-    src: "schedule.jpg",
+    title: "Sana nr1",
+    description: `Sala numer jeden to serce naszego klubu. 
+    To właśnie tutaj będą odbywać się zajęcia z szeroko zakrojonych sztuk walki.
+    Poznasz u nas tajniki BJJ, muay thai, kickboxingu, a także boksu.`,
+    src: "grafik1.jpg",
   },
   {
     name: "schedule",
-    title: "SALA NR2",
-    description:
-      "W sali numer dwa odbywają się z reguły zajęcia ze sztuk walki a takze uprawiamy tutaj ogółem szermiestwo",
-    src: "schedule.jng",
+    title: "Sala nr2",
+    description: `W drugiej sali znajdziecie państwo wysokiej klasy sprzęt siłowy, który będziecie mogli wykorzystac do budowaniu własnego ciała.
+    
+    Na sali odbywają się też zajęcia taneczne.`,
+    src: "grafik2.jpg",
   },
 ];

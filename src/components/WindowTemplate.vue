@@ -6,7 +6,7 @@
         <slot name="slot-fix">
           <div class="title" :key="selectedItem" @click="clicked = false">
             <div class="title-text">
-              {{ selectedItem.title }}
+              {{ selectedItem.title.toUpperCase() }}
             </div>
           </div>
         </slot>
@@ -382,7 +382,7 @@ export default defineComponent({
   .left-full {
     transition: opacity ease 2s;
     display: grid;
-    grid-template-rows: 5vh 20vh 45vh 4vh;
+    grid-template-rows: 5vh 20vh 45vh 7vh;
     grid-template-areas:
       "blank"
       "title"
@@ -411,12 +411,13 @@ export default defineComponent({
       align-content: center;
       justify-items: flex-start;
       font-weight: bold;
-      font-size: 4rem;
+      font-size: 3.5rem;
       grid-area: title;
     }
     .element-container {
       display: grid;
-
+      grid-template-rows: 80vh 8vh;
+      grid-gap: 0;
       width: 100%;
       height: 100%;
       // @include grid-center;
@@ -568,88 +569,91 @@ export default defineComponent({
       "rightfull rightfull"
       "leftfull leftfull";
     // overflow: hidden;
-    .right {
-      display: grid;
-      grid-template-rows: 25vh 33.5vh 20vh;
-      // img {
-      //   width: 50%;
-      //   height: 50%;
-      // }
-    }
-    .left-full {
-      grid-template-rows: 1vh 8vh 28vh 2vh;
-      margin-top: 50px;
-      .description {
-        margin-left: 1.3rem;
-        text-align: center;
-        font-size: 0.8rem;
+    // .right {
+    //   display: grid;
+    //   grid-template-rows: 25vh 33.5vh 20vh;
+    //   // img {
+    //   //   width: 50%;
+    //   //   height: 50%;
+    //   // }
+    // }
+    // .left-full {
+    //   // grid-template-rows: 1vh 7vh 35vh 4vh;
+    //   // margin-top: 50px;
+    //   // .description {
+    //   //   margin-left: 1.5rem;
+    //   //   text-align: center;
+    //   //   font-size: 1rem;
+    //   //   font-weight: thinner;
 
-        // align-self: center;
-      }
-      .title {
-        transform: translateY(-50%);
-        justify-items: center;
-        text-align: center;
-        font-size: 2rem;
-        margin-left: 0;
-      }
-      .line {
-        display: none;
-      }
-      .element-container {
-        .expanded {
-          width: 50vw;
-          transform: translateY(-10px);
+    //   //   // align-self: center;
+    //   // }
+    //   // .title {
+    //   //   transform: translateY(-50%);
+    //   //   justify-items: center;
+    //   //   text-align: center;
+    //   //   font-size: 4rem;
+    //   //   margin-left: 0;
+    //   // }
+    //   // .line {
+    //   //   display: none;
+    //   // }
+    //   .element-container {
+    //     .expanded {
+    //       width: 50vw;
+    //       transform: translateY(-4rem);
+    //       height: 50vh;
 
-          // border-bottom: none;
-          .expander {
-            transform: translateY(-12%) translateX(12%);
-            .item {
-              border-bottom: 0.5px $light-grey solid;
-              padding-left: 20px;
-              overflow-x: hidden;
-              &.selected {
-                .name {
-                  font-size: 0.8rem;
-                }
-              }
-              .name {
-                width: 40vw;
-                font-size: 0.8rem;
-                transform: translateX(2vw);
-              }
-            }
-          }
-        }
-        .proper-container {
-          transform: translateX(9%) translateY(-50px);
-          // margin-bottom: 0.5rem;
+    //       // border-bottom: none;
+    //       .expander {
+    //         transform: translateY(-12%) translateX(12%);
+    //         .item {
+    //           border-bottom: 0.5px $light-grey solid;
+    //           padding-left: 20px;
+    //           overflow-x: hidden;
+    //           &.selected {
+    //             .name {
+    //               font-size: 0.8rem;
+    //             }
+    //           }
+    //           .name {
+    //             width: 40vw;
+    //             font-size: 0.8rem;
+    //             transform: translateX(2vw);
+    //           }
+    //         }
+    //       }
+    //     }
+    //     .proper-container {
+    //       transform: translateX(9%) translateY(-50px);
+    //       // margin-bottom: 0.5rem;
 
-          grid-template-columns: 50vw 3rem 3rem;
-          position: fixed;
+    //       grid-template-columns: 50vw 3rem 3rem;
+    //       position: fixed;
 
-          grid-gap: 2vw;
-          .left-arrow,
-          .right-arrow,
-          .chosen-item {
-            height: 3rem;
-          }
-          .chosen-item {
-            grid-template-columns: 3vw 37vw 5vw;
-            .item-name {
-              // transform: translateX(-6%);
-              font-size: 0.8rem;
-              width: 40vw;
-            }
-            .icon {
-              transform: translateY(5%);
-            }
-          }
-        }
-      }
-    }
+    //       grid-gap: 2vw;
+    //       .left-arrow,
+    //       .right-arrow,
+    //       .chosen-item {
+    //         height: 3rem;
+    //       }
+    //       .chosen-item {
+    //         grid-template-columns: 3vw 37vw 5vw;
+    //         .item-name {
+    //           // transform: translateX(-6%);
+    //           font-size: 0.8rem;
+    //           width: 40vw;
+    //         }
+    //         .icon {
+    //           transform: translateY(5%);
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   }
 }
+
 @media screen and (max-width: 600px) {
   .window-template {
     grid-template-rows: 55vh 30vh;
@@ -666,7 +670,7 @@ export default defineComponent({
       // }
     }
     .left-full {
-      grid-template-rows: 1vh 6vh 30vh 2vh;
+      grid-template-rows: 1vh 7vh 24vh 2vh;
       margin-top: 50px;
       .description {
         margin-left: 1.3rem;
@@ -689,6 +693,7 @@ export default defineComponent({
       .element-container {
         .expanded {
           width: 50vw;
+          height: 50vh;
           transform: translateY(-2%);
 
           // border-bottom: none;

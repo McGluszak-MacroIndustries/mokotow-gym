@@ -26,9 +26,10 @@
       <div class="expanded-menu" v-else>
         <div class="mobile-buttons">
           <div class="x-" @click="clicked = true">x</div>
-          <div class="lang-button" @click="changeLanguageInMobile()">
+          <div class="lang-button">
             {{ chosenLanguage }}
           </div>
+          <!-- @click="changeLanguageInMobile()" -->
         </div>
         <div class="mobile-items">
           <div
@@ -44,14 +45,10 @@
     </div>
     <div class="lang">
       <div class="language-selection">
-        <div
-          @click="changeLanguage()"
-          class="lang-circle"
-          :key="chosenLanguage"
-        >
+        <div class="lang-circle" :key="chosenLanguage">
           {{ chosenLanguage }}
         </div>
-        <!-- <div @click="changeLanguage(true)" class="lang-circle">ENG</div> -->
+        <!-- @click="changeLanguage()" -->
       </div>
     </div>
     <div class="logo">
@@ -218,7 +215,7 @@ export default defineComponent({
         // padding-top: 0.5rem;
         cursor: pointer;
         height: 5vh;
-        width: 4vw;
+        width: 6vw;
         &.selected {
           // padding-bottom: 2rem;
           border-bottom: 4px $white-power solid;
@@ -228,12 +225,18 @@ export default defineComponent({
     }
   }
   .navbar-mobile {
+    display: grid;
     z-index: 1;
+    transform: translateX(-2vw);
+    // height: 100vh;
+    // width: 100vw;
     // width: 140rem;
     // height: 100vh;
 
     .burger-menu {
       @include hoverable;
+      margin-left: 10vw;
+      justify-self: start;
     }
     .expanded-menu {
       display: grid;
@@ -279,7 +282,7 @@ export default defineComponent({
         height: 120vh;
 
         overflow: hidden;
-
+        background: $dark-grey;
         .item {
           @include hoverable;
           z-index: 20;
@@ -336,12 +339,19 @@ svg {
 }
 @media screen and (max-width: 1200px) {
   .navbar {
-    margin-left: 0;
+    margin-left: 2vw;
     margin-top: 0;
+    .options {
+      .items {
+        grid-gap: 1.5vw;
+        .navbar-item {
+          font-size: 0.9rem;
+          width: 6vw;
+        }
+      }
+    }
   }
-  .items {
-    font-size: 0.75rem;
-  }
+
   .logo {
     transform: translateX(40%);
   }
@@ -359,6 +369,85 @@ svg {
     .lang {
       .language-selection {
         grid-template-columns: 20px 20px;
+      }
+    }
+
+    .navbar-mobile {
+      .expanded-menu {
+        background: $dark-grey;
+        .mobile-items {
+          font-size: 2.5rem;
+        }
+      }
+    }
+    // .lang {
+    //   display: none;
+    // }
+  }
+}
+@media screen and (max-width: 500px) {
+  .navbar {
+    grid-template-columns: 20vw 50vw 10vw;
+    .logo {
+      height: 5vh;
+    }
+    .lang {
+      .language-selection {
+        grid-template-columns: 20px 20px;
+      }
+    }
+    .navbar-mobile {
+      .expanded-menu {
+        display: grid;
+        grid-template-rows: 5vh 90vh;
+        width: 100vw;
+        // padding-left: 0;
+        height: 100vh;
+        transform: translateY(-10%);
+        background: $dark-grey;
+
+        padding-top: 0;
+        .mobile-buttons {
+          display: grid;
+          grid-template-columns: 4rem 4rem;
+          padding-left: 5rem;
+          justify-content: flex-start;
+          z-index: 110;
+          transform: translateY(200%);
+          & > * {
+            display: grid;
+            @include hoverable;
+            background: $white-power;
+            color: $dark-grey;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .mobile-items {
+          display: grid;
+          grid-auto-flow: row;
+
+          padding-top: 30vh;
+          // justify-content: start;
+          background: $dark-grey;
+          align-content: flex-start;
+          grid-gap: 1vh;
+          font-size: 2.5rem;
+          z-index: 99;
+
+          width: 100vw;
+          height: 120vh;
+
+          overflow: hidden;
+
+          .item {
+            @include hoverable;
+            z-index: 20;
+          }
+        }
       }
     }
     // .lang {
