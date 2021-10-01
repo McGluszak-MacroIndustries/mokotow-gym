@@ -464,7 +464,7 @@ export const privacyPolitics: Array<Item> = [
 export const teamItems: Array<Item> = [
   {
     name: "team",
-    title: "FILIP SZAMBORSKI",
+    title: "Filip Szamborski",
     description: `Sport zacząłem uprawiać w wieku 9 lat, kiedy to mama zaprowadziło mnie na judo i szermierkę. Jako nastolatek zająłem się parkourem i treningiem na siłowni. Od sześciu lat pracuję zawodowo jako trener personalny.
     Szczególny nacisk kładę na staranność i dokładność w wykonywaniu ćwiczeń, a także kompleksową mobilizację i rozciągnięcie po treningu. Moją specjalizacją jest modelowanie sylwetki, mogę pochwalić się licznymi spektakularnymi przemianami klientów.
     
@@ -494,7 +494,7 @@ export const teamItems: Array<Item> = [
   // },
   {
     name: "team",
-    title: "KAROLINA UJEJSKA",
+    title: "Karolina Ujejska",
     description: `Specjalizuję się w treningu z Kettlebells wg metody Hardstyle. Jestem wicemistrzynią Polski Kettlebell Hardstyle oraz zwyciężczynią pucharu Polskiej Ligi Kettlebell Hardstyle w kategorii pro.
   Doświadczenia zawodnicze i wnioski wyniesione z wielu lat ciężkich treningów pozwalają efektywniej pomagać moim podopiecznym. Nacisk na technikę i dbałość o detale w połączeniu z wytrwałością, mogą wznieść każdego na niespotykany poziom siły -  która jest podstawą dla pozostałych cech motorycznych oraz pracy nad sylwetką.
   Po godzinach jestem fotografką, pasjonatką podróży i entuzjastką zdrowego stylu życia :)
@@ -507,7 +507,7 @@ export const teamItems: Array<Item> = [
   },
   {
     name: "team",
-    title: "MARCIN NASIADKO",
+    title: "Marcin Nasiadko",
     description: `Kickboxing to moja pasja i życie od 15 lat. Trenowałem w Polsce oraz w najlepszych klubach Holandii, Łotwy i Norwegii. Dziewięciokrotnie zdobywałem Mistrzostwo Polski i Puchar Świata. Jako członek kadry narodowej pięciokrotnie reprezentowałem Polskę na Mistrzostwach Świata i Mistrzostwach Europy, walczyłem też w barwach największej zawodowej organizacji kickboxingu w Polsce – DSF Kickboxing Challenge.
     Od 4 lat trenuję dzieci, młodzież i dorosłych – zawodników oraz osoby ćwiczące rekreacyjnie. Dbam o każdy aspekt przygotowania technicznego, motorycznego i psychologicznego moich wychowanków.
      Po godzinach, oprócz sportów walki uprawiam narciarstwo. Bardzo lubię podróże.
@@ -522,7 +522,7 @@ export const teamItems: Array<Item> = [
   },
   {
     name: "team",
-    title: "MATEUSZ KRYNICKI",
+    title: "Mateusz Krynicki",
     description: `Od dzieciństwa interesowałem się sportami walki. Na początku było to Oyama Karate, później odkryłem pasję do boksu tajskiego. Muai Thai ćwiczyłem w wielu klubach w Polsce i za granicą (Londyn, Kijów, Tajlandia) pod okiem wielu znamienitych osobistości. 
     Posiadam uprawnienia trenera nie tylko boksu tajskiego, ale również boksu klasycznego. 
     Ukończyłem również 9-miesięczne szkolenie dla służb mundurowych prowadzone przez byłych żołnierzy jednostki GROM.
@@ -541,7 +541,7 @@ export const teamItems: Array<Item> = [
   },
   {
     name: "team",
-    title: "PATRYCJA CZEKAJ",
+    title: "Patrycja Czekaj",
     description: `Według znajomych jestem wulkanem energii. Od ponad 20 lat ćwiczę taniec, miałam styczność z wieloma stylami - od inscenizacji tanecznych, przez jazz, po cheerleading, hip hop, new style, commercial i shuffle. Wielokrotnie uczestniczyłam w mistrzostwach na poziomie krajowym oraz europejskim, realizowałam pokazy taneczne na wydarzeniach sportowych i kulturalnych, koncerty, teledyski i eventy telewizyjne.
     Jestem absolwentką socjologii oraz kryminologii, a na codzień pracuję w branży Public Relations.
     Zdecydowanie unikam nudy, rzucam sobie wyzwania i próbuję nowych rzeczy, obecnie uczę się bachaty sensual. Interesuję się też modą. Każdą wolną chwilę poświęcam mojej największej miłości - maltance Sheri.
@@ -557,7 +557,7 @@ export const teamItems: Array<Item> = [
   },
   {
     name: "team",
-    title: "PIOTR BURZYKOWSKI",
+    title: "Piotr Burzykowski",
     description: `Tłumacz, trener, terapeuta. Od najmłodszych lat podróżuję po świecie w poszukiwaniu wiedzy, doświadczeń i nowych smaków. Wierzę, że najszybszym sposobem na poprawę jakości życia każdego człowieka jest zwiększenie jego siły. Specjalizuję się w treningu według metody „Starting Strength”.
     Po godzinach zajmuję się urban exploration, filozofią, stolarstwem.
     
@@ -570,7 +570,7 @@ export const teamItems: Array<Item> = [
   },
   {
     name: "team",
-    title: "SANDRA WOCH",
+    title: "Sandra Woch",
     description: `Moimi sportowymi pasjami są taniec towarzyski, siatkówka i siłownia. Specjalizuję się w kształtowaniu sylwetki oraz zajęciach dla kobiet w ciąży  i świeżo upieczonych mam. Mam doświadczenie w prowadzeniu zajęć dla kobiet w każdym wieku. 
     Treningi ze mną sprawią, że pokochasz i zaakceptujesz swoje ciało i będziesz sprawna i silna. 
      Kocham egzotyczne podróże i kuchnie świata. A w wolnym czasie pieszczoty ze swoim psem Cookim i dobrą książkę.
@@ -585,7 +585,7 @@ export const teamItems: Array<Item> = [
   },
   {
     name: "team",
-    title: "TOMEK RYTEL",
+    title: "Tomek Rytel",
     description: `Jestem posiadaczem czarnego pasa w BJJ (brazylijskim jiu jitsu), członkiem kadry narodowej grapplingu, kilkukrotnym mistrzem polski ADCC, zdobywcą African Championship Masterclass 2021 w kategorii 65kg. Umiejętności przez wiele lat szlifowałem w Polsce, Abu Dhabi i Brazylii. Aktualnie pozostaję czynnym zawodnikiem i trenerem.
     Jestem człowiekiem rodzinnym. Moją drugą wielką pasją poza sportem jest sushi.
 

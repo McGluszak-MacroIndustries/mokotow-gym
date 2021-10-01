@@ -79,7 +79,7 @@ export default defineComponent({
     const address = ["ulica Białej Floty 2", "SPRAWDŹ TRASĘ"];
     const engAddress = ["Białej Floty Street 2", "FIND US ON MAP"];
     const currentTitle = computed(() => {
-      return isEnglishLanguageOn.value ? "Contact" : "Kontakt";
+      return isEnglishLanguageOn.value ? "CONTACT" : "KONTAKT";
     });
     const currentAddress = computed(() => {
       return isEnglishLanguageOn.value ? engAddress : address;

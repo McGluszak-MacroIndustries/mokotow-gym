@@ -26,9 +26,7 @@
       <div class="expanded-menu" v-else>
         <div class="mobile-buttons">
           <div class="x-" @click="clicked = true">x</div>
-          <div class="lang-button">
-            {{ chosenLanguage }}
-          </div>
+          <div class="lang-button" @click="goToReservations()">rezerwuj</div>
           <!-- @click="changeLanguageInMobile()" -->
         </div>
         <div class="mobile-items">
@@ -45,9 +43,7 @@
     </div>
     <div class="lang">
       <div class="language-selection">
-        <div class="lang-circle" :key="chosenLanguage">
-          {{ chosenLanguage }}
-        </div>
+        <div class="lang-circle" :key="chosenLanguage">KUP KARNET</div>
         <!-- @click="changeLanguage()" -->
       </div>
     </div>
@@ -315,8 +311,8 @@ export default defineComponent({
       justify-content: center;
       font-size: 1rem;
       text-align: center;
-      height: 4rem;
-      width: 4rem;
+      height: 5rem;
+      width: 5rem;
       border-radius: 50%;
       color: $dark-grey;
     }
