@@ -608,7 +608,7 @@ export const aboutUsItems: Array<Item> = [
   {
     name: "about-us",
     title: "SPORTY WALKI, FITNESS, TANIEC",
-    description: `Mokotowski Gym to nowopowstały klub fitness przy ul. Białej Floty 2 (Marina Mokotów II) w Warszawie.
+    description: `Mokotowski Gym to nowopowstałe studio treningu przy ul. Białej Floty 2 (Marina Mokotów II) w Warszawie.
 
     Chciałbyś trenować boks albo muay thai? 
     Lubisz także trening siłowy? 
