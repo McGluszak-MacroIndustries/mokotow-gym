@@ -43,7 +43,7 @@
     </div>
     <div class="lang">
       <div class="language-selection">
-        <div class="lang-circle" :key="chosenLanguage">KUP KARNET</div>
+        <div class="lang-circle" :key="chosenLanguage">PL</div>
         <!-- @click="changeLanguage()" -->
       </div>
     </div>
