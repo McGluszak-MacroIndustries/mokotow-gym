@@ -499,7 +499,6 @@ export const teamItems: Array<Item> = [
   Doświadczenia zawodnicze i wnioski wyniesione z wielu lat ciężkich treningów pozwalają efektywniej pomagać moim podopiecznym. Nacisk na technikę i dbałość o detale w połączeniu z wytrwałością, mogą wznieść każdego na niespotykany poziom siły -  która jest podstawą dla pozostałych cech motorycznych oraz pracy nad sylwetką.
   Po godzinach jestem fotografką, pasjonatką podróży i entuzjastką zdrowego stylu życia :)
 
-
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
     ○ kettlebells / explosive strength`,
@@ -511,7 +510,6 @@ export const teamItems: Array<Item> = [
     description: `Kickboxing to moja pasja i życie od 15 lat. Trenowałem w Polsce oraz w najlepszych klubach Holandii, Łotwy i Norwegii. Dziewięciokrotnie zdobywałem Mistrzostwo Polski i Puchar Świata. Jako członek kadry narodowej pięciokrotnie reprezentowałem Polskę na Mistrzostwach Świata i Mistrzostwach Europy, walczyłem też w barwach największej zawodowej organizacji kickboxingu w Polsce – DSF Kickboxing Challenge.
     Od 4 lat trenuję dzieci, młodzież i dorosłych – zawodników oraz osoby ćwiczące rekreacyjnie. Dbam o każdy aspekt przygotowania technicznego, motorycznego i psychologicznego moich wychowanków.
      Po godzinach, oprócz sportów walki uprawiam narciarstwo. Bardzo lubię podróże.
-
 
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
     
@@ -527,7 +525,6 @@ export const teamItems: Array<Item> = [
     Posiadam uprawnienia trenera nie tylko boksu tajskiego, ale również boksu klasycznego. 
     Ukończyłem również 9-miesięczne szkolenie dla służb mundurowych prowadzone przez byłych żołnierzy jednostki GROM.
     Po godzinach uprawiam survival i wspinaczkę wysokogórską. Interesuję się historią. Bardzo lubię teatr.
-    
     
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
@@ -546,7 +543,6 @@ export const teamItems: Array<Item> = [
     Jestem absolwentką socjologii oraz kryminologii, a na codzień pracuję w branży Public Relations.
     Zdecydowanie unikam nudy, rzucam sobie wyzwania i próbuję nowych rzeczy, obecnie uczę się bachaty sensual. Interesuję się też modą. Każdą wolną chwilę poświęcam mojej największej miłości - maltance Sheri.
 
-
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
     ○ shuffle dance
@@ -560,7 +556,6 @@ export const teamItems: Array<Item> = [
     title: "Piotr Burzykowski",
     description: `Tłumacz, trener, terapeuta. Od najmłodszych lat podróżuję po świecie w poszukiwaniu wiedzy, doświadczeń i nowych smaków. Wierzę, że najszybszym sposobem na poprawę jakości życia każdego człowieka jest zwiększenie jego siły. Specjalizuję się w treningu według metody „Starting Strength”.
     Po godzinach zajmuję się urban exploration, filozofią, stolarstwem.
-    
     
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
@@ -576,7 +571,6 @@ export const teamItems: Array<Item> = [
      Kocham egzotyczne podróże i kuchnie świata. A w wolnym czasie pieszczoty ze swoim psem Cookim i dobrą książkę.
     Ciekawym doświadczeniem  był udział w konkursie Miss Warszawy, gdzie dotarłam do finału.
     
-    
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
     ○ brzuch, uda, pośladki
@@ -589,7 +583,6 @@ export const teamItems: Array<Item> = [
     description: `Jestem posiadaczem czarnego pasa w BJJ (brazylijskim jiu jitsu), członkiem kadry narodowej grapplingu, kilkukrotnym mistrzem polski ADCC, zdobywcą African Championship Masterclass 2021 w kategorii 65kg. Umiejętności przez wiele lat szlifowałem w Polsce, Abu Dhabi i Brazylii. Aktualnie pozostaję czynnym zawodnikiem i trenerem.
     Jestem człowiekiem rodzinnym. Moją drugą wielką pasją poza sportem jest sushi.
 
-    
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
     ○ BJJ dla dorosłych
@@ -614,22 +607,19 @@ export const teamItems: Array<Item> = [
 export const aboutUsItems: Array<Item> = [
   {
     name: "about-us",
-    title: "FITNESS, SZTUKI WALKI, TANIEC",
+    title: "SPORTY WALKI, FITNESS, TANIEC",
     description: `Mokotowski Gym to nowopowstały klub fitness przy ul. Białej Floty 2 (Marina Mokotów II) w Warszawie.
 
+    Chciałbyś trenować boks albo muay thai? 
+    Lubisz także trening siłowy? 
+    A może szukasz miejsca, w którym można nauczyć się tańczyć?
 
-    Szukasz miejsca, w którym mógłbyś/mogłabyś nauczyć się tańczyć?
-    Może kusi Cię boksowanie lub trening w parterze?
-    Lubisz także trening siłowy?
     To wspaniale się składa: u nas znajdziesz wszystko - i to w jednym miejscu!
-
 
     Wyznajemy zasadę: przede wszystkim pasja.
     Nasi trenerzy są nie tylko świetnymi specjalistami we własnych dziedzinach, co także ciekawymi, otwartymi ludźmi, którzy bez trudu zarażą Cię pasją do sportu.
 
-
     Wejdź na wyższy poziom, i pamiętaj: sky is the limit!
-
     
     Oferujemy szeroki wybór zajęć w kameralnych grupach, treningi indywidualne i możliwość samodzielnych ćwiczeń - u nas każdy znajdzie coś dla siebie.`,
     src: "grupa1.jpg",
@@ -681,22 +671,19 @@ export const offerItems: Array<Item> = [
     title: "Starting Strength™",
     description: `Czym jest Starting Strength™?
     
-    
     Starting Strength™  jest kompletną metodą treningu siłowego opracowaną przez trenera Marka Rippetoe.
     Trening według metody Starting Strength™ świetnie się sprawdza zarówno u nastolatków i dorosłych, którzy pragną zwiększyć swoją sprawność fizyczną i poprawić sylwetkę, jak i u seniorów, którzy pragną zachować jak najdłużej autonomię w życiu codziennym. Metoda opiera się na ćwiczeniach wielostawowych wykonywanych ze sztangą według starannie zaprojektowanego programu treningowego.
 
-
     Główne ćwiczenia to:
+
 ○ przysiad ze sztangą
 ○ wyciskanie sztangi stojąc
 ○ wyciskanie sztangi leżąc
 ○ martwy ciąg
 
-
 Zostały one wybrane, ponieważ pozwalają na zwiększenie siły u trenujących szybciej, skuteczniej i w bardziej bezpieczny sposób w porównaniu z innymi zestawami ćwiczeń. Będziesz stawał się silniejszy od samego początku programu, ponieważ na każdym treningu będziemy odpowiednio zwiększać ciężar na sztandze.
 Ale bez obaw! Początkowe ciężary i progresja będą zawsze dostosowane do Twojej kondycji i poziomu siły.
 W miarę postępów w programie pojawią się nowe ćwiczenia, ale i tak  przysiady, wyciskanie stojąc i leżąc oraz martwe ciągi pozostaną najczęściej wykonywanymi ćwiczeniami.
-
 
 Zajęcia Starting Strength™ prowadzi u nas trener 𝐏𝐢𝐨𝐭𝐫 𝐁𝐮𝐫𝐳𝐲𝐤𝐨𝐰𝐬𝐤𝐢`,
     src: "strength.jpg",
@@ -706,15 +693,12 @@ Zajęcia Starting Strength™ prowadzi u nas trener 𝐏𝐢𝐨𝐭𝐫 𝐁�
     title: "Cross Training",
     description: `Cross Training to program treningu siłowego i kondycyjnego rodem z CrossFitu. Jest to świetna alternatywa dla monotonnych i nudnych treningów na siłowni - treningi crossa nigdy nie są takie same. 
     
-    
-    Głównym założeniem tego treningu jest osiągnięcie sprawności aż w dziesięciu różnych obszarach fizycznych: wydolność krążeniowo-oddechowa, wytrzymałość, siła, gibkość, moc, szybkość, zwinność, równowaga, koordynacja i dokładność. 
+        Głównym założeniem tego treningu jest osiągnięcie sprawności aż w dziesięciu różnych obszarach fizycznych: wydolność krążeniowo-oddechowa, wytrzymałość, siła, gibkość, moc, szybkość, zwinność, równowaga, koordynacja i dokładność. 
     Na zajęciach przeplatają się ćwiczenia funkcjonalne, elementy lekkoatletyki, gimnastyki i treningu siłowego – uczestnicy biegają, wiosłują, skaczą, przenoszą najróżniejsze przedmioty, rywalizują z innymi oraz z samym sobą. 
-    
     
     Metodyka Cross Training przynosi rozmaite rezultaty: większą wytrzymałość mięśni, zwiększenie zakres ruchu niemal wszystkich stawów, podkręcenie metabolizmu, przyspieszenie spalanie tkanki tłuszczowej, lepszą sprawność fizyczną organizmu, a także równomierne kształtowanie całej sylwetki.
     
-
-    Zajęcia Cross Training prowadzone są przez trenera 𝐅𝐢𝐥𝐢𝐩𝐚 𝐒𝐳𝐚𝐦𝐛𝐨𝐫𝐬𝐤𝐢𝐞𝐠𝐨`,
+Zajęcia Cross Training prowadzone są przez trenera 𝐅𝐢𝐥𝐢𝐩𝐚 𝐒𝐳𝐚𝐦𝐛𝐨𝐫𝐬𝐤𝐢𝐞𝐠𝐨`,
     src: "cross2.jpg",
   },
   // {
@@ -730,26 +714,21 @@ Zajęcia Starting Strength™ prowadzi u nas trener 𝐏𝐢𝐨𝐭𝐫 𝐁�
     title: "Zdrowe plecy",
     description: `Znowu obolały wstajesz sprzed komputera? Czujesz, że Twoim plecom przydałby się odpoczynek? W takim razie oto zajęcia dla Ciebie.
 
-
-    Ból całych pleców lub któregoś z odcinków kręgosłupa nie należy do rzadkości, a ze względu na sposób życia i pracy dla wielu osób stał się przykrą codziennością.
+ Ból całych pleców lub któregoś z odcinków kręgosłupa nie należy do rzadkości, a ze względu na sposób życia i pracy dla wielu osób stał się przykrą codziennością.
     Gdy zastanawiamy się, co w takiej sytuacji zrobić, często pędzimy do marketu, by specjalną kupić poduszkę ortopedycznej na kręgosłup szyjny czy twardy materac. Po czasie okazuje się jednak, że to tylko częściowo rozwiązało problem i wprawdzie boli mniej, ale nie jest idealnie. 
     Musimy sobie bowiem uświadomić, że nasz kręgosłup nie działa w osamotnieniu i sam nie „dźwiga” całego obciążenia. Nieocenionym wsparciem są mięśnie korpusu i to one powinny pełnić rolę mitologicznego Atlasa - jeśli więc nie zadbamy o to, by nasze mięśnie były wystarczająco silne, ciężar będzie osadzony na samym kręgosłupie, a ten odpowie nam bólem i kształtującymi się zwyrodnieniami. 
     Jeśli zaś wystarczająco się nie rozciągniemy, napięte ścięgna i zbite mięśnie do pewnego stopnia będą mogły ograniczyć naszą ruchomość i również wywoływać ból (może być to efektem za małej ilości ruchu lub po prostu stresu). 
     
-
     Dlaczego warto wykonywać ćwiczenia na zdrowy kręgosłup? 
     Ból całych pleców lub któregoś z odcinków kręgosłupa nie należy do rzadkości, a ze względu na sposób życia i pracy dla wielu osób stał się przykrą codziennością. Gdy zastanawiamy się, co w takiej sytuacji zrobić, często pędzimy do marketu, by specjalną kupić poduszkę ortopedycznej na kręgosłup szyjny czy twardy materac. 
     Po czasie okazuje się jednak, że to tylko częściowo rozwiązało problem i wprawdzie boli mniej, ale nie jest idealnie. Musimy sobie bowiem uświadomić, że nasz kręgosłup nie działa w osamotnieniu i sam nie „dźwiga” całego obciążenia. Nieocenionym wsparciem są mięśnie korpusu i to one powinny pełnić rolę mitologicznego Atlasa. Jeśli więc nie zadbamy o to, by nasze mięśnie były wystarczająco silne, ciężar będzie osadzony na samym kręgosłupie, a ten odpowie nam bólem i kształtującymi się zwyrodnieniami. Jeśli zaś wystarczająco się nie rozciągniemy, napięte ścięgna i zbite mięśnie do pewnego stopnia będą mogły ograniczyć naszą ruchomość i również wywoływać ból (może być to efektem za małej ilości ruchu lub po prostu stresu). 
     
-    
-    Kto powinien wykonywać ćwiczenia na zdrowy kręgosłup? 
+        Kto powinien wykonywać ćwiczenia na zdrowy kręgosłup? 
     Wciąż można spotkać się z przeświadczeniem, że ćwiczenia na zdrowy kręgosłup to zajęcia tylko dla seniorów, a to przecież zupełnie nieprawda! Siedzący tryb życia, ciągłe garbienie się i zamknięta pozycja przed komputerem – to codzienność ogromnej liczby Polaków - i to bez względu na wiek. 
     Warto zdawać sobie sprawę, że nawet jeśli jeszcze nie boli nas odcinek lędźwiowy czy piersiowy kręgosłupa, to w pewnym momencie zacznie, a właśnie uprzednia troska o mięśnie pleców może znacząco oddalić ten moment w czasie. Troska o zdrowy kręgosłup wymaga regularnej pracy – na szczęście nie jest to bardzo uciążliwe zajęcie, dzięki czemu nawet codzienna praktyka nie powinna przysporzyć nam problemu. 
     
-    
     Podczas wykonywania ćwiczeń na kręgosłup musimy zadbać o wzmocnienie mięśni, które podtrzymują nasz układ kostny, ponieważ to one odciążają plecy i pozwalają zredukować negatywnie efekty spędzania całych dni w pozycji siedzącej. Przede wszystkim należy pamiętać, że ćwiczenia na zdrowy kręgosłup nie powinny należeć do dynamicznych i przy ich wykonywaniu zdecydowanie bardziej liczy się dokładność i reakcja na własne odczucia, niż tempo (podobnie jak w jodze). Każde z ćwiczeń, zarówno na kręgosłup szyjny, piersiowy czy lędźwiowy wymaga wykonania kilku powtórzeń i zachowania symetrii (tzn. jeśli robimy skręt w lewo, to musimy wykonać też skręt w prawo – daje to pewność równomiernego rozciągnięcia i rozbudowania mięśni i ścięgien).
-    
-    
+      
     Zajęcia prowadzi trener 𝐅𝐢𝐥𝐢𝐩 𝐒𝐳𝐚𝐦𝐛𝐨𝐫𝐬𝐤𝐢`,
     src: "plecy.jpg",
   },
@@ -759,17 +738,14 @@ Zajęcia Starting Strength™ prowadzi u nas trener 𝐏𝐢𝐨𝐭𝐫 𝐁�
     description: `Współczesny boks jest dyscypliną wywodzącą się z XVIII-wiecznej Anglii.
     Jako sport walki jest unikatem na skalę światową, ponieważ ciosy zadaje się tylko rękami. Bywa nazywany sportem dżentelmenów.
 
-    
     Na grupie początkującej kształtujemy przede wszystkim odpowiednie nawyki i pamięć mięsniowo-motoryczną.
     Typowe zajęcia składają się z 15 minut rozgrzewki, a nastepnie z zajęć w parach, w których ćwiczymy wyprowadzanie ciosów, poruszanie się oraz obronę.
     Oprócz techniki kładziemy nacisk na przygotowanie kondycyjne. W miarę zdobywania doświadczenia wprowadzamy sparingi.
-
     
     Zajęcia są dla każdego, kto pragnie ukształtować kondycję i sylwetkę, zyskać praktyczne umiejętności obronne oraz pewność siebie.
     Prowadzimy grupy koedukacyjne oraz dedykowane dla kobiet.
     Zapraszamy również młodzież - tutaj minimalny wiek to ok. 12 lat.
     
-
     Zajęcia prowadzą 𝐉𝐚𝐫𝐞𝐤 𝐊𝐫𝐳𝐨𝐬𝐞𝐤 oraz 𝐌𝐚𝐫𝐜𝐢𝐧 𝐍𝐚𝐬𝐢𝐚𝐝𝐤𝐨.`,
     src: "boks.jpg",
   },
@@ -778,13 +754,11 @@ Zajęcia Starting Strength™ prowadzi u nas trener 𝐏𝐢𝐨𝐭𝐫 𝐁�
     title: "Shuffle Dance",
     description: `Shuffle dance to obecnie jeden z najbardziej popularnych stylów tańca w Europie, polegający na pozornym „ślizganiu się” po podłodze. Oprócz ślizgania, styl przeplata się różnorodnymi krokami, takimi jak przeskoki, obroty, wykopy, moonwalk i różnego rodzaju footworkami - a to wszystko w rytm energicznej muzyki!
 
-    
     Do czego tańczymy?
     Styl wywodzi się z klubów tanecznych muzyki rave, które w brzmieniu przypomina techno i house, ale ma mocniejsze brzmienie i szybsze tempo - z pewnością nie zabraknie sporej dawki muzycznej energii. 
     Regularne zajęcia Shuffle Dance poprawiają kondycję fizyczną, umożliwiają zrzucenie nadprogramowych kilogramów i spalenie duuużych ilości kalorii - to przyjemna wersja treningu cardio! Dodatkowo zajęcia pozwolą na polepszenie koordynacji ciała, ale przede wszystkim to dobra zabawa, duża dawka pozytywnej energii i skok endorfin.
     Zapisz się już dziś i tańcz jak w teledysku LMFAO!
     
-
     Zajęcia prowadzi trener 𝐏𝐚𝐭𝐫𝐲𝐜𝐣𝐚 𝐂𝐳𝐞𝐤𝐚𝐣.
     `,
     src: "shuffle.jpg",
@@ -795,10 +769,8 @@ Zajęcia Starting Strength™ prowadzi u nas trener 𝐏𝐢𝐨𝐭𝐫 𝐁�
     description: `Kickboxing należy do grupy stójkowych sportów walki. Dozwolone są w nim ciosy bokserskie i kopnięcia. 
     Zasady dyscypliny nastawiają nas na ciągłą wymianę ciosów i kopnięć, a brak przestojów walce powoduje, że jest to sport niezwykle dynamiczny oraz spektakularny dla oka. 
     
-    
     Treningi kickboxingu rozwiją nasze ciało w sposób holistyczny. Kształtuje takie cechy motoryczne jak szybkość, siła, wytrzymałość. Sport ten nie tylko wpływa dobrze na kondycje fizyczną, ale i psychiczną, redukuje stres, uczy trzymać nerwy na wodzy oraz znacząco poprawia naszą samodyscyplinę i pewność siebie.
-    
-
+  
     Zajęcia z kickboxingu w naszym klubie prowadzi 𝐌𝐚𝐫𝐜𝐢𝐧 𝐍𝐚𝐬𝐢𝐚𝐝𝐤𝐨.
     `,
     src: "kickboxing.jpg",
@@ -809,9 +781,7 @@ Zajęcia Starting Strength™ prowadzi u nas trener 𝐏𝐢𝐨𝐭𝐫 𝐁�
     description: `Brazylijskie jiu-jistu jest to dyscyplina sportowa wywodząca się z judo, ju-jitsu oraz zapasów, która koncentruje się na walce w parterze.
     Techniki ukierunkowane są na zajęcie pozycji dominujących oraz ataki dźwigniami bądź duszeniami. Nie stosuje się uderzeń ani kopnięć. 
     
-
     Jest to sport zarówno dla mężczyzn jak i dla kobiet. Rozwija szeroko rozumianą koordynację ruchową, siłę oraz wytrzymałość.
-
 
     Zajęcia prowadzi trener 𝐓𝐨𝐦𝐚𝐬𝐳 𝐑𝐲𝐭𝐞𝐥.
     `,
@@ -824,12 +794,10 @@ Zajęcia Starting Strength™ prowadzi u nas trener 𝐏𝐢𝐨𝐭𝐫 𝐁�
      Holistycznie wzmacnia ciało i jest niezwykle wydajny. Podczas treningu z kettlami angażujemy do pracy wiele mięśni jednocześnie, a więc zwiększa się zapotrzebowanie na energię.
 Trening kettlami doskonale buduje siłę, a jak wiadomo siła jest podstawą dla wszystkich cech motorycznych i jest potrzebna każdemu. Zwiększa wytrzymałość, koordynację, wzmacnia mięśnie odpowiedzialne za prawidłową postawę ciała oraz mięśnie głębokie, które pełnią rolę ochronną dla narządów wewnętrznych. 
     
-
     Podstawowe techniki z kettlem wg metody Hardstyle opierają się na głównych wzorcach ruchowych, których trenowanie przekłada się na to, że coraz lepiej wykonujemy inne ruchy, zarówno w życiu codziennym jak i w różnych sportach i aktywnościach.
     W treningu z kettlami wykonujemy ruchy o charakterze siłowym, dynamicznym i eksplozywnym, a więc kształtujemy wszystkie cechy motoryczne używając tylko jednego przyrządu treningowego.
     A przede wszystkim: trening typu kettlebell pomaga niwelować stres i jest po prostu fajny!
     
-
     Zajęcia z kettlebells prowadzi 𝐊𝐚𝐫𝐨𝐥𝐢𝐧𝐚 𝐔𝐣𝐞𝐣𝐬𝐤𝐚.
     `,
     src: "kettlebell.jpg",
@@ -840,7 +808,6 @@ Trening kettlami doskonale buduje siłę, a jak wiadomo siła jest podstawą dla
     description: ` Zajecia poswiecone aktywizacji obu półkul mózgowych majace na celu zgłębienia świadomosci własnego ciała. Bardzo wiele osób trenując na siłowni, bądź też trenując inne sporty ma problemy także z prawidłowym oddychaniem. 
     Trenują na tak zwanym bezdechu, przez co nie moga podniesć pewnej poprzeczki z racji niedotlenienia organizmu. 
     
-
     Zajecia będą poświęcone poprawie wlaśnie tych elementów ruchowych i oddechowych.
     `,
     src: "koncentracja.jpg",
@@ -881,8 +848,7 @@ export const priceListItems: Array<Item> = [
     title: "Oferta skrojona dla Ciebie",
     description: `Oferujemy kilka rodzajów karnetów, zarówno z możliwością korzystania z zajęć grupowych, jak i bez.
 
-    
-    Zakup karnetów i rezerwacje zajęć odbywają się przez stronę www (𝐝𝐨 𝐤𝐥𝐢𝐤𝐧𝐢𝐞̨𝐜𝐢𝐚 𝐩𝐨𝐧𝐢𝐳̇𝐞𝐣), można też kupić je na recepcji klubu. 
+    Zakup karnetów i rezerwacje zajęć odbywają się przez stronę www, można też kupić je na recepcji klubu. 
     Na zajęciach grupowych obowiązuje limit osób, co gwarantuje komfort ćwiczeń i bezpośredni kontakt z prowadzącym.
 
     Treningi indywidualne są płatne bezpośrednio u prowadzących – na pierwszy trening można umówić się za pośrednictwem recepcji (+48 696 168 867).`,
@@ -893,7 +859,7 @@ export const priceListItems: Array<Item> = [
 export const scheduleItems: Array<Item> = [
   {
     name: "schedule",
-    title: "Sana nr1",
+    title: "Sala nr1",
     description: `Sala numer jeden to serce naszego klubu. 
     To właśnie tutaj będą odbywać się zajęcia z szeroko zakrojonych sztuk walki.
     Poznasz u nas tajniki BJJ, muay thai, kickboxingu, a także boksu.`,

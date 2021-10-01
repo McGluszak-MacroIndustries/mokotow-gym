@@ -66,7 +66,7 @@ export default defineComponent({
       console.log("dupa");
       const a = document.createElement("a");
       a.target = "_blank";
-      a.href = "https://mokotowskigym.perfectgym.com/Pgm/#/Login";
+      a.href = "https://mokotowskigym.perfectgym.com/clientportal2/#/Login";
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
