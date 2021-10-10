@@ -71,3 +71,65 @@ export const englishNavbarElements: NavBarElement[] = [
     routerName: "contact",
   },
 ];
+
+export const navbarMobileElements: NavBarElement[] = [
+  {
+    frontName: "O NAS",
+    routerName: "home",
+  },
+  {
+    frontName: "OFERTA",
+    routerName: "offer",
+  },
+  {
+    frontName: "GRAFIK",
+    routerName: "schedule",
+  },
+  {
+    frontName: "ZESPÓŁ",
+    routerName: "team",
+  },
+  {
+    frontName: "CENNIK",
+    routerName: "pricelist",
+  },
+  {
+    frontName: "KONTAKT",
+    routerName: "contact",
+  },
+  {
+    frontName: "REZERWUJ",
+    routerName: "reserve",
+  },
+];
+
+export const englishNavbarMobileElements: NavBarElement[] = [
+  {
+    frontName: "ABOUT US",
+    routerName: "home",
+  },
+  {
+    frontName: "OFFER",
+    routerName: "offer",
+  },
+  {
+    frontName: "SCHEDULE",
+    routerName: "schedule",
+  },
+  {
+    frontName: "TEAM",
+    routerName: "team",
+  },
+  {
+    frontName: "PRICE LIST",
+    routerName: "pricelist",
+  },
+  {
+    frontName: "CONTACT",
+    routerName: "contact",
+  },
+  {
+    frontName: "RESERVE",
+    routerName: "reserve",
+  },
+];
