@@ -131,4 +131,9 @@ button {
     height: 8vh;
   }
 }
+@media screen and (max-width: 600px) {
+  button {
+    width: 40vw;
+  }
+}
 </style>

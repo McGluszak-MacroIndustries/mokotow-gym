@@ -26,12 +26,12 @@
       <div class="expanded-menu" v-else>
         <div class="mobile-buttons">
           <div class="x-" @click="clicked = true">x</div>
-          <div class="lang-button" @click="goToReservations()">rezerwuj</div>
+          <!-- <div class="lang-button" @click="goToReservations()">rezerwuj</div> -->
           <!-- @click="changeLanguageInMobile()" -->
         </div>
         <div class="mobile-items">
           <div
-            v-for="element in currentNavbarElements"
+            v-for="element in navbarMobileElements"
             :key="element"
             @click="moveToPageAndChangeActiveButtonMobile(element)"
             class="item"
@@ -63,6 +63,7 @@ import {
   navbarElements,
   NavBarElement,
   englishNavbarElements,
+  navbarMobileElements,
 } from "@/mixins/navbar-management";
 import router from "@/router";
 import { isEqual } from "lodash";
@@ -86,6 +87,7 @@ export default defineComponent({
     const chosenLanguage = computed(() => {
       return isEnglishLanguageOn.value ? "ENG" : "PL";
     });
+
     // const currentNavbarElements = ref<Array<NavBarElement>>(navbarElements);
 
     // const isEnglishLanguageOn = ref<boolean>(false);
@@ -140,8 +142,11 @@ export default defineComponent({
       console.log("kliknięty to: ", element.routerName);
     }
     function moveToPageAndChangeActiveButtonMobile(element: NavBarElement) {
-      if (isEqual(element, props.currentNavbarElement)) {
-        return;
+      // if (isEqual(element, props.currentNavbarElement)) {
+      //   return;
+      // }
+      if (isEqual(element.routerName, "reserve")) {
+        goToReservations();
       }
       const name: string = element.routerName;
       router.push({ name });
@@ -159,6 +164,15 @@ export default defineComponent({
       // console.log("dupa");
       isEnglishLanguageOn.value = !isEnglishLanguageOn.value;
     }
+    function goToReservations() {
+      // console.log("dupa");
+      const a = document.createElement("a");
+      a.target = "_blank";
+      a.href = "https://mokotowskigym.perfectgym.com/clientportal2/#/Login";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
     function changeLanguageInMobile() {
       isEnglishLanguageOn.value = !isEnglishLanguageOn.value;
     }
@@ -173,7 +187,9 @@ export default defineComponent({
       moveToPageAndChangeActiveButtonMobile,
       changeLanguage,
       changeLanguageInMobile,
+      goToReservations,
       chosenLanguage,
+      navbarMobileElements,
     };
   },
 });
@@ -304,7 +320,8 @@ export default defineComponent({
     height: 1rem;
 
     .lang-circle {
-      display: flex;
+      // display: flex;
+      display: none;
       transform: translateY(7%);
       background-color: $white-power;
       align-items: center;

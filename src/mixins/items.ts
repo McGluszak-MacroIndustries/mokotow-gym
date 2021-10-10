@@ -694,7 +694,7 @@ Zajęcia Starting Strength™ prowadzi u nas trener Piotr Burzykowski`,
     
     Metodyka Cross Training przynosi rozmaite rezultaty: większą wytrzymałość mięśni, zwiększenie zakres ruchu niemal wszystkich stawów, podkręcenie metabolizmu, przyspieszenie spalanie tkanki tłuszczowej, lepszą sprawność fizyczną organizmu, a także równomierne kształtowanie całej sylwetki.
     
-Zajęcia Cross Training prowadzone są przez trenera Filipa Szamborskiego`,
+Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
     src: "cross2.jpg",
   },
   // {
