@@ -523,7 +523,7 @@ export const teamItems: Array<Item> = [
   {
     name: "team",
     title: "Mateusz Krynicki",
-    description: `W wieku 6 Lat ojciec zaprowadził mnie na treningi Oyama Karate ze względu na stwarzane przeze mnie problemy wychowawcze. Zajęcia wyjątkowo przypadły mi do gustu. Przygodę z karate kontynuowałem aż do końca gimnazjum. Po 3 latach zmieniłem zajęcia na mocniejsze wydanie Karate Kyokushin na Warszawskim AWF-ie, przygodę z tą dyscypliną zakończyłem z zielonym pasem 3rd KYU. W liceum trafiłem do klasy z osobami, które trenowały różne sporty, jedna z nich zabrała mnie na trening muay thai do kolebki tej dyscypliny w Polsce – Palestry. Ze względu na zdecydowanie większą eksplozywność i typowy full contact - co zdecydowanie bardziej mi odpowiadało - skoncentrowałem się na Muay Thai. Dla dziecka z ADHD była to idealna możliwość na spożytkowanie zbyt dużej ilości energii. 
+    description: `Kiedy miałem sześć lat ojciec zaprowadził mnie na treningi oyama karate ze względu na stwarzane przeze mnie problemy wychowawcze. Zajęcia wyjątkowo przypadły mi do gustu. Przygodę z karate kontynuowałem aż do końca gimnazjum. Po 3 latach zmieniłem zajęcia na mocniejsze wydanie karate kyokushin na Warszawskim AWF-ie. Przygodę z tą dyscypliną zakończyłem z zielonym pasem 3rd kyu. W liceum trafiłem do klasy z osobami, które trenowały różne sporty - jedna z nich zabrała mnie na trening muay thai. Ze względu na zdecydowanie większą eksplozywność i typowy full contact - co zdecydowanie bardziej mi odpowiadało - przy sporcie tym pozostałem. Dla dziecka z ADHD była to idealna możliwość na spożytkowanie zbyt dużej ilości energii. 
     
     Przez wiele lat trenowałem w wielu różnych klubach w Warszawie, Kijowie oraz Londynie, gdzie mieszkałem przez 18 miesięcy. Treningi w tych miejscach oraz różnrodność wykorzystanych technik dały mi możliwość zdobycia jak największego doświadczenie. Między innymi w: S4 Fight Club, Legia Fight Club, Academia Gorilla, Aligatores Fight Club, Koszalin Fight Club, London Shoot Fighters I ukraiński Oktahon w Kijowie. Żeby rozwinąć swoje umiejętności, trenowałem przemiennie boks tajski z brazylijskim jiu jitsu i zapasami, biorąc udział między innymi w ALMMA. Umiejętności szlifowałem u takich trenerów jak: Zbigniew Raubo, Bartek Walczewski , Ireneusz Graczyk, Wojciech Feliński, Roman Ratajczyk. Uczestniczyłem w wielu seminariach prowadzonych przez zawodników z Holandii, Tajlandii i Białorusi, żeby poszerzyć swoje umiejętności.
     
@@ -541,7 +541,7 @@ export const teamItems: Array<Item> = [
   {
     name: "team",
     title: "Patrycja Czekaj",
-    description: `WWedług znajomych to przede wszystkim wulkan energiI! ;) Z tańcem jestem związana od ponad 20 lat. W swojej tanecznej przygodzie miałam styczność z wieloma stylami tanecznymi - zaczynając od inscenizacji tanecznych, jazz, po cheerleading, Hip hop, New style, commercial i shuffle. W ciągu tych wszystkich lat miałam przyjemność uczestniczyć wielokrotnie w zawodach, mistrzostwach na poziomie krajowym oraz europejskim, ale także realizować wiele projektów, w różnych miastach, dzięki czemu w moim artystycznym portfolio mogę pochwalić się różnymi aktywnościami - pokazy taneczne na wydarzeniach sportowych, kulturalnych, koncerty, teledyski, eventy telewizyjne. 
+    description: `Jestem przede wszystkim wulkanem energii ;) Z tańcem jestem związana od przeszło 20 lat. W swojej tanecznej przygodzie miałam styczność z wieloma stylami tanecznymi - zaczynając od inscenizacji tanecznych, jazz, po cheerleading, hip hop, new style, commercial i shuffle. W ciągu tych wszystkich lat miałam przyjemność uczestniczyć wielokrotnie w zawodach, mistrzostwach na poziomie krajowym oraz europejskim, ale także realizować wiele projektów, w różnych miastach, dzięki czemu w moim artystycznym portfolio mogę pochwalić się różnymi aktywnościami - pokazy taneczne na wydarzeniach sportowych, kulturalnych, koncerty, teledyski, eventy telewizyjne. 
 
     Na zajęciach szczególną uwagę przykładam do dobrej, pozytywnej energii. Do każdej grupy podchodzę indywidualnie, aby każdy wyniósł z lekcji jak najwięcej i na koniec zajęć czuł satysfakcję ze swojej pracy. Jeśli lubisz wyzwania i trochę się zmęczyć - to zdecydowanie zajęcia dla Ciebie.
     
@@ -573,9 +573,9 @@ Prowadzone zajęcia:
   {
     name: "team",
     title: "Sandra Woch",
-    description: `Moimi sportowymi pasjami są taniec towarzyski, siatkówka i siłownia. Specjalizuję się w kształtowaniu sylwetki oraz zajęciach dla kobiet w ciąży  i świeżo upieczonych mam. Mam doświadczenie w prowadzeniu zajęć dla kobiet w każdym wieku. 
+    description: `Moimi sportowymi pasjami są taniec towarzyski, siatkówka i siłownia. Specjalizuję się w kształtowaniu sylwetki oraz zajęciach dla kobiet w ciąży  i po porodzie. Mam doświadczenie w prowadzeniu zajęć dla kobiet w każdym wieku. 
     Treningi ze mną sprawią, że pokochasz i zaakceptujesz swoje ciało i będziesz sprawna i silna. 
-     Kocham egzotyczne podróże i kuchnie świata. A w wolnym czasie pieszczoty ze swoim psem Cookim i dobrą książkę.
+     Kocham egzotyczne podróże, kuchnie świata, pieszczoty ze swoim psem Cookim i dobrą książkę.
     Ciekawym doświadczeniem  był udział w konkursie Miss Warszawy, gdzie dotarłam do finału.
     
     Prowadzone zajęcia:
@@ -616,9 +616,9 @@ export const aboutUsItems: Array<Item> = [
     title: "SPORTY WALKI, FITNESS, TANIEC",
     description: `Mokotowski Gym to nowopowstałe studio treningu przy ul. Białej Floty 2 (Marina Mokotów II) w Warszawie.
 
-    Chciałbyś trenować boks albo muay thai? Lubisz także trening siłowy? A może szukasz miejsca, w którym można nauczyć się tańczyć? To wspaniale się składa: u nas znajdziesz wszystko - i to w jednym miejscu!
+    Chciałbyś/chciałbyś trenować boks albo muay thai? Lubisz także trening siłowy? A może szukasz miejsca, w którym można nauczyć się tańczyć? To wspaniale się składa: u nas znajdziesz wszystko - i to w jednym miejscu!
 
-    Wyznajemy zasadę: przede wszystkim pasja. Nasi trenerzy są nie tylko świetnymi specjalistami we własnych dziedzinach, co także ciekawymi, otwartymi ludźmi, którzy bez trudu zarażą Cię pasją do sportu. Wejdź na wyższy poziom, i pamiętaj: sky is the limit!
+    Wyznajemy zasadę: przede wszystkim pasja. Nasi trenerzy są nie tylko świetnymi specjalistami we własnych dziedzinach, ale także ciekawymi, otwartymi ludźmi, którzy bez trudu zarażą Cię pasją do sportu. Wejdź na wyższy poziom, i pamiętaj: sky is the limit!
     
     Oferujemy szeroki wybór zajęć w kameralnych grupach, treningi indywidualne i możliwość samodzielnych ćwiczeń - u nas każdy znajdzie coś dla siebie.`,
     src: "grupa1.jpg",
@@ -670,8 +670,8 @@ export const offerItems: Array<Item> = [
     title: "Starting Strength™",
     description: `Czym jest Starting Strength™?
     
-    Starting Strength™  jest kompletną metodą treningu siłowego opracowaną przez trenera Marka Rippetoe.
-    Trening według metody Starting Strength™ świetnie się sprawdza zarówno u nastolatków i dorosłych, którzy pragną zwiększyć swoją sprawność fizyczną i poprawić sylwetkę, jak i u seniorów, którzy pragną zachować jak najdłużej autonomię w życiu codziennym. Metoda opiera się na ćwiczeniach wielostawowych wykonywanych ze sztangą według starannie zaprojektowanego programu treningowego.
+    Starting Strength™  jest kompletną metodą treningu siłowego, opracowaną przez trenera Marka Rippetoe.
+    Trening według metody Starting Strength™ świetnie się sprawdza zarówno u nastolatków i dorosłych, którzy pragną zwiększyć swoją sprawność fizyczną jak i chcących poprawić sylwetkę, jak i u seniorów, którzy pragną zachować jak najdłużej autonomię w życiu codziennym. Metoda opiera się na ćwiczeniach wielostawowych, wykonywanych ze sztangą według starannie zaprojektowanego programu treningowego.
 
     Główne ćwiczenia to:
 ○ przysiad ze sztangą
@@ -690,9 +690,9 @@ Zajęcia Starting Strength™ prowadzi u nas trener Piotr Burzykowski`,
     title: "Cross Training",
     description: `Cross Training to program treningu siłowego i kondycyjnego rodem z CrossFitu. Jest to świetna alternatywa dla monotonnych i nudnych treningów na siłowni - treningi crossa nigdy nie są takie same. 
     
-    Głównym założeniem tego treningu jest osiągnięcie sprawności aż w dziesięciu różnych obszarach fizycznych: wydolność krążeniowo-oddechowa, wytrzymałość, siła, gibkość, moc, szybkość, zwinność, równowaga, koordynacja i dokładność. Na zajęciach przeplatają się ćwiczenia funkcjonalne, elementy lekkoatletyki, gimnastyki i treningu siłowego – uczestnicy biegają, wiosłują, skaczą, przenoszą najróżniejsze przedmioty, rywalizują z innymi oraz z samym sobą. 
+    Głównym założeniem tego treningu jest osiągnięcie sprawności aż w dziesięciu różnych obszarach: wydolność krążeniowo-oddechowa, wytrzymałość, siła, gibkość, moc, szybkość, zwinność, równowaga, koordynacja i dokładność. Na zajęciach przeplatają się ćwiczenia funkcjonalne, elementy lekkoatletyki, gimnastyki i treningu siłowego – uczestnicy biegają, wiosłują, skaczą, przenoszą najróżniejsze przedmioty, rywalizują z innymi oraz z samym sobą. 
     
-    Metodyka Cross Training przynosi rozmaite rezultaty: większą wytrzymałość mięśni, zwiększenie zakres ruchu niemal wszystkich stawów, podkręcenie metabolizmu, przyspieszenie spalanie tkanki tłuszczowej, lepszą sprawność fizyczną organizmu, a także równomierne kształtowanie całej sylwetki.
+    Metodyka Cross Training przynosi różnorodne rezultaty: większą wytrzymałość mięśni, zwiększenie zakres ruchu niemal wszystkich stawów, podkręcenie metabolizmu, przyspieszenie spalania tkanki tłuszczowej, lepszą sprawność fizyczną organizmu, a także równomierne kształtowanie całej sylwetki.
     
 Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
     src: "cross2.jpg",
@@ -708,9 +708,9 @@ Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
   {
     name: "offer",
     title: "Zdrowe plecy",
-    description: `Znowu obolały wstajesz sprzed komputera? Czujesz, że Twoim plecom przydałby się odpoczynek? W takim razie oto zajęcia dla Ciebie.
+    description: `Znowu obolały wstajesz sprzed komputera? Czujesz, że Twoim plecom przydałby się odpoczynek? W takim razie to zajęcia dla Ciebie.
 
- Ból całych pleców lub któregoś z odcinków kręgosłupa nie należy do rzadkości, a ze względu na sposób życia i pracy dla wielu osób stał się przykrą codziennością. Gdy zastanawiamy się, co w takiej sytuacji zrobić, często pędzimy do marketu, by specjalną kupić poduszkę ortopedycznej na kręgosłup szyjny czy twardy materac. Po czasie okazuje się jednak, że to tylko częściowo rozwiązało problem i wprawdzie boli mniej, ale nie jest idealnie. Musimy sobie bowiem uświadomić, że nasz kręgosłup nie działa w osamotnieniu i sam nie „dźwiga” całego obciążenia. Nieocenionym wsparciem są mięśnie korpusu i to one powinny pełnić rolę mitologicznego Atlasa - jeśli więc nie zadbamy o to, by nasze mięśnie były wystarczająco silne, ciężar będzie osadzony na samym kręgosłupie, a ten odpowie nam bólem i kształtującymi się zwyrodnieniami. Jeśli zaś wystarczająco się nie rozciągniemy, napięte ścięgna i zbite mięśnie do pewnego stopnia będą mogły ograniczyć naszą ruchomość i również wywoływać ból (może być to efektem za małej ilości ruchu lub po prostu stresu). 
+ Ból całych pleców lub któregoś z odcinków kręgosłupa nie należy do rzadkości, a ze względu na sposób życia i pracy dla wielu osób stał się przykrą codziennością. Gdy zastanawiamy się, co w takiej sytuacji zrobić, często pędzimy do marketu, by kupić specjalną poduszkę ortopedyczną na kręgosłup szyjny, czy też twardy materac. Po czasie okazuje się jednak, że to tylko częściowo rozwiązało problem i wprawdzie boli mniej, ale nie jest idealnie. Musimy sobie bowiem uświadomić, że nasz kręgosłup nie działa w osamotnieniu i sam nie „dźwiga” całego obciążenia. Nieocenionym wsparciem są mięśnie korpusu i to one powinny pełnić rolę mitologicznego Atlasa - jeśli więc nie zadbamy o to, by nasze mięśnie były wystarczająco silne, ciężar będzie osadzony na samym kręgosłupie, a ten odpowie nam bólem i kształtującymi się zwyrodnieniami. Jeśli zaś wystarczająco się nie rozciągniemy, napięte ścięgna i zbite mięśnie do pewnego stopnia będą mogły ograniczyć naszą ruchomość i również wywoływać ból (może być to efektem za małej ilości ruchu lub po prostu stresu). 
     
     Dlaczego warto wykonywać ćwiczenia na zdrowy kręgosłup? 
     Ból całych pleców lub któregoś z odcinków kręgosłupa nie należy do rzadkości, a ze względu na sposób życia i pracy dla wielu osób stał się przykrą codziennością. Gdy zastanawiamy się, co w takiej sytuacji zrobić, często pędzimy do marketu, by specjalną kupić poduszkę ortopedycznej na kręgosłup szyjny czy twardy materac. Po czasie okazuje się jednak, że to tylko częściowo rozwiązało problem i wprawdzie boli mniej, ale nie jest idealnie. Musimy sobie bowiem uświadomić, że nasz kręgosłup nie działa w osamotnieniu i sam nie „dźwiga” całego obciążenia. Nieocenionym wsparciem są mięśnie korpusu i to one powinny pełnić rolę mitologicznego Atlasa. Jeśli więc nie zadbamy o to, by nasze mięśnie były wystarczająco silne, ciężar będzie osadzony na samym kręgosłupie, a ten odpowie nam bólem i kształtującymi się zwyrodnieniami. Jeśli zaś wystarczająco się nie rozciągniemy, napięte ścięgna i zbite mięśnie do pewnego stopnia będą mogły ograniczyć naszą ruchomość i również wywoływać ból (może być to efektem za małej ilości ruchu lub po prostu stresu).
@@ -727,7 +727,7 @@ Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
     title: "Boks",
     description: `Współczesny boks jest dyscypliną wywodzącą się z XVIII-wiecznej Anglii. Jako sport walki jest unikatem na skalę światową, ponieważ ciosy zadaje się tylko rękami. Bywa nazywany sportem dżentelmenów.
 
-    Na grupie początkującej kształtujemy przede wszystkim odpowiednie nawyki i pamięć mięsniowo-motoryczną. Typowe zajęcia składają się z 15 minut rozgrzewki, a nastepnie z zajęć w parach, w których ćwiczymy wyprowadzanie ciosów, poruszanie się oraz obronę. Oprócz techniki kładziemy nacisk na przygotowanie kondycyjne. W miarę zdobywania doświadczenia wprowadzamy sparingi.
+    Na zajęciach grupy dla początkujących kształtujemy przede wszystkim odpowiednie nawyki i pamięć mięsniowo-motoryczną. Typowe zajęcia składają się z 15 minut rozgrzewki, a nastepnie z zajęć w parach, w których ćwiczymy wyprowadzanie ciosów, poruszanie się oraz obronę. Oprócz techniki kładziemy nacisk na przygotowanie kondycyjne. W miarę zdobywania doświadczenia wprowadzamy sparingi.
     
     Zajęcia są dla każdego, kto pragnie ukształtować kondycję i sylwetkę, zyskać praktyczne umiejętności obronne oraz pewność siebie. Prowadzimy grupy koedukacyjne oraz dedykowane dla kobiet. Zapraszamy również młodzież - tutaj minimalny wiek to ok. 12 lat.
     
@@ -737,11 +737,11 @@ Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
   {
     name: "offer",
     title: "Shuffle Dance",
-    description: `Shuffle dance to obecnie jeden z najbardziej popularnych stylów tańca w Europie, polegający na pozornym „ślizganiu się” po podłodze. Oprócz ślizgania, styl przeplata się różnorodnymi krokami, takimi jak przeskoki, obroty, wykopy, moonwalk i różnego rodzaju footworkami - a to wszystko w rytm energicznej muzyki!
+    description: `Shuffle dance to obecnie jeden z najbardziej popularnych stylów tańca w Europie, polega na pozornym „ślizganiu się” po podłodze. W tańcu wykonujemy różnorodne figury, takie jak przeskoki, obroty, wykopy, moonwalk i różnego rodzaju footworkami - a to wszystko w rytm energicznej muzyki!
 
     Do czego tańczymy?
     
-    Styl wywodzi się z klubów tanecznych muzyki rave, które w brzmieniu przypomina techno i house, ale ma mocniejsze brzmienie i szybsze tempo - z pewnością nie zabraknie sporej dawki muzycznej energii. Regularne zajęcia Shuffle Dance poprawiają kondycję fizyczną, umożliwiają zrzucenie nadprogramowych kilogramów i spalenie duuużych ilości kalorii - to przyjemna wersja treningu cardio! Dodatkowo zajęcia pozwolą na polepszenie koordynacji ciała, ale przede wszystkim to dobra zabawa, duża dawka pozytywnej energii i skok endorfin.
+    Styl wywodzi się z klubów tanecznych muzyki rave, która w brzmieniu przypomina techno i house, ale ma mocniejsze brzmienie i szybsze tempo - z pewnością nie zabraknie sporej dawki muzycznej energii. Regularne zajęcia Shuffle Dance poprawiają kondycję fizyczną, umożliwiają zrzucenie nadprogramowych kilogramów i spalenie duuużych ilości kalorii - to przyjemna wersja treningu cardio! Dodatkowo zajęcia pozwolą na polepszenie koordynacji ciała, ale przede wszystkim to dobra zabawa, duża dawka pozytywnej energii i skok endorfin.
     
     Zapisz się już dziś i tańcz jak w teledysku LMFAO!
     
@@ -754,9 +754,9 @@ Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
     title: "Kickboxing",
     description: `Kickboxing należy do grupy stójkowych sportów walki. Dozwolone są w nim ciosy bokserskie i kopnięcia. 
     
-    Zasady dyscypliny nastawiają nas na ciągłą wymianę ciosów i kopnięć, a brak przestojów walce powoduje, że jest to sport niezwykle dynamiczny oraz spektakularny dla oka. 
+    Zasady tej dyscypliny sportowej zmuszają do ciągłej wymiany ciosów i kopnięć, a brak przestojów walce powoduje, że jest to sport niezwykle dynamiczny oraz spektakularny dla oka. 
     
-    Treningi kickboxingu rozwiją nasze ciało w sposób holistyczny. Kształtuje takie cechy motoryczne jak szybkość, siła, wytrzymałość. Sport ten nie tylko wpływa dobrze na kondycje fizyczną, ale i psychiczną, redukuje stres, uczy trzymać nerwy na wodzy oraz znacząco poprawia naszą samodyscyplinę i pewność siebie.
+    Treningi kickboxingu rozwiją nasze ciało w sposób holistyczny. Kształtują takie cechy motoryczne jak szybkość, siła, wytrzymałość. Sport ten wpływa dobrze nie tylko na kondycje fizyczną, ale i psychiczną, redukuje stres, uczy trzymać nerwy na wodzy oraz znacząco poprawia naszą samodyscyplinę i pewność siebie.
   
     Zajęcia z kickboxingu w naszym klubie prowadzi Marcin Nasiadko.
     `,
@@ -777,9 +777,9 @@ Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
   {
     name: "offer",
     title: "Kettlebell hardstyle",
-    description: `Trening z odważnikami kulowymi metodyką Hardstyle przynosi nad wyraz wiele korzyści. Holistycznie wzmacnia ciało i jest niezwykle wydajny. Podczas treningu z kettlami angażujemy do pracy wiele mięśni jednocześnie, a więc zwiększa się zapotrzebowanie na energię.
+    description: `Trening z odważnikami kulowymi metodą hardstyle przynosi nad wyraz wiele korzyści. Holistycznie wzmacnia ciało i jest niezwykle wydajny. Podczas treningu z kettlami angażujemy do pracy wiele mięśni jednocześnie, a więc zwiększa się zapotrzebowanie na energię.
 
-    Trening kettlami doskonale buduje siłę, a jak wiadomo siła jest podstawą dla wszystkich cech motorycznych i jest potrzebna każdemu. Zwiększa wytrzymałość, koordynację, wzmacnia mięśnie odpowiedzialne za prawidłową postawę ciała oraz mięśnie głębokie, które pełnią rolę ochronną dla narządów wewnętrznych. 
+    Trening kettlami doskonale buduje siłę, a jak wiadomo siła jest podstawą wszystkich cech motorycznych i jest potrzebna każdemu. Zwiększa wytrzymałość, koordynację, wzmacnia mięśnie odpowiedzialne za prawidłową postawę ciała oraz mięśnie głębokie, które pełnią rolę ochronną dla narządów wewnętrznych. 
     
     Podstawowe techniki z kettlem wg metody Hardstyle opierają się na głównych wzorcach ruchowych, których trenowanie przekłada się na to, że coraz lepiej wykonujemy inne ruchy, zarówno w życiu codziennym jak i w różnych sportach i aktywnościach.
     W treningu z kettlami wykonujemy ruchy o charakterze siłowym, dynamicznym i eksplozywnym, a więc kształtujemy wszystkie cechy motoryczne używając tylko jednego przyrządu treningowego.
@@ -792,7 +792,7 @@ Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
   {
     name: "offer",
     title: "Oddech & koordynacja",
-    description: ` Zajecia poswiecone aktywizacji obu półkul mózgowych majace na celu zgłębienia świadomosci własnego ciała. Bardzo wiele osób trenując na siłowni, bądź też trenując inne sporty ma problemy także z prawidłowym oddychaniem. Trenują na tak zwanym bezdechu, przez co nie moga podniesć pewnej poprzeczki z racji niedotlenienia organizmu. 
+    description: ` Zajęcia poświęcone aktywizacji obu półkul mózgowych, mające na celu zgłębienie świadomosci własnego ciała. Bardzo wiele osób trenując na siłowni, bądź też trenując inne sporty ma problemy także z prawidłowym oddychaniem. Trenują na tak zwanym bezdechu, przez co - z racji niedotlenienia organizmu - nie mogą przekroczyć pewnych barier własnego ciała. 
     
     Zajecia będą poświęcone poprawie wlaśnie tych elementów ruchowych i oddechowych.
     `,
