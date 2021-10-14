@@ -118,7 +118,7 @@ button {
     }
   }
   button {
-    width: 25vw;
+    width: 40vw;
     height: 8vh;
   }
 }

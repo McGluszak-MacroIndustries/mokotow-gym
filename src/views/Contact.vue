@@ -202,7 +202,7 @@ button {
 
 @media screen and (max-width: 1200px) {
   button {
-    font-size: 0.65rem;
+    // font-size: 0.65rem;
   }
   .info {
     .name {
@@ -212,7 +212,9 @@ button {
 }
 @media screen and (max-width: 600px) {
   button {
-    font-size: 0.6rem;
+    // font-size: 0.6rem;
+    width: 40vw;
+    height: 8vh;
   }
   .info {
     .name {
