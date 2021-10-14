@@ -154,4 +154,23 @@ export default defineComponent({
     transform: translateY(-170vh);
   }
 }
+@media screen and (max-width: 600px) {
+  .layout {
+    display: grid;
+    grid-template-rows: 100vh;
+    overflow-y: hidden;
+    // grid-template-areas:
+    //   "view"
+    //   "view";
+    // .view {
+    //   grid-area: view;
+    // }
+    // .footer {
+    //   grid-area: foot;
+    // }
+  }
+  .construction {
+    transform: translateY(-170vh);
+  }
+}
 </style>

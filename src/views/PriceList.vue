@@ -135,5 +135,8 @@ button {
   button {
     width: 40vw;
   }
+  .menu {
+    transform: translateY(-15vh);
+  }
 }
 </style>
