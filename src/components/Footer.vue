@@ -23,7 +23,7 @@
       <div class="copyrights">&copy; 2021 Mokotowski-Gym</div>
       <div class="addresses">
         <div>ul. Białej Floty 2, 02-654 Warszawa</div>
-        <div>tel: +48696168867</div>
+        <div>tel: +48 696 168 867</div>
         <div>www.mokotowskigym.com</div>
         <div>office@mokotowskigym.com</div>
       </div>
