@@ -523,11 +523,9 @@ export const teamItems: Array<Item> = [
   {
     name: "team",
     title: "Mateusz Krynicki",
-    description: `Kiedy miałem sześć lat ojciec zaprowadził mnie na treningi oyama karate ze względu na stwarzane przeze mnie problemy wychowawcze. Zajęcia wyjątkowo przypadły mi do gustu. Przygodę z karate kontynuowałem aż do końca gimnazjum. Po 3 latach zmieniłem zajęcia na mocniejsze wydanie karate kyokushin na Warszawskim AWF-ie. Przygodę z tą dyscypliną zakończyłem z zielonym pasem 3rd kyu. W liceum trafiłem do klasy z osobami, które trenowały różne sporty - jedna z nich zabrała mnie na trening muay thai. Ze względu na zdecydowanie większą eksplozywność i typowy full contact - co zdecydowanie bardziej mi odpowiadało - przy sporcie tym pozostałem. Dla dziecka z ADHD była to idealna możliwość na spożytkowanie zbyt dużej ilości energii. 
+    description: `Kiedy miałem sześć lat ojciec zaprowadził mnie na treningi oyama karate ze względu na stwarzane przeze mnie problemy wychowawcze. Zajęcia wyjątkowo przypadły mi do gustu. Przygodę z karate kontynuowałem aż do końca gimnazjum. Po trzech latach zmieniłem zajęcia na mocniejsze wydanie Karate Kyokushin na Warszawskim AWF-ie. Przygodę z tą dyscypliną zakończyłem z zielonym pasem 3rd KYU. W liceum trafiłem do klasy z osobami, które trenowały różne sporty, jedna z nich zabrała mnie na trening muay thai. Ze względu na zdecydowanie większą eksplozywność i typowy full contact - co zdecydowanie bardziej mi odpowiadało - skoncentrowałem się własnie na tym sporcie walki. Dla dziecka z ADHD była to idealna możliwość na spożytkowanie zbyt dużej ilości energii. Przez wiele lat trenowałem w wielu różnych klubach w Warszawie, Kijowie oraz Londynie, gdzie mieszkałem przez 18 miesięcy. Treningi w tych miejscach oraz różnrodność wykorzystanych technik dały mi możliwość zdobycia jak największego doświadczenie, między innymi w: Koszalin Fight Club, London Shoot Fighters i ukraiński Oktahon w Kijowie. Żeby rozwinąć swoje umiejętności, trenowałem przemiennie boks tajski z brazylijskim jiu jitsu i zapasami. Umiejętności szlifowałem u takich trenerów jak: Zbigniew Raubo, Józef Ratajczyk, Szymon Warchoł, Ireneusz Graczyk, Wojciech Feliński, Roman Ratajczyk. Uczestniczyłem w wielu seminariach prowadzonych przez zawodników z Holandii, Tajlandii i Białorusi, żeby poszerzyć swoje umiejętności. 
     
-    Przez wiele lat trenowałem w wielu różnych klubach w Warszawie, Kijowie oraz Londynie, gdzie mieszkałem przez 18 miesięcy. Treningi w tych miejscach oraz różnrodność wykorzystanych technik dały mi możliwość zdobycia jak największego doświadczenie. Między innymi w: S4 Fight Club, Legia Fight Club, Academia Gorilla, Aligatores Fight Club, Koszalin Fight Club, London Shoot Fighters I ukraiński Oktahon w Kijowie. Żeby rozwinąć swoje umiejętności, trenowałem przemiennie boks tajski z brazylijskim jiu jitsu i zapasami, biorąc udział między innymi w ALMMA. Umiejętności szlifowałem u takich trenerów jak: Zbigniew Raubo, Bartek Walczewski , Ireneusz Graczyk, Wojciech Feliński, Roman Ratajczyk. Uczestniczyłem w wielu seminariach prowadzonych przez zawodników z Holandii, Tajlandii i Białorusi, żeby poszerzyć swoje umiejętności.
-    
-    Na przełomie 2018/2019 odbyłem 9-miesięczny kurs dla służb mundurowych w Polsce prowadzony przez takich specjalistów jak Arek "Motyl" Dembiński (były żołnierz jednostki GROM) i Tomasz Maczuga, który jest specjalistą i głównym koordynatorem zajęć z obezwładniania i samoobrony w Wyższej Szkole Policji w Szczytnie. Posiadam uprawnienia instruktorskie w boksie i w muay thai. Żyje w ramach starej rzymskiej maksymy: Jeśli chcesz żyć w pokoju to przygotuj się na wojnę.
+    Na przełomie lat 2018/2019 odbyłem 9-miesięczny kurs dla służb mundurowych w Polsce prowadzony przez byłych żołnierzy jednostki GROM. Posiadam uprawnienia instruktorskie w boksie i w muay thai. Żyję w ramach starej rzymskiej maksymy: Jeśli chcesz żyć w pokoju to przygotuj się na wojnę.
     
     Prowadzone zajęcia:
     ○ muai thai
@@ -586,8 +584,8 @@ Prowadzone zajęcia:
   {
     name: "team",
     title: "Tomek Rytel",
-    description: `Jestem posiadaczem czarnego pasa w BJJ (brazylijskim jiu jitsu), członkiem kadry narodowej grapplingu, kilkukrotnym mistrzem polski ADCC, zdobywcą African Championship Masterclass 2021 w kategorii 65kg. Umiejętności przez wiele lat szlifowałem w Polsce, Abu Dhabi i Brazylii. Aktualnie pozostaję czynnym zawodnikiem i trenerem.
-    Jestem człowiekiem rodzinnym. Moją drugą wielką pasją poza sportem jest sushi.
+    description: `Swoją przygodę sportową zacząłem na Warszawskim AWFie w 2010 roku. Jestem posiadaczem czarnego pasa w BJJ (brazylijskim jiu jitsu), kilkukrotnym mistrzem polski, zdobywcą ME and African Championship Masterclass 2021 w kategorii 65kg. Umiejętności przez wiele lat szlifowałem w Polsce, i Brazylii. 
+    Aktualnie pozostaję czynnym zawodnikiem i trenerem. Moją drugą wielką pasją poza sportem jest sushi.
 
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
 
@@ -776,14 +774,10 @@ Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
   },
   {
     name: "offer",
-    title: "Kettlebell hardstyle",
-    description: `Trening z odważnikami kulowymi metodą hardstyle przynosi nad wyraz wiele korzyści. Holistycznie wzmacnia ciało i jest niezwykle wydajny. Podczas treningu z kettlami angażujemy do pracy wiele mięśni jednocześnie, a więc zwiększa się zapotrzebowanie na energię.
-
-    Trening kettlami doskonale buduje siłę, a jak wiadomo siła jest podstawą wszystkich cech motorycznych i jest potrzebna każdemu. Zwiększa wytrzymałość, koordynację, wzmacnia mięśnie odpowiedzialne za prawidłową postawę ciała oraz mięśnie głębokie, które pełnią rolę ochronną dla narządów wewnętrznych. 
-    
-    Podstawowe techniki z kettlem wg metody Hardstyle opierają się na głównych wzorcach ruchowych, których trenowanie przekłada się na to, że coraz lepiej wykonujemy inne ruchy, zarówno w życiu codziennym jak i w różnych sportach i aktywnościach.
-    W treningu z kettlami wykonujemy ruchy o charakterze siłowym, dynamicznym i eksplozywnym, a więc kształtujemy wszystkie cechy motoryczne używając tylko jednego przyrządu treningowego.
-    A przede wszystkim: trening typu kettlebell pomaga niwelować stres i jest po prostu fajny!
+    title: "Kettlebells",
+    description: `Trening z odważnikami kulowymi wg metody Hardstyle znakomicie buduje siłę i sprawność, holistycznie rozwija ciało, sprzyja wydolności, koordynacji, wzmacnia mięśnie posturalne oraz kształtuje atletyczna sylwetkę. 
+    W treningu z kettlami wykonujemy ruchy o charakterze siłowym, dynamicznym i eksplozywnym, a wiec kształtujemy wszystkie cechy motoryczne używając tylko jednego przyrządu treningowego. 
+    Podstawowe techniki opierają się na głównych wzorcach ruchowych, których trenowanie przekłada się na to, ze coraz lepiej wykonujemy inne ruchy, zarówno w życiu codziennym jak i w różnych sportach i aktywnościach. Jest to wszechstronny trening siłowy, który angażuje wiele mięśni jednocześnie, jest niezwykle wydajny i dostarcza mnóstwo wysiłkowej frajdy!
     
     Zajęcia z kettlebells prowadzi Karolina Ujejska.
     `,
