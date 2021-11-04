@@ -35,5 +35,7 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .Home {
+  .fix {
+  }
 }
 </style>
