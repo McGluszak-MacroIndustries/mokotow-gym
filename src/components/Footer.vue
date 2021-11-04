@@ -23,8 +23,11 @@
       <div class="copyrights">&copy; 2021 Mokotowski-Gym</div>
       <div class="addresses">
         <div>ul. Białej Floty 2, 02-654 Warszawa</div>
+        <div>/</div>
         <div>tel: +48 696 168 867</div>
+        <div>/</div>
         <div>www.mokotowskigym.com</div>
+        <div>/</div>
         <div>office@mokotowskigym.com</div>
       </div>
       <div class="media-menu">
@@ -172,14 +175,16 @@ export default defineComponent({
   //   }
   // }
   .info {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     display: grid;
     grid-auto-flow: column;
+    // justify-content: stretch;
     border-bottom: $dark-grey 1px solid;
     & > * {
       color: $dark-grey;
       padding-top: 1vh;
+      // justify-content: stretch;
     }
     .copyrights {
       font-size: 0.9rem;

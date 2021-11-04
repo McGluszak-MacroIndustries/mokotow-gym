@@ -784,14 +784,15 @@ export default defineComponent({
       }
       .mobile-container {
         // transform: translateY(10vh);
-        display: block;
+        display: grid;
         position: absolute;
         bottom: 10vh;
+        grid-gap: 0.5rem;
         // margin-top: 2vh;
         padding-top: 1vh;
-        background: $dark-grey;
 
         .proper-container {
+          background: $dark-grey;
           display: grid;
           align-content: center;
           grid-gap: 1.1vw;
@@ -840,8 +841,8 @@ export default defineComponent({
           text-align: center;
           display: grid;
           font-weight: bold;
-          background-color: $dark-grey;
-          color: $white-power;
+          background-color: $white-power;
+          color: $dark-grey;
           align-items: center;
           z-index: 9;
           cursor: pointer;
