@@ -189,6 +189,177 @@
             </div>
           </div>
         </div>
+        <div class="mobile-container" @click.self="clicked = false">
+          <div class="expanded" v-if="clicked">
+            <div></div>
+            <div class="expander">
+              <div
+                class="item"
+                v-for="(item, index) in items"
+                :key="index"
+                @click="changeSelectedItem(item, index)"
+                :class="{ selected: isSelected(item) }"
+              >
+                <div></div>
+                <div class="name">{{ item.title }}</div>
+                <div></div>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div class="hidden" v-else></div>
+          <div class="proper-container">
+            <div class="chosen-item" @click="clicked = !clicked">
+              <div class="empty"></div>
+              <div class="item-name">
+                {{ selectedItem.title }}
+              </div>
+              <!-- <div class="" v-if="clicked">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14.142"
+                      height="14.142"
+                      viewBox="0 0 14.142 14.142"
+                    >
+                      <g id="burger" transform="translate(-1431.429 -603.429)">
+                        <line
+                          id="Line_7"
+                          data-name="Line 7"
+                          x2="18"
+                          transform="translate(1432.136 616.864) rotate(-45)"
+                          fill="none"
+                          stroke="#000"
+                          stroke-width="2"
+                        />
+                        <line
+                          id="Line_9"
+                          data-name="Line 9"
+                          x2="18"
+                          transform="translate(1432.136 604.136) rotate(45)"
+                          fill="none"
+                          stroke="#000"
+                          stroke-width="2"
+                        />
+                      </g>
+                    </svg>
+                  </div> -->
+              <div class="icon" v-if="!clicked">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="14"
+                  viewBox="0 0 18 14"
+                >
+                  <g id="burger" transform="translate(-1429.5 -603.5)">
+                    <line
+                      id="Line_7"
+                      data-name="Line 7"
+                      x2="18"
+                      transform="translate(1429.5 604.5)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-width="2"
+                    />
+                    <line
+                      id="Line_8"
+                      data-name="Line 8"
+                      x2="18"
+                      transform="translate(1429.5 610.5)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-width="2"
+                    />
+                    <line
+                      id="Line_9"
+                      data-name="Line 9"
+                      x2="18"
+                      transform="translate(1429.5 616.5)"
+                      fill="none"
+                      stroke="#000"
+                      stroke-width="2"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="left-arrow"
+              @click="changeItemToNextOrPreviousItem('previous')"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10.314"
+                height="17.385"
+                viewBox="0 0 10.314 17.385"
+              >
+                <g
+                  id="Group_10"
+                  data-name="Group 10"
+                  transform="translate(-345.068 -1200.96) rotate(45)"
+                >
+                  <line
+                    id="Line_5"
+                    data-name="Line 5"
+                    x2="10"
+                    transform="translate(1100.5 610.5)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                  />
+                  <line
+                    id="Line_6"
+                    data-name="Line 6"
+                    x2="10"
+                    transform="translate(1100.5 599.914) rotate(90)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div
+              class="right-arrow"
+              @click="changeItemToNextOrPreviousItem('next')"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10.314"
+                height="17.385"
+                viewBox="0 0 10.314 17.385"
+              >
+                <g
+                  id="Group_11"
+                  data-name="Group 11"
+                  transform="translate(355.382 1218.345) rotate(-135)"
+                >
+                  <line
+                    id="Line_5"
+                    data-name="Line 5"
+                    x2="10"
+                    transform="translate(1100.5 610.5)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                  />
+                  <line
+                    id="Line_6"
+                    data-name="Line 6"
+                    x2="10"
+                    transform="translate(1100.5 599.914) rotate(90)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
       </slot>
     </div>
 
@@ -260,6 +431,10 @@ export default defineComponent({
       () => `${selectedItem.value.name}/${selectedItem.value.src}`
     );
 
+    const isPageScrolled = computed(() => {
+      return window.scrollY;
+    });
+
     const emitSelectedItem = () => {
       context.emit("selected-item", selectedItem.value);
     };
@@ -326,6 +501,7 @@ export default defineComponent({
     // function changeNumberFormat(number: number): string {
     //   return (number < 10 ? "0" : "") + number.toString();
     // }
+
     return {
       isMobile,
       clicked,
@@ -336,6 +512,7 @@ export default defineComponent({
       // changeNumberFormat,
       isSelected,
       imgUrl,
+      isPageScrolled,
     };
   },
 });
@@ -485,7 +662,6 @@ export default defineComponent({
         grid-template-columns: 20vw 3rem 3rem;
         min-width: 20vw;
         height: 3rem;
-        // background: $white-power;
         & > * {
           cursor: pointer;
           @include hoverable;
@@ -502,15 +678,11 @@ export default defineComponent({
           border-radius: 50%;
         }
         .chosen-item {
-          // transform: translateY(15%);
           display: grid;
           @include hoverable;
           cursor: pointer;
           grid-template-columns: 3vw 17vw 3vw;
           border-radius: 2rem;
-          // z-index: 1;
-
-          // height: 2vh;
           & > * {
             color: $dark-grey;
             font-weight: bold;
@@ -541,13 +713,16 @@ export default defineComponent({
         }
       }
     }
+    .mobile-container {
+      display: none;
+      // grid-area: mobile;
+      // DUPSKO
+    }
     & > * {
-      // border: orange 2px solid;
       margin-left: 3vw;
     }
   }
   .right {
-    // border: 4px white solid;
     @include grid-center;
     grid-template-rows: 12.5vh 58vh 5vh;
 
@@ -573,6 +748,7 @@ export default defineComponent({
 
 @media screen and (max-width: 600px) {
   .window-template {
+    grid-template-rows: 50vh 40vh;
     .right {
       display: grid;
       grid-template-rows: 25vh 33.5vh 20vh;
@@ -583,7 +759,12 @@ export default defineComponent({
     }
     .left-full {
       grid-gap: none;
-      grid-template-rows: 5% 15% min-content 20%;
+      grid-template-areas:
+        "blank"
+        "title"
+        "description";
+      grid-template-rows: 1rem 1rem min-content !important;
+      margin-top: none;
 
       .title {
         transform: translateY(-10vh);
@@ -593,12 +774,23 @@ export default defineComponent({
         margin-left: 0;
       }
       .description {
-        transform: translateY(-5vh);
+        transform: translateY(-6vh);
+        padding-bottom: 5rem;
         // align-content: flex-start;
         text-align: center;
       }
       .element-container {
-        transform: translateY(-5vh);
+        display: none;
+      }
+      .mobile-container {
+        // transform: translateY(10vh);
+        display: block;
+        position: absolute;
+        bottom: 10vh;
+        // margin-top: 2vh;
+        padding-top: 1vh;
+        background: $dark-grey;
+
         .proper-container {
           display: grid;
           align-content: center;

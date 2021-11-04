@@ -1,5 +1,5 @@
 <template>
-  <WindowTemplate :items="currentItems" :key="currentItems">
+  <WindowTemplate :items="currentItems" :key="currentItems" class="fix">
     <template v-slot:menu-nav>
       <div></div>
     </template>

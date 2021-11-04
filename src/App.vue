@@ -6,12 +6,13 @@
       @update-current-element="onUpdateCurrentElement($event)"
       class="x"
       :key="currentNavbarElements"
+      :class="{ scrolled: isScrolled }"
     />
   </transition>
   <div class="layout">
     <router-view v-slot="{ Component }" class="view">
       <transition name="slide-fade" mode="out-in">
-        <component :is="Component" />
+        <component :is="Component" @scroll.passive="handleScroll" />
       </transition>
     </router-view>
 
@@ -46,6 +47,10 @@ export default defineComponent({
 
     const currentNavbarElement = ref(currentNavbarElements.value[0]);
 
+    const isScrolled = ref(false);
+
+    const ile = ref(window.scrollY);
+
     const isMobile = ref<number>(window.innerWidth < 1000 ? 1 : 0);
     setInterval(() => {
       const browserWidth = window.innerWidth;
@@ -59,13 +64,28 @@ export default defineComponent({
     function onUpdateCurrentElement(element: NavBarElement) {
       currentNavbarElement.value = element;
     }
+
+    function handleScroll(e: any) {
+      if (e.target.scrollTop > 250) {
+        console.log("jes");
+        isScrolled.value = true;
+        return true;
+      } else {
+        console.log("aha");
+        isScrolled.value = false;
+        return false;
+      }
+    }
+
     return {
+      isScrolled,
       isMobile,
       isEnglishLanguageOn,
       currentNavbarElements,
       currentNavbarElement,
       onUpdateCurrentElement,
       // currentNavbarElements,
+      handleScroll,
     };
   },
 });
@@ -97,6 +117,7 @@ export default defineComponent({
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  // transform: translateY(-);
 }
 .view {
   z-index: 0;
@@ -171,6 +192,19 @@ export default defineComponent({
   }
   .construction {
     transform: translateY(-170vh);
+  }
+
+  .scrolled {
+    // background: $dark-grey;
+    z-index: 10;
+    width: 40rem;
+    .navbar-mobile {
+      // transform: translateY(-10%);
+      background: $dark-grey;
+      width: 100vw;
+      transition: background-color 0.2s ease-in-out;
+      -webkit-transition: background-color 0.2s ease-in-out;
+    }
   }
 }
 </style>
