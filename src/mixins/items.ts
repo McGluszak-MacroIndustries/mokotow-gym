@@ -534,7 +534,7 @@ export const teamItems: Array<Item> = [
     ○ samoobrona dla kobiet
 
     `,
-    src: "krynicki.jpg",
+    src: "mati.jpg",
   },
   {
     name: "team",
@@ -579,7 +579,7 @@ Prowadzone zajęcia:
     Prowadzone zajęcia:
     ○ brzuch, uda, pośladki
     ○ treningi personalne`,
-    src: "woch.jpg",
+    src: "sandra.jpg",
   },
   {
     name: "team",
@@ -665,44 +665,71 @@ export const aboutUsItems: Array<Item> = [
 export const offerItems: Array<Item> = [
   {
     name: "offer",
-    title: "Starting Strength™",
-    description: `Czym jest Starting Strength™?
-    
-    Starting Strength™  jest kompletną metodą treningu siłowego, opracowaną przez trenera Marka Rippetoe.
-    Trening według metody Starting Strength™ świetnie się sprawdza zarówno u nastolatków i dorosłych, którzy pragną zwiększyć swoją sprawność fizyczną jak i chcących poprawić sylwetkę, jak i u seniorów, którzy pragną zachować jak najdłużej autonomię w życiu codziennym. Metoda opiera się na ćwiczeniach wielostawowych, wykonywanych ze sztangą według starannie zaprojektowanego programu treningowego.
+    title: "Muay thai",
+    description: `Przyjmuje się, że muay thai wywodzi się z Tajlandii, jednakże brak jest historycznych źródeł potwierdzających jednoznacznie i ostatecznie to założenie. Pomimo tego, iż większość krajów z tamtego regionu przypisuje sobie wynalezienie tej sztuki walki, to nie ulega wątpliwości, że to właśnie w Tajlandii rozwinął on się najbardziej stając się bez mała sportem narodowym. Początek rozwoju starożytnego muay thai (tzw. muay boran), jako wyodrębnionego i posiadającego cechy charakterystyczne stylu walki wręcz, datuje się według źródeł archeologicznych na początek XIII wieku (era Sukhothai). Czterej wojownicy Jatubaht, którzy ochraniali królewskiego słonia po stracie broni musieli używać Muay thai. U swoich źródeł był silnie zrytualizowanym i przesyconym elementami religijnymi, stylem obejmującym taniec przed walką (waikhru) oraz rytualne metody treningowe. W miarę szerszej jego adaptacji na potrzeby tajlandzkiej armii, włączono do niego elementy walki bronią (krabi-krabong) oraz za pomocą owijaczy na ręce zwanych "kaad chuek", które w celu zadawania większych obrażeń były specjalnie utwardzane i nabijane kamiennym żwirem (wg niektórych źródeł także szkłem i innymi podobnymi materiałami). Na rozwój muay boran wpłynęło też silnie chińskie Wushu, z którym Tajowie zetknęli się w na początku drugiej połowy XVIII wieku, a z którego zaczerpnięto rozmaite techniki uderzeń zadawanych z wyskoku.
+    W roku 1887 na mocy dekretu królewskiego otwarto wydziały wychowania fizycznego na nowych akademiach wojskowych zachodniego typu i w kolegiach nauczycielskich. Wśród obowiązkowych zajęć był boks tajski, praktykowany dwa razy w tygodniu przez półtorej godziny. Większość młodych bokserów jednakże pochodziła z klasy pracującej i trenowała w swoich wioskach i pobliskich świątyniach. Instruktorzy, zarówno z wiosek, jak i ze świątyń, byli z reguły bokserami, którzy zakończyli karierę sportową. Przed głównymi imprezami obiecujący zawodnicy trenowali codziennie, a w celu zachęcenia ich otrzymywali stypendia treningowe od lokalnych przedstawicieli rządu i możnowładców.
+    Do końca XIX wieku wykształciły się w miarę jednolite ringowe reguły muay thai przy użyciu owijaczy (w formule zwanej "muay kaad chuek" ). W 1921 walki w boksie tajskim zaczęły odbywać się na wzniesionych platformach otoczonych linami. Powód był taki, że platforma i liny zapobiegały przed wdarciem się kibiców na ring. A w roku 1929 właściciel stadionu Suan Sanuk wprowadził ring dla tajskich bokserów z trzema linami i narożnikami, głównie dlatego, że miał nadzieję na organizowanie międzynarodowych walk bokserskich.
+    Ze względu na wysoką urazowość walk, od połowy lat 20. XX wieku zaczęto wycofywać z ringu owijacze "kaad chuek" oraz wyłączać stosowanie bardziej destrukcyjnych technik, takich jak kopnięcia w krocze, dźwignie, rzuty czy uderzenia głową. Najprawdopodobniej bezpośrednią przyczyną tych zmian była śmierć zawodnika na ringu stadionu Lak Muang w Bangkoku. Na początku lat 30. XX wieku zawodnicy boksu tajskiego zaczęli używać metalowych ochraniaczy na krocze i skórzanych rękawic bokserskich. Stosowanie rękawic bokserskich stało się przy okazji przyczyną rozbudowania technik muay thai o elementy zachodnioeuropejskiego boksu. Przyjęto zmodyfikowane przepisy bokserskie markiza Queensberry i w ślad za tym profesjonalne walki Tajów wyznaczono na 5 rund po 3 minuty każda. Stopniowo wprowadzono podział zawodników na kategorie wagowe. Wszystko to uczyniło z muay thai popularny na całym świecie sport walki. Młodzi bokserzy wykonujący rytuał przed walką
+    Niemniej jednak, wiele z tradycji przetrwało. Na przykład, zawodnicy nadal wykonywali tradycyjny taniec przed walką (waikhru), początkowo, by przedstawić region, z którego pochodzą, a dziś ze względu na zwyczaje. Wykonywali swoje modły do bogów i odmawiali walki, jeżeli nie towarzyszyły im synkopowane rytmy tajskiej muzyki ludowej. Zespół muzyczny składał się z samych mężczyzn (aby uniknąć osłabienia sił zawodników): flecisty, dwóch bębnistów i cymbalisty. Flecista kierował perkusistami i zmieniał swe tony w zależności od tempa walki i emocji przejawianych przez tłum.
+    Około roku 1935 ośrodki, w których rozgrywano walki, zaczęły przeznaczać część zysków na pomoc tajlandzkim instytucjom dobroczynnym i armii Tajlandii. Taka praktyka stosowana jest do czasów obecnych.
 
-    Główne ćwiczenia to:
-○ przysiad ze sztangą
-○ wyciskanie sztangi stojąc
-○ wyciskanie sztangi leżąc
-○ martwy ciąg
-
-Zostały one wybrane, ponieważ pozwalają na zwiększenie siły u trenujących szybciej, skuteczniej i w bardziej bezpieczny sposób w porównaniu z innymi zestawami ćwiczeń. Będziesz stawał się silniejszy od samego początku programu, ponieważ na każdym treningu będziemy odpowiednio zwiększać ciężar na sztandze.
-Ale bez obaw! Początkowe ciężary i progresja będą zawsze dostosowane do Twojej kondycji i poziomu siły. W miarę postępów w programie pojawią się nowe ćwiczenia, ale i tak  przysiady, wyciskanie stojąc i leżąc oraz martwe ciągi pozostaną najczęściej wykonywanymi ćwiczeniami.
-
-Zajęcia Starting Strength™ prowadzi u nas trener Piotr Burzykowski`,
-    src: "strength.jpg",
+    Zajecia rozpoczynaja sie od mocniej rozgrzewki, ktora aktywuje kazdy and element naszego ciała aby obyło sie Bez specjalnych kontuzji.
+    Nastepnie pracujemy nad technika w parach zazwyczaj po 3 min jak na normalnej walce, pomiedzy rundami wplatamy cwiczenia ogolnorozwojowe.
+    Dla chetnych kazdy trening konczymy kilkoma rundami sparingowymi Albo cardio na worku.
+    Podczas treningu ksztaltujemy cala sylwetke, charakter i refleks. `,
+    src: "muay.jpg",
   },
   {
     name: "offer",
-    title: "Cross Training",
-    description: `Cross Training to program treningu siłowego i kondycyjnego rodem z CrossFitu. Jest to świetna alternatywa dla monotonnych i nudnych treningów na siłowni - treningi crossa nigdy nie są takie same. 
-    
-    Głównym założeniem tego treningu jest osiągnięcie sprawności aż w dziesięciu różnych obszarach: wydolność krążeniowo-oddechowa, wytrzymałość, siła, gibkość, moc, szybkość, zwinność, równowaga, koordynacja i dokładność. Na zajęciach przeplatają się ćwiczenia funkcjonalne, elementy lekkoatletyki, gimnastyki i treningu siłowego – uczestnicy biegają, wiosłują, skaczą, przenoszą najróżniejsze przedmioty, rywalizują z innymi oraz z samym sobą. 
-    
-    Metodyka Cross Training przynosi różnorodne rezultaty: większą wytrzymałość mięśni, zwiększenie zakres ruchu niemal wszystkich stawów, podkręcenie metabolizmu, przyspieszenie spalania tkanki tłuszczowej, lepszą sprawność fizyczną organizmu, a także równomierne kształtowanie całej sylwetki.
-    
-Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
-    src: "cross2.jpg",
+    title: "Kettlebells",
+    description: `Trening z odważnikami kulowymi wg metody Hardstyle znakomicie buduje siłę i sprawność, holistycznie rozwija ciało, sprzyja wydolności, koordynacji, wzmacnia mięśnie posturalne oraz kształtuje atletyczna sylwetkę. 
+    W treningu z kettlami wykonujemy ruchy o charakterze siłowym, dynamicznym i eksplozywnym, a wiec kształtujemy wszystkie cechy motoryczne używając tylko jednego przyrządu treningowego. 
+    Podstawowe techniki opierają się na głównych wzorcach ruchowych, których trenowanie przekłada się na to, ze coraz lepiej wykonujemy inne ruchy, zarówno w życiu codziennym jak i w różnych sportach i aktywnościach. Jest to wszechstronny trening siłowy, który angażuje wiele mięśni jednocześnie, jest niezwykle wydajny i dostarcza mnóstwo wysiłkowej frajdy!
+  
+    Zajęcia z kettlebells prowadzi Karolina Ujejska.
+    `,
+    src: "kettlebell.jpg",
   },
-  // {
-  //   name: "offer",
-  //   title: "Mama wraca do formy",
-  //   description: `Ciąża to niezwykle wymagający czas dla kobiety, a aktywność fizyczna to najlepsze remedium na powrót do dawnej formy.
+  {
+    name: "offer",
+    title: "Boks",
+    description: `Współczesny boks jest dyscypliną wywodzącą się z XVIII-wiecznej Anglii. Jako sport walki jest unikatem na skalę światową, ponieważ ciosy zadaje się tylko rękami. Bywa nazywany sportem dżentelmenów.
 
-  //   Nie pozwól sobie wmówić, że ruch nie jest dla Ciebie! Na naszych zajęciach poznasz podstawowe formy ruchowe, abyś mogła stopniowo i sukcesywnie wzmocnić swój organizm.`,
-  //   src: "mamy.jpg",
-  // },
+    Na zajęciach grupy dla początkujących kształtujemy przede wszystkim odpowiednie nawyki i pamięć mięsniowo-motoryczną. Typowe zajęcia składają się z 15 minut rozgrzewki, a nastepnie z zajęć w parach, w których ćwiczymy wyprowadzanie ciosów, poruszanie się oraz obronę. Oprócz techniki kładziemy nacisk na przygotowanie kondycyjne. W miarę zdobywania doświadczenia wprowadzamy sparingi.
+    
+    Zajęcia są dla każdego, kto pragnie ukształtować kondycję i sylwetkę, zyskać praktyczne umiejętności obronne oraz pewność siebie. Prowadzimy grupy koedukacyjne oraz dedykowane dla kobiet. Zapraszamy również młodzież - tutaj minimalny wiek to ok. 12 lat.
+    
+    Zajęcia prowadzą Jarek Krzosek oraz Marcin Nasiadko.`,
+    src: "boks.jpg",
+  },
+  {
+    name: "offer",
+    title: "Kickboxing",
+    description: `Kickboxing należy do grupy stójkowych sportów walki. Dozwolone są w nim ciosy bokserskie i kopnięcia. 
+    
+    Zasady tej dyscypliny sportowej zmuszają do ciągłej wymiany ciosów i kopnięć, a brak przestojów walce powoduje, że jest to sport niezwykle dynamiczny oraz spektakularny dla oka. 
+    
+    Treningi kickboxingu rozwiją nasze ciało w sposób holistyczny. Kształtują takie cechy motoryczne jak szybkość, siła, wytrzymałość. Sport ten wpływa dobrze nie tylko na kondycje fizyczną, ale i psychiczną, redukuje stres, uczy trzymać nerwy na wodzy oraz znacząco poprawia naszą samodyscyplinę i pewność siebie.
+  
+    Zajęcia z kickboxingu w naszym klubie prowadzi Marcin Nasiadko.
+    `,
+    src: "kickboxing.jpg",
+  },
+  {
+    name: "offer",
+    title: "Shuffle Dance",
+    description: `Shuffle dance to obecnie jeden z najbardziej popularnych stylów tańca w Europie, polega na pozornym „ślizganiu się” po podłodze. W tańcu wykonujemy różnorodne figury, takie jak przeskoki, obroty, wykopy, moonwalk i różnego rodzaju footworkami - a to wszystko w rytm energicznej muzyki!
+
+    Do czego tańczymy?
+    
+    Styl wywodzi się z klubów tanecznych muzyki rave, która w brzmieniu przypomina techno i house, ale ma mocniejsze brzmienie i szybsze tempo - z pewnością nie zabraknie sporej dawki muzycznej energii. Regularne zajęcia Shuffle Dance poprawiają kondycję fizyczną, umożliwiają zrzucenie nadprogramowych kilogramów i spalenie duuużych ilości kalorii - to przyjemna wersja treningu cardio! Dodatkowo zajęcia pozwolą na polepszenie koordynacji ciała, ale przede wszystkim to dobra zabawa, duża dawka pozytywnej energii i skok endorfin.
+    
+    Zapisz się już dziś i tańcz jak w teledysku LMFAO!
+    
+    Zajęcia prowadzi trener Patrycja Czekaj.
+    `,
+    src: "shuffle.jpg",
+  },
   {
     name: "offer",
     title: "Zdrowe plecy",
@@ -722,46 +749,6 @@ Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
   },
   {
     name: "offer",
-    title: "Boks",
-    description: `Współczesny boks jest dyscypliną wywodzącą się z XVIII-wiecznej Anglii. Jako sport walki jest unikatem na skalę światową, ponieważ ciosy zadaje się tylko rękami. Bywa nazywany sportem dżentelmenów.
-
-    Na zajęciach grupy dla początkujących kształtujemy przede wszystkim odpowiednie nawyki i pamięć mięsniowo-motoryczną. Typowe zajęcia składają się z 15 minut rozgrzewki, a nastepnie z zajęć w parach, w których ćwiczymy wyprowadzanie ciosów, poruszanie się oraz obronę. Oprócz techniki kładziemy nacisk na przygotowanie kondycyjne. W miarę zdobywania doświadczenia wprowadzamy sparingi.
-    
-    Zajęcia są dla każdego, kto pragnie ukształtować kondycję i sylwetkę, zyskać praktyczne umiejętności obronne oraz pewność siebie. Prowadzimy grupy koedukacyjne oraz dedykowane dla kobiet. Zapraszamy również młodzież - tutaj minimalny wiek to ok. 12 lat.
-    
-    Zajęcia prowadzą Jarek Krzosek oraz Marcin Nasiadko.`,
-    src: "boks.jpg",
-  },
-  {
-    name: "offer",
-    title: "Shuffle Dance",
-    description: `Shuffle dance to obecnie jeden z najbardziej popularnych stylów tańca w Europie, polega na pozornym „ślizganiu się” po podłodze. W tańcu wykonujemy różnorodne figury, takie jak przeskoki, obroty, wykopy, moonwalk i różnego rodzaju footworkami - a to wszystko w rytm energicznej muzyki!
-
-    Do czego tańczymy?
-    
-    Styl wywodzi się z klubów tanecznych muzyki rave, która w brzmieniu przypomina techno i house, ale ma mocniejsze brzmienie i szybsze tempo - z pewnością nie zabraknie sporej dawki muzycznej energii. Regularne zajęcia Shuffle Dance poprawiają kondycję fizyczną, umożliwiają zrzucenie nadprogramowych kilogramów i spalenie duuużych ilości kalorii - to przyjemna wersja treningu cardio! Dodatkowo zajęcia pozwolą na polepszenie koordynacji ciała, ale przede wszystkim to dobra zabawa, duża dawka pozytywnej energii i skok endorfin.
-    
-    Zapisz się już dziś i tańcz jak w teledysku LMFAO!
-    
-    Zajęcia prowadzi trener Patrycja Czekaj.
-    `,
-    src: "shuffle.jpg",
-  },
-  {
-    name: "offer",
-    title: "Kickboxing",
-    description: `Kickboxing należy do grupy stójkowych sportów walki. Dozwolone są w nim ciosy bokserskie i kopnięcia. 
-    
-    Zasady tej dyscypliny sportowej zmuszają do ciągłej wymiany ciosów i kopnięć, a brak przestojów walce powoduje, że jest to sport niezwykle dynamiczny oraz spektakularny dla oka. 
-    
-    Treningi kickboxingu rozwiją nasze ciało w sposób holistyczny. Kształtują takie cechy motoryczne jak szybkość, siła, wytrzymałość. Sport ten wpływa dobrze nie tylko na kondycje fizyczną, ale i psychiczną, redukuje stres, uczy trzymać nerwy na wodzy oraz znacząco poprawia naszą samodyscyplinę i pewność siebie.
-  
-    Zajęcia z kickboxingu w naszym klubie prowadzi Marcin Nasiadko.
-    `,
-    src: "kickboxing.jpg",
-  },
-  {
-    name: "offer",
     title: "BJJ",
     description: `Brazylijskie jiu-jistu jest to dyscyplina sportowa wywodząca się z judo, ju-jitsu oraz zapasów, która koncentruje się na walce w parterze.
     Techniki ukierunkowane są na zajęcie pozycji dominujących oraz ataki dźwigniami bądź duszeniami. Nie stosuje się uderzeń ani kopnięć. 
@@ -771,17 +758,6 @@ Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
     Zajęcia prowadzi trener Tomasz Rytel.
     `,
     src: "bjj.jpg",
-  },
-  {
-    name: "offer",
-    title: "Kettlebells",
-    description: `Trening z odważnikami kulowymi wg metody Hardstyle znakomicie buduje siłę i sprawność, holistycznie rozwija ciało, sprzyja wydolności, koordynacji, wzmacnia mięśnie posturalne oraz kształtuje atletyczna sylwetkę. 
-    W treningu z kettlami wykonujemy ruchy o charakterze siłowym, dynamicznym i eksplozywnym, a wiec kształtujemy wszystkie cechy motoryczne używając tylko jednego przyrządu treningowego. 
-    Podstawowe techniki opierają się na głównych wzorcach ruchowych, których trenowanie przekłada się na to, ze coraz lepiej wykonujemy inne ruchy, zarówno w życiu codziennym jak i w różnych sportach i aktywnościach. Jest to wszechstronny trening siłowy, który angażuje wiele mięśni jednocześnie, jest niezwykle wydajny i dostarcza mnóstwo wysiłkowej frajdy!
-    
-    Zajęcia z kettlebells prowadzi Karolina Ujejska.
-    `,
-    src: "kettlebell.jpg",
   },
   {
     name: "offer",
@@ -805,21 +781,46 @@ Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
     `,
     src: "kids.jpg",
   },
+  {
+    name: "offer",
+    title: "Cross Training",
+    description: `Cross Training to program treningu siłowego i kondycyjnego rodem z CrossFitu. Jest to świetna alternatywa dla monotonnych i nudnych treningów na siłowni - treningi crossa nigdy nie są takie same. 
+    
+    Głównym założeniem tego treningu jest osiągnięcie sprawności aż w dziesięciu różnych obszarach: wydolność krążeniowo-oddechowa, wytrzymałość, siła, gibkość, moc, szybkość, zwinność, równowaga, koordynacja i dokładność. Na zajęciach przeplatają się ćwiczenia funkcjonalne, elementy lekkoatletyki, gimnastyki i treningu siłowego – uczestnicy biegają, wiosłują, skaczą, przenoszą najróżniejsze przedmioty, rywalizują z innymi oraz z samym sobą. 
+    
+    Metodyka Cross Training przynosi różnorodne rezultaty: większą wytrzymałość mięśni, zwiększenie zakres ruchu niemal wszystkich stawów, podkręcenie metabolizmu, przyspieszenie spalania tkanki tłuszczowej, lepszą sprawność fizyczną organizmu, a także równomierne kształtowanie całej sylwetki.
+    
+Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
+    src: "cross2.jpg",
+  },
+  {
+    name: "offer",
+    title: "Starting Strength™",
+    description: `Czym jest Starting Strength™?
+    
+    Starting Strength™  jest kompletną metodą treningu siłowego, opracowaną przez trenera Marka Rippetoe.
+    Trening według metody Starting Strength™ świetnie się sprawdza zarówno u nastolatków i dorosłych, którzy pragną zwiększyć swoją sprawność fizyczną jak i chcących poprawić sylwetkę, jak i u seniorów, którzy pragną zachować jak najdłużej autonomię w życiu codziennym. Metoda opiera się na ćwiczeniach wielostawowych, wykonywanych ze sztangą według starannie zaprojektowanego programu treningowego.
+
+    Główne ćwiczenia to:
+○ przysiad ze sztangą
+○ wyciskanie sztangi stojąc
+○ wyciskanie sztangi leżąc
+○ martwy ciąg
+
+Zostały one wybrane, ponieważ pozwalają na zwiększenie siły u trenujących szybciej, skuteczniej i w bardziej bezpieczny sposób w porównaniu z innymi zestawami ćwiczeń. Będziesz stawał się silniejszy od samego początku programu, ponieważ na każdym treningu będziemy odpowiednio zwiększać ciężar na sztandze.
+Ale bez obaw! Początkowe ciężary i progresja będą zawsze dostosowane do Twojej kondycji i poziomu siły. W miarę postępów w programie pojawią się nowe ćwiczenia, ale i tak  przysiady, wyciskanie stojąc i leżąc oraz martwe ciągi pozostaną najczęściej wykonywanymi ćwiczeniami.
+
+Zajęcia Starting Strength™ prowadzi u nas trener Piotr Burzykowski`,
+    src: "strength.jpg",
+  },
+
   // {
   //   name: "offer",
-  //   title: "MUAY THAI",
-  //   description: `Przyjmuje się, że muay thai wywodzi się z Tajlandii, jednakże brak jest historycznych źródeł potwierdzających jednoznacznie i ostatecznie to założenie. Pomimo tego, iż większość krajów z tamtego regionu przypisuje sobie wynalezienie tej sztuki walki, to nie ulega wątpliwości, że to właśnie w Tajlandii rozwinął on się najbardziej stając się bez mała sportem narodowym. Początek rozwoju starożytnego muay thai (tzw. muay boran), jako wyodrębnionego i posiadającego cechy charakterystyczne stylu walki wręcz, datuje się według źródeł archeologicznych na początek XIII wieku (era Sukhothai). Czterej wojownicy Jatubaht, którzy ochraniali królewskiego słonia po stracie broni musieli używać Muay thai. U swoich źródeł był silnie zrytualizowanym i przesyconym elementami religijnymi, stylem obejmującym taniec przed walką (waikhru) oraz rytualne metody treningowe. W miarę szerszej jego adaptacji na potrzeby tajlandzkiej armii, włączono do niego elementy walki bronią (krabi-krabong) oraz za pomocą owijaczy na ręce zwanych "kaad chuek", które w celu zadawania większych obrażeń były specjalnie utwardzane i nabijane kamiennym żwirem (wg niektórych źródeł także szkłem i innymi podobnymi materiałami). Na rozwój muay boran wpłynęło też silnie chińskie Wushu, z którym Tajowie zetknęli się w na początku drugiej połowy XVIII wieku, a z którego zaczerpnięto rozmaite techniki uderzeń zadawanych z wyskoku.
-  //   W roku 1887 na mocy dekretu królewskiego otwarto wydziały wychowania fizycznego na nowych akademiach wojskowych zachodniego typu i w kolegiach nauczycielskich. Wśród obowiązkowych zajęć był boks tajski, praktykowany dwa razy w tygodniu przez półtorej godziny. Większość młodych bokserów jednakże pochodziła z klasy pracującej i trenowała w swoich wioskach i pobliskich świątyniach. Instruktorzy, zarówno z wiosek, jak i ze świątyń, byli z reguły bokserami, którzy zakończyli karierę sportową. Przed głównymi imprezami obiecujący zawodnicy trenowali codziennie, a w celu zachęcenia ich otrzymywali stypendia treningowe od lokalnych przedstawicieli rządu i możnowładców.
-  //   Do końca XIX wieku wykształciły się w miarę jednolite ringowe reguły muay thai przy użyciu owijaczy (w formule zwanej "muay kaad chuek" ). W 1921 walki w boksie tajskim zaczęły odbywać się na wzniesionych platformach otoczonych linami. Powód był taki, że platforma i liny zapobiegały przed wdarciem się kibiców na ring. A w roku 1929 właściciel stadionu Suan Sanuk wprowadził ring dla tajskich bokserów z trzema linami i narożnikami, głównie dlatego, że miał nadzieję na organizowanie międzynarodowych walk bokserskich.
-  //   Ze względu na wysoką urazowość walk, od połowy lat 20. XX wieku zaczęto wycofywać z ringu owijacze "kaad chuek" oraz wyłączać stosowanie bardziej destrukcyjnych technik, takich jak kopnięcia w krocze, dźwignie, rzuty czy uderzenia głową. Najprawdopodobniej bezpośrednią przyczyną tych zmian była śmierć zawodnika na ringu stadionu Lak Muang w Bangkoku. Na początku lat 30. XX wieku zawodnicy boksu tajskiego zaczęli używać metalowych ochraniaczy na krocze i skórzanych rękawic bokserskich. Stosowanie rękawic bokserskich stało się przy okazji przyczyną rozbudowania technik muay thai o elementy zachodnioeuropejskiego boksu. Przyjęto zmodyfikowane przepisy bokserskie markiza Queensberry i w ślad za tym profesjonalne walki Tajów wyznaczono na 5 rund po 3 minuty każda. Stopniowo wprowadzono podział zawodników na kategorie wagowe. Wszystko to uczyniło z muay thai popularny na całym świecie sport walki. Młodzi bokserzy wykonujący rytuał przed walką
-  //   Niemniej jednak, wiele z tradycji przetrwało. Na przykład, zawodnicy nadal wykonywali tradycyjny taniec przed walką (waikhru), początkowo, by przedstawić region, z którego pochodzą, a dziś ze względu na zwyczaje. Wykonywali swoje modły do bogów i odmawiali walki, jeżeli nie towarzyszyły im synkopowane rytmy tajskiej muzyki ludowej. Zespół muzyczny składał się z samych mężczyzn (aby uniknąć osłabienia sił zawodników): flecisty, dwóch bębnistów i cymbalisty. Flecista kierował perkusistami i zmieniał swe tony w zależności od tempa walki i emocji przejawianych przez tłum.
-  //   Około roku 1935 ośrodki, w których rozgrywano walki, zaczęły przeznaczać część zysków na pomoc tajlandzkim instytucjom dobroczynnym i armii Tajlandii. Taka praktyka stosowana jest do czasów obecnych.
+  //   title: "Mama wraca do formy",
+  //   description: `Ciąża to niezwykle wymagający czas dla kobiety, a aktywność fizyczna to najlepsze remedium na powrót do dawnej formy.
 
-  //   Zajecia rozpoczynaja sie od mocniej rozgrzewki, ktora aktywuje kazdy and element naszego ciała aby obyło sie Bez specjalnych kontuzji.
-  //   Nastepnie pracujemy nad technika w parach zazwyczaj po 3 min jak na normalnej walce, pomiedzy rundami wplatamy cwiczenia ogolnorozwojowe.
-  //   Dla chetnych kazdy trening konczymy kilkoma rundami sparingowymi Albo cardio na worku.
-  //   Podczas treningu ksztaltujemy cala sylwetke, charakter i refleks. `,
-  //   src: "muaythai.jpg",
+  //   Nie pozwól sobie wmówić, że ruch nie jest dla Ciebie! Na naszych zajęciach poznasz podstawowe formy ruchowe, abyś mogła stopniowo i sukcesywnie wzmocnić swój organizm.`,
+  //   src: "mamy.jpg",
   // },
 ];
 

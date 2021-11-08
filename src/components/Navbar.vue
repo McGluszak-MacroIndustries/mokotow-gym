@@ -304,7 +304,8 @@ export default defineComponent({
   }
   .logo {
     @include hoverable;
-    padding-left: 10vw;
+    padding-left: 5vw;
+    transform: translateY(10%);
 
     cursor: pointer;
     z-index: 1;
@@ -353,6 +354,7 @@ svg {
 @media screen and (max-width: 1200px) {
   .navbar {
     margin-left: 2vw;
+    margin-right: 2vw;
     margin-top: 0;
     .options {
       .items {

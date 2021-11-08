@@ -180,9 +180,9 @@ export default defineComponent({
     display: grid;
     grid-auto-flow: column;
     // justify-content: stretch;
-    border-bottom: $dark-grey 1px solid;
+    border-bottom: $medium-grey 2px solid;
     & > * {
-      color: $dark-grey;
+      color: $medium-grey;
       padding-top: 1vh;
       // justify-content: stretch;
     }
@@ -196,7 +196,7 @@ export default defineComponent({
       font-size: 0.7rem;
       grid-gap: 2vw;
       & > * {
-        color: $dark-grey;
+        color: $medium-grey;
       }
     }
     .media-menu {
