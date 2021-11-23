@@ -504,7 +504,7 @@ export const teamItems: Array<Item> = [
 
     Prowadzone zajęcia:
     ○ kettlebells`,
-    src: "ujejska.jpg",
+    src: "karo.jpeg",
   },
   {
     name: "team",
@@ -619,7 +619,7 @@ export const aboutUsItems: Array<Item> = [
     Wyznajemy zasadę: przede wszystkim pasja. Nasi trenerzy są nie tylko świetnymi specjalistami we własnych dziedzinach, ale także ciekawymi, otwartymi ludźmi, którzy bez trudu zarażą Cię pasją do sportu. Wejdź na wyższy poziom, i pamiętaj: sky is the limit!
     
     Oferujemy szeroki wybór zajęć w kameralnych grupach, treningi indywidualne i możliwość samodzielnych ćwiczeń - u nas każdy znajdzie coś dla siebie.`,
-    src: "grupa1.jpg",
+    src: "team.jpeg",
   },
   // {
   //   name: "about-us",
