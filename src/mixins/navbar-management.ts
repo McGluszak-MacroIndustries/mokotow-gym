@@ -98,7 +98,7 @@ export const navbarMobileElements: NavBarElement[] = [
     routerName: "contact",
   },
   {
-    frontName: "REZERWUJ",
+    frontName: "KUP/REZERWUJ",
     routerName: "reserve",
   },
 ];

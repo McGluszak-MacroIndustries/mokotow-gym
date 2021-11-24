@@ -124,7 +124,7 @@ button {
 }
 
 .title {
-  // padding-top: 10vh;
+  padding-top: 5vh;
 }
 
 .map {
@@ -137,7 +137,7 @@ button {
 
 .menu {
   // height: 40vh;
-  // padding-top: 2rem;
+  padding-top: 2rem;
   .info {
     display: grid;
     grid-template-rows: 7vh 8vh 5vh;

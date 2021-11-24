@@ -763,14 +763,14 @@ export default defineComponent({
         "blank"
         "title"
         "description";
-      grid-template-rows: 1rem 1rem min-content !important;
+      grid-template-rows: 2rem 2rem min-content !important;
       margin-top: none;
 
       .title {
         transform: translateY(-10vh);
         justify-items: center;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.6rem;
         margin-left: 0;
       }
       .description {
