@@ -14,449 +14,333 @@ export const privacyPolitics: Array<Item> = [
   {
     name: "privacy",
     title: "Polityka prywatności",
-    description: `POLITYKA OCHRONY DANYCH OSOBOWYCH
+    description: `REGULAMIN PŁATNOŚCI CYKLICZNYCH
 
+
+    § 1.DEFINICJE
+    Terminy użyte w niniejszym dokumencie oznaczają:
+        1. Karta płatnicza – karta w rozumieniu art. 2 pkt. 15a Ustawy z dnia 19 sierpnia 2011 r. o usługach płatniczych (Dz.U. Nr 199, poz. 1175 ze zm.) umożliwiająca dokonywanie płatności internetowych procesowanych przez Operatorów Płatności.
+        2. Klient - osoba fizyczna, która ukończyła 18 rok życia, a także osoba prawna oraz jednostka organizacyjna niebędąca osobą prawną, której przepisy szczególne przyznają zdolność prawną, a która dokonuje lub zamierza dokonać zakupu Karnetu za pośrednictwem Portalu Klienta.
+        3. Konto – indywidualny dla każdego Klienta panel, uruchomiony na jego rzecz przez Sprzedawcę, w którym gromadzone są dane Klienta oraz informacje o jego działaniach.
+        4. Okres Rozliczeniowy - ściśle określony przedział czasowy, w ujęciu miesięcznym rozumianym jako miesiąc kalendarzowy, za który dokonywane są rozliczenia za korzystanie z Usług powtarzalnych.
+        5. Operator Płatności – podmiot obsługujący system umożliwiający dokonywanie płatności elektronicznych:
+        6. Płatność Cykliczna – sposób dokonania przez Klienta zapłaty za Usługi, polegający na automatycznym (bez udziału Klienta) pobraniu z Karty płatniczej Klienta kwoty należności Sprzedawcy za Usługę.
+        7. Regulamin – niniejszy dokument.
+        8. Regulamin Serwisu – dokument określający zasady nabywania Karnetów oraz warunki Umowy.
+        9. Panel Klienta – prowadzona przez Sprzedawcę, na zasadach określonych w Regulaminie Serwisu, platforma on-line, na której Sprzedawca prowadzi działania informacyjne i marketingowe, o charakterze otwartym, dostępna w domenie https://mokotowskigym.perfectgym.com/clientportal2
+        10. Sprzedawca – McGluszak Sp. z o.o.  ul. Warszawska 6m32 |  15-063 Białystok | NIP: 9662116841
+        11. Umowa – umowa zawarta pomiędzy Sprzedawcą a Klientem, której przedmiotem jest świadczenie Usług.
+        12. Usługi – usługi znajdująca się w ofercie Sprzedawcy
+    § 2. POSTANOWIENIA OGÓLNE
+        1. Niniejszy Regulamin reguluje zasady dokonywania płatności w formie automatycznego pobrania należności z rachunku Klienta, za Usługi powtarzalne nabyte w Serwisie.
+        2. Rozpoczęcie korzystania z Płatności cyklicznych przez Klienta następuje w trakcie procedury nabywania Usług powtarzalnych.
+        3. Dokonując zakupu Usług powtarzalnych i akceptując Regulamin Klient wyraża zgodę na dokonywanie Płatności cyklicznych.
+    § 3. REJESTRACJA KARTY PŁATNICZEJ
+        1. Dla skorzystania przez Klienta z Płatności cyklicznych, niezbędne jest posiadanie przez Klienta Karty płatniczej i/lub konta bankowego lub innej formy płatności, którą obsługuje Operator Płatności (metody płatności).
+        2. Po wyborze metody płatności Klient zobowiązany jest podać niezbędne dane wymagane przez Operatora Płatności, takie jak: numer Karty płatniczej, datę ważności Karty płatniczej, kod CVV/CVC, numer konta bankowego (rejestracja metody płatności).
+        3. Klient dokonując akceptacji Regulaminu Serwisu oraz postanowień niniejszego Regulaminu wyraża zgodę na rejestrację danych wskazanych w trakcie procesu płatności, o których mowa w ust. 2 powyżej.
+        4. Transakcje płatnicze dokonywane w Serwisie z wykorzystaniem zarejestrowanej metody płatności obsługiwane są przez Operatorów Płatności świadczących usługi płatnicze w ramach działania Serwisu.
+        5. Prawidłowa rejestracja metody płatności skutkuje zapisaniem podanych danych przez Operatora Płatności i umożliwia Operatorowi Płatności cykliczne obciążanie rachunku Klienta.
+        6. Klient ma obowiązek zapewnienia kompletności i rzetelności danych zapisanych i przechowywanych przez Operatora Płatności, a w przypadku ich zmiany w celu skorzystania z Usługi zobowiązany jest ponownie dokonać rejestracji.
+        7. Klient ma możliwość samodzielnego zarządzania zarejestrowanymi metodami płatności, tzn. może rejestrować nowe oraz usuwać już dodane.
+        8. Korzystanie z Płatności cyklicznych jest dobrowolne. Rezygnacja z płatności cyklicznych jest możliwa w dowolnym momencie. W celu rezygnacji z Płatności cyklicznych, Klient wprowadza odpowiednią zmianę na swoim Koncie w Portalu Klienta. Rezygnacja wywołuje skutek w ostatni dzień miesiąca kalendarzowego.
+        9. Jeżeli klient nie zrezygnuje z płatności cyklicznej, zostaje ona przedłużona na kolejny miesiąc kalendarzowy.
+    § 4. PŁATNOŚCI
+        1. Klient zobowiązuje się zapewnić, na rachunku wskazanym przy wyborze metody Płatności cyklicznych, odpowiednie środki na pokrycie należności za Usługę. Środki powinny być dostępne na rachunku w wysokości oraz w takim czasie, aby było możliwe ich pobranie z zachowaniem terminów określonych w ustępach poniższych.
+        2. Operator Płatności cyklicznie pobiera z rachunku Klienta kwotę pieniężną stanowiącą równowartość należnej opłaty miesięcznej za Usługi. Wysokość należnej kwoty pieniężnej zależna jest od wariantu Karnetu wybranego przez Klienta.
+        3. Operator Płatności pobiera z rachunku Klienta należną kwotę pieniężną pierwszego dnia każdego Okresu Rozliczeniowego.
+        4. Okres Rozliczeniowy wynosi 30 kolejnych dni i liczony jest od dnia zawarcia Umowy. Daty Okresów Rozliczeniowych widoczne są na Koncie Klienta.
+        5. Brak wygaśnięcia oraz skutecznego wypowiedzenia Umowy przez Klienta lub Sprzedawcę zgodnie z zasadami wskazanymi w Regulaminie Serwisu skutkuje dalszym świadczeniem Usług oraz naliczaniem opłat zgodnie z zamówieniem.
+        6. W razie nieuregulowania płatności w terminie przez Klienta, Sprzedawcy należą się odsetki za każdy dzień opóźnienia.
+        7. Brak płatności ze strony Klienta skutkować może skierowaniem sprawy na drogę sądową w celu wyegzekwowania należności.
+    § 5. POSTANOWIENIA KOŃCOWE
+        1. W sprawach nieuregulowanych w Regulaminie zastosowanie znajdują postanowienia Regulaminu Sklepu Internetowego.
+        2. Zmiany i uchylenie Regulaminu następują w trybie określonym w Regulaminie Sklepu Internetowego.
+    
+    
+    REGULAMIN KLUBU
+    
+        1) Zabrania się przebywania na terenie siłowni poza wyznaczonymi godzinami otwarcia
+        2) Każda osoba korzystająca z siłowni jest obowiązana do zapoznania się z przepisami niniejszego regulaminu i podporządkowania się jego zapisom, a także poleceniom obsługi.
+        3) Siłownia jest przeznaczona do indywidualnej rekreacji oraz prowadzenia grupowych zajęć rekreacyjno-sportowych.
+        4) W przypadku organizowania imprez sportowych lub zajęć zorganizowanych kierownictwo obiektu ma prawo do zmiany harmonogramu korzystania z siłowni, zamknięcia jej w całości lub części.
+        5) Grupy zorganizowane zobowiązane są zgłosić się do administracji i uzgodnić warunki korzystania z siłowni.
+        6) Wstęp na siłownię odbywa się po wykupieniu biletu lub karnetu wg obowiązującego cennika.
+        7) Z siłowni wolno korzystać wyłącznie w obecności instruktora siłowni.
+        8) Każda osoba korzystająca z urządzeń i sprzętu sportowego znajdujących się w siłowni jest obowiązana do zapoznania się z ich instrukcją obsługi i użytkowania oraz do ich bezwzględnego przestrzegania.
+        9) Osoby niepełnosprawne lub ich opiekunowie po wcześniejszym zgłoszeniu się do instruktora mogą korzystać z jego pomocy w trakcie wykonywania ćwiczeń.
+        10) Każdy korzystający z siłowni przebywa w niej na własną odpowiedzialność i ponosi ryzyko związane z amatorskim uprawianiem sportu.
+        11) Każda osoba korzystająca z siłowni powinna zasięgnąć opinii lekarza odnośnie przeciwwskazań do uprawiania ćwiczeń siłowych. Osoby o niestabilnym stanie zdrowia powinny korzystać z siłowni ze szczególną ostrożnością, po konsultacji ze swoim lekarzem.
+        12) Z siłowni mogą korzystać osoby: a. które ukończyły 18 lat – samodzielnie, na własną odpowiedzialność, b. które ukończyły 14 lat – pod opieką pełnoletniej osoby, na jej odpowiedzialność, c. które nie ukończyły 14 lat - pod bezpośrednią opieką rodziców lub prawnych opiekunów.
+        13) Z siłowni należy korzystać w stroju oraz obuwiu sportowym (czystym, na płaskiej podeszwie, bez kolców i kołków, nie pozostawiającym podczas użytkowania zabrudzeń, rys itp.). Ze względów higienicznych wskazane jest korzystanie z ręcznika.
+        14) Zmiana ubrania wierzchniego na strój sportowy odbywa się w szatni siłowni.
+        15) Przed wyjściem z szatni należy sprawdzić, czy szafka została zamknięta. Za rzeczy uszkodzone lub utracone przez korzystających na skutek siły wyższej lub z wyłącznej winy korzystającego (w szczególności pozostawione w szafkach otwartych lub nieprawidłowo zamkniętych, pieniądze i przedmioty wartościowe) kierownictwo nie ponosi odpowiedzialności.
+        16) Kierownictwo obiektu lub instruktor siłowni może czasowo ograniczyć wstęp na siłownię ze względu na przekroczenie maksymalnej liczby osób ćwiczących.
+        17) O wszelkich sytuacjach wypadkowych, zagrażających życiu i zdrowiu użytkowników oraz nieprawidłowej pracy urządzeń należy bezwzględnie powiadomić instruktora siłowni.
+        18) Zabronione jest wszelkie zachowanie zagrażające bezpieczeństwu własnemu lub innych użytkowników siłowni, jak również:
+            a) przebierania się poza szatnią,
+            b) wchodzenia w innym stroju i obuwiu niż sportowe,
+            c) wnoszenie i spożywanie napojów alkoholowych oraz środków odurzających,
+            d) palenie tytoniu, używanie papierosów elektronicznych, używanie otwartego ognia,
+            e) słuchanie polskiego rapu za wyjątkiem utworu „Głucha Noc” Rycha Pei
+            f) publiczne pochwalanie totalitarnych praktyk i metod działania nazizmu, faszyzmu i hitleryzmu
+            g) żucie gumy
+            h) publiczne wyrażanie poparcia dla polityki gospodarczej rządu pana premiera Mateusza Morawieckiego
+            i) wnoszenie na salę ćwiczeń opakowań szklanych, puszek, ostrych narzędzi, broni oraz innych niebezpiecznych przedmiotów,
+            j) zaśmiecanie i zanieczyszczanie terenu siłowni,
+            k) niszczenie urządzeń i wyposażenia siłowni,
+            l) wnoszenie przedmiotów utrudniających komunikację,
+            m) hałasowanie, przeszkadzanie ćwiczącym oraz innym osobom przebywającym na terenie siłowni
+            n) wchodzenie	na	konstrukcję	przyrządów	do	ćwiczeń	niezgodnie	z	ich przeznaczeniem,
+            o) ustawianie na przyrządach jakichkolwiek przedmiotów i sprzętu (toreb, butelek, itp),
+            p) wykonywanie ćwiczeń siłowych bez rozgrzewki,
+            q) ćwiczenie z nie spiętymi długimi włosami oraz z biżuterią i ozdobami, mogącymi spowodować uszkodzenie ciała,
+            r) korzystania ze sprzętu sportowego, dokonywanie jakiejkolwiek modyfikacji przyrządów oraz przemieszczania wyposażenia ruchomego bez zgody instruktora siłowni,
+            s) korzystania ze sprzętu sportowego oraz wyposażenia siłowni niezgodnie z ich przeznaczeniem,
+            t) wykonywania ćwiczeń siłowych i treningu z dużymi obciążeniami, bez asekuracji instruktora lub osób współćwiczących,
+            u) gwałtownego opuszczania ciężarów umieszczonych na stosach urządzeń,
+            v) wkładania kończyn pomiędzy ruchome części segmentów przyrządów
+            w) zakładania na sztangę talerzy nie zabezpieczonych zaciskami i o różnej wadze po obu końcach sztangi
+            x) ćwiczeń	przy	użyciu	stojaków	do	sztangi	ustawionych	na	różnych wysokościach,
+            y) wykonywania ćwiczeń na przyrządach uszkodzonych lub niesprawnych,
+        19) prowadzenie działalności szkoleniowej i zarobkowej bez zgody kierownika obiektu. 20)Osoby korzystające z siłowni zobowiązane są do pozostawienia ładu i porządku po
+            zakończonych ćwiczeniach.
+        21) Wnoszenie i korzystanie na terenie obiektu z własnego sprzętu sportowego i rekreacyjnego może odbywać się wyłącznie po uzyskaniu zgody instruktora siłowni lub kierownika obiektu.
+        22) Na terenie siłowni nie zapewnia się stałej opieki medycznej.
+        23) Osoby przebywające na terenie obiektu i naruszające porządek, stwarzające zagrożenie dla innych osób, nie stosujące się do przepisów niniejszego regulaminu
+            i do zaleceń służb porządkowych lub pracowników mogą zostać usunięte z terenu obiektu.
+        24) Osoby niszczące lub uszkadzające wyposażenie lub urządzenia obiektu ponoszą odpowiedzialność materialną za wyrządzone szkody.
+        25) Kierownictwo obiektu nie ponosi odpowiedzialności za kontuzje powstałe w czasie korzystania z urządzeń siłowni oraz za jakiekolwiek zdarzenia wynikłe z nie przestrzegania niniejszego regulaminu.
+        26) Rezerwacja wejść na zajęcia grupowe odbywa się za pomocą strony: https://mokotowskigym.perfectgym.com/
+        27) Na zajęcia grupowe obowiązują limity osób, decyduje kolejność dokonania rezerwacji.
+        28) W sytuacji kiedy w „strefie fitness” odbywają się zajęcia grupowe, wejście na samodzielne ćwiczenia jest możliwe o ile nie zagraża to bezpieczeństwu i komfortowi uczestników zajęć grupowych. Ewentualną decyzję podejmuje recepcja.
+        29) Nieobecność na zajęciach grupowych – jeżeli rezerwacja nie została anulowana co najmniej 4 godziny przed rozpoczęciem zajęć, oznacza konieczność uiszczenia karnej opłaty 30 PLN
+    
+    
+    
+    
+    POLITYKA OCHRONY DANYCH OSOBOWYCH
+    
+    
     (Q) Kim jesteśmy?
     (A) Klubem fitness.
     
+    
     (Q) Co to są dane osobowe?
     (A) Dane osobowe - oznaczają wszelkie informacje o zidentyfikowanej lub możliwej do zidentyfikowania osobie fizycznej ("osobie, której dane dotyczą"); możliwa do zidentyfikowania osoba fizyczna to osoba, którą można bezpośrednio lub pośrednio zidentyfikować, w szczególności na podstawie identyfikatora takiego jak imię i nazwisko, numer identyfikacyjny, dane o lokalizacji, identyfikator internetowy lub jeden bądź kilka
-    szczególnych czynników określających fizyczną, fizjologiczną, genetyczną, psychiczną,
-    ekonomiczną, kulturową lub społeczną tożsamość osoby fizycznej.
+    szczególnych czynników określających fizyczną, fizjologiczną, genetyczną, psychiczną, ekonomiczną, kulturową lub społeczną tożsamość osoby fizycznej.
     
     (Q) Po co przetwarzamy dane osobowe?
-    (A) Dane osobowe przetwaramy w celu umożliwienia zapisania się na nasze usługi (np. kupno karnetu, odebranie wejścia na darmowy trening)
-    
-    
+    (A) Dane osobowe przetwaramy w celu umożliwienia zapisania się na nasze usługi (np. kupno karnetu, odebranie wejścia na darmowy trening) 
     Kontakt
-    1. Niniejszy dokument zatytułowany „Polityka ochrony danych osobowych” (dalej jako Polityka) ma za zadanie stanowić mapę wymogów, zasad i regulacji ochrony danych osobowych w McGłuszak MacroIndustries Sp z o.o, ul. Warszawska 6m32, 15-063 Białystok, NIP: 9662116841, KRS: 0000716731, REGON: 368770856.
-    Niniejsza Polityka jest polityką ochrony danych osobowych w rozumieniu 
-    RODO  – rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z 27.04.2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE
+        1. Niniejszy dokument zatytułowany „Polityka ochrony danych osobowych” (dalej jako Polityka) ma za zadanie stanowić mapę wymogów, zasad i regulacji ochrony danych osobowych w McGłuszak MacroIndustries Sp z o.o, ul. Warszawska 6m32, 15-063 Białystok, NIP: 9662116841, KRS: 0000716731, REGON: 368770856.
+    Niniejsza Polityka jest polityką ochrony danych osobowych w rozumieniu
+    RODO – rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z 27.04.2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE
     (ogólne rozporządzenie o ochronie danych) (Dz.Urz. UE L 119, s. 1).
-    2. Polityka zawiera:
-    a) opis zasad ochrony danych obowiązujących w Spółce;
-    b) odwołania do załączników uszczegóławiających (wzorcowe procedury lub instrukcje dotyczące poszczególnych obszarów z zakresu ochrony danych osobowych wymagających doprecyzowania w odrębnych dokumentach);
-    3. Odpowiedzialny za wdrożenie i utrzymanie niniejszej Polityki jest Zarząd Spółki, a w ramach Zarządu:
-    (i) Członek Zarządu, któremu powierzono nadzór nad obszarem ochrony danych
-    osobowych;
-    (ii) osoba wyznaczona przez Zarząd do zapewnienia zgodności z ochrona danych osobowych;
+        2. Polityka zawiera:
+        a) opis zasad ochrony danych obowiązujących w Spółce;
+        b) odwołania do załączników uszczegóławiających (wzorcowe procedury lub instrukcje dotyczące poszczególnych obszarów z zakresu ochrony danych osobowych wymagających doprecyzowania w odrębnych dokumentach);
+        3. Odpowiedzialny za wdrożenie i utrzymanie niniejszej Polityki jest Zarząd Spółki, a w ramach Zarządu:
+        (i) Członek Zarządu, któremu powierzono nadzór nad obszarem ochrony danych osobowych;
+        (ii) osoba wyznaczona przez Zarząd do zapewnienia zgodności z ochrona danych osobowych;
     
-    za nadzór i monitorowanie przestrzegania Polityki odpowiadają:
-    (iii) Inspektor Ochrony Danych, jeżeli został powołany w Spółce;
-    (iv) komórka audytu wewnętrznego, jeżeli funkcjonuje w Spółce;
-    za stosowanie niniejszej Polityki odpowiedzialni są:
-    (v) Spółka;
-    (vi) komórka organizacyjna odpowiedzialna za obszar bezpieczeństwa informacji;
-    (vii) komórki organizacyjne przetwarzające dane osobowe w dużym rozmiarze;
-    (viii) pozostałe komórki organizacyjne;
-    (ix) wszyscy członkowie personelu Spółki.
+    
+        za nadzór i monitorowanie przestrzegania Polityki odpowiadają:
+        (iii) Inspektor Ochrony Danych, jeżeli został powołany w Spółce;
+        (iv) komórka audytu wewnętrznego, jeżeli funkcjonuje w Spółce; za stosowanie niniejszej Polityki odpowiedzialni są:
+        (v) Spółka;
+        (vi) komórka organizacyjna odpowiedzialna za obszar bezpieczeństwa informacji;
+        (vii) komórki organizacyjne przetwarzające dane osobowe w dużym rozmiarze;
+        (viii) pozostałe komórki organizacyjne;
+        (ix) wszyscy członkowie personelu Spółki.
     Spółka powinna też zapewnić zgodność postępowania kontrahentów Spółki z niniejszą
     Polityką w odpowiednim zakresie, gdy dochodzi do przekazania im danych osobowych przez Spółkę.
     
-    4. Skróty i definicje:
-    Polityka oznacza niniejszą Politykę ochrony danych osobowych, o ile co innego nie
-    wynika wyraźnie z kontekstu. 
+    
+        4. Skróty i definicje:
+    Polityka oznacza niniejszą Politykę ochrony danych osobowych, o ile co innego nie wynika wyraźnie z kontekstu.
     RODO oznacza rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z 27.04.2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych) (Dz.Urz. UE L 119, s. 1).
-    Dane oznaczają dane osobowe, o ile co innego nie wynika wyraźnie z kontekstu.
-    Dane wrażliwe oznaczają dane specjalne i dane karne.
-    Dane specjalne oznaczają dane wymienione w art. 9 ust. 1 RODO, tj. dane osobowe
-    ujawniające pochodzenie rasowe lub etniczne, poglądy polityczne, przekonania religijne
-    lub światopoglądowe, przynależność do związków zawodowych, dane genetyczne,
-    biometryczne w celu jednoznacznego zidentyfikowania osoby fizycznej lub dane
-    dotyczące zdrowia, seksualności lub orientacji seksualnej.
-    Dane karne oznaczają dane wymienione w art. 10 RODO, tj. dane dotyczące wyroków
-    skazujących i naruszeń prawa.
+    Dane oznaczają dane osobowe, o ile co innego nie wynika wyraźnie z kontekstu. Dane wrażliwe oznaczają dane specjalne i dane karne.
+    Dane specjalne oznaczają dane wymienione w art. 9 ust. 1 RODO, tj. dane osobowe ujawniające pochodzenie rasowe lub etniczne, poglądy polityczne, przekonania religijne lub światopoglądowe, przynależność do związków zawodowych, dane genetyczne, biometryczne w celu jednoznacznego zidentyfikowania osoby fizycznej lub dane dotyczące zdrowia, seksualności lub orientacji seksualnej.
+    Dane karne oznaczają dane wymienione w art. 10 RODO, tj. dane dotyczące wyroków skazujących i naruszeń prawa.
     Dane dzieci oznaczają dane osób poniżej 16. roku życia.
-    Osoba oznacza osobę, której dane dotyczą, o ile co innego nie wynika wyraźnie z
-    kontekstu.
-    Podmiot przetwarzający oznacza organizację lub osobę, której Spółka powierzyła
-    przetwarzanie danych osobowych (np. usługodawca IT, zewnętrzna księgowość).
-    Profilowanie oznacza dowolną formę zautomatyzowanego przetwarzania danych
-    osobowych, które polega na wykorzystaniu danych osobowych do oceny niektórych
-    czynników osobowych osoby fizycznej, w szczególności do analizy lub prognozy
-    aspektów dotyczących efektów pracy tej osoby fizycznej, jej sytuacji ekonomicznej,
-    zdrowia, osobistych preferencji, zainteresowań, wiarygodności, zachowania, lokalizacji
-    lub przemieszczania się.
-    Eksport danych oznacza przekazanie danych do państwa trzeciego lub organizacji
-    międzynarodowej.
+    Osoba oznacza osobę, której dane dotyczą, o ile co innego nie wynika wyraźnie z kontekstu.
+    Podmiot przetwarzający oznacza organizację lub osobę, której Spółka powierzyła przetwarzanie danych osobowych (np. usługodawca IT, zewnętrzna księgowość). Profilowanie oznacza dowolną formę zautomatyzowanego przetwarzania danych osobowych, które polega na wykorzystaniu danych osobowych do oceny niektórych czynników osobowych osoby fizycznej, w szczególności do analizy lub prognozy aspektów dotyczących efektów pracy tej osoby fizycznej, jej sytuacji ekonomicznej, zdrowia, osobistych preferencji, zainteresowań, wiarygodności, zachowania, lokalizacji lub przemieszczania się.
+    Eksport danych oznacza przekazanie danych do państwa trzeciego lub organizacji międzynarodowej.
     IOD lub Inspektor oznacza Inspektora Ochrony Danych Osobowych
     RCPD lub Rejestr oznacza Rejestr Czynności Przetwarzania Danych Osobowych.
     Spółka oznacza spółkę McGłuszak MacroIndustries Sp z o.o, ul. Warszawska 6m32, 15-063 Białystok, NIP: 9662116841, KRS: 0000716731, REGON: 368770856.
     
-    5. Ochrona danych osobowych w Spółce – zasady ogólne
-    5.1. Filary ochrony danych osobowych w Spółce:
-    (1) Legalność − Spółka dba o ochronę prywatności i przetwarza dane zgodnie z
-    prawem.
-    (2) Bezpieczeństwo − Spółka zapewnia odpowiedni poziom bezpieczeństwa
-    danych podejmując stale działania w tym zakresie.
-    (3) Prawa Jednostki − Spółka umożliwia osobom, których dane przetwarza,
-    wykonywanie swoich praw i prawa te realizuje.
-    (4) Rozliczalność − Spółka dokumentuje to, w jaki sposób spełnia obowiązki, aby
-    w każdej chwili móc wykazać zgodność.
-    5.2. Zasady ochrony danych
+    
+        5. Ochrona danych osobowych w Spółce – zasady ogólne
+            5.1. Filary ochrony danych osobowych w Spółce:
+        (1) Legalność − Spółka dba o ochronę prywatności i przetwarza dane zgodnie z prawem.
+        (2) Bezpieczeństwo − Spółka zapewnia odpowiedni poziom bezpieczeństwa danych podejmując stale działania w tym zakresie.
+        (3) Prawa Jednostki − Spółka umożliwia osobom, których dane przetwarza, wykonywanie swoich praw i prawa te realizuje.
+        (4) Rozliczalność − Spółka dokumentuje to, w jaki sposób spełnia obowiązki, aby w każdej chwili móc wykazać zgodność.
+            5.2. Zasady ochrony danych
     Spółka przetwarza dane osobowe z poszanowaniem następujących zasad:
-    (1) w oparciu o podstawę prawną i zgodnie z prawem (legalizm);
-    (2) rzetelnie i uczciwie (rzetelność);
-    (3) w sposób przejrzysty dla osoby, której dane dotyczą (transparentność);
-    (4) w konkretnych celach i nie „na zapas” (minimalizacja);
-    (5) nie więcej niż potrzeba (adekwatność);
-    (6) z dbałością o prawidłowość danych (prawidłowość);
-    (7) nie dłużej niż potrzeba (czasowość);
-    (8) zapewniając odpowiednie bezpieczeństwo danych (bezpieczeństwo).
-    5.3. System ochrony danych
+        (1) w oparciu o podstawę prawną i zgodnie z prawem (legalizm);
+        (2) rzetelnie i uczciwie (rzetelność);
+        (3) w sposób przejrzysty dla osoby, której dane dotyczą (transparentność);
+        (4) w konkretnych celach i nie „na zapas” (minimalizacja);
+        (5) nie więcej niż potrzeba (adekwatność);
+        (6) z dbałością o prawidłowość danych (prawidłowość);
+        (7) nie dłużej niż potrzeba (czasowość);
+        (8) zapewniając odpowiednie bezpieczeństwo danych (bezpieczeństwo).
+            5.3. System ochrony danych
     System ochrony danych osobowych w Spółce składa się z następujących elementów:
-    1) Inwentaryzacja danych. Spółka dokonuje identyfikacji zasobów danych osobowych w
-    Spółce, klas danych, zależności między zasobami danych, identyfikacji sposobów
-    wykorzystania danych (inwentaryzacja), w tym:
-    a) przypadków przetwarzania danych specjalnych i danych „kryminalnych” (dane
-    wrażliwe);
-    b) przypadków przetwarzania danych osób, których Spółka nie identyfikuje (dane
-    niezidentyfikowane);
-    c) przypadków przetwarzania danych dzieci;
-    d) profilowania;
-    e) współadministrowania danymi.
-    2) Rejestr. Spółka opracowuje, prowadzi i utrzymuje Rejestr Czynności Danych Osobowych
-    w Spółce (Rejestr). Rejestr jest narzędziem rozliczania zgodności z ochroną danych w
-    Spółce.
-    3) Podstawy prawne. Spółka zapewnia, identyfikuje, weryfikuje podstawy prawne
-    przetwarzania danych i rejestruje je w Rejestrze, w tym:
-    a) utrzymuje system zarządzania zgodami na przetwarzanie danych i komunikację na
-    odległość,
-    b) inwentaryzuje i uszczegóławia uzasadnienie przypadków, gdy Spółka przetwarza dane
-    na podstawie prawnie uzasadnionego interesu Spółki.
-    4) Obsługa praw jednostki. Spółka spełnia obowiązki informacyjne względem osób,
-    których dane przetwarza, oraz zapewnia obsługę ich praw, realizując otrzymane w tym
-    zakresie żądania, w tym:
-    a) Obowiązki informacyjne. Spółka przekazuje osobom prawem wymagane informacje
-    przy zbieraniu danych i w innych sytuacjach oraz organizuje i zapewnia
-    udokumentowanie realizacji tych obowiązków.
-    b) Możliwość wykonania żądań. Spółka weryfikuje i zapewnia możliwość efektywnego
-    wykonania każdego typu żądania przez siebie i swoich przetwarzających.
-    c) Obsługa żądań. Spółka zapewnia odpowiednie nakłady i procedury, aby żądania osób
-    były realizowane w terminach i w sposób wymagany RODO i dokumentowane.
-    d) Zawiadamianie o naruszeniach. Spółka stosuje procedury pozwalające na ustalenie
-    konieczności zawiadomienia osób dotkniętych zidentyfikowanym naruszeniem
-    ochrony danych.
-    5) Minimalizacja. Spółka posiada zasady i metody zarządzania minimalizacją (privacy by
-    default), a w tym:
-    a) zasady zarządzania adekwatnością danych;
-    b) zasady reglamentacji i zarządzania dostępem do danych;
-    c) zasady zarządzania okresem przechowywania danych i weryfikacji dalszej
-    przydatności;
-    6) Bezpieczeństwo. Spółka zapewnia odpowiedni poziom bezpieczeństwa danych, w tym:
-    a) przeprowadza analizy ryzyka dla czynności przetwarzania danych lub ich kategorii;
-    b) przeprowadza oceny skutków dla ochrony danych tam, gdzie ryzyko naruszenia praw i
-    wolności osób jest wysokie;
-    c) dostosowuje środki ochrony danych do ustalonego ryzyka;
-    d) posiada system zarządzania bezpieczeństwem informacji;
-    e) stosuje procedury pozwalające na identyfikację, ocenę i zgłoszenie zidentyfikowanego
-    naruszenia ochrony danych Urzędowi Ochrony Danych − zarządza incydentami.
-    7) Przetwarzający. Spółka posiada zasady doboru przetwarzających dane na rzecz Spółki,
-    wymogów co do warunków przetwarzania (umowa powierzenia), zasad weryfikacji
-    wykonywania umów powierzenia.
-    8) Eksport danych. Spółka nie przekazuje danych do państw trzecich (czyli poza UE,
-    Norwegię, Lichtenstein, Islandię) lub do organizacji międzynarodowych.
-    9) Privacybydesign. Spółka zarządza zmianami mającymi wpływ na prywatność. W tym
-    celu procedury uruchamiania nowych projektów i inwestycji w Spółce uwzględniają
-    konieczność oceny wpływu zmiany na ochronę danych, zapewnienie prywatności (a w tym
-    zgodności celów przetwarzania, bezpieczeństwa danych i minimalizacji) już w fazie
-    projektowania zmiany, inwestycji czy na początku nowego projektu.
-    10) Przetwarzanie transgraniczne. Spółka nie dokonuje transgranicznego przetwarzania
-    danych osobowych.
-    6. Inwentaryzacja
-    6.1. Dane wrażliwe
-    Spółka identyfikuje przypadki, w których przetwarza lub może przetwarzać dane wrażliwe
-    (dane specjalne i dane karne) oraz utrzymuje dedykowane mechanizmy zapewnienia
-    zgodności z prawem przetwarzania danych wrażliwych. W przypadku zidentyfikowania
-    przypadków przetwarzania danych wrażliwych, Spółka postępuje zgodnie z przyjętymi
-    zasadami w tym zakresie.
-    6.2. Dane niezidentyfikowane
-    Spółka identyfikuje przypadki, w których przetwarza lub może przetwarzać dane
-    niezidentyfikowane i utrzymuje mechanizmy ułatwiające realizację praw osób, których
-    dotyczą dane niezidentyfikowane.
-    6.3. Profilowanie
-    Spółka identyfikuje przypadki, w których dokonuje profilowania przetwarzanych danych i
-    utrzymuje mechanizmy zapewniające zgodność tego procesu z prawem. W przypadku
-    zidentyfikowania przypadków profilowania i zautomatyzowanego podejmowania decyzji,
-    Spółka postępuje zgodnie z przyjętymi zasadami w tym zakresie.
-    6.4. Współadministrowanie
-    Spółka identyfikuje przypadki współadministrowania danymi i postępuje w tym zakresie
-    zgodnie z przyjętymi zasadami.
-    7. Rejestr Czynności Przetwarzania Danych
-    7.1. RCPD stanowi formę dokumentowania czynności przetwarzania danych, pełni rolę
-    mapy przetwarzania danych i jest jednym z kluczowych elementów umożliwiających
-    realizację fundamentalnej zasady, na której opiera się cały system ochrony danych
-    osobowych, czyli zasady rozliczalności.
-    7.2. Spółka prowadzi Rejestr Czynności Przetwarzania Danych, w którym inwentaryzuje i
-    monitoruje sposób, w jaki wykorzystuje dane osobowe.
-    7.3. Rejestr jest jednym z podstawowych narzędzi umożliwiających Spółce rozliczanie
-    większości obowiązków ochrony danych.
-    7.4. W Rejestrze, dla każdej czynności przetwarzania danych, którą Spółka uznała za
-    odrębną dla potrzeb Rejestru, Spółka odnotowuje co najmniej: (i) nazwę czynności,
-    (ii) cel przetwarzania, (iii) opis kategorii osób, (iv) opis kategorii danych, (v)
-    podstawę prawną przetwarzania, wraz z wyszczególnieniem kategorii uzasadnionego
+        1) Inwentaryzacja danych. Spółka dokonuje identyfikacji zasobów danych osobowych w Spółce, klas danych, zależności między zasobami danych, identyfikacji sposobów wykorzystania danych (inwentaryzacja), w tym:
+            a) przypadków przetwarzania danych specjalnych i danych „kryminalnych” (dane wrażliwe);
+            b) przypadków przetwarzania danych osób, których Spółka nie identyfikuje (dane niezidentyfikowane);
+            c) przypadków przetwarzania danych dzieci;
+            d) profilowania;
+            e) współadministrowania danymi.
+        2) Rejestr. Spółka opracowuje, prowadzi i utrzymuje Rejestr Czynności Danych Osobowych w Spółce (Rejestr). Rejestr jest narzędziem rozliczania zgodności z ochroną danych w Spółce.
+        3) Podstawy prawne. Spółka zapewnia, identyfikuje, weryfikuje podstawy prawne przetwarzania danych i rejestruje je w Rejestrze, w tym:
+            a) utrzymuje system zarządzania zgodami na przetwarzanie danych i komunikację na odległość,
+            b) inwentaryzuje i uszczegóławia uzasadnienie przypadków, gdy Spółka przetwarza dane na podstawie prawnie uzasadnionego interesu Spółki.
+        4) Obsługa praw jednostki. Spółka spełnia obowiązki informacyjne względem osób, których dane przetwarza, oraz zapewnia obsługę ich praw, realizując otrzymane w tym zakresie żądania, w tym:
+            a) Obowiązki informacyjne. Spółka przekazuje osobom prawem wymagane informacje przy zbieraniu danych i w innych sytuacjach oraz organizuje i zapewnia udokumentowanie realizacji tych obowiązków.
+            b) Możliwość wykonania żądań. Spółka weryfikuje i zapewnia możliwość efektywnego wykonania każdego typu żądania przez siebie i swoich przetwarzających.
+            c) Obsługa żądań. Spółka zapewnia odpowiednie nakłady i procedury, aby żądania osób były realizowane w terminach i w sposób wymagany RODO i dokumentowane.
+            d) Zawiadamianie o naruszeniach. Spółka stosuje procedury pozwalające na ustalenie konieczności zawiadomienia osób dotkniętych zidentyfikowanym naruszeniem ochrony danych.
+        5) Minimalizacja. Spółka posiada zasady i metody zarządzania minimalizacją (privacy by default), a w tym:
+        a) zasady zarządzania adekwatnością danych;
+        b) zasady reglamentacji i zarządzania dostępem do danych;
+        c) zasady zarządzania okresem przechowywania danych i weryfikacji dalszej przydatności;
+        6) Bezpieczeństwo. Spółka zapewnia odpowiedni poziom bezpieczeństwa danych, w tym:
+            a) przeprowadza analizy ryzyka dla czynności przetwarzania danych lub ich kategorii;
+            b) przeprowadza oceny skutków dla ochrony danych tam, gdzie ryzyko naruszenia praw i wolności osób jest wysokie;
+            c) dostosowuje środki ochrony danych do ustalonego ryzyka;
+            d) posiada system zarządzania bezpieczeństwem informacji;
+            e) stosuje procedury pozwalające na identyfikację, ocenę i zgłoszenie zidentyfikowanego naruszenia ochrony danych Urzędowi Ochrony Danych − zarządza incydentami.
+        7) Przetwarzający. Spółka posiada zasady doboru przetwarzających dane na rzecz Spółki, wymogów co do warunków przetwarzania (umowa powierzenia), zasad weryfikacji wykonywania umów powierzenia.
+        8) Eksport danych. Spółka nie przekazuje danych do państw trzecich (czyli poza UE, Norwegię, Lichtenstein, Islandię) lub do organizacji międzynarodowych.
+        9) Privacybydesign. Spółka zarządza zmianami mającymi wpływ na prywatność. W tym celu procedury uruchamiania nowych projektów i inwestycji w Spółce uwzględniają konieczność oceny wpływu zmiany na ochronę danych, zapewnienie prywatności (a w tym zgodności celów przetwarzania, bezpieczeństwa danych i minimalizacji) już w fazie projektowania zmiany, inwestycji czy na początku nowego projektu.
+        10) Przetwarzanie transgraniczne. Spółka nie dokonuje transgranicznego przetwarzania danych osobowych.
+        6. Inwentaryzacja
+            6.1. Dane wrażliwe
+    Spółka identyfikuje przypadki, w których przetwarza lub może przetwarzać dane wrażliwe (dane specjalne i dane karne) oraz utrzymuje dedykowane mechanizmy zapewnienia zgodności z prawem przetwarzania danych wrażliwych. W przypadku zidentyfikowania przypadków przetwarzania danych wrażliwych, Spółka postępuje zgodnie z przyjętymi zasadami w tym zakresie.
+            6.2. Dane niezidentyfikowane
+    Spółka identyfikuje przypadki, w których przetwarza lub może przetwarzać dane niezidentyfikowane i utrzymuje mechanizmy ułatwiające realizację praw osób, których dotyczą dane niezidentyfikowane.
+            6.3. Profilowanie
+    Spółka identyfikuje przypadki, w których dokonuje profilowania przetwarzanych danych i utrzymuje mechanizmy zapewniające zgodność tego procesu z prawem. W przypadku zidentyfikowania przypadków profilowania i zautomatyzowanego podejmowania decyzji, Spółka postępuje zgodnie z przyjętymi zasadami w tym zakresie.
+            6.4. Współadministrowanie
+    Spółka identyfikuje przypadki współadministrowania danymi i postępuje w tym zakresie zgodnie z przyjętymi zasadami.
+        7. Rejestr Czynności Przetwarzania Danych
+            7.1. RCPD stanowi formę dokumentowania czynności przetwarzania danych, pełni rolę mapy przetwarzania danych i jest jednym z kluczowych elementów umożliwiających realizację fundamentalnej zasady, na której opiera się cały system ochrony danych osobowych, czyli zasady rozliczalności.
+            7.2. Spółka prowadzi Rejestr Czynności Przetwarzania Danych, w którym inwentaryzuje i monitoruje sposób, w jaki wykorzystuje dane osobowe.
+            7.3. Rejestr jest jednym z podstawowych narzędzi umożliwiających Spółce rozliczanie większości obowiązków ochrony danych.
+            7.4. W Rejestrze, dla każdej czynności przetwarzania danych, którą Spółka uznała za odrębną dla potrzeb Rejestru, Spółka odnotowuje co najmniej: (i) nazwę czynności,
+    (ii) cel przetwarzania, (iii) opis kategorii osób, (iv) opis kategorii danych, (v)  podstawę prawną przetwarzania, wraz z wyszczególnieniem kategorii uzasadnionego
     interesu Spółki, jeśli podstawą jest uzasadniony interes, (vi) sposób zbierania danych,
-    (vii) opis kategorii odbiorców danych (w tym przetwarzających), (viii) informację o
-    przekazaniu poza EU/EOG; (ix) ogólny opis technicznych i organizacyjnych środków
-    ochrony danych.
-    8. Podstawy przetwarzania
-    8.1. Spółka dokumentuje w Rejestrze podstawy prawne przetwarzania danych dla
-    poszczególnych czynności przetwarzania.
-    8.2. Wskazując ogólną podstawę prawną (zgoda, umowa, obowiązek prawny, żywotne
-    interesy, zadanie publiczne/władza publiczna, uzasadniony cel Spółki) Spółka
-    dookreśla podstawę w czytelny sposób, gdy jest to potrzebne. Np. dla zgody
-    wskazując na jej zakres, gdy podstawą jest prawo – wskazując na konkretny przepis i
-    inne dokumenty, np. umowę, porozumienie administracyjne, żywotne interesy –
-    wskazując na kategorie zdarzeń, w których się zmaterializują, uzasadniony cel –
-    wskazując na konkretny cel, np. marketing własny, dochodzenie roszczeń.
-    8.3. Spółka wdraża metody zarządzania zgodami umożliwiające rejestrację i weryfikację
-    posiadania zgody osoby na przetwarzanie jej konkretnych danych w konkretnym celu,
-    zgody na komunikację na odległość (email, telefon, sms, in.) oraz rejestrację odmowy
-    zgody, cofnięcia zgody i podobnych czynności (sprzeciw, ograniczenie itp.).
-    8.4. Kierownik komórki organizacyjnej Spółki ma obowiązek znać podstawy prawne, na
-    jakich komórka przez niego kierowana dokonuje konkretnych czynności
-    przetwarzania danych osobowych. Jeżeli podstawą jest uzasadniony interes Spółki,
-    kierownik komórki ma obowiązek znać konkretny realizowany przetwarzaniem
-    interes Spółki.
-    9. Sposób obsługi praw jednostki i obowiązków informacyjnych
-    9.1. Spółka dba o czytelność i styl przekazywanych informacji i komunikacji z osobami,
-    których dane przetwarza.
-    9.2. Spółka ułatwia osobom korzystanie z ich praw poprzez różne działania, w tym:
-    zamieszczenie na stronie internetowej Spółki informacji lub odwołań (linków) do
-    informacji o prawach osób, sposobie skorzystania z nich w Spółce, w tym
-    wymaganiach dotyczących identyfikacji, metodach kontaktu ze Spółką w tym celu,
-    ewentualnym cenniku żądań „dodatkowych” itp.
-    9.3. Spółka dba o dotrzymywanie prawnych terminów realizacji obowiązków względem
-    osób.
-    9.4. Spółka wprowadza adekwatne metody identyfikacji i uwierzytelniania osób dla
-    potrzeb realizacji praw jednostki i obowiązków informacyjnych.
-    9.5. W celu realizacji praw jednostki Spółka zapewnia procedury i mechanizmy
-    pozwalające zidentyfikować dane konkretnych osób przetwarzane przez Spółkę,
-    zintegrować te dane, wprowadzać do nich zmiany i usuwać w sposób zintegrowany,
-    9.6. Spółka dokumentuje obsługę obowiązków informacyjnych, zawiadomień i żądań
-    osób.
-    10. Obowiązki informacyjne
-    10.1. Spółka określa zgodne z prawem i efektywne sposoby wykonywania obowiązków
-    informacyjnych.
-    10.2. Spółka informuje osobę o przedłużeniu ponad jeden miesiąc terminu na rozpatrzenie
-    żądania tej osoby.
-    10.3. Spółka informuje osobę o przetwarzaniu jej danych, przy pozyskiwaniu danych od tej
-    osoby.
-    10.4. Spółka informuje osobę o przetwarzaniu jej danych, przy pozyskiwaniu danych o tej
-    osobie niebezpośrednio od niej.
-    10.5. Spółka określa sposób informowania osób o przetwarzaniu danych
-    niezidentyfikowanych, tam gdzie to jest możliwe (np. tabliczka o objęciu obszaru
-    monitoringiem wizyjnym).
-    10.6. Spółka informuje osobę o planowanej zmianie celu przetwarzania danych.
-    10.7. Spółka informuje osobę przed uchyleniem ograniczenia przetwarzania.
-    10.8. Spółka informuje odbiorców danych o sprostowaniu, usunięciu lub ograniczeniu
-    przetwarzania danych (chyba że będzie to wymagało niewspółmiernie dużego wysiłku
-    lub będzie niemożliwe).
-    10.9. Spółka informuje osobę o prawie sprzeciwu względem przetwarzania danych
-    najpóźniej przy pierwszym kontakcie z tą osobą.
-    10.10. Spółka bez zbędnej zwłoki zawiadamia osobę o naruszeniu ochrony danych
-    osobowych, jeżeli może ono powodować wysokie ryzyko naruszenia praw lub
-    wolności tej osoby.
-    11. Żądania osób
-    11.1. Prawa osób trzecich. Realizując prawa osób, których dane dotyczą, Spółka
-    wprowadza proceduralne gwarancje ochrony praw i wolności osób trzecich. W
-    szczególności w przypadku powzięcia wiarygodnej wiadomości o tym, że wykonanie
-    żądania osoby o wydanie kopii danych lub prawa do przeniesienia danych może
-    niekorzystnie wpłynąć na prawa i wolności innych osób (np. prawa związane z
-    ochroną danych innych osób, dobra osobiste itp.), Spółka może zwrócić się do osoby
-    w celu wyjaśnienia wątpliwości lub podjąć inne prawem dozwolone kroki, łącznie z
-    odmową zadośćuczynienia żądaniu.
-    11.2. Nieprzetwarzanie. Spółka informuje osobę o tym, że nie przetwarza danych jej
-    dotyczących, jeśli taka osoba zgłosiła żądanie dotyczące jej praw.
-    11.3. Odmowa. Spółka informuje osobę, w ciągu miesiąca od otrzymania żądania, o
-    odmowie rozpatrzenia żądania i o prawach osoby z tym związanych.
-    11.4. Dostęp do danych. Na żądanie osoby dotyczące dostępu do jej danych, Spółka
-    informuje osobę, czy przetwarza jej dane oraz informuje osobę o szczegółach
-    przetwarzania, zgodnie z art. 15 RODO (zakres odpowiada obowiązkowi
-    informacyjnemu przy zbieraniu danych), a także udziela osobie dostępu do danych jej
-    dotyczących. Dostęp do danych może być zrealizowany przez wydanie kopii danych,
-    z zastrzeżeniem, że kopii danych wydanej w wykonaniu prawa dostępu do danych
-    Spółka nie uzna za pierwszą nieodpłatną kopię danych dla potrzeb opłat za kopie
-    danych.
-    11.5. Kopie danych. Na żądanie Spółka wydaje osobie kopię danych jej dotyczących i
-    odnotowuje fakt wydania pierwszej kopii danych. Spółka wprowadza i utrzymuje
-    cennik kopii danych, zgodnie z którym pobiera opłaty za kolejne kopie danych. Cena
-    kopii danych skalkulowana jest w oparciu o oszacowany jednostkowy koszt obsługi
-    żądania wydania kopii danych.
-    11.6. Sprostowanie danych. Spółka dokonuje sprostowania nieprawidłowych danych na
-    żądanie osoby. Spółka ma prawo odmówić sprostowania danych, chyba że osoba w
-    rozsądny sposób wykaże nieprawidłowości danych, których sprostowania się domaga.
-    W przypadku sprostowania danych Spółka informuje osobę o odbiorcach danych, na
-    żądanie tej osoby.
-    11.7. Uzupełnienie danych. Spółka uzupełnia i aktualizuje dane na żądanie osoby. Spółka
-    ma prawo odmówić uzupełnienia danych, jeżeli uzupełnienie byłoby niezgodne z
-    celami przetwarzania danych (np. Spółka nie musi przetwarzać danych, które są
-    Spółce zbędne). Spółka może polegać na oświadczeniu osoby, co do uzupełnianych
-    danych, chyba że będzie to niewystarczające w świetle przyjętych przez Spółkę
-    procedur (np. co do pozyskiwania takich danych), prawa lub zaistnieją podstawy, aby
-    uznać oświadczenie za niewiarygodne.
-    7
-    11.8. Usunięcie danych. Na żądanie osoby, Spółka usuwa dane, gdy:
-    (1) dane nie są niezbędne do celów, w których zostały zebrane ani przetwarzane w
-    innych celach,
-    (2) zgoda na ich przetwarzanie została cofnięta, a nie ma innej podstawy prawnej
-    przetwarzania,
-    (3) osoba wniosła skuteczny sprzeciw względem przetwarzania tych danych,
-    (4) dane były przetwarzane niezgodnie z prawem,
-    (5) konieczność usunięcia wynika z obowiązku prawnego,
-    (6) żądanie dotyczy danych dziecka zebranych na podstawie zgody w celu
-    świadczenia usług społeczeństwa informacyjnego oferowanych bezpośrednio
-    dziecku (np. profil dziecka na portalu społecznościowym, udział w konkursie na
-    stronie internetowej).
-    Spółka określa sposób obsługi prawa do usunięcia danych w taki sposób, aby
-    zapewnić efektywną realizację tego prawa przy poszanowaniu wszystkich zasad
-    ochrony danych, w tym bezpieczeństwa, a także weryfikację, czy nie zachodzą
-    wyjątki, o których mowa w art. 17. ust. 3 RODO.
+    (vii) opis kategorii odbiorców danych (w tym przetwarzających), (viii) informację o przekazaniu poza EU/EOG; (ix) ogólny opis technicznych i organizacyjnych środków ochrony danych.
+        8. Podstawy przetwarzania
+            8.1. Spółka dokumentuje w Rejestrze podstawy prawne przetwarzania danych dla poszczególnych czynności przetwarzania.
+            8.2. Wskazując ogólną podstawę prawną (zgoda, umowa, obowiązek prawny, żywotne interesy, zadanie publiczne/władza publiczna, uzasadniony cel Spółki) Spółka dookreśla podstawę w czytelny sposób, gdy jest to potrzebne. Np. dla zgody wskazując na jej zakres, gdy podstawą jest prawo – wskazując na konkretny przepis i inne dokumenty, np. umowę, porozumienie administracyjne, żywotne interesy – wskazując na kategorie zdarzeń, w których się zmaterializują, uzasadniony cel – wskazując na konkretny cel, np. marketing własny, dochodzenie roszczeń.
+            8.3. Spółka wdraża metody zarządzania zgodami umożliwiające rejestrację i weryfikację posiadania zgody osoby na przetwarzanie jej konkretnych danych w konkretnym celu, zgody na komunikację na odległość (email, telefon, sms, in.) oraz rejestrację odmowy zgody, cofnięcia zgody i podobnych czynności (sprzeciw, ograniczenie itp.).
+            8.4. Kierownik komórki organizacyjnej Spółki ma obowiązek znać podstawy prawne, na jakich komórka przez niego kierowana dokonuje konkretnych czynności
+                przetwarzania danych osobowych. Jeżeli podstawą jest uzasadniony interes Spółki, kierownik komórki ma obowiązek znać konkretny realizowany przetwarzaniem interes Spółki.
+        9. Sposób obsługi praw jednostki i obowiązków informacyjnych
+            9.1. Spółka dba o czytelność i styl przekazywanych informacji i komunikacji z osobami,
+                których dane przetwarza.
+            9.2. Spółka ułatwia osobom korzystanie z ich praw poprzez różne działania, w tym: zamieszczenie na stronie internetowej Spółki informacji lub odwołań (linków) do informacji o prawach osób, sposobie skorzystania z nich w Spółce, w tym wymaganiach dotyczących identyfikacji, metodach kontaktu ze Spółką w tym celu, ewentualnym cenniku żądań „dodatkowych” itp.
+            9.3. Spółka dba o dotrzymywanie prawnych terminów realizacji obowiązków względem osób.
+            9.4. Spółka wprowadza adekwatne metody identyfikacji i uwierzytelniania osób dla potrzeb realizacji praw jednostki i obowiązków informacyjnych.
+            9.5. W celu realizacji praw jednostki Spółka zapewnia procedury i mechanizmy pozwalające zidentyfikować dane konkretnych osób przetwarzane przez Spółkę, zintegrować te dane, wprowadzać do nich zmiany i usuwać w sposób zintegrowany,
+            9.6. Spółka dokumentuje obsługę obowiązków informacyjnych, zawiadomień i żądań osób.
+        10. Obowiązki informacyjne
+            10.1. Spółka określa zgodne z prawem i efektywne sposoby wykonywania obowiązków informacyjnych.
+            10.2. Spółka informuje osobę o przedłużeniu ponad jeden miesiąc terminu na rozpatrzenie żądania tej osoby.
+            10.3. Spółka informuje osobę o przetwarzaniu jej danych, przy pozyskiwaniu danych od tej osoby.
+            10.4. Spółka informuje osobę o przetwarzaniu jej danych, przy pozyskiwaniu danych o tej osobie niebezpośrednio od niej.
+            10.5. Spółka określa sposób informowania osób o przetwarzaniu danych niezidentyfikowanych, tam gdzie to jest możliwe (np. tabliczka o objęciu obszaru monitoringiem wizyjnym).
+            10.6. Spółka informuje osobę o planowanej zmianie celu przetwarzania danych.
+            10.7. Spółka informuje osobę przed uchyleniem ograniczenia przetwarzania.
+            10.8. Spółka informuje odbiorców danych o sprostowaniu, usunięciu lub ograniczeniu przetwarzania danych (chyba że będzie to wymagało niewspółmiernie dużego wysiłku lub będzie niemożliwe).
+            10.9. Spółka informuje osobę o prawie sprzeciwu względem przetwarzania danych najpóźniej przy pierwszym kontakcie z tą osobą.
+            10.10. Spółka bez zbędnej zwłoki zawiadamia osobę o naruszeniu ochrony danych osobowych, jeżeli może ono powodować wysokie ryzyko naruszenia praw lub wolności tej osoby.
+        11. Żądania osób
+            11.1. Prawa osób trzecich. Realizując prawa osób, których dane dotyczą, Spółka wprowadza proceduralne gwarancje ochrony praw i wolności osób trzecich. W szczególności w przypadku powzięcia wiarygodnej wiadomości o tym, że wykonanie żądania osoby o wydanie kopii danych lub prawa do przeniesienia danych może niekorzystnie wpłynąć na prawa i wolności innych osób (np. prawa związane z ochroną danych innych osób, dobra osobiste itp.), Spółka może zwrócić się do osoby w celu wyjaśnienia wątpliwości lub podjąć inne prawem dozwolone kroki, łącznie z odmową zadośćuczynienia żądaniu.
+            11.2. Nieprzetwarzanie. Spółka informuje osobę o tym, że nie przetwarza danych jej dotyczących, jeśli taka osoba zgłosiła żądanie dotyczące jej praw.
+            11.3. Odmowa. Spółka informuje osobę, w ciągu miesiąca od otrzymania żądania, o odmowie rozpatrzenia żądania i o prawach osoby z tym związanych.
+            11.4. Dostęp do danych. Na żądanie osoby dotyczące dostępu do jej danych, Spółka informuje osobę, czy przetwarza jej dane oraz informuje osobę o szczegółach przetwarzania, zgodnie z art. 15 RODO (zakres odpowiada obowiązkowi informacyjnemu przy zbieraniu danych), a także udziela osobie dostępu do danych jej dotyczących. Dostęp do danych może być zrealizowany przez wydanie kopii danych,
+                  z zastrzeżeniem, że kopii danych wydanej w wykonaniu prawa dostępu do danych Spółka nie uzna za pierwszą nieodpłatną kopię danych dla potrzeb opłat za kopie danych.
+            11.5. Kopie danych. Na żądanie Spółka wydaje osobie kopię danych jej dotyczących i odnotowuje fakt wydania pierwszej kopii danych. Spółka wprowadza i utrzymuje cennik kopii danych, zgodnie z którym pobiera opłaty za kolejne kopie danych. Cena kopii danych skalkulowana jest w oparciu o oszacowany jednostkowy koszt obsługi żądania wydania kopii danych.
+            11.6. Sprostowanie danych. Spółka dokonuje sprostowania nieprawidłowych danych na żądanie osoby. Spółka ma prawo odmówić sprostowania danych, chyba że osoba w rozsądny sposób wykaże nieprawidłowości danych, których sprostowania się domaga. W przypadku sprostowania danych Spółka informuje osobę o odbiorcach danych, na żądanie tej osoby.
+            11.7. Uzupełnienie danych. Spółka uzupełnia i aktualizuje dane na żądanie osoby. Spółka ma prawo odmówić uzupełnienia danych, jeżeli uzupełnienie byłoby niezgodne z
+                  celami przetwarzania danych (np. Spółka nie musi przetwarzać danych, które są Spółce zbędne). Spółka może polegać na oświadczeniu osoby, co do uzupełnianych danych, chyba że będzie to niewystarczające w świetle przyjętych przez Spółkę procedur (np. co do pozyskiwania takich danych), prawa lub zaistnieją podstawy, aby uznać oświadczenie za niewiarygodne.
+
+            11.8. Usunięcie danych. Na żądanie osoby, Spółka usuwa dane, gdy:
+        (1) dane nie są niezbędne do celów, w których zostały zebrane ani przetwarzane w innych celach,
+        (2) zgoda na ich przetwarzanie została cofnięta, a nie ma innej podstawy prawnej przetwarzania,
+        (3) osoba wniosła skuteczny sprzeciw względem przetwarzania tych danych,
+        (4) dane były przetwarzane niezgodnie z prawem,
+        (5) konieczność usunięcia wynika z obowiązku prawnego,
+        (6) żądanie dotyczy danych dziecka zebranych na podstawie zgody w celu świadczenia usług społeczeństwa informacyjnego oferowanych bezpośrednio dziecku (np. profil dziecka na portalu społecznościowym, udział w konkursie na stronie internetowej).
+    Spółka określa sposób obsługi prawa do usunięcia danych w taki sposób, aby zapewnić efektywną realizację tego prawa przy poszanowaniu wszystkich zasad ochrony danych, w tym bezpieczeństwa, a także weryfikację, czy nie zachodzą wyjątki, o których mowa w art. 17. ust. 3 RODO.
     Jeżeli dane podlegające usunięciu zostały upublicznione przez Spółkę, Spółka
-    podejmuje rozsądne działania, w tym środki techniczne, by poinformować innych
-    administratorów przetwarzających te dane osobowe, o potrzebie usunięcia danych i
-    dostępu do nich.
-    W przypadku usunięcia danych Spółka informuje osobę o odbiorcach danych, na
-    żądanie tej osoby.
-    11.9. Ograniczenie przetwarzania. Spółka dokonuje ograniczenia przetwarzania danych
-    na żądanie osoby, gdy:
-    a) osoba kwestionuje prawidłowość danych – na okres pozwalający sprawdzić ich
-    prawidłowość,
-    b) przetwarzanie jest niezgodne z prawem, a osoba, której dane dotyczą, sprzeciwia
-    się usunięciu danych osobowych, żądając w zamian ograniczenia ich
-    wykorzystywania,
-    c) Spółka nie potrzebuje już danych osobowych, ale są one potrzebne osobie, której
-    dane dotyczą, do ustalenia, dochodzenia lub obrony roszczeń,
-    d) osoba wniosła sprzeciw względem przetwarzania z przyczyn związanych z jej
-    szczególną sytuacją – do czasu stwierdzenia, czy po stronie Spółki zachodzą
-    prawnie uzasadnione podstawy nadrzędne wobec podstaw sprzeciwu.
-    W trakcie ograniczenia przetwarzania Spółka przechowuje dane, natomiast nie
-    przetwarza ich (nie wykorzystuje, nie przekazuje), bez zgody osoby, której dane
-    dotyczą, chyba że w celu ustalenia, dochodzenia lub obrony roszczeń, lub w celu
-    ochrony praw innej osoby fizycznej lub prawnej, lub z uwagi na ważne względy
-    interesu publicznego.
+    podejmuje rozsądne działania, w tym środki techniczne, by poinformować innych administratorów przetwarzających te dane osobowe, o potrzebie usunięcia danych i dostępu do nich.
+    W przypadku usunięcia danych Spółka informuje osobę o odbiorcach danych, na żądanie tej osoby.
+            11.9. Ograniczenie przetwarzania. Spółka dokonuje ograniczenia przetwarzania danych na żądanie osoby, gdy:
+        a) osoba kwestionuje prawidłowość danych – na okres pozwalający sprawdzić ich prawidłowość,
+        b) przetwarzanie jest niezgodne z prawem, a osoba, której dane dotyczą, sprzeciwia się usunięciu danych osobowych, żądając w zamian ograniczenia ich wykorzystywania,
+        c) Spółka nie potrzebuje już danych osobowych, ale są one potrzebne osobie, której dane dotyczą, do ustalenia, dochodzenia lub obrony roszczeń,
+        d) osoba wniosła sprzeciw względem przetwarzania z przyczyn związanych z jej szczególną sytuacją – do czasu stwierdzenia, czy po stronie Spółki zachodzą prawnie uzasadnione podstawy nadrzędne wobec podstaw sprzeciwu.
+    W trakcie ograniczenia przetwarzania Spółka przechowuje dane, natomiast nie przetwarza ich (nie wykorzystuje, nie przekazuje), bez zgody osoby, której dane dotyczą, chyba że w celu ustalenia, dochodzenia lub obrony roszczeń, lub w celu ochrony praw innej osoby fizycznej lub prawnej, lub z uwagi na ważne względy interesu publicznego.
     Spółka informuje osobę przed uchyleniem ograniczenia przetwarzania.
-    W przypadku ograniczenia przetwarzania danych Spółka informuje osobę o
-    odbiorcach danych, na żądanie tej osoby.
-    11.10. Przenoszenie danych. Na żądanie osoby Spółka wydaje w ustrukturyzowanym,
-    powszechnie używanym formacie nadającym się do odczytu maszynowego lub
-    przekazuje innemu podmiotowi, jeśli jest to możliwe, dane dotyczące tej osoby, które
-    dostarczyła ona Spółce, przetwarzane na podstawie zgody tej osoby lub w celu
-    zawarcia lub wykonania umowy z nią zawartej, w systemach informatycznych Spółki.
-    11.11. Sprzeciw w szczególnej sytuacji. Jeżeli osoba zgłosi umotywowany jej szczególną
-    sytuacją sprzeciw względem przetwarzania jej danych, a dane przetwarzane są przez
-    Spółkę w oparciu o uzasadniony interes Spółki lub o powierzone Spółce zadanie w
-    interesie publicznym, Spółka uwzględni sprzeciw, o ile nie zachodzą po stronie Spółki
-    ważne prawnie uzasadnione podstawy do przetwarzania, nadrzędne wobec interesów,
-    praw i wolności osoby zgłaszającej sprzeciw, lub podstawy do ustalenia, dochodzenia
-    lub obrony roszczeń.
-    11.12. Sprzeciw przy badaniach naukowych, historycznych lub celach statystycznych.
-    Jeżeli Spółka prowadzi badania naukowe, historyczne lub przetwarza dane w celach
-    statystycznych, osoba może wnieść umotywowany jej szczególną sytuacją sprzeciw
-    względem takiego przetwarzania. Spółka uwzględni taki sprzeciw, chyba że
-    przetwarzanie jest niezbędne do wykonania zadania realizowanego w interesie
-    publicznym.
-    11.13. Sprzeciw względem marketingu bezpośredniego. Jeżeli osoba zgłosi sprzeciw
-    względem przetwarzania jej danych przez Spółkę na potrzeby marketingu
-    bezpośredniego (w tym ewentualnie profilowania), Spółka uwzględni sprzeciw i
-    zaprzestanie takiego przetwarzania.
-    11.14. Prawo do ludzkiej interwencji przy automatycznym przetwarzaniu. Jeżeli Spółka
-    przetwarza dane w sposób automatyczny, w tym w szczególności profiluje osoby, i w
-    konsekwencji podejmuje względem osoby decyzje wywołujące skutki prawne lub
-    inaczej istotnie wpływające na osobę, Spółka zapewnia możliwość odwołania się do
-    interwencji i decyzji człowieka po stronie Spółki, chyba że taka automatyczna decyzja
-    (i) jest niezbędna do zawarcia lub wykonania umowy między odwołującą się osobą a
-    Spółką; lub (ii) jest wprost dozwolona przepisami prawa; lub (iii) opiera się o wyraźną
-    zgodę odwołującej osoby.
-    12. MINIMALIZACJA
-    Spółka dba o minimalizację przetwarzania danych pod kątem: (i) adekwatności danych do
-    celów (ilości danych i zakresu przetwarzania), (ii) dostępu do danych, (iii) czasu
-    przechowywania danych.
-    12.1. Minimalizacja zakresu
-    Spółka zweryfikowała zakres pozyskiwanych danych, zakres ich przetwarzania i ilość
-    przetwarzanych danych pod kątem adekwatności do celów przetwarzania w ramach
-    wdrożenia RODO.
-    Spółka dokonuje okresowego przeglądu ilości przetwarzanych danych i zakresu ich
-    przetwarzania nie rzadziej niż raz na rok.
-    Spółka przeprowadza weryfikację zmian co do ilości i zakresu przetwarzania danych w
-    ramach procedur zarządzania zmianą (privacy by design).
-    12.2. Minimalizacja dostępu
-    Spółka stosuje ograniczenia dostępu do danych osobowych: prawne (zobowiązania do
-    poufności, zakresy upoważnień), fizyczne (strefy dostępu, zamykanie pomieszczeń) i logiczne
-    (ograniczenia uprawnień do systemów przetwarzających dane osobowe i zasobów
-    sieciowych, w których rezydują dane osobowe).
+    W przypadku ograniczenia przetwarzania danych Spółka informuje osobę o odbiorcach danych, na żądanie tej osoby.
+            11.10. Przenoszenie danych. Na żądanie osoby Spółka wydaje w ustrukturyzowanym, powszechnie używanym formacie nadającym się do odczytu maszynowego lub przekazuje innemu podmiotowi, jeśli jest to możliwe, dane dotyczące tej osoby, które dostarczyła ona Spółce, przetwarzane na podstawie zgody tej osoby lub w celu zawarcia lub wykonania umowy z nią zawartej, w systemach informatycznych Spółki.
+            11.11. Sprzeciw w szczególnej sytuacji. Jeżeli osoba zgłosi umotywowany jej szczególną sytuacją sprzeciw względem przetwarzania jej danych, a dane przetwarzane są przez Spółkę w oparciu o uzasadniony interes Spółki lub o powierzone Spółce zadanie w interesie publicznym, Spółka uwzględni sprzeciw, o ile nie zachodzą po stronie Spółki ważne prawnie uzasadnione podstawy do przetwarzania, nadrzędne wobec interesów, praw i wolności osoby zgłaszającej sprzeciw, lub podstawy do ustalenia, dochodzenia lub obrony roszczeń.
+            11.12. Sprzeciw przy badaniach naukowych, historycznych lub celach statystycznych. Jeżeli Spółka prowadzi badania naukowe, historyczne lub przetwarza dane w celach statystycznych, osoba może wnieść umotywowany jej szczególną sytuacją sprzeciw względem takiego przetwarzania. Spółka uwzględni taki sprzeciw, chyba że przetwarzanie jest niezbędne do wykonania zadania realizowanego w interesie publicznym.
+            11.13. Sprzeciw względem marketingu bezpośredniego. Jeżeli osoba zgłosi sprzeciw względem przetwarzania jej danych przez Spółkę na potrzeby marketingu bezpośredniego (w tym ewentualnie profilowania), Spółka uwzględni sprzeciw i zaprzestanie takiego przetwarzania.
+            11.14. Prawo do ludzkiej interwencji przy automatycznym przetwarzaniu. Jeżeli Spółka przetwarza dane w sposób automatyczny, w tym w szczególności profiluje osoby, i w konsekwencji podejmuje względem osoby decyzje wywołujące skutki prawne lub inaczej istotnie wpływające na osobę, Spółka zapewnia możliwość odwołania się do interwencji i decyzji człowieka po stronie Spółki, chyba że taka automatyczna decyzja
+    (i) jest niezbędna do zawarcia lub wykonania umowy między odwołującą się osobą a Spółką; lub (ii) jest wprost dozwolona przepisami prawa; lub (iii) opiera się o wyraźną zgodę odwołującej osoby.
+        12. MINIMALIZACJA
+    Spółka dba o minimalizację przetwarzania danych pod kątem: (i) adekwatności danych do celów (ilości danych i zakresu przetwarzania), (ii) dostępu do danych, (iii) czasu przechowywania danych.
+            12.1. Minimalizacja zakresu
+    Spółka zweryfikowała zakres pozyskiwanych danych, zakres ich przetwarzania i ilość przetwarzanych danych pod kątem adekwatności do celów przetwarzania w ramach wdrożenia RODO.
+    Spółka dokonuje okresowego przeglądu ilości przetwarzanych danych i zakresu ich przetwarzania nie rzadziej niż raz na rok.
+    Spółka przeprowadza weryfikację zmian co do ilości i zakresu przetwarzania danych w ramach procedur zarządzania zmianą (privacy by design).
+            12.2. Minimalizacja dostępu
+    Spółka stosuje ograniczenia dostępu do danych osobowych: prawne (zobowiązania do poufności, zakresy upoważnień), fizyczne (strefy dostępu, zamykanie pomieszczeń) i logiczne (ograniczenia uprawnień do systemów przetwarzających dane osobowe i zasobów sieciowych, w których rezydują dane osobowe).
     Spółka stosuje kontrolę dostępu fizycznego.
     Spółka dokonuje aktualizacji uprawnień dostępowych przy zmianach w składzie personelu i zmianach ról osób, oraz zmianach podmiotów przetwarzających.
-    Spółka dokonuje okresowego przeglądu ustanowionych użytkowników systemów i
-    aktualizuje ich nie rzadziej niż raz na rok.
-    Szczegółowe zasady kontroli dostępu fizycznego i logicznego zawarte są w procedurach
-    bezpieczeństwa fizycznego i bezpieczeństwa informacji Spółki.
-    12.3. Minimalizacja czasu
-    Spółka wdraża mechanizmy kontroli cyklu życia danych osobowych w Spółce, w tym
-    weryfikacji dalszej przydatności danych względem terminów i punktów kontrolnych
-    wskazanych w Rejestrze.
+    Spółka dokonuje okresowego przeglądu ustanowionych użytkowników systemów i aktualizuje ich nie rzadziej niż raz na rok.
+    Szczegółowe zasady kontroli dostępu fizycznego i logicznego zawarte są w procedurach bezpieczeństwa fizycznego i bezpieczeństwa informacji Spółki.
+            12.3. Minimalizacja czasu
+    Spółka wdraża mechanizmy kontroli cyklu życia danych osobowych w Spółce, w tym weryfikacji dalszej przydatności danych względem terminów i punktów kontrolnych wskazanych w Rejestrze.
     Dane, których zakres przydatności ulega ograniczeniu wraz z upływem czasu są usuwane z systemów produkcyjnych Spółki, jak też z akt podręcznych i głównych. Dane takie mogą być archiwizowane oraz znajdować się na kopiach zapasowych systemów i informacji
     przetwarzanych przez Spółkę. Procedury archiwizacji i korzystania z archiwów, tworzenia i
     wykorzystania kopii zapasowych uwzględniają wymagania kontroli nad cyklem życia danych, a w tym wymogi usuwania danych.
-    13. BEZPIECZEŃSTWO
-    Spółka zapewnia stopień bezpieczeństwa odpowiadający ryzyku naruszenia praw i wolności
-    osób fizycznych wskutek przetwarzania danych osobowych przez Spółkę.
-    13.1. Analizy ryzyka i adekwatności środków bezpieczeństwa
-    Spółka przeprowadza i dokumentuje analizy adekwatności środków bezpieczeństwa danych
-    osobowych. W tym celu:
-    (1) Spółka zapewnia odpowiedni stan wiedzy o bezpieczeństwie informacji,
-    cyberbezpieczeństwie i ciągłości działania − wewnętrznie lub ze wsparciem
-    podmiotów wyspecjalizowanych.
-    (2) Spółka kategoryzuje dane oraz czynności przetwarzania pod kątem ryzyka, które
-    przedstawiają.
-    (3) Spółka przeprowadza analizy ryzyka naruszenia praw lub wolności osób fizycznych
-    dla czynności przetwarzania danych lub ich kategorii. Spółka analizuje możliwe
-    sytuacje i scenariusze naruszenia ochrony danych osobowych uwzględniając
-    charakter, zakres, kontekst i cele przetwarzania, ryzyko naruszenia praw lub wolności
-    osób fizycznych o różnym prawdopodobieństwie wystąpienia i wadze zagrożenia.
-    (4) Spółka ustala możliwe do zastosowania organizacyjne i techniczne środki
-    bezpieczeństwa i ocenia koszt ich wdrażania. W tym Spółka ustala przydatność i
-    stosuje takie środki i podejście jak:
-    (i) pseudonimizacja,
-    (ii) szyfrowanie danych osobowych,
-    (iii) inne środki cyberbezpieczeństwa składające się na zdolność do ciągłego
-    zapewnienia poufności, integralności, dostępności i odporności systemów i
-    usług przetwarzania,
-    (iv) środki zapewnienia ciągłości działania i zapobiegania skutkom katastrof, czyli
-    zdolności do szybkiego przywrócenia dostępności danych osobowych i dostępu
-    do nich w razie incydentu fizycznego lub technicznego.
-    13.2. Oceny skutków dla ochrony danych
-    Spółka dokonuje oceny skutków planowanych operacji przetwarzania dla ochrony danych
-    osobowych tam, gdzie zgodnie z analizą ryzyka ryzyko naruszenia praw i wolności osób jest
-    wysokie.
+        13. BEZPIECZEŃSTWO
+    Spółka zapewnia stopień bezpieczeństwa odpowiadający ryzyku naruszenia praw i wolności osób fizycznych wskutek przetwarzania danych osobowych przez Spółkę.
+            13.1. Analizy ryzyka i adekwatności środków bezpieczeństwa
+    Spółka przeprowadza i dokumentuje analizy adekwatności środków bezpieczeństwa danych osobowych. W tym celu:
+        (1) Spółka zapewnia odpowiedni stan wiedzy o bezpieczeństwie informacji, cyberbezpieczeństwie i ciągłości działania − wewnętrznie lub ze wsparciem podmiotów wyspecjalizowanych.
+        (2) Spółka kategoryzuje dane oraz czynności przetwarzania pod kątem ryzyka, które przedstawiają.
+        (3) Spółka przeprowadza analizy ryzyka naruszenia praw lub wolności osób fizycznych dla czynności przetwarzania danych lub ich kategorii. Spółka analizuje możliwe sytuacje i scenariusze naruszenia ochrony danych osobowych uwzględniając charakter, zakres, kontekst i cele przetwarzania, ryzyko naruszenia praw lub wolności osób fizycznych o różnym prawdopodobieństwie wystąpienia i wadze zagrożenia.
+        (4) Spółka ustala możliwe do zastosowania organizacyjne i techniczne środki bezpieczeństwa i ocenia koszt ich wdrażania. W tym Spółka ustala przydatność i stosuje takie środki i podejście jak:
+        (i) pseudonimizacja,
+        (ii) szyfrowanie danych osobowych,
+        (iii) inne środki cyberbezpieczeństwa składające się na zdolność do ciągłego zapewnienia poufności, integralności, dostępności i odporności systemów i usług przetwarzania,
+        (iv) środki zapewnienia ciągłości działania i zapobiegania skutkom katastrof, czyli zdolności do szybkiego przywrócenia dostępności danych osobowych i dostępu do nich w razie incydentu fizycznego lub technicznego.
+            13.2. Oceny skutków dla ochrony danych
+    Spółka dokonuje oceny skutków planowanych operacji przetwarzania dla ochrony danych osobowych tam, gdzie zgodnie z analizą ryzyka ryzyko naruszenia praw i wolności osób jest wysokie.
     Spółka stosuje metodykę oceny skutków przyjętą w Spółce.
-    13.3. Środki bezpieczeństwa
-    Spółka stosuje środki bezpieczeństwa ustalone w ramach analiz ryzyka i adekwatności
-    środków bezpieczeństwa oraz ocen skutków dla ochrony danych.
+            13.3. Środki bezpieczeństwa
+    Spółka stosuje środki bezpieczeństwa ustalone w ramach analiz ryzyka i adekwatności środków bezpieczeństwa oraz ocen skutków dla ochrony danych.
     Środki bezpieczeństwa danych osobowych stanowią element środków bezpieczeństwa
-    informacji i zapewnienia cyberbezpieczeństwa w Spółce i są bliżej opisane w procedurach
-    przyjętych przez Spółkę dla tych obszarów.
-    13.4. Zgłaszanie naruszeń
-    Spółka stosuje procedury pozwalające na identyfikację, ocenę i zgłoszenie zidentyfikowanego
-    naruszenia ochrony danych Urzędowi Ochrony Danych w terminie 72 godzin od ustalenia
-    naruszenia.
-    14. PRZETWARZAJĄCY
-    Spółka posiada zasady doboru i weryfikacji przetwarzających dane na rzecz Spółki
-    opracowane w celu zapewnienia, aby przetwarzający dawali wystarczające gwarancje
-    wdrożenia odpowiednich środków organizacyjnych i technicznych dla zapewnienia
-    bezpieczeństwa, realizacji praw jednostki i innych obowiązków ochrony danych
-    spoczywających na Spółce.
-    Spółka przyjęła minimalne wymagania co do umowy powierzenia przetwarzania danych.
-    Spółka rozlicza przetwarzających z wykorzystania podprzetwarzających, jak też z innych
-    wymagań wynikających z Zasad powierzenia danych osobowych.
-    15. PROJEKTOWANIE PRYWATNOŚCI
-    Spółka zarządza zmianą mającą wpływ na prywatność w taki sposób, aby umożliwić
-    zapewnienie odpowiedniego bezpieczeństwa danych osobowych oraz minimalizacji ich
-    przetwarzania.
-    W tym celu zasady prowadzenia projektów i inwestycji przez Spółkę odwołują się do zasad
-    bezpieczeństwa danych osobowych i minimalizacji, wymagając oceny wpływu na prywatność
-    i ochronę danych, uwzględnienia i zaprojektowana bezpieczeństwa i minimalizacji
-    przetwarzania danych od początku projektu lub inwestycji.`,
+    informacji i zapewnienia cyberbezpieczeństwa w Spółce i są bliżej opisane w procedurach przyjętych przez Spółkę dla tych obszarów.
+            13.4. Zgłaszanie naruszeń
+    Spółka stosuje procedury pozwalające na identyfikację, ocenę i zgłoszenie zidentyfikowanego naruszenia ochrony danych Urzędowi Ochrony Danych w terminie 72 godzin od ustalenia naruszenia.
+        14. PRZETWARZAJĄCY
+    Spółka posiada zasady doboru i weryfikacji przetwarzających dane na rzecz Spółki opracowane w celu zapewnienia, aby przetwarzający dawali wystarczające gwarancje wdrożenia odpowiednich środków organizacyjnych i technicznych dla zapewnienia bezpieczeństwa, realizacji praw jednostki i innych obowiązków ochrony danych spoczywających na Spółce.
+    Spółka przyjęła minimalne wymagania co do umowy powierzenia przetwarzania danych. Spółka rozlicza przetwarzających z wykorzystania podprzetwarzających, jak też z innych wymagań wynikających z Zasad powierzenia danych osobowych.
+        15. PROJEKTOWANIE PRYWATNOŚCI
+    Spółka zarządza zmianą mającą wpływ na prywatność w taki sposób, aby umożliwić zapewnienie odpowiedniego bezpieczeństwa danych osobowych oraz minimalizacji ich przetwarzania.
+    W tym celu zasady prowadzenia projektów i inwestycji przez Spółkę odwołują się do zasad bezpieczeństwa danych osobowych i minimalizacji, wymagając oceny wpływu na prywatność i ochronę danych, uwzględnienia i zaprojektowana bezpieczeństwa i minimalizacji przetwarzania danych od początku projektu lub inwestycji.`,
     src: "grupa1.jpg",
   },
 ];

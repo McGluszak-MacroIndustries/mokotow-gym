@@ -40,7 +40,7 @@
     </div>
     <div class="lower-pannel">
       <div class="privacy-politics" @click="moveToPrivacyPolitics()">
-        Polityka prywatności
+        Regulamin płatności, Regulamin klubu, Polityka prywatności
       </div>
       <div class="company-data">
         <div>McGluszak MacroIndustries Sp.z o.o</div>

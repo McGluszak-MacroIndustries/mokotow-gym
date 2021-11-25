@@ -35,7 +35,7 @@ export default defineComponent({
     const currentButtons = computed(() => {
       return isEnglishLanguageOn.value
         ? ["DOWNLOAD", "MAKE RESERVATION"]
-        : ["POBIERZ", "ZAREZERWUJ"];
+        : ["POBIERZ", "KUP/ZAREZERWUJ"];
     });
 
     const selected = ref<Item>(currentItems.value[0]);
