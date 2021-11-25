@@ -387,7 +387,8 @@ export const teamItems: Array<Item> = [
     Jestem także fotografem, pasjonatką podróży i entuzjastką zdrowego stylu życia :)
 
     Prowadzone zajęcia:
-    ○ kettlebells`,
+    ○ kettlebells
+    ○ treningi personalne`,
     src: "karo.jpeg",
   },
   {

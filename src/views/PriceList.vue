@@ -7,7 +7,7 @@
   >
     <template v-slot:left-side>
       <div class="menu">
-        <div></div>
+        <div class="nothing"></div>
         <div class="buttons">
           <!-- <button @click="download()">{{ currentButtons[0] }}</button> -->
           <button @click="goToReservations()">{{ currentButtons[1] }}</button>
