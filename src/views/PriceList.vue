@@ -5,6 +5,12 @@
     id="pricelist"
     :key="currentItems"
   >
+    <template v-slot:optional>
+      <div class="buttons-mobile">
+        <!-- <button @click="download()">{{ currentButtons[0] }}</button> -->
+        <button @click="goToReservations()">{{ currentButtons[1] }}</button>
+      </div>
+    </template>
     <template v-slot:left-side>
       <div class="menu">
         <div class="nothing"></div>
@@ -84,7 +90,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import "@/styles/main";
 button {
   background-color: $dark-grey;
@@ -97,6 +103,9 @@ button {
   width: 10vw;
   height: 5vh;
 }
+.buttons-mobile {
+  display: none;
+}
 .menu {
   display: grid;
   grid-template-rows: 17vh 3vh;
@@ -107,6 +116,7 @@ button {
     z-index: 99;
     display: grid;
     grid-auto-flow: column;
+    // grid-area: buttons;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -135,8 +145,14 @@ button {
   button {
     width: 40vw;
   }
+  .buttons-mobile {
+    display: block;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+  }
   .menu {
     transform: translateY(-15vh);
+    display: none;
   }
 }
 </style>

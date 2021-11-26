@@ -13,6 +13,7 @@
       </transition>
       <transition name="slide-fade" mode="out-in">
         <div class="description" :key="selectedItem" @click="clicked = false">
+          <slot name="optional"></slot>
           {{ selectedItem.description }}
           <slot name="left-side"> </slot>
         </div>
