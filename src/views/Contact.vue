@@ -109,8 +109,11 @@ export default defineComponent({
 });
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import "@/styles/main";
+.window-template .left-full .description[data-v-f6e3548c] {
+  overflow-y: hidden;
+}
 button {
   background-color: $dark-grey;
   @include hoverable;
@@ -138,9 +141,16 @@ button {
 .menu {
   // height: 40vh;
   padding-top: 2rem;
+  display: grid;
+  grid-template-rows: 30vh auto;
+  overflow-y: hidden;
+  justify-items: center;
+  // margin-top: 10vh;
   .info {
+    // margin-top: 5vh;
     display: grid;
     grid-template-rows: 7vh 8vh 5vh;
+    grid-gap: 1rem;
 
     .name {
       font-size: 2rem;

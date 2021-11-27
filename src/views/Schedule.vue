@@ -92,6 +92,7 @@ button {
   height: 5vh;
 }
 .menu {
+  margin-top: 10vh;
   display: grid;
   grid-template-rows: 13vh 15vh;
   .buttons {
