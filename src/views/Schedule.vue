@@ -44,7 +44,7 @@ export default defineComponent({
       selected.value = value;
     }
     function generateFileUrl() {
-      return `/schedules/grafik.pdf`;
+      return `/schedules/mokotowskigym-grafik.pdf`;
     }
     function download() {
       const a = document.createElement("a");
