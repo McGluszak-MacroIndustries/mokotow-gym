@@ -40,7 +40,7 @@ export const navbarElements: NavBarElement[] = [
     routerName: "pricelist",
   },
   {
-    frontName: "KONTAKT",
+    frontName: "KONTAKT/PARKING",
     routerName: "contact",
   },
 ];

@@ -39,8 +39,21 @@
       </div>
     </div>
     <div class="lower-pannel">
-      <div class="privacy-politics" @click="moveToPrivacyPolitics()">
-        Regulamin płatności, Regulamin klubu, Polityka prywatności
+      <div class="pdfs">
+        <div
+          class="privacy-politics"
+          @click="
+            download('regulamin płatności, regulamin klubu 2021-12-07.pdf')
+          "
+        >
+          Regulamin płatności, regulamin klubu
+        </div>
+        <div
+          class="privacy-politics"
+          @click="download('polityka ochrony danych osobowych 2021-09-30.pdf')"
+        >
+          Polityka ochrony danych osobowych
+        </div>
       </div>
       <div class="company-data">
         <div>McGluszak MacroIndustries Sp.z o.o</div>
@@ -85,13 +98,24 @@ export default defineComponent({
       const name = "privacypolitics";
       router.push({ name });
     }
+    function generateFileUrl(filename: string) {
+      return `/pdfs/${filename}`;
+    }
+    function download(filename: string) {
+      const a = document.createElement("a");
+      a.href = generateFileUrl(filename);
+      a.download = generateFileUrl(filename);
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
 
     return {
       navbarElements,
       icons,
       moveToPage,
       moveToPrivacyPolitics,
-
+      download,
       getIconUrl,
     };
   },
@@ -112,7 +136,12 @@ export default defineComponent({
   }
   .lower-pannel {
     display: grid;
-    grid-template-columns: 20vw 70vw;
+    grid-template-columns: 35vw 50vw;
+    justify-content: stretch;
+    .pdfs {
+      display: grid;
+      grid-auto-flow: column;
+    }
     .privacy-politics {
       @include hoverable;
       transform: translateX(10vw) translateY(-2.8vh);

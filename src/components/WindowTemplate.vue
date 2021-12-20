@@ -560,7 +560,7 @@ export default defineComponent({
   .left-full {
     transition: opacity ease 2s;
     display: grid;
-    grid-template-rows: 5vh 20vh 45vh 7vh;
+    grid-template-rows: 1vh 20vh 45vh 7vh;
     grid-template-areas:
       "blank"
       "title"
