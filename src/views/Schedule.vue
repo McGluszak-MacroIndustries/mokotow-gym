@@ -9,7 +9,7 @@
       <div class="menu">
         <div></div>
         <div class="buttons">
-          <button @click="download()">{{ currentButtons[0] }}</button>
+          <!-- <button @click="download()">{{ currentButtons[0] }}</button> -->
           <button @click="goToReservations()">{{ currentButtons[1] }}</button>
         </div>
       </div>
