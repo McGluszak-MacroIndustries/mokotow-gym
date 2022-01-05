@@ -99,6 +99,7 @@ button {
     z-index: 99;
     display: grid;
     grid-auto-flow: column;
+    transform: translateY(-7rem);
   }
 }
 @media screen and (max-width: 1000px) {

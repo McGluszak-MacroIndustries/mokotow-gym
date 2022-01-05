@@ -69,7 +69,7 @@ export default defineComponent({
       document.body.removeChild(a);
     }
     function goToReservations() {
-      console.log("dupa");
+      // console.log("dupa");
       const a = document.createElement("a");
       a.target = "_blank";
       a.href = "https://mokotowskigym.perfectgym.com/clientportal2/#/Login";

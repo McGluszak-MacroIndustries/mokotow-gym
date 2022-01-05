@@ -43,7 +43,7 @@
         <div
           class="privacy-politics"
           @click="
-            download('regulamin płatności, regulamin klubu 2021-12-07.pdf')
+            download('regulamin płatności, regulamin klubu 2022-01-04.pdf')
           "
         >
           Regulamin płatności, regulamin klubu
@@ -145,7 +145,7 @@ export default defineComponent({
     .privacy-politics {
       @include hoverable;
       transform: translateX(10vw) translateY(-2.8vh);
-      color: $light-grey;
+      color: $medium-grey;
       font-size: 0.8rem;
     }
 
