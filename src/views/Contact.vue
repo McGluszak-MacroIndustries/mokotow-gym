@@ -13,7 +13,9 @@
             <div>02 - 654 Warszawa</div>
             <div>+48 696 168 867</div>
             <div class="breaker"></div>
-            <div>NIP: 966211684</div>
+            <div>McGluszak MacroIndustries Sp.z o.o</div>
+            <div>ul. Warszawska 6m32, 15-063 Białystok</div>
+            <div>NIP: 9662116841</div>
             <div>KRS: 0000716731</div>
             <div>REGON: 368770856</div>
           </div>
@@ -165,7 +167,7 @@ button {
 }
 
 .menu {
-  // height: 40vh;
+  // height: 60vh;
   padding-top: 2rem;
   display: grid;
   grid-template-rows: 40vh auto;
@@ -203,6 +205,7 @@ button {
     }
     .buttons {
       display: grid;
+      height: 5rem;
       grid-auto-flow: column;
     }
   }
@@ -257,12 +260,17 @@ button {
   button {
     // font-size: 0.6rem;
     width: 40vw;
-    height: 8vh;
+    height: 6vh;
   }
   .info {
     margin-left: 1.5rem;
+    // height: 40rem;
     .name {
       font-size: 2.5rem;
+    }
+    .buttons {
+      height: 10rem;
+      transform: translateY(-1rem);
     }
   }
 }
