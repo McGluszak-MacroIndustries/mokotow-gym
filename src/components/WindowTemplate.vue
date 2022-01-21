@@ -5,16 +5,25 @@
       <transition name="slide-fade" mode="out-in">
         <slot name="slot-fix">
           <div class="title" :key="selectedItem" @click="clicked = false">
-            <div class="title-text">
+            <div class="title-text" v-if="!isGallery">
               {{ selectedItem.title.toUpperCase() }}
             </div>
+            <div class="title-text" else>GALERIA ZDJĘĆ</div>
           </div>
         </slot>
       </transition>
       <transition name="slide-fade" mode="out-in">
         <div class="description" :key="selectedItem" @click="clicked = false">
           <slot name="optional"></slot>
-          {{ selectedItem.description }}
+          <slot name="proper-desc">
+            <div v-if="!isGallery">{{ selectedItem.description }}</div>
+            <div v-else>
+              <GallerySquares
+                @clicked-item="changeItemFromClick($event)"
+                :items="items"
+              ></GallerySquares>
+            </div>
+          </slot>
           <slot name="left-side"> </slot>
         </div>
       </transition>
@@ -408,9 +417,12 @@ import { computed, defineComponent, onMounted, Ref, ref, watch } from "vue";
 import { Item } from "@/mixins/items";
 import { findIndex, isEqual } from "lodash";
 import { isEnglishLanguageOn } from "@/mixins/items";
+import GallerySquares from "@/components/GallerySquares.vue";
 
 export default defineComponent({
   name: "WindowTemplate",
+  components: { GallerySquares },
+
   props: {
     items: {
       type: Array as () => Item[],
@@ -420,7 +432,12 @@ export default defineComponent({
       type: Number,
       default: 3,
     },
+    isGallery: {
+      type: Boolean,
+      default: false,
+    },
   },
+  // components: { GallerySquares },
   emits: ["selected-item"],
   setup(props, context) {
     const clicked = ref<boolean>(false);
@@ -459,6 +476,11 @@ export default defineComponent({
     //   setInterval(() => changeItemToNextOrPreviousItem("next"), 5000);
 
     // onMounted(changeItemSpontaneously);
+
+    function changeItemFromClick(item: Item) {
+      console.log("ZMIENIIIIIIŁEM");
+      selectedItem.value = item;
+    }
 
     function changeItemToNextOrPreviousItem(direction: string) {
       const index = findIndex(props.items, selectedItem.value);
@@ -514,6 +536,7 @@ export default defineComponent({
       isSelected,
       imgUrl,
       isPageScrolled,
+      changeItemFromClick,
     };
   },
 });

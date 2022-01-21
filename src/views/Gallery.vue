@@ -1,36 +1,34 @@
 <template>
-  <WindowTemplate :items="currentItems" :key="currentItems" id="window">
+  <WindowTemplate :items="currentItems" :key="currentItems" :isGallery="true">
+    <template v-slot:slot-fix>
+      <!-- <div>GALERIA</div> -->
+    </template>
+    <!-- <template v-slot:optional>
+      <GallerySquares >
+      </GallerySquares>
+    </template>
+    <template v-slot:proper-desc>
+      <div></div>
+    </template> -->
   </WindowTemplate>
 </template>
 
 <script lang="ts">
 import { computed, defineComponent } from "vue";
 import WindowTemplate from "@/components/WindowTemplate.vue";
-import { aboutUsItems, Item, isEnglishLanguageOn } from "@/mixins/items";
+// import GallerySquares from "@/components/GallerySquares.vue";
+import { isEnglishLanguageOn, Item, teamItems } from "@/mixins/items";
+import { aboutUsItemsEnglish } from "@/mixins/englishItems";
 
 export default defineComponent({
   name: "Gallery",
+  components: { WindowTemplate },
   props: {},
   setup() {
-    const englishItems: Array<Item> = [
-      {
-        name: "GALLERY",
-        title: "GALLERY",
-        description: "",
-        src: "",
-      },
-    ];
-    const items: Array<Item> = [
-      {
-        name: "GALLERY",
-        title: "GALLERY",
-        description: "",
-        src: "",
-      },
-    ];
     const currentItems = computed(() => {
-      return isEnglishLanguageOn.value ? englishItems : items;
+      return isEnglishLanguageOn.value ? aboutUsItemsEnglish : teamItems;
     });
+
     return {
       currentItems,
     };
@@ -38,7 +36,4 @@ export default defineComponent({
 });
 </script>
 
-<style scoped lang="scss">
-. {
-}
-</style>
+<style scoped lang="scss"></style>
