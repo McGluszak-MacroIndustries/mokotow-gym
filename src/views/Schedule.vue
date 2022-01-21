@@ -9,7 +9,7 @@
       <div class="menu">
         <div></div>
         <div class="buttons">
-          <button @click="download()">{{ currentButtons[0] }}</button>
+          <!-- <button @click="download()">{{ currentButtons[0] }}</button> -->
           <button @click="goToReservations()">{{ currentButtons[1] }}</button>
         </div>
       </div>
@@ -99,6 +99,7 @@ button {
     z-index: 99;
     display: grid;
     grid-auto-flow: column;
+    transform: translateY(-7rem);
   }
 }
 @media screen and (max-width: 1000px) {

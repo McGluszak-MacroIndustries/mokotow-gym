@@ -719,7 +719,7 @@ export const priceListItems: Array<Item> = [
     Na zajęciach grupowych obowiązuje limit osób, co gwarantuje komfort ćwiczeń i bezpośredni kontakt z prowadzącym.
 
     Treningi indywidualne są płatne bezpośrednio u prowadzących – na pierwszy trening można umówić się za pośrednictwem recepcji (+48 696 168 867).`,
-    src: "cennik12.jpg",
+    src: "cennik.jpg",
   },
 ];
 
@@ -728,12 +728,12 @@ export const scheduleItems: Array<Item> = [
     name: "schedule",
     title: "Sala Fight",
     description: `Sala wyłożona matą do sportów walki – idealna zarówno do sportów uderzanych jak i parterowych. Wyposażona w lustra, worki treningowe i inny niezbędny sprzęt.`,
-    src: "grafikwalka12.jpg",
+    src: "salafight.jpg",
   },
   {
     name: "schedule",
     title: "Sala Fitness",
     description: `Na sali znajduje się dobrze wyposażona strefa wolnych ciężarów oraz brama do crossfitu. Mamy również ring bokserski oraz dwa urządzenia Air Bike firmy Proud..`,
-    src: "grafikzwykle12.jpg",
+    src: "salafitness.jpg",
   },
 ];
