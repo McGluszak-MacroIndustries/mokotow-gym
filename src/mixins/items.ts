@@ -421,24 +421,24 @@ export const teamItems: Array<Item> = [
     `,
     src: "mati.jpg",
   },
-  {
-    name: "team",
-    title: "Patrycja Czekaj",
-    description: `Jestem przede wszystkim wulkanem energii ;) Z tańcem jestem związana od przeszło 20 lat. W swojej tanecznej przygodzie miałam styczność z wieloma stylami tanecznymi - zaczynając od inscenizacji tanecznych, jazz, po cheerleading, hip hop, new style, commercial i shuffle. W ciągu tych wszystkich lat miałam przyjemność uczestniczyć wielokrotnie w zawodach, mistrzostwach na poziomie krajowym oraz europejskim, ale także realizować wiele projektów, w różnych miastach, dzięki czemu w moim artystycznym portfolio mogę pochwalić się różnymi aktywnościami - pokazy taneczne na wydarzeniach sportowych, kulturalnych, koncerty, teledyski, eventy telewizyjne. 
+  //   {
+  //     name: "team",
+  //     title: "Patrycja Czekaj",
+  //     description: `Jestem przede wszystkim wulkanem energii ;) Z tańcem jestem związana od przeszło 20 lat. W swojej tanecznej przygodzie miałam styczność z wieloma stylami tanecznymi - zaczynając od inscenizacji tanecznych, jazz, po cheerleading, hip hop, new style, commercial i shuffle. W ciągu tych wszystkich lat miałam przyjemność uczestniczyć wielokrotnie w zawodach, mistrzostwach na poziomie krajowym oraz europejskim, ale także realizować wiele projektów, w różnych miastach, dzięki czemu w moim artystycznym portfolio mogę pochwalić się różnymi aktywnościami - pokazy taneczne na wydarzeniach sportowych, kulturalnych, koncerty, teledyski, eventy telewizyjne.
 
-    Na zajęciach szczególną uwagę przykładam do dobrej, pozytywnej energii. Do każdej grupy podchodzę indywidualnie, aby każdy wyniósł z lekcji jak najwięcej i na koniec zajęć czuł satysfakcję ze swojej pracy. Jeśli lubisz wyzwania i trochę się zmęczyć - to zdecydowanie zajęcia dla Ciebie.
-    
-    Ponadto, jestem też absolwentką socjologii oraz kryminologii, a na codzień pracuję w branży Public Relations. 
+  //     Na zajęciach szczególną uwagę przykładam do dobrej, pozytywnej energii. Do każdej grupy podchodzę indywidualnie, aby każdy wyniósł z lekcji jak najwięcej i na koniec zajęć czuł satysfakcję ze swojej pracy. Jeśli lubisz wyzwania i trochę się zmęczyć - to zdecydowanie zajęcia dla Ciebie.
 
-    Po godzinach zecydowanie unikam nudy, rzucam sobie wyzwania i próbuję nowych rzeczy, obecnie uczę się bachaty sensual. Interesuję się też modą. Każdą wolną chwilę poświęcam mojej największej miłości - maltance Sheri.
+  //     Ponadto, jestem też absolwentką socjologii oraz kryminologii, a na codzień pracuję w branży Public Relations.
 
-Prowadzone zajęcia:
-    ○ shuffle dance
-    ○ hip hop, new style
-    ○ commercial
-    ○ cheerleaders`,
-    src: "czekaj.jpg",
-  },
+  //     Po godzinach zecydowanie unikam nudy, rzucam sobie wyzwania i próbuję nowych rzeczy, obecnie uczę się bachaty sensual. Interesuję się też modą. Każdą wolną chwilę poświęcam mojej największej miłości - maltance Sheri.
+
+  // Prowadzone zajęcia:
+  //     ○ shuffle dance
+  //     ○ hip hop, new style
+  //     ○ commercial
+  //     ○ cheerleaders`,
+  //     src: "czekaj.jpg",
+  //   },
   {
     name: "team",
     title: "Piotr Burzykowski",
@@ -600,21 +600,21 @@ export const offerItems: Array<Item> = [
     `,
     src: "kickboxing.jpg",
   },
-  {
-    name: "offer",
-    title: "Shuffle Dance",
-    description: `Shuffle dance to obecnie jeden z najbardziej popularnych stylów tańca w Europie, polega na pozornym „ślizganiu się” po podłodze. W tańcu wykonujemy różnorodne figury, takie jak przeskoki, obroty, wykopy, moonwalk i różnego rodzaju footworkami - a to wszystko w rytm energicznej muzyki!
+  // {
+  //   name: "offer",
+  //   title: "Shuffle Dance",
+  //   description: `Shuffle dance to obecnie jeden z najbardziej popularnych stylów tańca w Europie, polega na pozornym „ślizganiu się” po podłodze. W tańcu wykonujemy różnorodne figury, takie jak przeskoki, obroty, wykopy, moonwalk i różnego rodzaju footworkami - a to wszystko w rytm energicznej muzyki!
 
-    Do czego tańczymy?
-    
-    Styl wywodzi się z klubów tanecznych muzyki rave, która w brzmieniu przypomina techno i house, ale ma mocniejsze brzmienie i szybsze tempo - z pewnością nie zabraknie sporej dawki muzycznej energii. Regularne zajęcia Shuffle Dance poprawiają kondycję fizyczną, umożliwiają zrzucenie nadprogramowych kilogramów i spalenie duuużych ilości kalorii - to przyjemna wersja treningu cardio! Dodatkowo zajęcia pozwolą na polepszenie koordynacji ciała, ale przede wszystkim to dobra zabawa, duża dawka pozytywnej energii i skok endorfin.
-    
-    Zapisz się już dziś i tańcz jak w teledysku LMFAO!
-    
-    Zajęcia prowadzi trener Patrycja Czekaj.
-    `,
-    src: "shuffle.jpg",
-  },
+  //   Do czego tańczymy?
+
+  //   Styl wywodzi się z klubów tanecznych muzyki rave, która w brzmieniu przypomina techno i house, ale ma mocniejsze brzmienie i szybsze tempo - z pewnością nie zabraknie sporej dawki muzycznej energii. Regularne zajęcia Shuffle Dance poprawiają kondycję fizyczną, umożliwiają zrzucenie nadprogramowych kilogramów i spalenie duuużych ilości kalorii - to przyjemna wersja treningu cardio! Dodatkowo zajęcia pozwolą na polepszenie koordynacji ciała, ale przede wszystkim to dobra zabawa, duża dawka pozytywnej energii i skok endorfin.
+
+  //   Zapisz się już dziś i tańcz jak w teledysku LMFAO!
+
+  //   Zajęcia prowadzi trener Patrycja Czekaj.
+  //   `,
+  //   src: "shuffle.jpg",
+  // },
   {
     name: "offer",
     title: "Zdrowe plecy",
