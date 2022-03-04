@@ -439,20 +439,20 @@ export const teamItems: Array<Item> = [
   //     ○ cheerleaders`,
   //     src: "czekaj.jpg",
   //   },
-  {
-    name: "team",
-    title: "Piotr Burzykowski",
-    description: `Tłumacz, trener, terapeuta. 
-    
-    Od najmłodszych lat podróżuję po świecie w poszukiwaniu wiedzy, doświadczeń i nowych smaków. Wierzę, że najszybszym sposobem na poprawę jakości życia każdego człowieka jest zwiększenie jego siły. Specjalizuję się w treningu według metody „Starting Strength”.
-    
-    Po godzinach zajmuję się urban exploration, filozofią, stolarstwem.
-    
-    Prowadzone zajęcia:
-    ○ trening siłowy ze sztangą (Starting Strength)
-    ○ treningi personalne`,
-    src: "piotr.jpg",
-  },
+  // {
+  //   name: "team",
+  //   title: "Piotr Burzykowski",
+  //   description: `Tłumacz, trener, terapeuta.
+
+  //   Od najmłodszych lat podróżuję po świecie w poszukiwaniu wiedzy, doświadczeń i nowych smaków. Wierzę, że najszybszym sposobem na poprawę jakości życia każdego człowieka jest zwiększenie jego siły. Specjalizuję się w treningu według metody „Starting Strength”.
+
+  //   Po godzinach zajmuję się urban exploration, filozofią, stolarstwem.
+
+  //   Prowadzone zajęcia:
+  //   ○ trening siłowy ze sztangą (Starting Strength)
+  //   ○ treningi personalne`,
+  //   src: "piotr.jpg",
+  // },
   {
     name: "team",
     title: "Sandra Woch",
@@ -678,26 +678,26 @@ export const offerItems: Array<Item> = [
 Zajęcia Cross Training prowadzone są przez trenera Marka Rybińskiego`,
     src: "cross2.jpg",
   },
-  {
-    name: "offer",
-    title: "Starting Strength™",
-    description: `Czym jest Starting Strength™?
-    
-    Starting Strength™  jest kompletną metodą treningu siłowego, opracowaną przez trenera Marka Rippetoe.
-    Trening według metody Starting Strength™ świetnie się sprawdza zarówno u nastolatków i dorosłych, którzy pragną zwiększyć swoją sprawność fizyczną jak i chcących poprawić sylwetkę, jak i u seniorów, którzy pragną zachować jak najdłużej autonomię w życiu codziennym. Metoda opiera się na ćwiczeniach wielostawowych, wykonywanych ze sztangą według starannie zaprojektowanego programu treningowego.
+  //   {
+  //     name: "offer",
+  //     title: "Starting Strength™",
+  //     description: `Czym jest Starting Strength™?
 
-    Główne ćwiczenia to:
-○ przysiad ze sztangą
-○ wyciskanie sztangi stojąc
-○ wyciskanie sztangi leżąc
-○ martwy ciąg
+  //     Starting Strength™  jest kompletną metodą treningu siłowego, opracowaną przez trenera Marka Rippetoe.
+  //     Trening według metody Starting Strength™ świetnie się sprawdza zarówno u nastolatków i dorosłych, którzy pragną zwiększyć swoją sprawność fizyczną jak i chcących poprawić sylwetkę, jak i u seniorów, którzy pragną zachować jak najdłużej autonomię w życiu codziennym. Metoda opiera się na ćwiczeniach wielostawowych, wykonywanych ze sztangą według starannie zaprojektowanego programu treningowego.
 
-Zostały one wybrane, ponieważ pozwalają na zwiększenie siły u trenujących szybciej, skuteczniej i w bardziej bezpieczny sposób w porównaniu z innymi zestawami ćwiczeń. Będziesz stawał się silniejszy od samego początku programu, ponieważ na każdym treningu będziemy odpowiednio zwiększać ciężar na sztandze.
-Ale bez obaw! Początkowe ciężary i progresja będą zawsze dostosowane do Twojej kondycji i poziomu siły. W miarę postępów w programie pojawią się nowe ćwiczenia, ale i tak  przysiady, wyciskanie stojąc i leżąc oraz martwe ciągi pozostaną najczęściej wykonywanymi ćwiczeniami.
+  //     Główne ćwiczenia to:
+  // ○ przysiad ze sztangą
+  // ○ wyciskanie sztangi stojąc
+  // ○ wyciskanie sztangi leżąc
+  // ○ martwy ciąg
 
-Zajęcia Starting Strength™ prowadzi u nas trener Piotr Burzykowski`,
-    src: "strength.jpg",
-  },
+  // Zostały one wybrane, ponieważ pozwalają na zwiększenie siły u trenujących szybciej, skuteczniej i w bardziej bezpieczny sposób w porównaniu z innymi zestawami ćwiczeń. Będziesz stawał się silniejszy od samego początku programu, ponieważ na każdym treningu będziemy odpowiednio zwiększać ciężar na sztandze.
+  // Ale bez obaw! Początkowe ciężary i progresja będą zawsze dostosowane do Twojej kondycji i poziomu siły. W miarę postępów w programie pojawią się nowe ćwiczenia, ale i tak  przysiady, wyciskanie stojąc i leżąc oraz martwe ciągi pozostaną najczęściej wykonywanymi ćwiczeniami.
+
+  // Zajęcia Starting Strength™ prowadzi u nas trener Piotr Burzykowski`,
+  //     src: "strength.jpg",
+  //   },
 
   // {
   //   name: "offer",
