@@ -168,7 +168,7 @@ button {
 
 .menu {
   // height: 60vh;
-  padding-top: 2rem;
+  // padding-top: 2rem;
   display: grid;
   grid-template-rows: 40vh auto;
   overflow-y: hidden;
@@ -207,6 +207,7 @@ button {
       display: grid;
       height: 5rem;
       grid-auto-flow: column;
+      transform: translateY(20%);
     }
   }
 }

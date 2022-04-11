@@ -8,7 +8,7 @@
             <div class="title-text" v-if="!isGallery">
               {{ selectedItem.title.toUpperCase() }}
             </div>
-            <div class="title-text" else>GALERIA ZDJĘĆ</div>
+            <div class="title-text" v-else>GALERIA ZDJĘĆ</div>
           </div>
         </slot>
       </transition>
@@ -435,6 +435,7 @@ export default defineComponent({
     isGallery: {
       type: Boolean,
       default: false,
+      required: false,
     },
   },
   // components: { GallerySquares },
