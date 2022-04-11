@@ -31,6 +31,7 @@ export const navbarElements: NavBarElement[] = [
     frontName: "GRAFIK",
     routerName: "schedule",
   },
+  // { frontName: "GALERIA", routerName: "gallery" },
   {
     frontName: "ZESPÓŁ",
     routerName: "team",

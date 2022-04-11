@@ -362,19 +362,18 @@ export const teamItems: Array<Item> = [
     ○ treningi personalne`,
     src: "szamborski.jpg",
   },
-  // {
-  //   name: "team",
-  //   title: "JAREK KRZOSEK",
-  //   description: `Sporty kopane i uderzane uprawiam od 15 lat. Moje zajęcia mają opinie wymagających: nie oszczędzam ani siebie, ani podopiecznych. Uczestnicy treningów wychodzą z nich zmęczeni, ale zadowoleni. Oprócz przygotowania kondycyjnego bardzo duży nacisk kładę na technikę. Poszczególne ciosy czy akcje powtarzamy aż do momentu kiedy ćwiczący opanują je do perfekcji.
-  //   Moim hobby są kuchnie świata (sport i karierę trenera łączę z pracą w gastronomii). Gram również w piłkę nożną i tenisa.
+  {
+    name: "team",
+    title: "Paweł Tarkowski",
+    description: `Paweł Tarkowski – trener przygotowania motorycznego, absolwent AWF Warszawa, specjalista w dziedzinie treningu siłowo-funkcjonalnego ukierunkowanego na prozdrowotny rozwój całego ciała, miłośnik sportów walki, trener boksu. 
+    Jego trenerskie motto brzmi: „Jakość pielęgnowana cierpliwością nagradzana jest siłą”. Na zajęciach u Pawła spodziewaj się dużego nacisku na technikę, bezpieczeństwo i poprawność wykonywanych ruchów, a każde ćwiczenie posiada swoje funkcjonalne oraz biomechaniczne uzasadnienie. 
+    Prywatnie oprócz machania ciężarami Paweł to zapalony muzyk gitarzysta oraz pasjonat motocykli spędzający ogrom czasu na torze wyścigowym.
 
-  //   𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
-  //   ○ boks
-  //   ○ kickboxing
-  //   ○ treningi indywidualne
-  //   `,
-  //   src: "2x.jpg",
-  // },
+    𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
+    ○ treningi indywidualne
+    `,
+    src: "tarkowski.jpeg",
+  },
   {
     name: "team",
     title: "Karolina Ujejska",
