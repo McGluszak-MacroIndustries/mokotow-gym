@@ -371,6 +371,7 @@ export const teamItems: Array<Item> = [
 
     𝗣𝗿𝗼𝘄𝗮𝗱𝘇𝗼𝗻𝗲 𝘇𝗮𝗷𝗲̨𝗰𝗶𝗮:
     ○ treningi indywidualne
+    ○ trening funkcjonalno-siłowy dla początkujących
     `,
     src: "tarkowski.jpeg",
   },
@@ -718,7 +719,7 @@ export const priceListItems: Array<Item> = [
     Na zajęciach grupowych obowiązuje limit osób, co gwarantuje komfort ćwiczeń i bezpośredni kontakt z prowadzącym.
 
     Treningi indywidualne są płatne bezpośrednio u prowadzących – na pierwszy trening można umówić się za pośrednictwem recepcji (+48 696 168 867).`,
-    src: "cennik.jpg",
+    src: "cennik.jpeg",
   },
 ];
 
