@@ -737,3 +737,84 @@ export const scheduleItems: Array<Item> = [
     src: "salafitness.jpg",
   },
 ];
+
+export const galleryItems: Array<Item> = [
+  {
+    name: "gallery",
+    title: "1",
+    description: "",
+    src: "1.jpg",
+  },
+  {
+    name: "gallery",
+    title: "1",
+    description: "",
+    src: "2.jpg",
+  },
+  {
+    name: "gallery",
+    title: "1",
+    description: "",
+    src: "3.jpg",
+  },
+  {
+    name: "gallery",
+    title: "1",
+    description: "",
+    src: "4.jpg",
+  },
+  {
+    name: "gallery",
+    title: "1",
+    description: "",
+    src: "5.jpg",
+  },
+  {
+    name: "gallery",
+    title: "1",
+    description: "",
+    src: "6.jpg",
+  },
+  {
+    name: "gallery",
+    title: "1",
+    description: "",
+    src: "7.jpg",
+  },
+  {
+    name: "gallery",
+    title: "1",
+    description: "",
+    src: "8.jpg",
+  },
+  {
+    name: "gallery",
+    title: "1",
+    description: "",
+    src: "9.jpg",
+  },
+  {
+    name: "gallery",
+    title: "1",
+    description: "",
+    src: "10.jpg",
+  },
+  {
+    name: "gallery",
+    title: "1",
+    description: "",
+    src: "11.jpg",
+  },
+  {
+    name: "gallery",
+    title: "1",
+    description: "",
+    src: "12.jpg",
+  },
+  {
+    name: "gallery",
+    title: "1",
+    description: "",
+    src: "13.jpg",
+  },
+];

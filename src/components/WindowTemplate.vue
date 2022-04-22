@@ -479,7 +479,6 @@ export default defineComponent({
     // onMounted(changeItemSpontaneously);
 
     function changeItemFromClick(item: Item) {
-      console.log("ZMIENIIIIIIŁEM");
       selectedItem.value = item;
     }
 

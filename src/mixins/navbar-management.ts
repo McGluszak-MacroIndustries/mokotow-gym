@@ -23,15 +23,15 @@ export const navbarElements: NavBarElement[] = [
     frontName: "O NAS",
     routerName: "home",
   },
-  {
-    frontName: "OFERTA",
-    routerName: "offer",
-  },
+  // {
+  //   frontName: "OFERTA",
+  //   routerName: "offer",
+  // },
   {
     frontName: "GRAFIK",
     routerName: "schedule",
   },
-  // { frontName: "GALERIA", routerName: "gallery" },
+  { frontName: "GALERIA", routerName: "gallery" },
   {
     frontName: "ZESPÓŁ",
     routerName: "team",
@@ -51,10 +51,10 @@ export const englishNavbarElements: NavBarElement[] = [
     frontName: "ABOUT US",
     routerName: "home",
   },
-  {
-    frontName: "OFFER",
-    routerName: "offer",
-  },
+  // {
+  //   frontName: "OFFER",
+  //   routerName: "offer",
+  // },
   {
     frontName: "SCHEDULE",
     routerName: "schedule",
@@ -78,13 +78,17 @@ export const navbarMobileElements: NavBarElement[] = [
     frontName: "O NAS",
     routerName: "home",
   },
-  {
-    frontName: "OFERTA",
-    routerName: "offer",
-  },
+  // {
+  //   frontName: "OFERTA",
+  //   routerName: "offer",
+  // },
   {
     frontName: "GRAFIK",
     routerName: "schedule",
+  },
+  {
+    frontName: "GALERIA",
+    routerName: "gallery",
   },
   {
     frontName: "ZESPÓŁ",
@@ -109,10 +113,10 @@ export const englishNavbarMobileElements: NavBarElement[] = [
     frontName: "ABOUT US",
     routerName: "home",
   },
-  {
-    frontName: "OFFER",
-    routerName: "offer",
-  },
+  // {
+  //   frontName: "OFFER",
+  //   routerName: "offer",
+  // },
   {
     frontName: "SCHEDULE",
     routerName: "schedule",

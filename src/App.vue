@@ -67,11 +67,10 @@ export default defineComponent({
 
     function handleScroll(e: any) {
       if (e.target.scrollTop > 250) {
-        console.log("jes");
         isScrolled.value = true;
         return true;
       } else {
-        console.log("aha");
+        // console.log("aha");
         isScrolled.value = false;
         return false;
       }

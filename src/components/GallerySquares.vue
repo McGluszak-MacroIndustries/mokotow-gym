@@ -6,7 +6,7 @@
       class="square"
       @click="changePicture(item)"
       :style="{
-        'background-image': `linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(${require('../img/subpages/team/' +
+        'background-image': `linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(${require('../img/subpages/gallery/' +
           item.src)})`,
       }"
     >
@@ -29,7 +29,7 @@ export default defineComponent({
   emits: ["clicked-item"],
   setup(props, { emit }) {
     function changePicture(item: Item) {
-      console.log("kliknieto");
+      // console.log("kliknieto");
       emit("clicked-item", item);
     }
     return {
@@ -43,14 +43,16 @@ export default defineComponent({
 .gallery-squares {
   display: grid;
   grid-template-columns: repeat(5, min-content);
-  background-color: yellow;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  // background-color: yellow;
   height: 100%;
   .square {
     background-color: red;
     cursor: pointer;
     z-index: 9999;
-    height: 7rem;
-    width: 7rem;
+    height: 9rem;
+    width: 9rem;
     background-size: cover;
   }
 }
@@ -58,6 +60,8 @@ export default defineComponent({
   .gallery-squares {
     grid-template-columns: repeat(3, auto);
     grid-gap: none;
+    justify-items: center;
+    justify-self: center;
     .square {
       // height: 4rem;
       // width: 4rem;
