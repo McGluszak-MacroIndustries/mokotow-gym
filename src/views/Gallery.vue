@@ -3,6 +3,9 @@
     <template v-slot:slot-fix>
       <!-- <div>GALERIA</div> -->
     </template>
+    <template v-slot:menu-nav>
+      <div></div>
+    </template>
     <!-- <template v-slot:optional>
       <GallerySquares >
       </GallerySquares>
@@ -17,7 +20,12 @@
 import { computed, defineComponent } from "vue";
 import WindowTemplate from "@/components/WindowTemplate.vue";
 // import GallerySquares from "@/components/GallerySquares.vue";
-import { isEnglishLanguageOn, Item, teamItems } from "@/mixins/items";
+import {
+  isEnglishLanguageOn,
+  Item,
+  teamItems,
+  galleryItems,
+} from "@/mixins/items";
 import { aboutUsItemsEnglish } from "@/mixins/englishItems";
 
 export default defineComponent({
@@ -26,7 +34,7 @@ export default defineComponent({
   props: {},
   setup() {
     const currentItems = computed(() => {
-      return isEnglishLanguageOn.value ? aboutUsItemsEnglish : teamItems;
+      return isEnglishLanguageOn.value ? aboutUsItemsEnglish : galleryItems;
     });
 
     return {

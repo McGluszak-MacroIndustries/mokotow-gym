@@ -138,8 +138,8 @@ export default defineComponent({
 
       activeButton.value = element;
 
-      console.log("aktywny element to: ", activeButton.value.routerName);
-      console.log("kliknięty to: ", element.routerName);
+      // console.log("aktywny element to: ", activeButton.value.routerName);
+      // console.log("kliknięty to: ", element.routerName);
     }
     function moveToPageAndChangeActiveButtonMobile(element: NavBarElement) {
       // if (isEqual(element, props.currentNavbarElement)) {
