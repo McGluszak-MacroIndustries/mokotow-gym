@@ -504,7 +504,7 @@ export const aboutUsItems: Array<Item> = [
     Wyznajemy zasadę: przede wszystkim pasja. Nasi trenerzy są nie tylko świetnymi specjalistami we własnych dziedzinach, ale także ciekawymi, otwartymi ludźmi, którzy bez trudu zarażą Cię pasją do sportu. Wejdź na wyższy poziom, i pamiętaj: sky is the limit!
     
     Oferujemy szeroki wybór zajęć w kameralnych grupach, treningi indywidualne i możliwość samodzielnych ćwiczeń - u nas każdy znajdzie coś dla siebie.`,
-    src: "team.jpeg",
+    src: "1.jpg",
   },
   // {
   //   name: "about-us",
@@ -726,15 +726,15 @@ export const priceListItems: Array<Item> = [
 export const scheduleItems: Array<Item> = [
   {
     name: "schedule",
-    title: "Sala Fight",
-    description: `Sala wyłożona matą do sportów walki – idealna zarówno do sportów uderzanych jak i parterowych. Wyposażona w lustra, worki treningowe i inny niezbędny sprzęt.`,
-    src: "salafight.jpg",
-  },
-  {
-    name: "schedule",
     title: "Sala Fitness",
     description: `Na sali znajduje się dobrze wyposażona strefa wolnych ciężarów oraz brama do crossfitu. Mamy również ring bokserski oraz dwa urządzenia Air Bike firmy Proud..`,
     src: "salafitness.jpg",
+  },
+  {
+    name: "schedule",
+    title: "Sala Fight",
+    description: `Sala wyłożona matą do sportów walki – idealna zarówno do sportów uderzanych jak i parterowych. Wyposażona w lustra, worki treningowe i inny niezbędny sprzęt.`,
+    src: "salafight.jpg",
   },
 ];
 
