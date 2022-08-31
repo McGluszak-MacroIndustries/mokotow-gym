@@ -112,7 +112,8 @@ button {
 
   .buttons {
     // margin-left: 3vw;
-    transform: translateY(-15vh);
+    height: 7vh;
+    transform: translateY(-10vh);
     z-index: 99;
     display: grid;
     grid-auto-flow: column;
