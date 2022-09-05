@@ -727,7 +727,7 @@ export const scheduleItems: Array<Item> = [
   {
     name: "schedule",
     title: "Sala Fitness",
-    description: `Na sali znajduje się dobrze wyposażona strefa wolnych ciężarów oraz brama do crossfitu. Mamy również ring bokserski oraz dwa urządzenia Air Bike firmy Proud..`,
+    description: `Sala przeznaczona do treningu siłowego i funkcjonalnego. Dobrze zaopatrzona brama, dwie ławeczki, wyciąg, szeroki wybór wolnych ciężarów (kettle, hantle, sztangi, powerbagi i inne). Mamy również rowerek airbike.`,
     src: "salafitness.jpg",
   },
   {
