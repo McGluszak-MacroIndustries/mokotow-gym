@@ -728,13 +728,13 @@ export const scheduleItems: Array<Item> = [
     name: "schedule",
     title: "Sala Fitness",
     description: `Sala przeznaczona do treningu siłowego i funkcjonalnego. Dobrze zaopatrzona brama, dwie ławeczki, wyciąg, szeroki wybór wolnych ciężarów (kettle, hantle, sztangi, powerbagi i inne). Mamy również rowerek airbike.`,
-    src: "salafitness.jpg",
+    src: "sala-fight.webp",
   },
   {
     name: "schedule",
     title: "Sala Fight",
     description: `Sala wyłożona matą do sportów walki – idealna zarówno do sportów uderzanych jak i parterowych. Wyposażona w lustra, worki treningowe i inny niezbędny sprzęt.`,
-    src: "salafight.jpg",
+    src: "sala-fitness.webp",
   },
 ];
 

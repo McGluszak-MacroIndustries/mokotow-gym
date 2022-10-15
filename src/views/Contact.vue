@@ -170,7 +170,7 @@ button {
   // height: 60vh;
   // padding-top: 2rem;
   display: grid;
-  grid-template-rows: 40vh auto;
+  grid-template-rows: 60vh auto;
   overflow-y: hidden;
   justify-items: left;
   // margin-top: 10vh;
@@ -178,6 +178,7 @@ button {
     // margin-top: 5vh;
     display: grid;
     // grid-template-rows: 7vh 15vh 8vh;
+    // height: 100%;
     grid-gap: 1rem;
 
     .name {
@@ -205,7 +206,7 @@ button {
     }
     .buttons {
       display: grid;
-      height: 5rem;
+      height: 4rem;
       grid-auto-flow: column;
       transform: translateY(20%);
     }
