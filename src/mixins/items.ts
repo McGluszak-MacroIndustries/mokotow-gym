@@ -405,22 +405,22 @@ export const teamItems: Array<Item> = [
     ○ treningi personalne`,
     src: "nasiadko.jpg",
   },
-  {
-    name: "team",
-    title: "Mateusz Krynicki",
-    description: `Kiedy miałem sześć lat ojciec zaprowadził mnie na treningi oyama karate ze względu na stwarzane przeze mnie problemy wychowawcze. Zajęcia wyjątkowo przypadły mi do gustu. Przygodę z karate kontynuowałem aż do końca gimnazjum. Po trzech latach zmieniłem zajęcia na mocniejsze wydanie Karate Kyokushin na Warszawskim AWF-ie. Przygodę z tą dyscypliną zakończyłem z zielonym pasem 3rd KYU. W liceum trafiłem do klasy z osobami, które trenowały różne sporty, jedna z nich zabrała mnie na trening muay thai. Ze względu na zdecydowanie większą eksplozywność i typowy full contact - co zdecydowanie bardziej mi odpowiadało - skoncentrowałem się własnie na tym sporcie walki. Dla dziecka z ADHD była to idealna możliwość na spożytkowanie zbyt dużej ilości energii. Przez wiele lat trenowałem w wielu różnych klubach w Warszawie, Kijowie oraz Londynie, gdzie mieszkałem przez 18 miesięcy. Treningi w tych miejscach oraz różnrodność wykorzystanych technik dały mi możliwość zdobycia jak największego doświadczenie, między innymi w: Koszalin Fight Club, London Shoot Fighters i ukraiński Oktahon w Kijowie. Żeby rozwinąć swoje umiejętności, trenowałem przemiennie boks tajski z brazylijskim jiu jitsu i zapasami. Umiejętności szlifowałem u takich trenerów jak: Zbigniew Raubo, Józef Ratajczyk, Szymon Warchoł, Ireneusz Graczyk, Wojciech Feliński, Roman Ratajczyk. Uczestniczyłem w wielu seminariach prowadzonych przez zawodników z Holandii, Tajlandii i Białorusi, żeby poszerzyć swoje umiejętności. 
-    
-    Na przełomie lat 2018/2019 odbyłem 9-miesięczny kurs dla służb mundurowych w Polsce prowadzony przez byłych żołnierzy jednostki GROM. Posiadam uprawnienia instruktorskie w boksie i w muay thai. Żyję w ramach starej rzymskiej maksymy: Jeśli chcesz żyć w pokoju to przygotuj się na wojnę.
-    
-    Prowadzone zajęcia:
-    ○ muai thai
-    ○ boks
-    ○ kickboxing
-    ○ samoobrona dla kobiet
+  // {
+  //   name: "team",
+  //   title: "Mateusz Krynicki",
+  //   description: `Kiedy miałem sześć lat ojciec zaprowadził mnie na treningi oyama karate ze względu na stwarzane przeze mnie problemy wychowawcze. Zajęcia wyjątkowo przypadły mi do gustu. Przygodę z karate kontynuowałem aż do końca gimnazjum. Po trzech latach zmieniłem zajęcia na mocniejsze wydanie Karate Kyokushin na Warszawskim AWF-ie. Przygodę z tą dyscypliną zakończyłem z zielonym pasem 3rd KYU. W liceum trafiłem do klasy z osobami, które trenowały różne sporty, jedna z nich zabrała mnie na trening muay thai. Ze względu na zdecydowanie większą eksplozywność i typowy full contact - co zdecydowanie bardziej mi odpowiadało - skoncentrowałem się własnie na tym sporcie walki. Dla dziecka z ADHD była to idealna możliwość na spożytkowanie zbyt dużej ilości energii. Przez wiele lat trenowałem w wielu różnych klubach w Warszawie, Kijowie oraz Londynie, gdzie mieszkałem przez 18 miesięcy. Treningi w tych miejscach oraz różnrodność wykorzystanych technik dały mi możliwość zdobycia jak największego doświadczenie, między innymi w: Koszalin Fight Club, London Shoot Fighters i ukraiński Oktahon w Kijowie. Żeby rozwinąć swoje umiejętności, trenowałem przemiennie boks tajski z brazylijskim jiu jitsu i zapasami. Umiejętności szlifowałem u takich trenerów jak: Zbigniew Raubo, Józef Ratajczyk, Szymon Warchoł, Ireneusz Graczyk, Wojciech Feliński, Roman Ratajczyk. Uczestniczyłem w wielu seminariach prowadzonych przez zawodników z Holandii, Tajlandii i Białorusi, żeby poszerzyć swoje umiejętności.
 
-    `,
-    src: "mati.jpg",
-  },
+  //   Na przełomie lat 2018/2019 odbyłem 9-miesięczny kurs dla służb mundurowych w Polsce prowadzony przez byłych żołnierzy jednostki GROM. Posiadam uprawnienia instruktorskie w boksie i w muay thai. Żyję w ramach starej rzymskiej maksymy: Jeśli chcesz żyć w pokoju to przygotuj się na wojnę.
+
+  //   Prowadzone zajęcia:
+  //   ○ muai thai
+  //   ○ boks
+  //   ○ kickboxing
+  //   ○ samoobrona dla kobiet
+
+  //   `,
+  //   src: "mati.jpg",
+  // },
   //   {
   //     name: "team",
   //     title: "Patrycja Czekaj",
