@@ -24,7 +24,7 @@
       <div class="addresses">
         <div>ul. Białej Floty 2, 02-654 Warszawa</div>
         <div>/</div>
-        <div>tel: +48 696 168 867</div>
+        <div>tel: +48 664 099 162</div>
         <div>/</div>
         <div>www.mokotowskigym.com</div>
         <div>/</div>

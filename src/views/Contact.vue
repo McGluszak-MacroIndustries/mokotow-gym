@@ -11,7 +11,7 @@
             <!-- <div>kod-pocztowy</div> -->
             <div>{{ currentAddress[0] }}</div>
             <div>02 - 654 Warszawa</div>
-            <div>+48 696 168 867</div>
+            <div>+48 664 099 162</div>
             <div class="breaker"></div>
             <div>McGluszak MacroIndustries Sp.z o.o</div>
             <div>ul. Warszawska 6m32, 15-063 Białystok</div>

@@ -718,7 +718,7 @@ export const priceListItems: Array<Item> = [
     Zakup karnetów i rezerwacje zajęć odbywają się przez stronę www, można też kupić je na recepcji klubu. 
     Na zajęciach grupowych obowiązuje limit osób, co gwarantuje komfort ćwiczeń i bezpośredni kontakt z prowadzącym.
 
-    Treningi indywidualne są płatne bezpośrednio u prowadzących – na pierwszy trening można umówić się za pośrednictwem recepcji (+48 696 168 867).`,
+    Treningi indywidualne są płatne bezpośrednio u prowadzących – na pierwszy trening można umówić się za pośrednictwem recepcji (+48 664 099 162).`,
     src: "cennik.webp",
   },
 ];
